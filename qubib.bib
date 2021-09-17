@@ -6596,18 +6596,7 @@
   Year =	 2002
 }
 
-@InProceedings{CGS02,
-  author =	 {Claude Crépeau and Daniel Gottesman and Adam Smith},
-  title =	 {Secure multi-party quantum computation},
-  booktitle =	 {STOC '02: Proceedings of the thiry-fourth annual ACM
-                  symposium on Theory of computing},
-  year =	 2002,
-  pages =	 {643-652},
-  month =	 {May},
-  doi =		 {https://doi.org/10.1145/509907.510000}
-}
-
-@inproceedings{CGS02b,
+@inproceedings{CGS02:secure,
   source =	 {Luka Music, 2021-09-16},
   author =	 {Cr{\'e}peau, Claude and Gottesman, Daniel and Smith,
                   Adam},
@@ -8508,7 +8497,7 @@
   Year =	 1991
 }
 
-@InProceedings{DFLS16,
+@InProceedings{DFLS16:adaptive,
   source =	 {Luka Music, 2021-09-16},
   author =	 "Dupuis, Fr{\'e}d{\'e}ric and Fehr, Serge and
                   Lamontagne, Philippe and Salvail, Louis",
@@ -8872,29 +8861,46 @@
   Year =	 1999
 }
 
-@inproceedings{DGJ+19a,
-  author =	 {Yfke Dulek and Alex B. Grilo and Stacey Jeffery and
-                  Christian Majenz and Christian Schaffner},
-  title =	 {Secure Multi-party Quantum Computation with a
-                  Dishonest Majority},
+@InProceedings{DGJM+20:secure,
+  author =	 "Dulek, Yfke and Grilo, Alex B.  and Jeffery, Stacey
+                  and Majenz, Christian and Schaffner, Christian",
+  editor =	 "Canteaut, Anne and Ishai, Yuval",
+  title =	 "Secure Multi-party Quantum Computation with a
+                  Dishonest Majority",
+  booktitle =	 "Advances in Cryptology -- EUROCRYPT 2020",
   year =	 2020,
-  booktitle =	 {Advances in Cryptology – EUROCRYPT 2020},
-  editor =	 {Canteaut A. and Ishai Y.},
-  series =	 {Lecture Notes in Computer Science},
-  volume =	 12107,
-  publisher =	 {Springer, Cham}
-}
-
-@misc{DGJMS19,
-  source =	 {Luka Music, 2021-09-16},
-  title =	 {Secure Multi-party Quantum Computation with a
-                  Dishonest Majority},
-  author =	 {Yfke Dulek and Alex B. Grilo and Stacey Jeffery and
-                  Christian Majenz and Christian Schaffner},
-  year =	 2019,
-  eprint =	 {1909.13770},
-  archivePrefix ={arXiv},
-  primaryClass = {quant-ph}
+  publisher =	 "Springer International Publishing",
+  address =	 "Cham",
+  pages =	 "729--758",
+  abstract =	 "The cryptographic task of secure multi-party
+                  (classical) computation has received a lot of
+                  attention in the last decades. Even in the extreme
+                  case where a computation is performed between k
+                  mutually distrustful players, and security is
+                  required even for the single honest player if all
+                  other players are colluding adversaries, secure
+                  protocols are known. For quantum computation, on the
+                  other hand, protocols allowing arbitrary dishonest
+                  majority have only been proven for
+                  {\$}{\$}k=2{\$}{\$}. In this work, we generalize the
+                  approach taken by Dupuis, Nielsen and Salvail
+                  (CRYPTO 2012) in the two-party setting to devise a
+                  secure, efficient protocol for multi-party quantum
+                  computation for any number of players k, and prove
+                  security against up to {\$}{\$}k-1{\$}{\$}colluding
+                  adversaries. The quantum round complexity of the
+                  protocol for computing a quantum circuit of
+                  {\$}{\$}{\backslash}{\{}{\backslash}mathsf
+                  {\{}CNOT{\}}, {\backslash}mathsf {\{}T{\}}
+                  {\backslash}{\}}{\$}{\$}depth d is {\$}{\$}O(k
+                  {\backslash}cdot (d + {\backslash}log n)){\$}{\$},
+                  where n is the security parameter. To achieve
+                  efficiency, we develop a novel public verification
+                  protocol for the Clifford authentication code, and a
+                  testing protocol for magic-state inputs, both using
+                  classical multi-party computation.",
+  isbn =	 "978-3-030-45727-3",
+  doi =		 "10.1007/978-3-030-45727-3_25",
 }
 
 @article{DGS98a,
@@ -9408,7 +9414,7 @@
   Year =	 2002
 }
 
-@Book{DNS10,
+@Book{DNS10:secure,
   source =	 {Luka Music, 2021-09-16},
   pages =	 {685--706},
   title =	 {Secure Two-Party Quantum Evaluation of Unitaries
@@ -9426,7 +9432,7 @@
   url =		 {http://dx.doi.org/10.1007/978-3-642-14623-7_37},
 }
 
-@incollection{DNS12,
+@incollection{DNS12:actively,
   source =	 {Luka Music, 2021-09-16},
   title =	 {Actively secure two-party evaluation of any quantum
                   operation},
@@ -11204,7 +11210,7 @@
   Year =	 2001
 }
 
-@article{FK17,
+@article{FK17:unconditionally,
   source =	 {Luka Music, 2021-09-16},
   title =	 {Unconditionally verifiable blind quantum
                   computation},
@@ -11278,7 +11284,7 @@
   Year =	 1999
 }
 
-@InProceedings{FKSZZ13,
+@InProceedings{FKSZ+13:feasibility,
   source =	 {Luka Music, 2021-09-16},
   author =	 "Fehr, Serge and Katz, Jonathan and Song, Fang and
                   Zhou, Hong-Sheng and Zikas, Vassilis",
@@ -14328,7 +14334,7 @@
   Year =	 2003
 }
 
-@article{HHTF18,
+@article{HHTF18:composable,
   source =	 {Luka Music, 2021-09-16},
   author =	 {Houshmand, Monireh and Houshmand, Mahboobeh and Tan,
                   Si-Hui and Fitzsimons, Joseph},
@@ -17034,26 +17040,29 @@
   year =	 2019
 }
 
-@Article{KDK15,
+@misc{KDK15:optimizing,
   source =	 {Luka Music, 2021-09-16},
-  author =	 {Kapourniotis and Dunjko and Kashefi},
-  title =	 {On optimising quantum communication in verifiable
-                  quantum computing},
+  author =	 {Kapourniotis, Theodoros and Dunjko, Vedran and
+                  Kashefi, Elham},
+  title =	 "On optimising quantum communication in verifiable
+                  quantum computing",
   journal =	 {arXiv e-prints},
   year =	 2015,
-  note =	 {AQIS},
+  note =	 {Presented at AQIS'15 conference},
 }
 
-@article{KE99a,
-  Author =	 {Kessel, A. and Ermakov, V. L.},
+@article{KE99:multiqubit,
+  Author =	 {Kessel, A. R. and Ermakov, V. L.},
   Eprint =	 {quant-ph/9912047},
+  journal =	 {Jetp Lett.},
   Pages =	 {61-65},
-  Title =	 {Multiqubit System},
+  Title =	 {Multiqubit spin},
   Volume =	 70,
-  Year =	 1999
+  Year =	 1999,
+  doi =		 {10.1134/1.568130}
 }
 
-@article{KFH+99a,
+@article{KFHD+99:classical,
   Adsnote =	 {Provided by the NASA Astrophysics Data System},
   Adsurl =
                   {http://adsabs.harvard.edu/cgi-bin/nph-bib_query?bibcode=1999PhRvL..82.4737K{\&}amp;db_key=INST},
@@ -17696,7 +17705,7 @@
   Year =	 2002
 }
 
-@misc{KMW17,
+@misc{KMW17:quantum,
   source =	 {Luka Music, 2021-09-16},
   title =	 {The Quantum Cut-and-Choose Technique and Quantum
                   Two-Party Computation},
@@ -17765,7 +17774,7 @@
   Year =	 2005
 }
 
-@article{KP17,
+@article{KP17:multiparty,
   source =	 {Luka Music, 2021-09-16},
   title =	 "Multiparty Delegated Quantum Computing",
   abstract =	 "Quantum computing has seen tremendous progress in
@@ -18069,7 +18078,7 @@
   Year =	 2002
 }
 
-@article{KW17,
+@article{KW17:optimised,
   source =	 {Luka Music, 2021-09-16},
   author =	 {Elham Kashefi and Petros Wallden},
   title =	 {Optimised resource construction for verifiable
@@ -18080,7 +18089,7 @@
   year =	 2017,
 }
 
-@article{KW17b,
+@article{KW17:garbled,
   source =	 {Luka Music, 2021-09-16},
   title =	 {Garbled quantum computation},
   author =	 {Kashefi, Elham and Wallden, Petros},
@@ -19749,7 +19758,7 @@
   Year =	 1999
 }
 
-@ARTICLE{LRW20a,
+@ARTICLE{LRW20:secure,
   source =	 {Luka Music, 2021-09-16},
   author =	 {{Lipinska}, Victoria and {Ribeiro}, J{\'e}r{\'e}my
                   and {Wehner}, Stephanie},
@@ -29396,7 +29405,7 @@
   Year =	 2003
 }
 
-@InProceedings{U10a,
+@InProceedings{U10:universally,
   source =	 {Luka Music, 2021-09-16},
   author =	 "Unruh, Dominique",
   editor =	 "Gilbert, Henri",
