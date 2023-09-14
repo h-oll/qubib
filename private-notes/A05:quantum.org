@@ -1,0 +1,6 @@
+* Aaronson, S. (2005): Quantum Computing, Postselection, and Probabilistic                  Polynomial-Time
+:PROPERTIES:
+:Custom_id: A05:quantum
+:NOTER_DOCUMENT: 
+:END:
+Test
