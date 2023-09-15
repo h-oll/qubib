@@ -1,7 +1,9 @@
-* Bonet-Monroig, X. and Sagastizabal, R. and Singh,                  M. and O’Brien, T. E. (2018): Low-cost error mitigation by symmetry verification
+* Bonet-Monroig, X. and Sagastizabal, R. and Singh, M. and O’Brien, T. E. (2018): Low-cost error mitigation by symmetry verification
 :PROPERTIES:
 :Custom_id: BSSO18:low
 :END:
+
+** Summary
 - H is evolution Hamiltonian that we seek to implement.
 - S is a symmetry operator at all times, [H,S] = 0.
 - S can also be constructed from a subspace that is invariant by H (if that's what is given).
@@ -13,7 +15,7 @@
 - Do classical post-processing when computing expectation values (and final symmetry verification)
 
 
-** Idea
+** Ideas
 - Can reproduce the same with more complex symmetres as long as we can characterize the subspace through local (or k-local) operations.
 - What is the possible error propagation incurred by the ancilla methods? can we improve it with bias qubits?
 - Use Shadows to optimally get the values that we will recompose later to get the traces that are involved into the post-processing method. Can we do it also with "mid" way measurements / partial shadows?
