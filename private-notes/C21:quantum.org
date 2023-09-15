@@ -3,13 +3,15 @@
 :Custom_id: C21:quantum
 :END:
 
-** SUmmary
+** Summary
 
 - Idea is to start from symmetry verification, which projects the final state onto the correct subspace -- i.e. makes the measurement and discards anything that doesn't fall into the right subspace.
 - Perform the projection through random application of the group generating the symmetry (this is done through uniform sampling)
 - Now we are not forced to take a uniform sampling, this is symmetry expansion
 - They introduce a metric for the performance of this class of schemes and identify two contributions. One is always positive, the other can be negative (nd compensate the positiviy of the other). => try to balance both.
+- Section 6.3 describes a situation where noise is approximately decomposable into detectable / undetectable components and makes partial analytic computation.
 
-
+  
 ** Ideas
 - Pay attention to the fact that combination of error mitigation techniques when there is post selection requires that we reanalyze the noise when post selection has been performed
+- section 6.3 might be useful for biased noise
