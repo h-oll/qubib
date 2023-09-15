@@ -1,0 +1,6 @@
+* Cai, Zhenyu (2021): Quantum Error Mitigation using Symmetry Expansion
+:PROPERTIES:
+:Custom_id: C21:quantum
+:END:
+
+Idea is to start from symmetry verification, which projects the final state onto the correct subspace -- i.e. makes the measurement and discards anything that doesn't fall into the right subspace.
