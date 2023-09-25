@@ -16,6 +16,9 @@
 
 
 ** Ideas
+:PROPERTIES:
+:ID:       0bd7651d-2659-43b1-85b9-383da9acd823
+:END:
 - Can reproduce the same with more complex symmetres as long as we can characterize the subspace through local (or k-local) operations.
 - What is the possible error propagation incurred by the ancilla methods? can we improve it with bias qubits?
 - Use Shadows to optimally get the values that we will recompose later to get the traces that are involved into the post-processing method. Can we do it also with "mid" way measurements / partial shadows?
