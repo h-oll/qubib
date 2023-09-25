@@ -13,5 +13,8 @@
 
   
 ** Ideas
+:PROPERTIES:
+:ID:       5a4cbfe1-2b91-4a10-b1cd-dafe7be7c7ac
+:END:
 - Pay attention to the fact that combination of error mitigation techniques when there is post selection requires that we reanalyze the noise when post selection has been performed
 - section 6.3 might be useful for biased noise
