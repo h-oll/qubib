@@ -41,6 +41,7 @@
 }
 
 @Article{A00:quantum,
+	annote = {this is going to be inside the DB},
 	author = {Averin, D.V.},
 	title = {Quantum Computing and Quantum Measurement with
                   Mesoscopic Josephson Junctions},
@@ -745,6 +746,25 @@
 	Eprint = {quant-ph/9803007},
 	Title = {Efficient Quantum Key Distribution},
 	Year = 1998
+}
+
+@Article{ABDP+09:fault,
+	annote = {Describes how to perform CNOT in a FT and bias preserving way using a gate combination technique (ie not opening the box of how gates are physically implemented)},
+	file = {ABDP+09:fault.pdf},
+	author = {Aliferis, P and Brito, F and DiVincenzo, D P and
+                  Preskill, J and Steffen, M and Terhal, B M},
+	title = {Fault-tolerant computing with biased-noise
+                  superconducting qubits: a case study},
+	journal = {New Journal of Physics},
+	year = 2009,
+	volume = 11,
+	number = 1,
+	month = {Jan},
+	pages = 013061,
+	issn = {1367-2630},
+	doi = {10.1088/1367-2630/11/1/013061},
+	url = {https://iopscience.iop.org/article/10.1088/1367-2630/11/1/013061/pdf},
+	publisher = {IOP Publishing}
 }
 
 @Article{ABE08:interactive,
@@ -3224,20 +3244,20 @@
 }
 
 @article{BBDE+97:stabilization,
-  author       = {Barenco, Adriano and Berthiaume, Andr\'{e} and
+	author = {Barenco, Adriano and Berthiaume, Andr\'{e} and
                   Deutsch, David and Ekert, Artur and Jozsa, Richard
                   and Macchiavello, Chiara},
-  title        = {Stabilization of Quantum Computations by
+	title = {Stabilization of Quantum Computations by
                   Symmetrization},
-  journal      = {SIAM Journal on Computing},
-  volume       = 26,
-  number       = 5,
-  pages        = {1541-1557},
-  year         = 1997,
-  doi          = {10.1137/S0097539796302452},
-  URL          = {https://doi.org/10.1137/S0097539796302452},
-  eprint       = {https://doi.org/10.1137/S0097539796302452},
-  abstract     = { We propose a method for the stabilization of
+	journal = {SIAM Journal on Computing},
+	volume = 26,
+	number = 5,
+	pages = {1541-1557},
+	year = 1997,
+	doi = {10.1137/S0097539796302452},
+	URL = {https://doi.org/10.1137/S0097539796302452},
+	eprint = {https://doi.org/10.1137/S0097539796302452},
+	abstract = { We propose a method for the stabilization of
                   quantum computations (including quantum state
                   storage). The method is based on the operation of
                   projection into \$\cal SYM\$, the symmetric subspace
@@ -4894,6 +4914,21 @@
 	Year = 2003
 }
 
+@Article{BK22:categorical,
+	file = {BK22:categorical.pdf},
+	author = {Broadbent, Anne and Karvonen, Martti},
+	title = {Categorical composable cryptography},
+	journal = {Foundations of Software Science and Computation
+                  Structures},
+	year = 2022,
+	pages = {161–183},
+	issn = {1611-3349},
+	doi = {10.1007/978-3-030-99253-8_9},
+	url = {https://arxiv.org/pdf/2105.05949.pdf},
+	ISBN = 9783030992538,
+	publisher = {Springer International Publishing}
+}
+
 @article{BK95:designing,
 	Author = {Blum, M. and Kannan, S.},
 	Date-Modified = {2006-01-04 15:14:53 +1000},
@@ -6001,6 +6036,34 @@
 	Year = 1996
 }
 
+@Article{BSSO18:low,
+	annote = {<-- H. Ollivier -- 2023-09-15. 
+- H is evolution Hamiltonian that we seek to implement.
+- S is a symmetry operator at all times, [H,S] = 0.
+- S can also be constructed from a subspace that is invariant by H (if that's what is given).
+- Best is when the subspace that we want to stay in can be characterized via a Pauli measurement. 
+
+- Mitigation is done by measuring S mid-way (bulk symmetry verification) or at the end (final symmetry verification).
+- Do the measurement with an ancilla (possibly with swaps to avoid long range interaction)
+- Do the measurement with an ancilla embedded in the computation (not so clear as there are many ways of doing this).
+- Do classical post-processing when computing expectation values (and final symmetry verification)
+-->},
+	keywords = {qem},
+	file = {BSSO18:low.pdf},
+	author = {Bonet-Monroig, X. and Sagastizabal, R. and Singh,
+                  M. and O’Brien, T. E.},
+	title = {Low-cost error mitigation by symmetry verification},
+	journal = {Physical Review A},
+	year = 2018,
+	volume = 98,
+	number = 6,
+	month = {Dec},
+	issn = {2469-9934},
+	doi = {10.1103/physreva.98.062339},
+	url = {https://arxiv.org/abs/1807.10050},
+	publisher = {American Physical Society (APS)}
+}
+
 @misc{BSST01:entanglement,
 	Author = {Bennett, C.H. and Shor, P. W. and Smolin, J. A. and
                   Thapliyal, A. V.},
@@ -6570,6 +6633,30 @@
 	Local-Url = {file://localhost/Volumes/IoData/ollivier/Work/Qubib/Epapers/Col05a.pdf},
 	Title = {Coleman's Lecture Notes on Quantum Field Theory},
 	Year = 0000
+}
+
+@Article{C21:quantum,
+	keywords = {qem},
+	annote = {<-- H. Ollivier -- 2023-09-15
+- Idea is to start from symmetry verification, which projects the final state onto the correct subspace -- i.e. makes the measurement and discards anything that doesn't fall into the right subspace.
+- Perform the projection through random application of the group generating the symmetry (this is done through uniform sampling)
+- Now we are not forced to take a uniform sampling, this is symmetry expansion
+- They introduce a metric for the performance of this class of schemes and identify two contributions. One is always positive, the other can be negative (nd compensate the positiviy of the other). => try to balance both.
+- Section 6.3 describes a situation where noise is approximately decomposable into detectable / undetectable components and makes partial analytic computation.
+-->},
+	file = {C21:quantum.pdf},
+	author = {Cai, Zhenyu},
+	title = {Quantum Error Mitigation using Symmetry Expansion},
+	journal = {Quantum},
+	year = 2021,
+	volume = 5,
+	month = {Sep},
+	pages = 548,
+	issn = {2521-327X},
+	doi = {10.22331/q-2021-09-21-548},
+	url = {https://quantum-journal.org/papers/q-2021-09-21-548/pdf},
+	publisher = {Verein zur Forderung des Open Access Publizierens in
+                  den Quantenwissenschaften}
 }
 
 @article{C36:note,
@@ -12790,6 +12877,23 @@
 	Year = 2002
 }
 
+@Article{FR15:quantum,
+	file = {FR15:quantum.pdf},
+	author = {Fawzi, Omar and Renner, Renato},
+	title = {Quantum Conditional Mutual Information and
+                  Approximate Markov Chains},
+	journal = {Communications in Mathematical Physics},
+	year = 2015,
+	volume = 340,
+	number = 2,
+	month = {Sep},
+	pages = {575–611},
+	issn = {1432-0916},
+	doi = {10.1007/s00220-015-2466-x},
+	url = {https://link.springer.com/content/pdf/10.1007/s00220-015-2466-x.pdf},
+	publisher = {Springer Science and Business Media LLC}
+}
+
 @misc{FS00:lp,
 	Author = {Feldman, J. and Stein, C.},
 	Correct_Ref = {No},
@@ -13797,6 +13901,20 @@
 	Year = 1996
 }
 
+@Article{GCM23:quantum,
+	file = {GCM23:quantum.pdf},
+	author = {Guillaud, Jérémie and Cohen, Joachim and Mirrahimi,
+                  Mazyar},
+	title = {Quantum computation with cat qubits},
+	journal = {SciPost Physics Lecture Notes},
+	year = 2023,
+	month = {Jun},
+	issn = {2590-1990},
+	doi = {10.21468/scipostphyslectnotes.72},
+	url = {https://scipost.org/SciPostPhysLectNotes.72/pdf},
+	publisher = {Stichting SciPost}
+}
+
 @article{GEB99:average,
 	Author = {Ghose, R. and Eyken, T. R. and Bodenhausen, G.},
 	Date-Modified = {2006-01-04 15:31:28 +1000},
@@ -14194,6 +14312,7 @@
 }
 
 @Article{GKK19:verification,
+	file = {GKK19:verification.pdf},
 	source = {Luka Music, 2021-09-16},
 	author = {Gheorghiu, Alexandru and Kapourniotis, Theodoros and
                   Kashefi, Elham},
@@ -14227,7 +14346,7 @@
                   protocols.},
 	issn = {1433-0490},
 	doi = {10.1007/s00224-018-9872-3},
-	url = {https://doi.org/10.1007/s00224-018-9872-3}
+	url = {https://link.springer.com/content/pdf/10.1007/s00224-018-9872-3.pdf}
 }
 
 @misc{GKLC01:separability,
@@ -14428,6 +14547,7 @@
 }
 
 @article{GM19:repetition,
+	file = {GM19:repetition.pdf},
 	title = {Repetition Cat Qubits for Fault-Tolerant Quantum
                   Computation},
 	author = {Guillaud, J\'er\'emie and Mirrahimi, Mazyar},
@@ -14440,7 +14560,7 @@
 	month = {Dec},
 	publisher = {American Physical Society},
 	doi = {10.1103/PhysRevX.9.041053},
-	url = {https://link.aps.org/doi/10.1103/PhysRevX.9.041053}
+	url = {https://journals.aps.org/prx/pdf/10.1103/PhysRevX.9.041053}
 }
 
 @article{GM87:detector,
@@ -14865,6 +14985,25 @@
 	Title = {Complex geometrical phases for dissipative systems},
 	Volume = 128,
 	Year = 1988
+}
+
+@Misc{GWWS+23:constructor,
+	file = {GWWS+23:constructor.pdf},
+	url = {https://act2023.github.io/papers/paper27.pdf},
+	abstract = {Constructor theory is a meta-theoretic approach that seeks to characterise concrete theories of physics
+in terms of the (im)possibility to implement certain abstract “tasks” by means of physical processes.
+Process theory, on the other hand, pursues analogous characterisation goals in terms of the compo-
+sitional structure of said processes, concretely presented through the lens of (symmetric monoidal)
+category theory. In this work, we show how to formulate fundamental notions of constructor the-
+ory within the canvas of process theory. Specifically, we exploit the functorial interplay between
+the symmetric monoidal structure of the category of sets and relations, where the abstract tasks live,
+and that of symmetric monoidal categories from physics, where concrete processes can be found to
+implement said tasks. Through this, we answer the question of how constructor theory relates to the
+broader body of process-theoretic literature, and provide the impetus for future collaborative work
+between the fields},
+	year = {2023},
+	title = {Constructor Theory as Process Theory},
+	author = {Stefano Gogioso and Vincent Wang-Mascianica and Muhammad Hamza Waseem and Carlo Maria Scandolo and Bob Coecke}
 }
 
 @misc{GZ01:coherent,
@@ -16113,6 +16252,24 @@
 	Title = {Structure of states which satisfy strong
                   subadditivity of quantum entropy with equality},
 	Year = 2003
+}
+
+@Article{HJPW04:structure,
+	file = {HJPW04:structure.pdf},
+	author = {Hayden, Patrick and Jozsa, Richard and Petz, D�nes
+                  and Winter, Andreas},
+	title = {Structure of States Which Satisfy Strong
+                  Subadditivity of Quantum Entropy with Equality},
+	journal = {Communications in Mathematical Physics},
+	year = 2004,
+	volume = 246,
+	number = 2,
+	month = {Apr},
+	pages = {359–374},
+	issn = {1432-0916},
+	doi = {10.1007/s00220-004-1049-z},
+	url = {https://arxiv.org/pdf/quant-ph/0304007.pdf},
+	publisher = {Springer Science and Business Media LLC}
 }
 
 @misc{HJW02:trading,
@@ -22723,6 +22880,22 @@
 	year = {September 2012}
 }
 
+@Article{MF13:blind,
+	file = {MF13:blind.pdf},
+	author = {Morimae, Tomoyuki and Fujii, Keisuke},
+	title = {Blind quantum computation protocol in which Alice
+                  only makes measurements},
+	journal = {Physical Review A},
+	year = 2013,
+	volume = 87,
+	number = 5,
+	month = {May},
+	issn = {1094-1622},
+	doi = {10.1103/physreva.87.050301},
+	url = {https://arxiv.org/pdf/1201.3966},
+	publisher = {American Physical Society (APS)}
+}
+
 @article{MF13:secure,
 	source = {Luka Music, 2021-09-16},
 	title = {Secure Entanglement Distillation for Double-Server
@@ -24724,6 +24897,21 @@
 	Year = 2001
 }
 
+@Article{OG19:recovering,
+	keywords = {qem},
+	author = {Otten, Matthew and Gray, Stephen K.},
+	title = {Recovering noise-free quantum observables},
+	journal = {Physical Review A},
+	year = 2019,
+	volume = 99,
+	number = 1,
+	month = {Jan},
+	issn = {2469-9934},
+	doi = {10.1103/physreva.99.012338},
+	url = {http://dx.doi.org/10.1103/PhysRevA.99.012338},
+	publisher = {American Physical Society (APS)}
+}
+
 @article{OGKL01:quantum,
 	Author = {Ortiz, G. and Gubernatis, J. E. and Knill, E. and
                   Laflamme, R.},
@@ -26287,6 +26475,8 @@
 }
 
 @Article{QR21:emergent,
+	file = {QR21:emergent.pdf},
+	url = {https://quantum-journal.org/papers/q-2021-09-28-555/pdf/},
 	author = {Xiao-Liang Qi and Daniel Ranard},
 	title = {Emergent classicality in general multipartite states
                   and channels},
@@ -26509,6 +26699,20 @@
 	author = {Hallgren, Sean and Smith, Adam and Song, Fang},
 	pages = {411-428},
 	language = {English}
+}
+
+@Misc{R13:quantum,
+	title = {Quantum Information Theory},
+	year = {2013},
+	author = {Renato Renner},
+	file = {R13:quantum.pdf}
+}
+
+@Misc{R15:quantum,
+	file = {R15:quantum.pdf},
+	year = {2015},
+	author = {Jospeh Renes},
+	title = {Quantum Information Theory}
 }
 
 @Article{R17:classical,
@@ -30959,6 +31163,15 @@
 	url = {https://link.aps.org/doi/10.1103/PhysRevLett.113.160403}
 }
 
+@Article{UPEK23:what,
+	file = {UPEK23:what.pdf},
+	url = {https://arxiv.org/pdf/2308.16664},
+	doi = {10.48550/arXiv.2308.16664},
+	year = {2023},
+	title = {What can we learn from quantum convolutional neural networks?},
+	author = {Chukwudubem Umeano and Annie E. Paine and Vincent E. Elfving and Oleksandr Kyriienko}
+}
+
 @article{USB99:laser,
 	Author = {Unanyan, R. G. and Shore, B. W. and Bergmann, K.},
 	Journal = {Phys. Rev. A},
@@ -31937,6 +32150,13 @@
 	publisher = {Cambridge University Press},
 	author = {Wilde, Mark M.},
 	year = 2017
+}
+
+@Book{W19:from,
+	file = {W19:from.pdf},
+	year = {2019},
+	title = {From Classical to Quantum Shannon Theory},
+	author = {Mark Wilde}
 }
 
 @article{W21:non,
@@ -34586,6 +34806,21 @@
 	year = 2020,
 	url = "https://en.wikipedia.org/wiki/Hypergeometric_distribution",
 	note = "[Online; accessed June 24, 2020]"
+}
+
+@Article{https://doi.org/10.48550/arxiv.1106.1445,
+	author = {Wilde, Mark M.},
+	title = {From Classical to Quantum Shannon Theory},
+	year = 2011,
+	doi = {10.48550/ARXIV.1106.1445},
+	url = {https://arxiv.org/abs/1106.1445},
+	keywords = {Quantum Physics (quant-ph), Information Theory
+                  (cs.IT), FOS: Physical sciences, FOS: Physical
+                  sciences, FOS: Computer and information sciences,
+                  FOS: Computer and information sciences},
+	publisher = {arXiv},
+	copyright = {Creative Commons Attribution Non Commercial Share
+                  Alike 4.0 International}
 }
 
 @misc{u00:coding,

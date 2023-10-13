@@ -1,0 +1,16 @@
+* Bartusek, James (2021): Secure Quantum Computation with Classical                  Communication
+:PROPERTIES:
+:Custom_id: B21:secure
+:END:
+** Overview
+*** Claims (SMPC only)
+- constant round,
+- composable protocol
+- maliciously secure
+- for pseudo-deterministic functions[HO::i.e. fBQP]
+
+The protocol is 6 rounds in the common random string model and can tolerate any kind of collusion
+The protocol is 3 rounds in the PKI+QROM model
+*** Asumption
+- QLWE (quantum hardness of LWE)
+- Specific assumptions relative to each model (PKI+QROM and CRS).
