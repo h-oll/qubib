@@ -1,5 +1,0 @@
-* Stefano Gogioso and Vincent Wang-Mascianica and Muhammad Hamza Waseem and Carlo Maria Scandolo and Bob Coecke (2023): Constructor Theory as Process Theory
-:PROPERTIES:
-:Custom_id: GWWS+23:constructor
-:END:
-

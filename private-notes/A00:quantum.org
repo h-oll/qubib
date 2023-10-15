@@ -1,7 +1,0 @@
-* Averin, D.V. (2000): Quantum Computing and Quantum Measurement with                  Mesoscopic Josephson Junctions
-:PROPERTIES:
-:Custom_id: A00:quantum
-:NOTER_DOCUMENT: 
-:END:
-
-This is a test
