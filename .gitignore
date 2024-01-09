@@ -1,5 +1,6 @@
 *.sav
 private-notes**
+papers**
 *.rm
 *.pdf
 *.PDF
