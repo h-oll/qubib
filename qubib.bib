@@ -38,6 +38,17 @@ pages[normalize_page_numbers]
 ;}
 
 
+@inproceedings{KP17quantum,
+	Author = {Iordanis Kerenidis and Anupam Prakash},
+	Crossref = {ITCS17:proceedings},
+	Date-Added = {2019-02-24 13:05:01 +0100},
+	Date-Modified = {2019-02-24 13:05:01 +0100},
+	Keywords = {c-acti,irif,Kerenidis,eq-ac,selected},
+	Title = {Quantum recommendation systems},
+	Year = 2017,
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2688073.2688097}
+}
+
 @proceedings{17proceedings,
 	Date-Added = {2019-02-24 13:05:01 +0100},
 	Date-Modified = {2019-02-24 13:05:01 +0100},
@@ -9179,11 +9190,16 @@ pages[normalize_page_numbers]
 }
 
 @article{DK16blind,
-	source = {Luka Music, 2021-09-16},
-	title = {Blind quantum computing with two almost identical states},
+	file = {DK16blind.pdf},
 	author = {Dunjko, Vedran and Kashefi, Elham},
-	journal = {arXiv preprint arXiv:1604.01586},
-	year = 2016
+	title = {Blind Quantum Computing With Two Almost Identical States},
+	journal = {CoRR},
+	year = 2016,
+	url = {http://arxiv.org/pdf/1604.01586},
+	abstract = {The question of whether a fully classical client can delegate a quantum computation to an untrusted quantum server while fully maintaining privacy (blindness) is one of the big open questions in quantum cryptography. Both yes and no answers have important practical and theoretical consequences, and the question seems genuinely hard. The state-of-the-art approaches to securely delegating quantum computation, without exception, rely on granting the client modest quantum powers, or on additional, non-communicating, quantum servers. In this work, we consider the single server setting, and push the boundaries of the minimal devices of the client, which still allow for blind quantum computation. Our approach is based on the observation that, in many blind quantum computing protocols, the "quantum" part of the protocol, from the clients perspective, boils down to the establishing classical-quantum correlations (independent from the computation) between the client and the server, following which the steering of the computation itself requires only classical communication. Here, we abstract this initial preparation phase, specifically for the Universal Blind Quantum Computation protocol of Broadbent, Fitzsimons and Kashefi. We identify sufficient criteria on the powers of the client, which still allow for secure blind quantum computation. We work in a universally composable framework, and provide a series of protocols, where each step reduces the number of differing states the client needs to be able to prepare. As the limit of such reductions, we show that the capacity to prepare just two pure states, which have an arbitrarily high overlap (thus are arbitrarily close to identical), suffices for efficient and secure blind quantum computation.},
+	archivePrefix = {arXiv},
+	eprint = {1604.01586},
+	primaryClass = {quant-ph}
 }
 
 @article{DK96consistent,
@@ -17580,17 +17596,6 @@ pages[normalize_page_numbers]
 	number = 2
 }
 
-@inproceedings{KP17quantum,
-	Author = {Iordanis Kerenidis and Anupam Prakash},
-	Crossref = {ITCS17:proceedings},
-	Date-Added = {2019-02-24 13:05:01 +0100},
-	Date-Modified = {2019-02-24 13:05:01 +0100},
-	Keywords = {c-acti,irif,Kerenidis,eq-ac,selected},
-	Title = {Quantum recommendation systems},
-	Year = 2017,
-	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2688073.2688097}
-}
-
 @article{KR01minimal,
 	Author = {King, C. and Ruskai, M. B.},
 	Date-Modified = {2006-01-04 12:56:41 +1000},
@@ -23677,6 +23682,19 @@ pages[normalize_page_numbers]
 	Year = 1996
 }
 
+@article{PSCC24quantum,
+	author = {Prakash, Anupam and Sun, Yue and Chakrabarti, Shouvanik and Che, Charlie and Dandapani, Aditi and Herman, Dylan and Kumar, Niraj and Sureshbabu, Shree Hari and Wood, Ben and Kerenidis, Iordanis and Pistoia, Marco},
+	title = {Quantum Option Pricing Via the Karhunen-Lo{\`e}ve Expansion},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2402.10132v1},
+	abstract = {We consider the problem of pricing discretely monitored Asian options over $T$ monitoring points where the underlying asset is modeled by a geometric Brownian motion. We provide two quantum algorithms with complexity poly-logarithmic in $T$ and polynomial in $1/\epsilon$, where $\epsilon$ is the additive approximation error. Our algorithms are obtained respectively by using an $O(\log T)$-qubit semi-digital quantum encoding of the Brownian motion that allows for exponentiation of the stochastic process and by analyzing classical Monte Carlo algorithms inspired by the semi-digital encodings. The best quantum algorithm obtained using this approach has complexity $\widetilde{O}(1/\epsilon^{3})$ where the $\widetilde{O}$ suppresses factors poly-logarithmic in $T$ and $1/\epsilon$. The methods proposed in this work generalize to pricing options where the underlying asset price is modeled by a smooth function of a sub-Gaussian process and the payoff is dependent on the weighted time-average of the underlying asset price.},
+	archivePrefix = {arXiv},
+	eprint = {2402.10132},
+	primaryClass = {quant-ph},
+	file = {~/prj/qubib/papers/PSCC24quantum.pdf}
+}
+
 @article{PSDH99generalized,
 	Author = {Price, M. D. and Somaroo, S. S. and Dunlop, A. E. and Havel, T. F. and Cory, D. G.},
 	Journal = {Phys. Rev. A},
@@ -25474,6 +25492,19 @@ pages[normalize_page_numbers]
 	Pages = 44,
 	Year = 2018,
 	Eprint = {arXiv:1703.00454}
+}
+
+@article{S21two,
+	file = {S21two.pdf},
+	author = {Stacey, Blake C.},
+	title = {On Two Recent Approaches To the Born Rule},
+	journal = {CoRR},
+	year = 2021,
+	url = {http://arxiv.org/pdf/2103.09910},
+	abstract = {I comment briefly on derivations of the Born rule presented by Masanes et al.  and by Hossenfelder.},
+	archivePrefix = {arXiv},
+	eprint = {2103.09910},
+	primaryClass = {quant-ph}
 }
 
 @article{S29decrease,
@@ -31781,37 +31812,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{PSCC24quantum,
-  author       = {Prakash, Anupam and Sun, Yue and Chakrabarti, Shouvanik and Che, Charlie and Dandapani, Aditi and Herman, Dylan and Kumar, Niraj and Sureshbabu, Shree Hari and Wood, Ben and Kerenidis, Iordanis and Pistoia, Marco},
-  title        = {Quantum Option Pricing Via the Karhunen-Lo{\`e}ve Expansion},
+@article{BEMP23unitary,
+  author       = {Bostanci, John and Efron, Yuval and Metger, Tony and Poremba, Alexander and Qian, Luowen and Yuen, Henry},
+  title        = {Unitary Complexity and the Uhlmann Transformation Problem},
   journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2402.10132v1},
-  abstract     = {We consider the problem of pricing discretely monitored Asian options over $T$ monitoring points where the underlying asset is modeled by a geometric Brownian motion. We provide two quantum algorithms with complexity poly-logarithmic in $T$ and polynomial in $1/\epsilon$, where $\epsilon$ is the additive approximation error. Our algorithms are obtained respectively by using an $O(\log T)$-qubit semi-digital quantum encoding of the Brownian motion that allows for exponentiation of the stochastic process and by analyzing classical Monte Carlo algorithms inspired by the semi-digital encodings. The best quantum algorithm obtained using this approach has complexity $\widetilde{O}(1/\epsilon^{3})$ where the $\widetilde{O}$ suppresses factors poly-logarithmic in $T$ and $1/\epsilon$. The methods proposed in this work generalize to pricing options where the underlying asset price is modeled by a smooth function of a sub-Gaussian process and the payoff is dependent on the weighted time-average of the underlying asset price.},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2306.13073v2},
+  abstract     = {State transformation problems such as compressing quantum information or breaking quantum commitments are fundamental quantum tasks. However, their computational difficulty cannot easily be characterized using traditional complexity theory, which focuses on tasks with classical inputs and outputs.  To study the complexity of such state transformation tasks, we introduce a framework for unitary synthesis problems, including notions of reductions and unitary complexity classes. We use this framework to study the complexity of transforming one entangled state into another via local operations. We formalize this as the Uhlmann Transformation Problem, an algorithmic version of Uhlmann's theorem. Then, we prove structural results relating the complexity of the Uhlmann Transformation Problem, polynomial space quantum computation, and zero knowledge protocols.  The Uhlmann Transformation Problem allows us to characterize the complexity of a variety of tasks in quantum information processing, including decoding noisy quantum channels, breaking falsifiable quantum cryptographic assumptions, implementing optimal prover strategies in quantum interactive proofs, and decoding the Hawking radiation of black holes. Our framework for unitary complexity thus provides new avenues for studying the computational complexity of many natural quantum information processing tasks.},
   archivePrefix= {arXiv},
-  eprint       = {2402.10132},
-  primaryClass = {quant-ph},
-  file = {~/prj/qubib/papers/PSCC24quantum.pdf}
-  }
-@article{S21two,
-  author       = {Stacey, Blake C.},
-  title        = {On Two Recent Approaches To the Born Rule},
-  journal      = {CoRR},
-  year         = 2021,
-  url          = {http://arxiv.org/abs/2103.09910v1},
-  abstract     = {I comment briefly on derivations of the Born rule presented by Masanes et al.  and by Hossenfelder.},
-  archivePrefix= {arXiv},
-  eprint       = {2103.09910},
-  primaryClass = {quant-ph},
-}
-@article{DK16blind,
-  author       = {Dunjko, Vedran and Kashefi, Elham},
-  title        = {Blind Quantum Computing With Two Almost Identical States},
-  journal      = {CoRR},
-  year         = 2016,
-  url          = {http://arxiv.org/abs/1604.01586v1},
-  abstract     = {The question of whether a fully classical client can delegate a quantum computation to an untrusted quantum server while fully maintaining privacy (blindness) is one of the big open questions in quantum cryptography. Both yes and no answers have important practical and theoretical consequences, and the question seems genuinely hard. The state-of-the-art approaches to securely delegating quantum computation, without exception, rely on granting the client modest quantum powers, or on additional, non-communicating, quantum servers. In this work, we consider the single server setting, and push the boundaries of the minimal devices of the client, which still allow for blind quantum computation. Our approach is based on the observation that, in many blind quantum computing protocols, the "quantum" part of the protocol, from the clients perspective, boils down to the establishing classical-quantum correlations (independent from the computation) between the client and the server, following which the steering of the computation itself requires only classical communication. Here, we abstract this initial preparation phase, specifically for the Universal Blind Quantum Computation protocol of Broadbent, Fitzsimons and Kashefi. We identify sufficient criteria on the powers of the client, which still allow for secure blind quantum computation. We work in a universally composable framework, and provide a series of protocols, where each step reduces the number of differing states the client needs to be able to prepare. As the limit of such reductions, we show that the capacity to prepare just two pure states, which have an arbitrarily high overlap (thus are arbitrarily close to identical), suffices for efficient and secure blind quantum computation.},
-  archivePrefix= {arXiv},
-  eprint       = {1604.01586},
+  eprint       = {2306.13073},
   primaryClass = {quant-ph},
 }
