@@ -2152,6 +2152,19 @@ pages[normalize_page_numbers]
 	isbn = "978-3-030-90459-3"
 }
 
+@article{B22quantum,
+	author = {Beer, Kerstin},
+	title = {Quantum Neural Networks},
+	journal = {CoRR},
+	year = 2022,
+	url = {http://arxiv.org/abs/2205.08154v1},
+	abstract = {This PhD thesis combines two of the most exciting research areas of the last decades: quantum computing and machine learning. We introduce dissipative quantum neural networks (DQNNs), which are designed for fully quantum learning tasks, are capable of universal quantum computation and have low memory requirements while training. These networks are optimised with training data pairs in form of input and desired output states and therefore can be used for characterising unknown or untrusted quantum devices. We not only demonstrate the generalisation behaviour of DQNNs using classical simulations, but also implement them successfully on actual quantum computers. To understand the ultimate limits for such quantum machine learning methods, we discuss the quantum no free lunch theorem, which describes a bound on the probability that a quantum device, which can be modelled as a unitary process and is optimised with quantum examples, gives an incorrect output for a random input. Moreover we expand the area of applications of DQNNs in two directions. In the first case, we include additional information beyond just the training data pairs: since quantum devices are always structured, the resulting data is always structured as well. We modify the DQNN's training algorithm such that knowledge about the graph-structure of the training data pairs is included in the training process and show that this can lead to better generalisation behaviour. Both the original DQNN and the DQNN including graph structure are trained with data pairs in order to characterise an underlying relation.  However, in the second extension of the algorithm we aim to learn characteristics of a set of quantum states in order to extend it to quantum states which have similar properties. Therefore we build a generative adversarial model where two DQNNs, called the generator and discriminator, are trained in a competitive way.},
+	archivePrefix = {arXiv},
+	eprint = {2205.08154},
+	primaryClass = {quant-ph},
+	file = {~/prj/qubib/papers/B22quantum.pdf}
+}
+
 @PhdThesis{B22topological,
 	file = {B22topological.pdf},
 	author = {Bodnar, Cristian},
@@ -5921,6 +5934,22 @@ pages[normalize_page_numbers]
 	keywords = {Quantum Physics (quant-ph), Machine Learning (cs.LG), FOS: Physical sciences, FOS: Physical sciences, FOS: Computer and information sciences, FOS: Computer and information sciences},
 	publisher = {arXiv},
 	copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@Article{C23ibm,
+	timestamp = {2024-03-18 06:50:06 (CET)},
+	author = {Castelvecchi, Davide},
+	title = {IBM releases first-ever 1,000-qubit quantum chip},
+	journal = {Nature},
+	year = 2023,
+	volume = 624,
+	number = 7991,
+	month = dec,
+	pages = {238–238},
+	issn = {1476-4687},
+	doi = {10.1038/d41586-023-03854-1},
+	url = {http://dx.doi.org/10.1038/d41586-023-03854-1},
+	publisher = {Springer Science and Business Media LLC}
 }
 
 @article{C36note-entscheidungsproblem,
@@ -14243,15 +14272,6 @@ pages[normalize_page_numbers]
 	Year = 1981
 }
 
-@misc{HEB03multi,
-	Author = {Hein, M. and Eisert, J. and Briegel, H. J.},
-	Date-Modified = {2006-01-03 17:45:46 +1000},
-	Local-Url = {file://localhost/Volumes/IoData/ollivier/Work/Qubib/Epapers/HEB03a.pdf},
-	Title = {Multi-party entanglement in graph states},
-	Volume = {quant-ph/0307130},
-	Year = 2003
-}
-
 @article{HEB04multiparty,
 	source = {Luka Music, 2021-09-16},
 	title = {Multiparty entanglement in graph states},
@@ -17317,6 +17337,19 @@ pages[normalize_page_numbers]
 	Title = {Benchmarking quantum computers: hte five-qubit error correcting code},
 	Volume = 86,
 	Year = 2001
+}
+
+@article{KLMO24verification,
+	author = {Kashefi, Elham and Leichtle, Dominik and Music, Luka and Ollivier, Harold},
+	title = {Verification of Quantum Computations Without Trusted Preparations Or Measurements},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2403.10464v1},
+	abstract = {With the advent of delegated quantum computing as a service, verifying quantum computations is becoming a question of great importance. Existing information theoretically Secure Delegated Quantum Computing (SDQC) protocols require the client to possess the ability to perform either trusted state preparations or measurements. Whether it is possible to verify universal quantum computations with information-theoretic security without trusted preparations or measurements was an open question so far. In this paper, we settle this question in the affirmative by presenting a modular, composable, and efficient way to turn known verification schemes into protocols that rely only on trusted gates.  Our first contribution is an extremely lightweight reduction of the problem of quantum verification for BQP to the trusted application of single-qubit rotations around the Z axis and bit flips. The second construction presented in this work shows that it is generally possible to information-theoretically verify arbitrary quantum computations with quantum output without trusted preparations or measurements. However, this second protocol requires the verifier to perform multi-qubit gates on a register whose size is independent of the size of the delegated computation.},
+	archivePrefix = {arXiv},
+	eprint = {2403.10464},
+	primaryClass = {quant-ph},
+	file = {~/prj/qubib/papers/KLMO24verification.pdf}
 }
 
 @article{KLMT00algorithmic,
@@ -31877,27 +31910,11 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{B22quantum,
-  author       = {Beer, Kerstin},
-  title        = {Quantum Neural Networks},
-  journal      = {CoRR},
-  year         = 2022,
-  url          = {http://arxiv.org/abs/2205.08154v1},
-  abstract     = {This PhD thesis combines two of the most exciting research areas of the last decades: quantum computing and machine learning. We introduce dissipative quantum neural networks (DQNNs), which are designed for fully quantum learning tasks, are capable of universal quantum computation and have low memory requirements while training. These networks are optimised with training data pairs in form of input and desired output states and therefore can be used for characterising unknown or untrusted quantum devices. We not only demonstrate the generalisation behaviour of DQNNs using classical simulations, but also implement them successfully on actual quantum computers. To understand the ultimate limits for such quantum machine learning methods, we discuss the quantum no free lunch theorem, which describes a bound on the probability that a quantum device, which can be modelled as a unitary process and is optimised with quantum examples, gives an incorrect output for a random input. Moreover we expand the area of applications of DQNNs in two directions. In the first case, we include additional information beyond just the training data pairs: since quantum devices are always structured, the resulting data is always structured as well. We modify the DQNN's training algorithm such that knowledge about the graph-structure of the training data pairs is included in the training process and show that this can lead to better generalisation behaviour. Both the original DQNN and the DQNN including graph structure are trained with data pairs in order to characterise an underlying relation.  However, in the second extension of the algorithm we aim to learn characteristics of a set of quantum states in order to extend it to quantum states which have similar properties. Therefore we build a generative adversarial model where two DQNNs, called the generator and discriminator, are trained in a competitive way.},
-  archivePrefix= {arXiv},
-  eprint       = {2205.08154},
-  primaryClass = {quant-ph},
-  file = {~/prj/qubib/papers/B22quantum.pdf}
-  }
-@article{KLMO24verification,
-  author       = {Kashefi, Elham and Leichtle, Dominik and Music, Luka and Ollivier, Harold},
-  title        = {Verification of Quantum Computations Without Trusted Preparations Or Measurements},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2403.10464v1},
-  abstract     = {With the advent of delegated quantum computing as a service, verifying quantum computations is becoming a question of great importance. Existing information theoretically Secure Delegated Quantum Computing (SDQC) protocols require the client to possess the ability to perform either trusted state preparations or measurements. Whether it is possible to verify universal quantum computations with information-theoretic security without trusted preparations or measurements was an open question so far. In this paper, we settle this question in the affirmative by presenting a modular, composable, and efficient way to turn known verification schemes into protocols that rely only on trusted gates.  Our first contribution is an extremely lightweight reduction of the problem of quantum verification for BQP to the trusted application of single-qubit rotations around the Z axis and bit flips. The second construction presented in this work shows that it is generally possible to information-theoretically verify arbitrary quantum computations with quantum output without trusted preparations or measurements. However, this second protocol requires the verifier to perform multi-qubit gates on a register whose size is independent of the size of the delegated computation.},
-  archivePrefix= {arXiv},
-  eprint       = {2403.10464},
-  primaryClass = {quant-ph},
-  file = {~/prj/qubib/papers/KLMO24verification.pdf}
-  }
+@inproceedings{PMKL23preservation,
+  title={Preservation of Quantum States by Local Error Correction on a Two-dimensional Toric Code in a Rydberg Atom Array},
+  author={Park, Mincheol and Maskara, Nishad and Kalinowski, Marcin and Lukin, Mikhail},
+  booktitle={APS March Meeting Abstracts},
+  volume=2023,
+  pages={T66--004},
+  year=2023
+}
