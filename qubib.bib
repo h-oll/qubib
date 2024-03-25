@@ -7055,6 +7055,19 @@ pages[normalize_page_numbers]
 	Year = 2000
 }
 
+@article{CHPZ23local,
+	author = {Chen, Chi-Fang and Huang, Hsin-Yuan and Preskill, John and Zhou, Leo},
+	title = {Local Minima in Quantum Systems},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2309.16596v1},
+	abstract = {Finding ground states of quantum many-body systems is known to be hard for both classical and quantum computers. As a result, when Nature cools a quantum system in a low-temperature thermal bath, the ground state cannot always be found efficiently. Instead, Nature finds a local minimum of the energy. In this work, we study the problem of finding local minima in quantum systems under thermal perturbations. While local minima are much easier to find than ground states, we show that finding a local minimum is computationally hard for classical computers, even when the task is to output a single-qubit observable at any local minimum. In contrast, we prove that a quantum computer can always find a local minimum efficiently using a thermal gradient descent algorithm that mimics the cooling process in Nature. To establish the classical hardness of finding local minima, we consider a family of two-dimensional Hamiltonians such that any problem solvable by polynomial-time quantum algorithms can be reduced to finding ground states of these Hamiltonians. We prove that for such Hamiltonians, all local minima are global minima. Therefore, assuming quantum computation is more powerful than classical computation, finding local minima is classically hard and quantumly easy.},
+	archivePrefix = {arXiv},
+	eprint = {2309.16596},
+	primaryClass = {quant-ph},
+	file = {~/prj/qubib/papers/CHPZ23local.pdf}
+}
+
 @article{CHS00multipartite,
 	oldkey = CHS00a,
 	Author = {Carteret, H. A. and Higuchi, A. and Sudbery, A.},
@@ -21008,6 +21021,19 @@ pages[normalize_page_numbers]
 	Year = 2005
 }
 
+@article{MNBS24sampling,
+	author = {Mansky, Maximilian Balthasar and N{\"u}{\ss}lein, Jonas and Bucher, David and Schuman, Dani{\"e}lle and Zielinski, Sebastian and Linnhoff-Popien, Claudia},
+	title = {Sampling Problems on a Quantum Computer},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2402.16341v1},
+	abstract = {Due to the advances in the manufacturing of quantum hardware in the recent years, significant research efforts have been directed towards employing quantum methods to solving problems in various areas of interest. Thus a plethora of novel quantum methods have been developed in recent years. In this paper, we provide a survey of quantum sampling methods alongside needed theory and applications of those sampling methods as a starting point for research in this area. This work focuses in particular on Gaussian Boson sampling, quantum Monte Carlo methods, quantum variational Monte Carlo, quantum Boltzmann Machines and quantum Bayesian networks. We strive to provide a self-contained overview over the mathematical background, technical feasibility, applicability for other problems and point out potential areas of future research.},
+	archivePrefix = {arXiv},
+	eprint = {2402.16341},
+	primaryClass = {quant-ph},
+	file = {~/prj/qubib/papers/MNBS24sampling.pdf}
+}
+
 @misc{MNW01bell-inequality,
 	Author = {Munro, W. J. and Nemoto, K. and White, A. G.},
 	Date-Modified = {2006-01-03 17:49:35 +1000},
@@ -28036,6 +28062,19 @@ pages[normalize_page_numbers]
 	Year = 2002
 }
 
+@article{TM24unconditional,
+	file = {TM24unconditional.pdf},
+	author = {Takeuchi, Yuki and Mizutani, Akihiro},
+	title = {Unconditional Verification of Quantum Computation With Classical Light},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/pdf/2403.14142.pdf},
+	abstract = {Verification of quantum computation is a task to efficiently check whether an output given from a quantum computer is correct. Existing verification protocols conducted between a quantum computer to be verified and a verifier necessitate quantum communication to unconditionally detect any malicious behavior of the quantum computer solving any promise problem in ${\sf BQP}$. In this paper, we remove the necessity of the communication of qubits by proposing a "physically-classical" verification protocol in which the verifier just sends coherent light to the quantum computer.},
+	archivePrefix = {arXiv},
+	eprint = {2403.14142},
+	primaryClass = {quant-ph}
+}
+
 @article{TM71energy,
 	Author = {Tribus, M. and McIrvine, E. C.},
 	Date-Modified = {2006-01-05 13:53:05 -0500},
@@ -31921,39 +31960,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{MNBS24sampling,
-  author       = {Mansky, Maximilian Balthasar and N{\"u}{\ss}lein, Jonas and Bucher, David and Schuman, Dani{\"e}lle and Zielinski, Sebastian and Linnhoff-Popien, Claudia},
-  title        = {Sampling Problems on a Quantum Computer},
+@article{B22quantum,
+  author       = {Beer, Kerstin},
+  title        = {Quantum Neural Networks},
   journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2402.16341v1},
-  abstract     = {Due to the advances in the manufacturing of quantum hardware in the recent years, significant research efforts have been directed towards employing quantum methods to solving problems in various areas of interest. Thus a plethora of novel quantum methods have been developed in recent years. In this paper, we provide a survey of quantum sampling methods alongside needed theory and applications of those sampling methods as a starting point for research in this area. This work focuses in particular on Gaussian Boson sampling, quantum Monte Carlo methods, quantum variational Monte Carlo, quantum Boltzmann Machines and quantum Bayesian networks. We strive to provide a self-contained overview over the mathematical background, technical feasibility, applicability for other problems and point out potential areas of future research.},
+  year         = 2022,
+  url          = {http://arxiv.org/abs/2205.08154v1},
+  abstract     = {This PhD thesis combines two of the most exciting research areas of the last decades: quantum computing and machine learning. We introduce dissipative quantum neural networks (DQNNs), which are designed for fully quantum learning tasks, are capable of universal quantum computation and have low memory requirements while training. These networks are optimised with training data pairs in form of input and desired output states and therefore can be used for characterising unknown or untrusted quantum devices. We not only demonstrate the generalisation behaviour of DQNNs using classical simulations, but also implement them successfully on actual quantum computers. To understand the ultimate limits for such quantum machine learning methods, we discuss the quantum no free lunch theorem, which describes a bound on the probability that a quantum device, which can be modelled as a unitary process and is optimised with quantum examples, gives an incorrect output for a random input. Moreover we expand the area of applications of DQNNs in two directions. In the first case, we include additional information beyond just the training data pairs: since quantum devices are always structured, the resulting data is always structured as well. We modify the DQNN's training algorithm such that knowledge about the graph-structure of the training data pairs is included in the training process and show that this can lead to better generalisation behaviour. Both the original DQNN and the DQNN including graph structure are trained with data pairs in order to characterise an underlying relation.  However, in the second extension of the algorithm we aim to learn characteristics of a set of quantum states in order to extend it to quantum states which have similar properties. Therefore we build a generative adversarial model where two DQNNs, called the generator and discriminator, are trained in a competitive way.},
   archivePrefix= {arXiv},
-  eprint       = {2402.16341},
+  eprint       = {2205.08154},
   primaryClass = {quant-ph},
-  file = {~/prj/qubib/papers/MNBS24sampling.pdf}
-  }
-@article{CHPZ23local,
-  author       = {Chen, Chi-Fang and Huang, Hsin-Yuan and Preskill, John and Zhou, Leo},
-  title        = {Local Minima in Quantum Systems},
-  journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2309.16596v1},
-  abstract     = {Finding ground states of quantum many-body systems is known to be hard for both classical and quantum computers. As a result, when Nature cools a quantum system in a low-temperature thermal bath, the ground state cannot always be found efficiently. Instead, Nature finds a local minimum of the energy. In this work, we study the problem of finding local minima in quantum systems under thermal perturbations. While local minima are much easier to find than ground states, we show that finding a local minimum is computationally hard for classical computers, even when the task is to output a single-qubit observable at any local minimum. In contrast, we prove that a quantum computer can always find a local minimum efficiently using a thermal gradient descent algorithm that mimics the cooling process in Nature. To establish the classical hardness of finding local minima, we consider a family of two-dimensional Hamiltonians such that any problem solvable by polynomial-time quantum algorithms can be reduced to finding ground states of these Hamiltonians. We prove that for such Hamiltonians, all local minima are global minima. Therefore, assuming quantum computation is more powerful than classical computation, finding local minima is classically hard and quantumly easy.},
-  archivePrefix= {arXiv},
-  eprint       = {2309.16596},
-  primaryClass = {quant-ph},
-  file = {~/prj/qubib/papers/CHPZ23local.pdf}
-  }
-@article{TM24unconditional,
-  author       = {Takeuchi, Yuki and Mizutani, Akihiro},
-  title        = {Unconditional Verification of Quantum Computation With Classical Light},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2403.14142v1},
-  abstract     = {Verification of quantum computation is a task to efficiently check whether an output given from a quantum computer is correct. Existing verification protocols conducted between a quantum computer to be verified and a verifier necessitate quantum communication to unconditionally detect any malicious behavior of the quantum computer solving any promise problem in ${\sf BQP}$. In this paper, we remove the necessity of the communication of qubits by proposing a "physically-classical" verification protocol in which the verifier just sends coherent light to the quantum computer.},
-  archivePrefix= {arXiv},
-  eprint       = {2403.14142},
-  primaryClass = {quant-ph},
-  file = {~/prj/qubib/papers/TM24unconditional.pdf}
-  }
+}
