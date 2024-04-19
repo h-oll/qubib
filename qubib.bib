@@ -1485,6 +1485,20 @@ pages[normalize_page_numbers]
 	Year = 2004
 }
 
+@article{AMA13adiabatic,
+	author = {Antonio, Bobby and Markham, Damian and Anders, Janet},
+	title = {Adiabatic Graph-State Quantum Computation},
+	journal = {CoRR},
+	year = 2013,
+	url = {http://arxiv.org/abs/1309.1443v4},
+	abstract = {Measurement-based quantum computation (MBQC) and holonomic quantum computation (HQC) are two very different computational methods. The computation in MBQC is driven by adaptive measurements executed in a particular order on a large entangled state. In contrast in HQC the system starts in the ground subspace of a Hamiltonian which is slowly changed such that a transformation occurs within the subspace. Following the approach of Bacon and Flammia, we show that any measurement-based quantum computation on a graph state with \emph{gflow} can be converted into an adiabatically driven holonomic computation, which we call \emph{adiabatic graph-state quantum computation} (AGQC). We then investigate how properties of AGQC relate to the properties of MBQC, such as computational depth. We identify a trade-off that can be made between the number of adiabatic steps in AGQC and the norm of $\dot{H}$ as well as the degree of $H$, in analogy to the trade-off between the number of measurements and classical post-processing seen in MBQC. Finally the effects of performing AGQC with orderings that differ from standard MBQC are investigated.},
+	archivePrefix = {arXiv},
+	eprint = {1309.1443},
+	primaryClass = {quant-ph},
+	doi = {10.1088/1367-2630/16/11/113070},
+	file = {~/shared/papers/AMA13adiabatic.pdf}
+}
+
 @article{AMM97generalized,
 	Author = {Arvind and Mallesh, K. S. and Mukunda, N.},
 	Date-Modified = {2006-01-04 14:57:30 +1000},
@@ -5937,6 +5951,7 @@ pages[normalize_page_numbers]
 }
 
 @misc{C22quantum,
+	file = {C22quantum.pdf},
 	Author = {Cole, Oliver},
 	Title = {Quantum Circuit Optimisation Through Stabilizer Reduction of Pauli Exponentials},
 	Date = 2022,
@@ -26774,6 +26789,19 @@ pages[normalize_page_numbers]
 	url = {https://api.semanticscholar.org/CorpusID:245131091}
 }
 
+@article{SHG23deterministic,
+	author = {Schroeder, Anna and Heller, Matthias and Gachechiladze, Mariami},
+	title = {Deterministic Ans{\"a}tze for the Measurement-Based Variational Quantum Eigensolver},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2312.13241v1},
+	abstract = {Measurement-based quantum computing (MBQC) is a promising approach to reducing circuit depth in noisy intermediate-scale quantum algorithms such as the Variational Quantum Eigensolver (VQE). Unlike gate-based computing, MBQC employs local measurements on a preprepared resource state, offering a trade-off between circuit depth and qubit count. Ensuring determinism is crucial to MBQC, particularly in the VQE context, as a lack of flow in measurement patterns leads to evaluating the cost function at irrelevant locations. This study introduces MBVQE-ans\"atze that respect determinism and resemble the widely used problem-agnostic hardware-efficient VQE ansatz. We evaluate our approach using ideal simulations on the Schwinger Hamiltonian and $XY$-model and perform experiments on IBM hardware with an adaptive measurement capability. In our use case, we find that ensuring determinism works better via postselection than by adaptive measurements at the expense of increased sampling cost. Additionally, we propose an efficient MBQC-inspired method to prepare the resource state, specifically the cluster state, on hardware with heavy-hex connectivity, requiring a single measurement round, and implement this scheme on quantum computers with $27$ and $127$ qubits. We observe notable improvements for larger cluster states, although direct gate-based implementation achieves higher fidelity for smaller instances.},
+	archivePrefix = {arXiv},
+	eprint = {2312.13241},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/SHG23deterministic.pdf}
+}
+
 @Article{SJA19expressibility,
 	file = {SJA19expressibility.pdf},
 	author = {Sim, Sukin and Johnson, Peter D. and Aspuru‐Guzik, Alán},
@@ -30359,6 +30387,19 @@ pages[normalize_page_numbers]
 	Year = 1999
 }
 
+@article{WHCQ24enhancing,
+	author = {Wen, Jingwei and Huang, Zhiguo and Cai, Dunbo and Qian, Ling},
+	title = {Enhancing the Expressivity of Quantum Neural Networks With Residual Connections},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2401.15871v1},
+	abstract = {In the recent noisy intermediate-scale quantum era, the research on the combination of artificial intelligence and quantum computing has been greatly developed. Inspired by neural networks, developing quantum neural networks with specific structures is one of the most promising directions for improving network performance. In this work, we propose a quantum circuit-based algorithm to implement quantum residual neural networks (QResNets), where the residual connection channels are constructed by introducing auxiliary qubits to the data-encoding and trainable blocks of the quantum neural networks. Importantly, we prove that when this particular network architecture is applied to a $l$-layer data-encoding, the number of frequency generation forms can be extended from one, namely the difference of the sum of generator eigenvalues, to $\mathcal{O}(l^2)$. And the flexibility in adjusting the corresponding Fourier coefficients can also be improved due to the diversity of spectrum construction methods and the additional optimization degrees of freedom in the generalized residual operators. These results indicate that the residual encoding scheme can achieve better spectral richness and enhance the expressivity of various parameterized quantum circuits. Extensive numerical demonstrations in regression tasks of fitting various functions and applications in image classification with MNIST datasets are offered to present the expressivity enhancement. Our work lays the foundation for a complete quantum implementation of the classical residual neural networks and explores a new strategy for quantum feature map in quantum machine learning.},
+	archivePrefix = {arXiv},
+	eprint = {2401.15871},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/WHCQ24enhancing.pdf}
+}
+
 @article{WHGT03maximal,
 	Author = {Wenger, J{\'e}r{\^o}me and Hafezi, Mohammad and Grosshans, Fr{\'e}d{\'e}ric and Tualle-Brouri, Rosa and Grangier, Philippe},
 	Date-Added = {2019-07-23 14:29:48 +0200},
@@ -32089,40 +32130,3 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{SHG23deterministic,
-  author       = {Schroeder, Anna and Heller, Matthias and Gachechiladze, Mariami},
-  title        = {Deterministic Ans{\"a}tze for the Measurement-Based Variational Quantum Eigensolver},
-  journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2312.13241v1},
-  abstract     = {Measurement-based quantum computing (MBQC) is a promising approach to reducing circuit depth in noisy intermediate-scale quantum algorithms such as the Variational Quantum Eigensolver (VQE). Unlike gate-based computing, MBQC employs local measurements on a preprepared resource state, offering a trade-off between circuit depth and qubit count. Ensuring determinism is crucial to MBQC, particularly in the VQE context, as a lack of flow in measurement patterns leads to evaluating the cost function at irrelevant locations. This study introduces MBVQE-ans\"atze that respect determinism and resemble the widely used problem-agnostic hardware-efficient VQE ansatz. We evaluate our approach using ideal simulations on the Schwinger Hamiltonian and $XY$-model and perform experiments on IBM hardware with an adaptive measurement capability. In our use case, we find that ensuring determinism works better via postselection than by adaptive measurements at the expense of increased sampling cost. Additionally, we propose an efficient MBQC-inspired method to prepare the resource state, specifically the cluster state, on hardware with heavy-hex connectivity, requiring a single measurement round, and implement this scheme on quantum computers with $27$ and $127$ qubits. We observe notable improvements for larger cluster states, although direct gate-based implementation achieves higher fidelity for smaller instances.},
-  archivePrefix= {arXiv},
-  eprint       = {2312.13241},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/SHG23deterministic.pdf}
-  }
-@article{WHCQ24enhancing,
-  author       = {Wen, Jingwei and Huang, Zhiguo and Cai, Dunbo and Qian, Ling},
-  title        = {Enhancing the Expressivity of Quantum Neural Networks With Residual Connections},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2401.15871v1},
-  abstract     = {In the recent noisy intermediate-scale quantum era, the research on the combination of artificial intelligence and quantum computing has been greatly developed. Inspired by neural networks, developing quantum neural networks with specific structures is one of the most promising directions for improving network performance. In this work, we propose a quantum circuit-based algorithm to implement quantum residual neural networks (QResNets), where the residual connection channels are constructed by introducing auxiliary qubits to the data-encoding and trainable blocks of the quantum neural networks. Importantly, we prove that when this particular network architecture is applied to a $l$-layer data-encoding, the number of frequency generation forms can be extended from one, namely the difference of the sum of generator eigenvalues, to $\mathcal{O}(l^2)$. And the flexibility in adjusting the corresponding Fourier coefficients can also be improved due to the diversity of spectrum construction methods and the additional optimization degrees of freedom in the generalized residual operators. These results indicate that the residual encoding scheme can achieve better spectral richness and enhance the expressivity of various parameterized quantum circuits. Extensive numerical demonstrations in regression tasks of fitting various functions and applications in image classification with MNIST datasets are offered to present the expressivity enhancement. Our work lays the foundation for a complete quantum implementation of the classical residual neural networks and explores a new strategy for quantum feature map in quantum machine learning.},
-  archivePrefix= {arXiv},
-  eprint       = {2401.15871},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/WHCQ24enhancing.pdf}
-  }
-@article{AMA13adiabatic,
-  author       = {Antonio, Bobby and Markham, Damian and Anders, Janet},
-  title        = {Adiabatic Graph-State Quantum Computation},
-  journal      = {CoRR},
-  year         = 2013,
-  url          = {http://arxiv.org/abs/1309.1443v4},
-  abstract     = {Measurement-based quantum computation (MBQC) and holonomic quantum computation (HQC) are two very different computational methods. The computation in MBQC is driven by adaptive measurements executed in a particular order on a large entangled state. In contrast in HQC the system starts in the ground subspace of a Hamiltonian which is slowly changed such that a transformation occurs within the subspace. Following the approach of Bacon and Flammia, we show that any measurement-based quantum computation on a graph state with \emph{gflow} can be converted into an adiabatically driven holonomic computation, which we call \emph{adiabatic graph-state quantum computation} (AGQC). We then investigate how properties of AGQC relate to the properties of MBQC, such as computational depth. We identify a trade-off that can be made between the number of adiabatic steps in AGQC and the norm of $\dot{H}$ as well as the degree of $H$, in analogy to the trade-off between the number of measurements and classical post-processing seen in MBQC. Finally the effects of performing AGQC with orderings that differ from standard MBQC are investigated.},
-  archivePrefix= {arXiv},
-  eprint       = {1309.1443},
-  primaryClass = {quant-ph},
-  doi          = {10.1088/1367-2630/16/11/113070},
-  file = {~/shared/papers/AMA13adiabatic.pdf}
-  }
