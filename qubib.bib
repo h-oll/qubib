@@ -38,6 +38,17 @@ pages[normalize_page_numbers]
 ;}
 
 
+@inproceedings{KP17quantum,
+	Author = {Iordanis Kerenidis and Anupam Prakash},
+	Crossref = {ITCS17:proceedings},
+	Date-Added = {2019-02-24 13:05:01 +0100},
+	Date-Modified = {2019-02-24 13:05:01 +0100},
+	Keywords = {c-acti,irif,Kerenidis,eq-ac,selected},
+	Title = {Quantum recommendation systems},
+	Year = 2017,
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2688073.2688097}
+}
+
 @proceedings{17proceedings,
 	Date-Added = {2019-02-24 13:05:01 +0100},
 	Date-Modified = {2019-02-24 13:05:01 +0100},
@@ -5926,10 +5937,11 @@ pages[normalize_page_numbers]
 }
 
 @misc{C22quantum,
-Author = {Cole, Oliver},
-Title = {Quantum Circuit Optimisation Through Stabilizer Reduction of Pauli Exponentials},
-Date = 2022,
-url = https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/cole-thesis.pdf}
+	Author = {Cole, Oliver},
+	Title = {Quantum Circuit Optimisation Through Stabilizer Reduction of Pauli Exponentials},
+	Date = 2022,
+	url = https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/cole-thesis.pdf
+}
 
 @Article{C23ibm,
 	timestamp = {2024-03-18 06:50:06 (CET)},
@@ -17691,17 +17703,6 @@ url = https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/cole-thesis.pdf}
 	number = 2
 }
 
-@inproceedings{KP17quantum,
-	Author = {Iordanis Kerenidis and Anupam Prakash},
-	Crossref = {ITCS17:proceedings},
-	Date-Added = {2019-02-24 13:05:01 +0100},
-	Date-Modified = {2019-02-24 13:05:01 +0100},
-	Keywords = {c-acti,irif,Kerenidis,eq-ac,selected},
-	Title = {Quantum recommendation systems},
-	Year = 2017,
-	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2688073.2688097}
-}
-
 @article{KR01minimal,
 	Author = {King, C. and Ruskai, M. B.},
 	Date-Modified = {2006-01-04 12:56:41 +1000},
@@ -27034,6 +27035,19 @@ url = https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/cole-thesis.pdf}
 	pages = 227901
 }
 
+@article{SRJG23potential,
+	author = {Sweke, Ryan and Recio, Erik and Jerbi, Sofiene and Gil-Fuster, Elies and Fuller, Bryce and Eisert, Jens and Meyer, Johannes Jakob},
+	title = {Potential and Limitations of Random Fourier Features for Dequantizing Quantum Machine Learning},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2309.11647v1},
+	abstract = {Quantum machine learning is arguably one of the most explored applications of near-term quantum devices. Much focus has been put on notions of variational quantum machine learning where parameterized quantum circuits (PQCs) are used as learning models. These PQC models have a rich structure which suggests that they might be amenable to efficient dequantization via random Fourier features (RFF). In this work, we establish necessary and sufficient conditions under which RFF does indeed provide an efficient dequantization of variational quantum machine learning for regression. We build on these insights to make concrete suggestions for PQC architecture design, and to identify structures which are necessary for a regression problem to admit a potential quantum advantage via PQC based optimization.},
+	archivePrefix = {arXiv},
+	eprint = {2309.11647},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/SRJG23potential.pdf}
+}
+
 @misc{SRS06better,
 	Author = {Smith, G. and Renes, J. M. and Smolin, J. A.},
 	Correct_Ref = {Yes},
@@ -27121,6 +27135,22 @@ url = https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/cole-thesis.pdf}
 	Title = {Quantum Manipulations of Small Josephson Junctions},
 	Volume = 79,
 	Year = 1997
+}
+
+@Article{SSM21effect,
+	file = {SSM21effect.pdf},
+	timestamp = {2024-05-05 09:36:13 (CEST)},
+	author = {Schuld, Maria and Sweke, Ryan and Meyer, Johannes Jakob},
+	title = {Effect of data encoding on the expressive power of variational quantum-machine-learning models},
+	journal = {Physical Review A},
+	year = 2021,
+	volume = 103,
+	number = 3,
+	month = mar,
+	issn = {2469-9934},
+	doi = {10.1103/physreva.103.032430},
+	url = {http://dx.doi.org/10.1103/PhysRevA.103.032430},
+	publisher = {American Physical Society (APS)}
 }
 
 @book{SSS09power,
@@ -31993,15 +32023,4 @@ url = https://www.cs.ox.ac.uk/people/aleks.kissinger/theses/cole-thesis.pdf}
 	Volume = 71,
 	Year = 1993
 }
-@article{SRJG23potential,
-  author       = {Sweke, Ryan and Recio, Erik and Jerbi, Sofiene and Gil-Fuster, Elies and Fuller, Bryce and Eisert, Jens and Meyer, Johannes Jakob},
-  title        = {Potential and Limitations of Random Fourier Features for Dequantizing Quantum Machine Learning},
-  journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2309.11647v1},
-  abstract     = {Quantum machine learning is arguably one of the most explored applications of near-term quantum devices. Much focus has been put on notions of variational quantum machine learning where parameterized quantum circuits (PQCs) are used as learning models. These PQC models have a rich structure which suggests that they might be amenable to efficient dequantization via random Fourier features (RFF). In this work, we establish necessary and sufficient conditions under which RFF does indeed provide an efficient dequantization of variational quantum machine learning for regression. We build on these insights to make concrete suggestions for PQC architecture design, and to identify structures which are necessary for a regression problem to admit a potential quantum advantage via PQC based optimization.},
-  archivePrefix= {arXiv},
-  eprint       = {2309.11647},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/SRJG23potential.pdf}
-}
+
