@@ -4776,6 +4776,22 @@ pages[normalize_page_numbers]
 	Year = 2006
 }
 
+@Article{BM23flow,
+	file = {BM23flow.pdf},
+	timestamp = {2024-05-14 17:30:04 (CEST)},
+	author = {Booth, Robert I. and Markham, Damian},
+	title = {Flow conditions for continuous variable measurement-based quantum computing},
+	journal = {Quantum},
+	year = 2023,
+	volume = 7,
+	month = oct,
+	pages = 1146,
+	issn = {2521-327X},
+	doi = {10.22331/q-2023-10-19-1146},
+	url = {https://arxiv.org/pdf/2104.00572},
+	publisher = {Verein zur Forderung des Open Access Publizierens in den Quantenwissenschaften}
+}
+
 @book{BM69nuclear,
 	Address = {New York},
 	Author = {Bohr, A. and Mottelson, B.},
@@ -9398,6 +9414,18 @@ pages[normalize_page_numbers]
 	publisher = {American Physical Society},
 	doi = {10.1103/PhysRevA.74.052310},
 	url = {https://arxiv.org/pdf/quant-ph/0506062}
+}
+
+@article{DK10algebraic,
+	author = {Dunjko, Vedran and Kashefi, Elham},
+	title = {Algebraic Characterisation of One-Way Patterns},
+	journal = {CoRR},
+	year = 2010,
+	url = {http://arxiv.org/abs/1006.1431v1},
+	abstract = {We give a complete structural characterisation of the map the positive branch of a one-way pattern implements. We start with the representation of the positive branch in terms of the phase map decomposition, which is then further analysed to obtain the primary structure of the matrix M, representing the phase map decomposition in the computational basis. Using this approach we obtain some preliminary results on the connection between the columns structure of a given unitary and the angles of measurements in a pattern that implements it. We believe this work is a step forward towards a full characterisation of those unitaries with an efficient one-way model implementation.},
+	archivePrefix = {arXiv},
+	eprint = {1006.1431},
+	primaryClass = {cs.DS}
 }
 
 @article{DK16blind,
@@ -27461,19 +27489,6 @@ pages[normalize_page_numbers]
 	file = {~/shared/papers/SRJG23potential.pdf}
 }
 
-@article{SRJG23potentialb,
-	author = {Sweke, Ryan and Recio, Erik and Jerbi, Sofiene and Gil-Fuster, Elies and Fuller, Bryce and Eisert, Jens and Meyer, Johannes Jakob},
-	title = {Potential and Limitations of Random Fourier Features for Dequantizing Quantum Machine Learning},
-	journal = {CoRR},
-	year = 2023,
-	url = {http://arxiv.org/abs/2309.11647v1},
-	abstract = {Quantum machine learning is arguably one of the most explored applications of near-term quantum devices. Much focus has been put on notions of variational quantum machine learning where parameterized quantum circuits (PQCs) are used as learning models. These PQC models have a rich structure which suggests that they might be amenable to efficient dequantization via random Fourier features (RFF). In this work, we establish necessary and sufficient conditions under which RFF does indeed provide an efficient dequantization of variational quantum machine learning for regression. We build on these insights to make concrete suggestions for PQC architecture design, and to identify structures which are necessary for a regression problem to admit a potential quantum advantage via PQC based optimization.},
-	archivePrefix = {arXiv},
-	eprint = {2309.11647},
-	primaryClass = {quant-ph},
-	file = {~/shared/papers/SRJG23potential.pdf}
-}
-
 @misc{SRS06better,
 	Author = {Smith, G. and Renes, J. M. and Smolin, J. A.},
 	Correct_Ref = {Yes},
@@ -32463,14 +32478,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{DK10algebraic,
-  author       = {Dunjko, Vedran and Kashefi, Elham},
-  title        = {Algebraic Characterisation of One-Way Patterns},
+@article{RR16generalization,
+  author       = {Rudi, Alessandro and Rosasco, Lorenzo},
+  title        = {Generalization Properties of Learning With Random Features},
   journal      = {CoRR},
-  year         = 2010,
-  url          = {http://arxiv.org/abs/1006.1431v1},
-  abstract     = {We give a complete structural characterisation of the map the positive branch of a one-way pattern implements. We start with the representation of the positive branch in terms of the phase map decomposition, which is then further analysed to obtain the primary structure of the matrix M, representing the phase map decomposition in the computational basis. Using this approach we obtain some preliminary results on the connection between the columns structure of a given unitary and the angles of measurements in a pattern that implements it. We believe this work is a step forward towards a full characterisation of those unitaries with an efficient one-way model implementation.},
+  year         = 2016,
+  url          = {http://arxiv.org/abs/1602.04474v5},
+  abstract     = {We study the generalization properties of ridge regression with random features in the statistical learning framework. We show for the first time that $O(1/\sqrt{n})$ learning bounds can be achieved with only $O(\sqrt{n}\log n)$ random features rather than $O({n})$ as suggested by previous results. Further, we prove faster learning rates and show that they might require more random features, unless they are sampled according to a possibly problem dependent distribution. Our results shed light on the statistical computational trade-offs in large scale kernelized learning, showing the potential effectiveness of random features in reducing the computational complexity while keeping optimal generalization properties.},
   archivePrefix= {arXiv},
-  eprint       = {1006.1431},
-  primaryClass = {cs.DS},
+  eprint       = {1602.04474},
+  primaryClass = {stat.ML},
 }
