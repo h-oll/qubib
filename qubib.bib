@@ -15287,6 +15287,22 @@ pages[normalize_page_numbers]
 	Year = 1999
 }
 
+@Article{HSCC22connecting,
+	file = {Holmes_2022.pdf},
+	timestamp = {2024-05-15 07:34:48 (CEST)},
+	author = {Holmes, Zoë and Sharma, Kunal and Cerezo, M. and Coles, Patrick J.},
+	title = {Connecting Ansatz Expressibility to Gradient Magnitudes and Barren Plateaus},
+	journal = {PRX Quantum},
+	year = 2022,
+	volume = 3,
+	number = 1,
+	month = jan,
+	issn = {2691-3399},
+	doi = {10.1103/prxquantum.3.010313},
+	url = {https://journals.aps.org/prxquantum/pdf/10.1103/PRXQuantum.3.010313},
+	publisher = {American Physical Society (APS)}
+}
+
 @article{HSR03entanglement,
 	Author = {Horodecki, M. and Shor, P. W. and Ruskai, M. B.},
 	Journal = {Rev. Math. Phys.},
@@ -25340,6 +25356,19 @@ pages[normalize_page_numbers]
 	Year = 2002
 }
 
+@article{RR16generalization,
+	author = {Rudi, Alessandro and Rosasco, Lorenzo},
+	title = {Generalization Properties of Learning With Random Features},
+	journal = {CoRR},
+	year = 2016,
+	url = {http://arxiv.org/abs/1602.04474v5},
+	abstract = {We study the generalization properties of ridge regression with random features in the statistical learning framework. We show for the first time that $O(1/\sqrt{n})$ learning bounds can be achieved with only $O(\sqrt{n}\log n)$ random features rather than $O({n})$ as suggested by previous results. Further, we prove faster learning rates and show that they might require more random features, unless they are sampled according to a possibly problem dependent distribution. Our results shed light on the statistical computational trade-offs in large scale kernelized learning, showing the potential effectiveness of random features in reducing the computational complexity while keeping optimal generalization properties.},
+	archivePrefix = {arXiv},
+	eprint = {1602.04474},
+	primaryClass = {stat.ML},
+	file = {~/shared/papers/RR16generalization.pdf}
+}
+
 @book{RR98mass,
 	Author = {Rachev, S. T. and R{\"u}schendorf, L.},
 	Publisher = {Springer, New York},
@@ -32478,15 +32507,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{RR16generalization,
-  author       = {Rudi, Alessandro and Rosasco, Lorenzo},
-  title        = {Generalization Properties of Learning With Random Features},
+@article{SCZ24stabilizer,
+  author       = {Sun, Jiace and Cheng, Lixue and Zhang, Shi-Xin},
+  title        = {Stabilizer Ground States: Theory, Algorithms and Applications},
   journal      = {CoRR},
-  year         = 2016,
-  url          = {http://arxiv.org/abs/1602.04474v5},
-  abstract     = {We study the generalization properties of ridge regression with random features in the statistical learning framework. We show for the first time that $O(1/\sqrt{n})$ learning bounds can be achieved with only $O(\sqrt{n}\log n)$ random features rather than $O({n})$ as suggested by previous results. Further, we prove faster learning rates and show that they might require more random features, unless they are sampled according to a possibly problem dependent distribution. Our results shed light on the statistical computational trade-offs in large scale kernelized learning, showing the potential effectiveness of random features in reducing the computational complexity while keeping optimal generalization properties.},
+  year         = 2024,
+  url          = {http://arxiv.org/abs/2403.08441v1},
+  abstract     = {Stabilizer states have been commonly utilized in quantum information, quantum error correction, and quantum circuit simulation due to their simple mathematical structure. In this work, we apply stabilizer states to tackle quantum many-body problems and introduce the concept of stabilizer ground states. We present a simplified equivalent formalism for identifying stabilizer ground states of general Pauli Hamiltonians. Moreover, we also develop an exact and linear-scaled algorithm to obtain stabilizer ground states of 1D local Hamiltonians and thus free from discrete optimization. This proposed theoretical formalism and linear-scaled algorithm are not only applicable to finite-size systems, but also adaptable to infinite periodic systems. The scalability and efficiency of the algorithms are numerically benchmarked on different Hamiltonians. Finally, we demonstrate that stabilizer ground states can find various promising applications including better design on variational quantum algorithms, qualitative understanding of phase transitions, and cornerstones for more advanced ground state ansatzes.},
   archivePrefix= {arXiv},
-  eprint       = {1602.04474},
-  primaryClass = {stat.ML},
-  file = {~/shared/papers/RR16generalization.pdf}
-  }
+  eprint       = {2403.08441},
+  primaryClass = {quant-ph},
+}
