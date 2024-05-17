@@ -32,17 +32,6 @@ pages[normalize_page_numbers]
 @Comment https://github.com/org-roam/org-roam-bibtex/issues/105
 
 
-@inproceedings{KP17quantum,
-	Author = {Iordanis Kerenidis and Anupam Prakash},
-	Crossref = {ITCS17:proceedings},
-	Date-Added = {2019-02-24 13:05:01 +0100},
-	Date-Modified = {2019-02-24 13:05:01 +0100},
-	Keywords = {c-acti,irif,Kerenidis,eq-ac,selected},
-	Title = {Quantum recommendation systems},
-	Year = 2017,
-	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2688073.2688097}
-}
-
 @proceedings{17proceedings,
 	Date-Added = {2019-02-24 13:05:01 +0100},
 	Date-Modified = {2019-02-24 13:05:01 +0100},
@@ -4835,6 +4824,19 @@ pages[normalize_page_numbers]
 	Year = 1999
 }
 
+@article{BMFL20there,
+  author       = {Backens, Miriam and Miller-Bakewell, Hector and Felice, Giovanni de and Lobski, Leo and Wetering, John van de},
+  title        = {There and Back Again: a Circuit Extraction Tale},
+  journal      = {CoRR},
+  year         = 2020,
+  url          = {http://arxiv.org/abs/2003.01664v3},
+  abstract     = {Translations between the quantum circuit model and the measurement-based one-way model are useful for verification and optimisation of quantum computations. They make crucial use of a property known as gflow. While gflow is defined for one-way computations allowing measurements in three different planes of the Bloch sphere, most research so far has focused on computations containing only measurements in the XY-plane. Here, we give the first circuit-extraction algorithm to work for one-way computations containing measurements in all three planes and having gflow. The algorithm is efficient and the resulting circuits do not contain ancillae. One-way computations are represented using the ZX-calculus, hence the algorithm also represents the most general known procedure for extracting circuits from ZX-diagrams. In developing this algorithm, we generalise several concepts and results previously known for computations containing only XY-plane measurements. We bring together several known rewrite rules for measurement patterns and formalise them in a unified notation using the ZX-calculus. These rules are used to simplify measurement patterns by reducing the number of qubits while preserving both the semantics and the existence of gflow. The results can be applied to circuit optimisation by translating circuits to patterns and back again.},
+  archivePrefix= {arXiv},
+  eprint       = {2003.01664},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/BMFL20there.pdf}
+  }
+
 @article{BMG94quantum,
 	Author = {Breguet, J. and Muller, A. and Gisin, N.},
 	Date-Modified = {2006-01-04 15:15:07 +1000},
@@ -9612,6 +9614,19 @@ pages[normalize_page_numbers]
 	Volume = 48,
 	Year = 2002
 }
+
+@article{DMDG23learning,
+  author       = {Denzler, Janek and Mele, Antonio Anna and Derbyshire, Ellen and Guaita, Tommaso and Eisert, Jens},
+  title        = {Learning Fermionic Correlations By Evolving With Random Translationally Invariant Hamiltonians},
+  journal      = {CoRR},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2309.12933v1},
+  abstract     = {Schemes of classical shadows have been developed to facilitate the read-out of digital quantum devices, but similar tools for analog quantum simulators are scarce and experimentally impractical. In this work, we provide a measurement scheme for fermionic quantum devices that estimates second and fourth order correlation functions by means of free fermionic, translationally invariant evolutions - or quenches - and measurements in the mode occupation number basis. We precisely characterize what correlation functions can be recovered and equip the estimates with rigorous bounds on sample complexities, a particularly important feature in light of the difficulty of getting good statistics in reasonable experimental platforms, with measurements being slow.  Finally, we demonstrate how our procedure can be approximately implemented with just nearest-neighbour, translationally invariant hopping quenches, a very plausible procedure under current experimental requirements, and requiring only random time-evolution with respect to a single native Hamiltonian. On a conceptual level, this work brings the idea of classical shadows to the realm of large scale analog quantum simulators.},
+  archivePrefix= {arXiv},
+  eprint       = {2309.12933},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/DMDG23learning.pdf}
+  }
 
 @inproceedings{DMMS00self,
 	Author = {van Dam, W. and Magniez, F. and Mosca, M. and Santha, M.},
@@ -17966,6 +17981,17 @@ pages[normalize_page_numbers]
 	journal = "Cryptography",
 	issn = "2410-387X",
 	number = 2
+}
+
+@inproceedings{KP17quantum,
+	Author = {Iordanis Kerenidis and Anupam Prakash},
+	Crossref = {ITCS17:proceedings},
+	Date-Added = {2019-02-24 13:05:01 +0100},
+	Date-Modified = {2019-02-24 13:05:01 +0100},
+	Keywords = {c-acti,irif,Kerenidis,eq-ac,selected},
+	Title = {Quantum recommendation systems},
+	Year = 2017,
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2688073.2688097}
 }
 
 @article{KR01minimal,
@@ -27000,6 +27026,19 @@ pages[normalize_page_numbers]
 	Year = 1987
 }
 
+@article{SCZ24stabilizer,
+  author       = {Sun, Jiace and Cheng, Lixue and Zhang, Shi-Xin},
+  title        = {Stabilizer Ground States: Theory, Algorithms and Applications},
+  journal      = {CoRR},
+  year         = 2024,
+  url          = {http://arxiv.org/abs/2403.08441v1},
+  abstract     = {Stabilizer states have been commonly utilized in quantum information, quantum error correction, and quantum circuit simulation due to their simple mathematical structure. In this work, we apply stabilizer states to tackle quantum many-body problems and introduce the concept of stabilizer ground states. We present a simplified equivalent formalism for identifying stabilizer ground states of general Pauli Hamiltonians. Moreover, we also develop an exact and linear-scaled algorithm to obtain stabilizer ground states of 1D local Hamiltonians and thus free from discrete optimization. This proposed theoretical formalism and linear-scaled algorithm are not only applicable to finite-size systems, but also adaptable to infinite periodic systems. The scalability and efficiency of the algorithms are numerically benchmarked on different Hamiltonians. Finally, we demonstrate that stabilizer ground states can find various promising applications including better design on variational quantum algorithms, qualitative understanding of phase transitions, and cornerstones for more advanced ground state ansatzes.},
+  archivePrefix= {arXiv},
+  eprint       = {2403.08441},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/SCZ24stabilizer.pdf}
+  }
+
 @article{SD94experimental,
 	Author = {Svensmark, H. and Dimon, P.},
 	Journal = {Phys. Rev. Lett.},
@@ -32486,7 +32525,6 @@ pages[normalize_page_numbers]
 	Volume = 94,
 	Year = 2005
 }
-
 @article{ZZF00entangling,
 	Author = {Zanardi, P. and Zalka, C. and Faoro, L.},
 	Date-Modified = {2006-01-04 16:35:25 +1000},
@@ -32497,7 +32535,6 @@ pages[normalize_page_numbers]
 	Volume = 62,
 	Year = 2000
 }
-
 @article{ZZHE93event,
 	Author = {Zukowski, M. and Zeilinger, A. and Horne, M.A. and Ekert, A.K.},
 	Journal = {Phys. Rev. Lett.},
@@ -32506,40 +32543,3 @@ pages[normalize_page_numbers]
 	Volume = 71,
 	Year = 1993
 }
-
-@article{SCZ24stabilizer,
-  author       = {Sun, Jiace and Cheng, Lixue and Zhang, Shi-Xin},
-  title        = {Stabilizer Ground States: Theory, Algorithms and Applications},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2403.08441v1},
-  abstract     = {Stabilizer states have been commonly utilized in quantum information, quantum error correction, and quantum circuit simulation due to their simple mathematical structure. In this work, we apply stabilizer states to tackle quantum many-body problems and introduce the concept of stabilizer ground states. We present a simplified equivalent formalism for identifying stabilizer ground states of general Pauli Hamiltonians. Moreover, we also develop an exact and linear-scaled algorithm to obtain stabilizer ground states of 1D local Hamiltonians and thus free from discrete optimization. This proposed theoretical formalism and linear-scaled algorithm are not only applicable to finite-size systems, but also adaptable to infinite periodic systems. The scalability and efficiency of the algorithms are numerically benchmarked on different Hamiltonians. Finally, we demonstrate that stabilizer ground states can find various promising applications including better design on variational quantum algorithms, qualitative understanding of phase transitions, and cornerstones for more advanced ground state ansatzes.},
-  archivePrefix= {arXiv},
-  eprint       = {2403.08441},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/SCZ24stabilizer.pdf}
-  }
-@article{BMFL20there,
-  author       = {Backens, Miriam and Miller-Bakewell, Hector and Felice, Giovanni de and Lobski, Leo and Wetering, John van de},
-  title        = {There and Back Again: a Circuit Extraction Tale},
-  journal      = {CoRR},
-  year         = 2020,
-  url          = {http://arxiv.org/abs/2003.01664v3},
-  abstract     = {Translations between the quantum circuit model and the measurement-based one-way model are useful for verification and optimisation of quantum computations. They make crucial use of a property known as gflow. While gflow is defined for one-way computations allowing measurements in three different planes of the Bloch sphere, most research so far has focused on computations containing only measurements in the XY-plane. Here, we give the first circuit-extraction algorithm to work for one-way computations containing measurements in all three planes and having gflow. The algorithm is efficient and the resulting circuits do not contain ancillae. One-way computations are represented using the ZX-calculus, hence the algorithm also represents the most general known procedure for extracting circuits from ZX-diagrams. In developing this algorithm, we generalise several concepts and results previously known for computations containing only XY-plane measurements. We bring together several known rewrite rules for measurement patterns and formalise them in a unified notation using the ZX-calculus. These rules are used to simplify measurement patterns by reducing the number of qubits while preserving both the semantics and the existence of gflow. The results can be applied to circuit optimisation by translating circuits to patterns and back again.},
-  archivePrefix= {arXiv},
-  eprint       = {2003.01664},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/BMFL20there.pdf}
-  }
-@article{DMDG23learning,
-  author       = {Denzler, Janek and Mele, Antonio Anna and Derbyshire, Ellen and Guaita, Tommaso and Eisert, Jens},
-  title        = {Learning Fermionic Correlations By Evolving With Random Translationally Invariant Hamiltonians},
-  journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2309.12933v1},
-  abstract     = {Schemes of classical shadows have been developed to facilitate the read-out of digital quantum devices, but similar tools for analog quantum simulators are scarce and experimentally impractical. In this work, we provide a measurement scheme for fermionic quantum devices that estimates second and fourth order correlation functions by means of free fermionic, translationally invariant evolutions - or quenches - and measurements in the mode occupation number basis. We precisely characterize what correlation functions can be recovered and equip the estimates with rigorous bounds on sample complexities, a particularly important feature in light of the difficulty of getting good statistics in reasonable experimental platforms, with measurements being slow.  Finally, we demonstrate how our procedure can be approximately implemented with just nearest-neighbour, translationally invariant hopping quenches, a very plausible procedure under current experimental requirements, and requiring only random time-evolution with respect to a single native Hamiltonian. On a conceptual level, this work brings the idea of classical shadows to the realm of large scale analog quantum simulators.},
-  archivePrefix= {arXiv},
-  eprint       = {2309.12933},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/DMDG23learning.pdf}
-  }
