@@ -1695,6 +1695,19 @@ pages[normalize_page_numbers]
 	organization = {SIAM}
 }
 
+@article{AS03blind,
+	author = {Arrighi, Pablo and Salvail, Louis},
+	title = {Blind Quantum Computation},
+	journal = {CoRR},
+	year = 2003,
+	url = {http://arxiv.org/abs/quant-ph/0309152v2},
+	abstract = {We investigate the possibility of "having someone carry out the work of executing a function for you, but without letting him learn anything about your input". Say Alice wants Bob to compute some known function f upon her input x, but wants to prevent Bob from learning anything about x. The situation arises for instance if client Alice has limited computational resources in comparison with mistrusted server Bob, or if x is an inherently mobile piece of data.  Could there be a protocol whereby Bob is forced to compute f(x) "blindly", i.e.  without observing x? We provide such a blind computation protocol for the class of functions which admit an efficient procedure to generate random input-output pairs, e.g. factorization. The cheat-sensitive security achieved relies only upon quantum theory being true. The security analysis carried out assumes the eavesdropper performs individual attacks.  Keywords: Secure Circuit Evaluation, Secure Two-party Computation, Information Hiding, Information gain vs disturbance.},
+	archivePrefix = {arXiv},
+	eprint = {quant-ph/0309152},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/AS03blind.pdf}
+}
+
 @ARTICLE{AS06blind,
 	source = {Luka Music, 2021-09-16},
 	AUTHOR = {P.~Arrighi and L.~Salvail},
@@ -3733,6 +3746,19 @@ pages[normalize_page_numbers]
 	Year = 1995
 }
 
+@article{BDK06phase,
+	author = {Beaudrap, Niel de and Danos, Vincent and Kashefi, Elham},
+	title = {Phase Map Decompositions for Unitaries},
+	journal = {CoRR},
+	year = 2006,
+	url = {http://arxiv.org/abs/quant-ph/0603266v1},
+	abstract = {We propose a universal decomposition of unitary maps over a tensorial power of C^2, introducing the key concept of "phase maps", and investigate how this decomposition can be used to implement unitary maps directly in the measurement-based model for quantum computing. Specifically, we show how to extract from such a decomposition a matching entangled graph state (with inputs), and a set of measurements angles, when there is one. Next, we check whether the obtained graph state verifies a "flow" condition, which guarantees an execution order such that the dependent measurements and corrections of the pattern yield deterministic results. Using a graph theoretic characterization of flows, we can determine whether a flow can be constructed for a graph state in polynomial time. This approach yields an algorithmic procedure which, when it succeeds, may produce an efficient pattern for a given unitary.},
+	archivePrefix = {arXiv},
+	eprint = {quant-ph/0603266},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/BDK06phase.pdf}
+}
+
 @inproceedings{BDKK20secure,
 	source = {Luka Music, 2021-09-16},
 	booktitle = {18th International Conference on Applied Cryptography and Network Security (ACNS'20)},
@@ -4158,6 +4184,19 @@ pages[normalize_page_numbers]
 	Pages = {21-30},
 	Title = {Thermodynamics of Computation and Information Distance},
 	Year = 1993
+}
+
+@article{BGS12quantum,
+	file = {BGS12quantum.pdf},
+	author = {Broadbent, Anne and Gutoski, Gus and Stebila, Douglas},
+	title = {Quantum One-Time Programs},
+	journal = {CoRR},
+	year = 2012,
+	url = {http://arxiv.org/pdf/1211.1080v1},
+	abstract = {One-time programs are modelled after a black box that allows a single evaluation of a function, and then self-destructs. Because software can, in principle, be copied, general one-time programs exists only in the hardware token model: it has been shown that any function admits a one-time program as long as we assume access to physical devices called one-time memories. Quantum information, with its well-known property of no-cloning, would, at first glance, prevent the basic copying attack for classical programs. We show that this intuition is false: one-time programs for both classical and quantum maps, based solely on quantum information, do not exist, even with computational assumptions. We complement this strong impossibility proof by an equally strong possibility result: assuming the same basic one-time memories as used for classical one-time programs, we show that every quantum map has a quantum one-time program that is secure in the universal composability framework. Our construction relies on a new, simpler quantum authentication scheme and corresponding mechanism for computing on authenticated data.},
+	archivePrefix = {arXiv},
+	eprint = {1211.1080},
+	primaryClass = {quant-ph}
 }
 
 @article{BGS84characterization,
@@ -5925,6 +5964,19 @@ pages[normalize_page_numbers]
 	Local-Url = {file://localhost/Volumes/IoData/ollivier/Work/Qubib/Epapers/Cle01a.pdf},
 	Title = {Quantum Algorithm as Cryptographic Reductions},
 	Year = 2001
+}
+
+@article{C01secure,
+	author = {Childs, Andrew M.},
+	title = {Secure Assisted Quantum Computation},
+	journal = {CoRR},
+	year = 2001,
+	url = {http://arxiv.org/abs/quant-ph/0111046v2},
+	abstract = {Suppose Alice wants to perform some computation that could be done quickly on a quantum computer, but she cannot do universal quantum computation. Bob can do universal quantum computation and claims he is willing to help, but Alice wants to be sure that Bob cannot learn her input, the result of her calculation, or perhaps even the function she is trying to compute. We describe a simple, efficient protocol by which Bob can help Alice perform the computation, but there is no way for him to learn anything about it. We also discuss techniques for Alice to detect whether Bob is honestly helping her or if he is introducing errors.},
+	archivePrefix = {arXiv},
+	eprint = {quant-ph/0111046},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/C01secure.pdf}
 }
 
 @misc{C01simulation,
@@ -32621,50 +32673,3 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{AS03blind,
-  author       = {Arrighi, Pablo and Salvail, Louis},
-  title        = {Blind Quantum Computation},
-  journal      = {CoRR},
-  year         = 2003,
-  url          = {http://arxiv.org/abs/quant-ph/0309152v2},
-  abstract     = {We investigate the possibility of "having someone carry out the work of executing a function for you, but without letting him learn anything about your input". Say Alice wants Bob to compute some known function f upon her input x, but wants to prevent Bob from learning anything about x. The situation arises for instance if client Alice has limited computational resources in comparison with mistrusted server Bob, or if x is an inherently mobile piece of data.  Could there be a protocol whereby Bob is forced to compute f(x) "blindly", i.e.  without observing x? We provide such a blind computation protocol for the class of functions which admit an efficient procedure to generate random input-output pairs, e.g. factorization. The cheat-sensitive security achieved relies only upon quantum theory being true. The security analysis carried out assumes the eavesdropper performs individual attacks.  Keywords: Secure Circuit Evaluation, Secure Two-party Computation, Information Hiding, Information gain vs disturbance.},
-  archivePrefix= {arXiv},
-  eprint       = {quant-ph/0309152},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/AS03blind.pdf}
-  }
-@article{BDK06phase,
-  author       = {Beaudrap, Niel de and Danos, Vincent and Kashefi, Elham},
-  title        = {Phase Map Decompositions for Unitaries},
-  journal      = {CoRR},
-  year         = 2006,
-  url          = {http://arxiv.org/abs/quant-ph/0603266v1},
-  abstract     = {We propose a universal decomposition of unitary maps over a tensorial power of C^2, introducing the key concept of "phase maps", and investigate how this decomposition can be used to implement unitary maps directly in the measurement-based model for quantum computing. Specifically, we show how to extract from such a decomposition a matching entangled graph state (with inputs), and a set of measurements angles, when there is one. Next, we check whether the obtained graph state verifies a "flow" condition, which guarantees an execution order such that the dependent measurements and corrections of the pattern yield deterministic results. Using a graph theoretic characterization of flows, we can determine whether a flow can be constructed for a graph state in polynomial time. This approach yields an algorithmic procedure which, when it succeeds, may produce an efficient pattern for a given unitary.},
-  archivePrefix= {arXiv},
-  eprint       = {quant-ph/0603266},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/BDK06phase.pdf}
-  }
-@article{C01secure,
-  author       = {Childs, Andrew M.},
-  title        = {Secure Assisted Quantum Computation},
-  journal      = {CoRR},
-  year         = 2001,
-  url          = {http://arxiv.org/abs/quant-ph/0111046v2},
-  abstract     = {Suppose Alice wants to perform some computation that could be done quickly on a quantum computer, but she cannot do universal quantum computation. Bob can do universal quantum computation and claims he is willing to help, but Alice wants to be sure that Bob cannot learn her input, the result of her calculation, or perhaps even the function she is trying to compute. We describe a simple, efficient protocol by which Bob can help Alice perform the computation, but there is no way for him to learn anything about it. We also discuss techniques for Alice to detect whether Bob is honestly helping her or if he is introducing errors.},
-  archivePrefix= {arXiv},
-  eprint       = {quant-ph/0111046},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/C01secure.pdf}
-  }
-@article{BGS12quantum,
-  author       = {Broadbent, Anne and Gutoski, Gus and Stebila, Douglas},
-  title        = {Quantum One-Time Programs},
-  journal      = {CoRR},
-  year         = 2012,
-  url          = {http://arxiv.org/abs/1211.1080v1},
-  abstract     = {One-time programs are modelled after a black box that allows a single evaluation of a function, and then self-destructs. Because software can, in principle, be copied, general one-time programs exists only in the hardware token model: it has been shown that any function admits a one-time program as long as we assume access to physical devices called one-time memories. Quantum information, with its well-known property of no-cloning, would, at first glance, prevent the basic copying attack for classical programs. We show that this intuition is false: one-time programs for both classical and quantum maps, based solely on quantum information, do not exist, even with computational assumptions. We complement this strong impossibility proof by an equally strong possibility result: assuming the same basic one-time memories as used for classical one-time programs, we show that every quantum map has a quantum one-time program that is secure in the universal composability framework. Our construction relies on a new, simpler quantum authentication scheme and corresponding mechanism for computing on authenticated data.},
-  archivePrefix= {arXiv},
-  eprint       = {1211.1080},
-  primaryClass = {quant-ph},
-}
