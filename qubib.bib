@@ -32810,15 +32810,3 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{KLLN16breaking-b,
-  author       = {Kaplan, Marc and Leurent, Ga{\"e}tan and Leverrier, Anthony and Naya-Plasencia, Mar{\'i}a},
-  title        = {Breaking Symmetric Cryptosystems Using Quantum Period Finding},
-  journal      = {CoRR},
-  year         = 2016,
-  url          = {http://arxiv.org/abs/1602.05973v3},
-  abstract     = {Due to Shor's algorithm, quantum computers are a severe threat for public key cryptography. This motivated the cryptographic community to search for quantum-safe solutions. On the other hand, the impact of quantum computing on secret key cryptography is much less understood. In this paper, we consider attacks where an adversary can query an oracle implementing a cryptographic primitive in a quantum superposition of different states. This model gives a lot of power to the adversary, but recent results show that it is nonetheless possible to build secure cryptosystems in it.  We study applications of a quantum procedure called Simon's algorithm (the simplest quantum period finding algorithm) in order to attack symmetric cryptosystems in this model. Following previous works in this direction, we show that several classical attacks based on finding collisions can be dramatically sped up using Simon's algorithm: finding a collision requires $\Omega(2^{n/2})$ queries in the classical setting, but when collisions happen with some hidden periodicity, they can be found with only $O(n)$ queries in the quantum model.  We obtain attacks with very strong implications. First, we show that the most widely used modes of operation for authentication and authenticated encryption e.g. CBC-MAC, PMAC, GMAC, GCM, and OCB) are completely broken in this security model. Our attacks are also applicable to many CAESAR candidates: CLOC, AEZ, COPA, OTR, POET, OMD, and Minalpher. This is quite surprising compared to the situation with encryption modes: Anand et al. show that standard modes are secure with a quantum-secure PRF.  Second, we show that Simon's algorithm can also be applied to slide attacks, leading to an exponential speed-up of a classical symmetric cryptanalysis technique in the quantum model.},
-  archivePrefix= {arXiv},
-  eprint       = {1602.05973},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/KLLN16breaking-b.pdf}
-  }
