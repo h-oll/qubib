@@ -1208,6 +1208,19 @@ pages[normalize_page_numbers]
 	Year = 1981
 }
 
+@article{AGS19quantum,
+	author = {Arunachalam, Srinivasan and Grilo, Alex B. and Sundaram, Aarthi},
+	title = {Quantum Hardness of Learning Shallow Classical Circuits},
+	journal = {CoRR},
+	year = 2019,
+	url = {http://arxiv.org/abs/1903.02840v2},
+	abstract = {In this paper we study the quantum learnability of constant-depth classical circuits under the uniform distribution and in the distribution-independent framework of PAC learning. In order to attain our results, we establish connections between quantum learning and quantum-secure cryptosystems. We then achieve the following results.  1) Hardness of learning AC$^0$ and TC$^0$ under the uniform distribution. Our first result concerns the concept class TC$^0$ (resp. AC$^0$), the class of constant-depth and polynomial-sized circuits with unbounded fan-in majority gates (resp. AND, OR, NOT gates). We show that if there exists no quantum polynomial-time (resp. strong sub-exponential time) algorithm to solve the Ring Learning with Errors (RLWE) problem, then there exists no polynomial-time quantum learning algorithm for TC$^0$ (resp. AC$^0$) under the uniform distribution (even with access to quantum membership queries). The main technique in this result uses explicit pseudo-random functions that are believed to be quantum-secure to construct concept classes that are hard to learn quantumly under the uniform distribution.  2) Hardness of learning TC$^0_2$ in the PAC setting. Our second result shows that if there exists no quantum polynomial time algorithm for the LWE problem, then there exists no polynomial time quantum PAC learning algorithm for the class TC$^0_2$, i.e., depth-2 TC$^0$ circuits. The main technique in this result is to establish a connection between the quantum security of public-key cryptosystems and the learnability of a concept class that consists of decryption functions of the cryptosystem.  This gives a strong (conditional) negative answer to one of the "Ten Semi-Grand Challenges for Quantum Computing Theory" raised by Aaronson [Aar05], who asked if AC$^0$ and TC$^0$ can be PAC-learned in quantum polynomial time.},
+	archivePrefix = {arXiv},
+	eprint = {1903.02840},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/AGS19quantum.pdf}
+}
+
 @misc{AH55spin,
 	Author = {Anderson, A. G. and Hahn, E. L.},
 	Howpublished = {US Patent \# 2,714,714},
@@ -4421,6 +4434,18 @@ pages[normalize_page_numbers]
 	volume = 14
 }
 
+@article{BJ14quantum,
+	author = {Broadbent, Anne and Jeffery, Stacey},
+	title = {Quantum Homomorphic Encryption for Circuits of Low $T$-gate Complexity},
+	journal = {CoRR},
+	year = 2014,
+	url = {http://arxiv.org/pdf/1412.8766v2},
+	abstract = {Fully homomorphic encryption is an encryption method with the property that any computation on the plaintext can be performed by a party having access to the ciphertext only. Here, we formally define and give schemes for quantum homomorphic encryption, which is the encryption of quantum information such that quantum computations can be performed given the ciphertext only. Our schemes allows for arbitrary Clifford group gates, but become inefficient for circuits with large complexity, measured in terms of the non-Clifford portion of the circuit (we use the "$\pi/8$" non-Clifford group gate, which is also known as the $T$-gate).  More specifically, two schemes are proposed: the first scheme has a decryption procedure whose complexity scales with the square of the number of $T$-gates (compared with a trivial scheme in which the complexity scales with the total number of gates); the second scheme uses a quantum evaluation key of length given by a polynomial of degree exponential in the circuit's $T$-gate depth, yielding a homomorphic scheme for quantum circuits with constant $T$-depth. Both schemes build on a classical fully homomorphic encryption scheme.  A further contribution of ours is to formally define the security of encryption schemes for quantum messages: we define quantum indistinguishability under chosen plaintext attacks in both the public and private-key settings. In this context, we show the equivalence of several definitions.  Our schemes are the first of their kind that are secure under modern cryptographic definitions, and can be seen as a quantum analogue of classical results establishing homomorphic encryption for circuits with a limited number of multiplication gates. Historically, such results appeared as precursors to the breakthrough result establishing classical fully homomorphic encryption.},
+	archivePrefix = {arXiv},
+	eprint = {1412.8766},
+	primaryClass = {quant-ph}
+}
+
 @article{BJ99learning,
 	Author = {Bshouty, N. H. and Jackson, J. C.},
 	Pages = {1136-1153},
@@ -7285,6 +7310,19 @@ pages[normalize_page_numbers]
 	keywords = {distributed computing, multi-party protocols, quantum cryptography, secure function evaluation}
 }
 
+@article{CGV21deniable,
+	file = {CGV21deniable.pdf},
+	author = {Coladangelo, Andrea and Goldwasser, Shafi and Vazirani, Umesh},
+	title = {Deniable Encryption in a Quantum World},
+	journal = {CoRR},
+	year = 2021,
+	url = {http://arxiv.org/pdf/2112.14988},
+	abstract = {(Sender-)Deniable encryption provides a very strong privacy guarantee: a sender who is coerced by an attacker into "opening" their ciphertext after-the-fact is able to generate "fake" local random choices that are consistent with any plaintext of their choice. The only known fully-efficient constructions of public-key deniable encryption rely on indistinguishability obfuscation (iO) (which currently can only be based on sub-exponential hardness assumptions). In this work, we study (sender-)deniable encryption in a setting where the encryption procedure is a quantum algorithm, but the ciphertext is classical. First, we propose a quantum analog of the classical definition in this setting. We give a fully efficient construction satisfying this definition, assuming the quantum hardness of the Learning with Errors (LWE) problem. Second, we show that quantum computation unlocks a fundamentally stronger form of deniable encryption, which we call perfect unexplainability.  The primitive at the heart of unexplainability is a quantum computation for which there is provably no efficient way, such as exhibiting the "history of the computation", to establish that the output was indeed the result of the computation. We give a construction which is secure in the random oracle model, assuming the quantum hardness of LWE. Crucially, this notion implies a form of protection against coercion "before-the-fact", a property that is impossible to achieve classically.},
+	archivePrefix = {arXiv},
+	eprint = {2112.14988},
+	primaryClass = {quant-ph}
+}
+
 @article{CH00bipartite,
 	oldkey = CH00b,
 	Author = {Clifton, R. and Halvorson, H.},
@@ -8223,6 +8261,19 @@ pages[normalize_page_numbers]
 	Source = {K. Kzyczkowski, 2004-11-18},
 	Title = {Reduced Density Matrices},
 	Year = 2000
+}
+
+@article{CY19non,
+	author = {Cr{\'e}peau, Claude and Yang, Nan},
+	title = {Non-Locality and Zero-Knowledge Mips},
+	journal = {CoRR},
+	year = 2019,
+	url = {http://arxiv.org/abs/1907.12619v1},
+	abstract = {The foundation of zero-knowledge is the simulator: a weak machine capable of pretending to be a weak verifier talking with all-powerful provers. To achieve this, simulators need some kind of advantage such as the knowledge of a trapdoor. In existing zero-knowledge multi-prover protocols, this advantage is essentially signalling, something that the provers are explicitly forbidden to do. In most cases, this advantage is stronger than necessary as it is possible to define a sense in which simulators need much less to simulate. We define a framework in which we can quantify the simulators' non-local advantage and exhibit examples of zero-knowledge protocols that are sound against local or entangled provers but that are not sound against no-signalling provers precisely because the no-signalling simulation strategy can be adopted by malicious provers.},
+	archivePrefix = {arXiv},
+	eprint = {1907.12619},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/CY19non.pdf}
 }
 
 @article{CY95simple,
@@ -19362,6 +19413,22 @@ pages[normalize_page_numbers]
 	Year = 1981
 }
 
+@Article{LG22depth,
+	file = {LG22depth.pdf},
+	timestamp = {2024-07-12 19:02:25 (CEST)},
+	author = {Liu, Zhenning and Gheorghiu, Alexandru},
+	title = {Depth-efficient proofs of quantumness},
+	journal = {Quantum},
+	year = 2022,
+	volume = 6,
+	month = sep,
+	pages = 807,
+	issn = {2521-327X},
+	doi = {10.22331/q-2022-09-19-807},
+	url = {https://quantum-journal.org/papers/q-2022-09-19-807/pdf/},
+	publisher = {Verein zur Forderung des Open Access Publizierens in den Quantenwissenschaften}
+}
+
 @Article{LGAG22advancing,
 	file = {LGAG22advancing.pdf},
 	author = {Lubinski, Thomas and Granade, Cassandra and Anderson, Amos and Geller, Alan and Roetteler, Martin and Petrenko, Andrei and Heim, Bettina},
@@ -20545,6 +20612,19 @@ pages[normalize_page_numbers]
 	publisher = {Theory of Computing Exchange}
 }
 
+@article{M17classical,
+	author = {Mahadev, Urmila},
+	title = {Classical Homomorphic Encryption for Quantum Circuits},
+	journal = {CoRR},
+	year = 2017,
+	url = {http://arxiv.org/abs/1708.02130v5},
+	abstract = {We present the first leveled fully homomorphic encryption scheme for quantum circuits with classical keys. The scheme allows a classical client to blindly delegate a quantum computation to a quantum server: an honest server is able to run the computation while a malicious server is unable to learn any information about the computation. We show that it is possible to construct such a scheme directly from a quantum secure classical homomorphic encryption scheme with certain properties. Finally, we show that a classical homomorphic encryption scheme with the required properties can be constructed from the learning with errors problem.},
+	archivePrefix = {arXiv},
+	eprint = {1708.02130},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/M17classical.pdf}
+}
+
 @inproceedings{M18classical,
 	file = {M18classical.pdf},
 	source = {Luka Music, 2021-09-16},
@@ -20560,6 +20640,15 @@ pages[normalize_page_numbers]
 	timestamp = {Wed, 16 Oct 2019 14:14:54 +0200},
 	biburl = {https://dblp.org/rec/conf/focs/Mahadev18.bib},
 	bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@inproceedings{M19quantum,
+	file = {M19quantum.pdf},
+	timestamp = {2024-07-12 17:53:30 (CEST)},
+	title = {Quantum Shell Games: How to Classically Delegate the Preparation of Authenticated Quantum States},
+	author = {John Hunter McKnight},
+	year = {2019},
+	url = {https://eprints.illc.uva.nl/id/eprint/1766/1/MoL-2019-27.text.pdf}
 }
 
 @Article{M23measurement,
@@ -22340,6 +22429,19 @@ pages[normalize_page_numbers]
 	Title = {Wehrl entropy, {L}ieb conjecture and entanglement monotones},
 	Volume = 69,
 	Year = 2004
+}
+
+@article{MZ18testing,
+	author = {Miranskyy, Andriy and Zhang, Lei},
+	title = {On Testing Quantum Programs},
+	journal = {CoRR},
+	year = 2018,
+	url = {http://arxiv.org/abs/1812.09261v1},
+	abstract = {A quantum computer (QC) can solve many computational problems more efficiently than a classic one. The field of QCs is growing: companies (such as DWave, IBM, Google, and Microsoft) are building QC offerings. We position that software engineers should look into defining a set of software engineering practices that apply to QC's software. To start this process, we give examples of challenges associated with testing such software and sketch potential solutions to some of these challenges.},
+	archivePrefix = {arXiv},
+	eprint = {1812.09261},
+	primaryClass = {cs.SE},
+	file = {~/shared/papers/MZ18testing.pdf}
 }
 
 @article{MZKS99determining,
@@ -32812,74 +32914,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{AGS19quantum,
-  author       = {Arunachalam, Srinivasan and Grilo, Alex B. and Sundaram, Aarthi},
-  title        = {Quantum Hardness of Learning Shallow Classical Circuits},
-  journal      = {CoRR},
-  year         = 2019,
-  url          = {http://arxiv.org/abs/1903.02840v2},
-  abstract     = {In this paper we study the quantum learnability of constant-depth classical circuits under the uniform distribution and in the distribution-independent framework of PAC learning. In order to attain our results, we establish connections between quantum learning and quantum-secure cryptosystems. We then achieve the following results.  1) Hardness of learning AC$^0$ and TC$^0$ under the uniform distribution. Our first result concerns the concept class TC$^0$ (resp. AC$^0$), the class of constant-depth and polynomial-sized circuits with unbounded fan-in majority gates (resp. AND, OR, NOT gates). We show that if there exists no quantum polynomial-time (resp. strong sub-exponential time) algorithm to solve the Ring Learning with Errors (RLWE) problem, then there exists no polynomial-time quantum learning algorithm for TC$^0$ (resp. AC$^0$) under the uniform distribution (even with access to quantum membership queries). The main technique in this result uses explicit pseudo-random functions that are believed to be quantum-secure to construct concept classes that are hard to learn quantumly under the uniform distribution.  2) Hardness of learning TC$^0_2$ in the PAC setting. Our second result shows that if there exists no quantum polynomial time algorithm for the LWE problem, then there exists no polynomial time quantum PAC learning algorithm for the class TC$^0_2$, i.e., depth-2 TC$^0$ circuits. The main technique in this result is to establish a connection between the quantum security of public-key cryptosystems and the learnability of a concept class that consists of decryption functions of the cryptosystem.  This gives a strong (conditional) negative answer to one of the "Ten Semi-Grand Challenges for Quantum Computing Theory" raised by Aaronson [Aar05], who asked if AC$^0$ and TC$^0$ can be PAC-learned in quantum polynomial time.},
-  archivePrefix= {arXiv},
-  eprint       = {1903.02840},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/AGS19quantum.pdf}
-  }
-@article{MZ18testing,
-  author       = {Miranskyy, Andriy and Zhang, Lei},
-  title        = {On Testing Quantum Programs},
-  journal      = {CoRR},
-  year         = 2018,
-  url          = {http://arxiv.org/abs/1812.09261v1},
-  abstract     = {A quantum computer (QC) can solve many computational problems more efficiently than a classic one. The field of QCs is growing: companies (such as DWave, IBM, Google, and Microsoft) are building QC offerings. We position that software engineers should look into defining a set of software engineering practices that apply to QC's software. To start this process, we give examples of challenges associated with testing such software and sketch potential solutions to some of these challenges.},
-  archivePrefix= {arXiv},
-  eprint       = {1812.09261},
-  primaryClass = {cs.SE},
-  file = {~/shared/papers/MZ18testing.pdf}
-  }
-@article{M17classical,
-  author       = {Mahadev, Urmila},
-  title        = {Classical Homomorphic Encryption for Quantum Circuits},
-  journal      = {CoRR},
-  year         = 2017,
-  url          = {http://arxiv.org/abs/1708.02130v5},
-  abstract     = {We present the first leveled fully homomorphic encryption scheme for quantum circuits with classical keys. The scheme allows a classical client to blindly delegate a quantum computation to a quantum server: an honest server is able to run the computation while a malicious server is unable to learn any information about the computation. We show that it is possible to construct such a scheme directly from a quantum secure classical homomorphic encryption scheme with certain properties. Finally, we show that a classical homomorphic encryption scheme with the required properties can be constructed from the learning with errors problem.},
-  archivePrefix= {arXiv},
-  eprint       = {1708.02130},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/M17classical.pdf}
-  }
-@article{BJ14quantum,
-  author       = {Broadbent, Anne and Jeffery, Stacey},
-  title        = {Quantum Homomorphic Encryption for Circuits of Low $T$-gate Complexity},
-  journal      = {CoRR},
-  year         = 2014,
-  url          = {http://arxiv.org/pdf/1412.8766v2},
-  abstract     = {Fully homomorphic encryption is an encryption method with the property that any computation on the plaintext can be performed by a party having access to the ciphertext only. Here, we formally define and give schemes for quantum homomorphic encryption, which is the encryption of quantum information such that quantum computations can be performed given the ciphertext only. Our schemes allows for arbitrary Clifford group gates, but become inefficient for circuits with large complexity, measured in terms of the non-Clifford portion of the circuit (we use the "$\pi/8$" non-Clifford group gate, which is also known as the $T$-gate).  More specifically, two schemes are proposed: the first scheme has a decryption procedure whose complexity scales with the square of the number of $T$-gates (compared with a trivial scheme in which the complexity scales with the total number of gates); the second scheme uses a quantum evaluation key of length given by a polynomial of degree exponential in the circuit's $T$-gate depth, yielding a homomorphic scheme for quantum circuits with constant $T$-depth. Both schemes build on a classical fully homomorphic encryption scheme.  A further contribution of ours is to formally define the security of encryption schemes for quantum messages: we define quantum indistinguishability under chosen plaintext attacks in both the public and private-key settings. In this context, we show the equivalence of several definitions.  Our schemes are the first of their kind that are secure under modern cryptographic definitions, and can be seen as a quantum analogue of classical results establishing homomorphic encryption for circuits with a limited number of multiplication gates. Historically, such results appeared as precursors to the breakthrough result establishing classical fully homomorphic encryption.},
-  archivePrefix= {arXiv},
-  eprint       = {1412.8766},
-  primaryClass = {quant-ph},
-}
-@article{CY19non,
-  author       = {Cr{\'e}peau, Claude and Yang, Nan},
-  title        = {Non-Locality and Zero-Knowledge Mips},
-  journal      = {CoRR},
-  year         = 2019,
-  url          = {http://arxiv.org/abs/1907.12619v1},
-  abstract     = {The foundation of zero-knowledge is the simulator: a weak machine capable of pretending to be a weak verifier talking with all-powerful provers. To achieve this, simulators need some kind of advantage such as the knowledge of a trapdoor. In existing zero-knowledge multi-prover protocols, this advantage is essentially signalling, something that the provers are explicitly forbidden to do. In most cases, this advantage is stronger than necessary as it is possible to define a sense in which simulators need much less to simulate. We define a framework in which we can quantify the simulators' non-local advantage and exhibit examples of zero-knowledge protocols that are sound against local or entangled provers but that are not sound against no-signalling provers precisely because the no-signalling simulation strategy can be adopted by malicious provers.},
-  archivePrefix= {arXiv},
-  eprint       = {1907.12619},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/CY19non.pdf}
-  }
-@article{CGV21deniable,
-  author       = {Coladangelo, Andrea and Goldwasser, Shafi and Vazirani, Umesh},
-  title        = {Deniable Encryption in a Quantum World},
+@article{HG21test,
+  author       = {Hirahara, Shuichi and Gall, Fran{\c{c}}ois Le},
+  title        = {Test of Quantumness With Small-Depth Quantum Circuits},
   journal      = {CoRR},
   year         = 2021,
-  url          = {http://arxiv.org/abs/2112.14988v3},
-  abstract     = {(Sender-)Deniable encryption provides a very strong privacy guarantee: a sender who is coerced by an attacker into "opening" their ciphertext after-the-fact is able to generate "fake" local random choices that are consistent with any plaintext of their choice. The only known fully-efficient constructions of public-key deniable encryption rely on indistinguishability obfuscation (iO) (which currently can only be based on sub-exponential hardness assumptions). In this work, we study (sender-)deniable encryption in a setting where the encryption procedure is a quantum algorithm, but the ciphertext is classical. First, we propose a quantum analog of the classical definition in this setting. We give a fully efficient construction satisfying this definition, assuming the quantum hardness of the Learning with Errors (LWE) problem. Second, we show that quantum computation unlocks a fundamentally stronger form of deniable encryption, which we call perfect unexplainability.  The primitive at the heart of unexplainability is a quantum computation for which there is provably no efficient way, such as exhibiting the "history of the computation", to establish that the output was indeed the result of the computation. We give a construction which is secure in the random oracle model, assuming the quantum hardness of LWE. Crucially, this notion implies a form of protection against coercion "before-the-fact", a property that is impossible to achieve classically.},
+  url          = {http://arxiv.org/abs/2105.05500v2},
+  abstract     = {Recently Brakerski, Christiano, Mahadev, Vazirani and Vidick (FOCS 2018) have shown how to construct a test of quantumness based on the learning with errors (LWE) assumption: a test that can be solved efficiently by a quantum computer but cannot be solved by a classical polynomial-time computer under the LWE assumption. This test has lead to several cryptographic applications. In particular, it has been applied to producing certifiable randomness from a single untrusted quantum device, self-testing a single quantum device and device-independent quantum key distribution.  In this paper, we show that this test of quantumness, and essentially all the above applications, can actually be implemented by a very weak class of quantum circuits: constant-depth quantum circuits combined with logarithmic-depth classical computation. This reveals novel complexity-theoretic properties of this fundamental test of quantumness and gives new concrete evidence of the superiority of small-depth quantum circuits over classical computation.},
   archivePrefix= {arXiv},
-  eprint       = {2112.14988},
+  eprint       = {2105.05500},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/CGV21deniable.pdf}
-  }
+}
