@@ -7222,6 +7222,19 @@ pages[normalize_page_numbers]
 	isbn = {978-3-319-79063-3}
 }
 
+@article{CGK21non,
+	author = {Colisson, L{\'e}o and Grosshans, Fr{\'e}d{\'e}ric and Kashefi, Elham},
+	title = {Non-Destructive Zero-Knowledge Proofs on Quantum States, and Multi-Party Generation of Authorized Hidden Ghz States},
+	journal = {CoRR},
+	year = 2021,
+	url = {http://arxiv.org/abs/2104.04742v3},
+	abstract = {We propose the first generalization of the famous Non-Interactive Zero-Knowledge (NIZK) proofs to quantum languages (NIZKoQS) and we provide a protocol to prove advanced properties on a received quantum state non-destructively and non-interactively (a single message being sent from the prover to the verifier).  In our second orthogonal contribution, we improve the costly Remote State Preparation protocols [CCKW18,CCKW19,GV19] that can classically fake a quantum channel (this is at the heart of our NIZKoQS protocol) by showing how to create a multi-qubits state from a single superposition.  Finally, we generalize these results to a multi-party setting and prove that multiple parties can anonymously distribute a GHZ state in such a way that only participants knowing a secret credential can share this state, which could have applications to quantum anonymous transmission, quantum secret sharing, quantum onion routing and more.},
+	archivePrefix = {arXiv},
+	eprint = {2104.04742},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/CGK21non.pdf}
+}
+
 @article{CGK98experimental,
 	oldkey = CGK98a,
 	Author = {Chuang, I. L. and Gershenfeld, N. and Kubinec, M.},
@@ -15300,6 +15313,19 @@ pages[normalize_page_numbers]
 	Title = {Generation of Einstein-Podolsky-Rosen Pairs of Atoms},
 	Volume = 79,
 	Year = 1997
+}
+
+@article{HMNY21quantum,
+	author = {Hiroka, Taiga and Morimae, Tomoyuki and Nishimaki, Ryo and Yamakawa, Takashi},
+	title = {Quantum Encryption With Certified Deletion, Revisited: Public Key, Attribute-Based, and Classical Communication},
+	journal = {CoRR},
+	year = 2021,
+	url = {http://arxiv.org/abs/2105.05393v1},
+	abstract = {Broadbent and Islam (TCC '20) proposed a quantum cryptographic primitive called quantum encryption with certified deletion. In this primitive, a receiver in possession of a quantum ciphertext can generate a classical certificate that the encrypted message is deleted. Although their construction is information-theoretically secure, it is limited to the setting of one-time symmetric key encryption (SKE), where a sender and receiver have to share a common key in advance and the key can be used only once. Moreover, the sender has to generate a quantum state and send it to the receiver over a quantum channel in their construction. Although deletion certificates are privately verifiable, which means a verification key for a certificate has to be kept secret, in the definition by Broadbent and Islam, we can also consider public verifiability.  In this work, we present various constructions of encryption with certified deletion.  - Quantum communication case: We achieve (reusable-key) public key encryption (PKE) and attribute-based encryption (ABE) with certified deletion. Our PKE scheme with certified deletion is constructed assuming the existence of IND-CPA secure PKE, and our ABE scheme with certified deletion is constructed assuming the existence of indistinguishability obfuscation and one-way function. These two schemes are privately verifiable.  - Classical communication case: We also achieve PKE with certified deletion that uses only classical communication. We give two schemes, a privately verifiable one and a publicly verifiable one. The former is constructed assuming the LWE assumption in the quantum random oracle model. The latter is constructed assuming the existence of one-shot signatures and extractable witness encryption.},
+	archivePrefix = {arXiv},
+	eprint = {2105.05393},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/HMNY21quantum.pdf}
 }
 
 @article{HMOL21virtual,
@@ -30303,6 +30329,19 @@ pages[normalize_page_numbers]
 	Year = 2004
 }
 
+@article{VW16quantum-proofs,
+	file = {VW16quantum-proofs.pdf},
+	author = {Vidick, Thomas and Watrous, John},
+	title = {Quantum Proofs},
+	journal = {CoRR},
+	year = 2016,
+	url = {http://arxiv.org/abs/1610.01664v1},
+	abstract = {Quantum information and computation provide a fascinating twist on the notion of proofs in computational complexity theory. For instance, one may consider a quantum computational analogue of the complexity class \class{NP}, known as QMA, in which a quantum state plays the role of a proof (also called a certificate or witness), and is checked by a polynomial-time quantum computation. For some problems, the fact that a quantum proof state could be a superposition over exponentially many classical states appears to offer computational advantages over classical proof strings. In the interactive proof system setting, one may consider a verifier and one or more provers that exchange and process quantum information rather than classical information during an interaction for a given input string, giving rise to quantum complexity classes such as QIP, QSZK, and QMIP* that represent natural quantum analogues of IP, SZK, and MIP. While quantum interactive proof systems inherit some properties from their classical counterparts, they also possess distinct and uniquely quantum features that lead to an interesting landscape of complexity classes based on variants of this model.  In this survey we provide an overview of many of the known results concerning quantum proofs, computational models based on this concept, and properties of the complexity classes they define. In particular, we discuss non-interactive proofs and the complexity class QMA, single-prover quantum interactive proof systems and the complexity class QIP, statistical zero-knowledge quantum interactive proof systems and the complexity class \class{QSZK}, and multiprover interactive proof systems and the complexity classes QMIP, QMIP*, and MIP*.},
+	archivePrefix = {arXiv},
+	eprint = {1610.01664},
+	primaryClass = {quant-ph}
+}
+
 @article{VYSC99realization,
 	Author = {Vandersypen, L. M. K. and Yannoni, C. S. and Sherwood, M. H. and Chuang, I. L.},
 	Eprint = {quant-ph/9905041},
@@ -32927,38 +32966,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{HMNY21quantum,
-  author       = {Hiroka, Taiga and Morimae, Tomoyuki and Nishimaki, Ryo and Yamakawa, Takashi},
-  title        = {Quantum Encryption With Certified Deletion, Revisited: Public Key, Attribute-Based, and Classical Communication},
+@article{KCVY21classically,
+  author       = {Kahanamoku-Meyer, Gregory D. and Choi, Soonwon and Vazirani, Umesh V. and Yao, Norman Y.},
+  title        = {Classically-Verifiable Quantum Advantage From a Computational Bell Test},
   journal      = {CoRR},
   year         = 2021,
-  url          = {http://arxiv.org/abs/2105.05393v1},
-  abstract     = {Broadbent and Islam (TCC '20) proposed a quantum cryptographic primitive called quantum encryption with certified deletion. In this primitive, a receiver in possession of a quantum ciphertext can generate a classical certificate that the encrypted message is deleted. Although their construction is information-theoretically secure, it is limited to the setting of one-time symmetric key encryption (SKE), where a sender and receiver have to share a common key in advance and the key can be used only once. Moreover, the sender has to generate a quantum state and send it to the receiver over a quantum channel in their construction. Although deletion certificates are privately verifiable, which means a verification key for a certificate has to be kept secret, in the definition by Broadbent and Islam, we can also consider public verifiability.  In this work, we present various constructions of encryption with certified deletion.  - Quantum communication case: We achieve (reusable-key) public key encryption (PKE) and attribute-based encryption (ABE) with certified deletion. Our PKE scheme with certified deletion is constructed assuming the existence of IND-CPA secure PKE, and our ABE scheme with certified deletion is constructed assuming the existence of indistinguishability obfuscation and one-way function. These two schemes are privately verifiable.  - Classical communication case: We also achieve PKE with certified deletion that uses only classical communication. We give two schemes, a privately verifiable one and a publicly verifiable one. The former is constructed assuming the LWE assumption in the quantum random oracle model. The latter is constructed assuming the existence of one-shot signatures and extractable witness encryption.},
+  url          = {http://arxiv.org/abs/2104.00687v2},
+  abstract     = {We propose and analyze a novel interactive protocol for demonstrating quantum computational advantage, which is efficiently classically verifiable. Our protocol relies upon the cryptographic hardness of trapdoor claw-free functions (TCFs). Through a surprising connection to Bell's inequality, our protocol avoids the need for an adaptive hardcore bit, with essentially no increase in the quantum circuit complexity and no extra cryptographic assumptions.  Crucially, this expands the set of compatible TCFs, and we propose two new constructions: one based upon the decisional Diffie-Hellman problem and the other based upon Rabin's function, $x^2 \bmod N$. We also describe two independent innovations which improve the efficiency of our protocol's implementation: (i) a scheme to discard so-called "garbage bits", thereby removing the need for reversibility in the quantum circuits, and (ii) a natural way of performing post-selection which significantly reduces the fidelity needed to demonstrate quantum advantage. These two constructions may also be of independent interest, as they may be applicable to other TCF-based quantum cryptography such as certifiable random number generation. Finally, we design several efficient circuits for $x^2 \bmod N$ and describe a blueprint for their implementation on a Rydberg-atom-based quantum computer.},
   archivePrefix= {arXiv},
-  eprint       = {2105.05393},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/HMNY21quantum.pdf}
-  }
-@article{CGK21non,
-  author       = {Colisson, L{\'e}o and Grosshans, Fr{\'e}d{\'e}ric and Kashefi, Elham},
-  title        = {Non-Destructive Zero-Knowledge Proofs on Quantum States, and Multi-Party Generation of Authorized Hidden Ghz States},
-  journal      = {CoRR},
-  year         = 2021,
-  url          = {http://arxiv.org/abs/2104.04742v3},
-  abstract     = {We propose the first generalization of the famous Non-Interactive Zero-Knowledge (NIZK) proofs to quantum languages (NIZKoQS) and we provide a protocol to prove advanced properties on a received quantum state non-destructively and non-interactively (a single message being sent from the prover to the verifier).  In our second orthogonal contribution, we improve the costly Remote State Preparation protocols [CCKW18,CCKW19,GV19] that can classically fake a quantum channel (this is at the heart of our NIZKoQS protocol) by showing how to create a multi-qubits state from a single superposition.  Finally, we generalize these results to a multi-party setting and prove that multiple parties can anonymously distribute a GHZ state in such a way that only participants knowing a secret credential can share this state, which could have applications to quantum anonymous transmission, quantum secret sharing, quantum onion routing and more.},
-  archivePrefix= {arXiv},
-  eprint       = {2104.04742},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/CGK21non.pdf}
-  }
-@article{VW16quantum-proofs,
-  author       = {Vidick, Thomas and Watrous, John},
-  title        = {Quantum Proofs},
-  journal      = {CoRR},
-  year         = 2016,
-  url          = {http://arxiv.org/abs/1610.01664v1},
-  abstract     = {Quantum information and computation provide a fascinating twist on the notion of proofs in computational complexity theory. For instance, one may consider a quantum computational analogue of the complexity class \class{NP}, known as QMA, in which a quantum state plays the role of a proof (also called a certificate or witness), and is checked by a polynomial-time quantum computation. For some problems, the fact that a quantum proof state could be a superposition over exponentially many classical states appears to offer computational advantages over classical proof strings. In the interactive proof system setting, one may consider a verifier and one or more provers that exchange and process quantum information rather than classical information during an interaction for a given input string, giving rise to quantum complexity classes such as QIP, QSZK, and QMIP* that represent natural quantum analogues of IP, SZK, and MIP. While quantum interactive proof systems inherit some properties from their classical counterparts, they also possess distinct and uniquely quantum features that lead to an interesting landscape of complexity classes based on variants of this model.  In this survey we provide an overview of many of the known results concerning quantum proofs, computational models based on this concept, and properties of the complexity classes they define. In particular, we discuss non-interactive proofs and the complexity class QMA, single-prover quantum interactive proof systems and the complexity class QIP, statistical zero-knowledge quantum interactive proof systems and the complexity class \class{QSZK}, and multiprover interactive proof systems and the complexity classes QMIP, QMIP*, and MIP*.},
-  archivePrefix= {arXiv},
-  eprint       = {1610.01664},
+  eprint       = {2104.00687},
   primaryClass = {quant-ph},
 }
