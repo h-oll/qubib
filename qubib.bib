@@ -14761,6 +14761,19 @@ pages[normalize_page_numbers]
 	url = {https://link.aps.org/doi/10.1103/PhysRevA.89.032121}
 }
 
+@article{HG21test,
+	file = {HG21test.pdf},
+	author = {Hirahara, Shuichi and Gall, Fran{\c{c}}ois Le},
+	title = {Test of Quantumness With Small-Depth Quantum Circuits},
+	journal = {CoRR},
+	year = 2021,
+	url = {http://arxiv.org/abs/2105.05500v2},
+	abstract = {Recently Brakerski, Christiano, Mahadev, Vazirani and Vidick (FOCS 2018) have shown how to construct a test of quantumness based on the learning with errors (LWE) assumption: a test that can be solved efficiently by a quantum computer but cannot be solved by a classical polynomial-time computer under the LWE assumption. This test has lead to several cryptographic applications. In particular, it has been applied to producing certifiable randomness from a single untrusted quantum device, self-testing a single quantum device and device-independent quantum key distribution.  In this paper, we show that this test of quantumness, and essentially all the above applications, can actually be implemented by a very weak class of quantum circuits: constant-depth quantum circuits combined with logarithmic-depth classical computation. This reveals novel complexity-theoretic properties of this fundamental test of quantumness and gives new concrete evidence of the superiority of small-depth quantum circuits over classical computation.},
+	archivePrefix = {arXiv},
+	eprint = {2105.05500},
+	primaryClass = {quant-ph}
+}
+
 @techreport{HH02quantum,
 	Address = {Los Alamos, NM},
 	Author = {Hughes, R. and Heinrichs, T.},
@@ -32914,15 +32927,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{HG21test,
-  author       = {Hirahara, Shuichi and Gall, Fran{\c{c}}ois Le},
-  title        = {Test of Quantumness With Small-Depth Quantum Circuits},
+@article{HMNY21quantum,
+  author       = {Hiroka, Taiga and Morimae, Tomoyuki and Nishimaki, Ryo and Yamakawa, Takashi},
+  title        = {Quantum Encryption With Certified Deletion, Revisited: Public Key, Attribute-Based, and Classical Communication},
   journal      = {CoRR},
   year         = 2021,
-  url          = {http://arxiv.org/abs/2105.05500v2},
-  abstract     = {Recently Brakerski, Christiano, Mahadev, Vazirani and Vidick (FOCS 2018) have shown how to construct a test of quantumness based on the learning with errors (LWE) assumption: a test that can be solved efficiently by a quantum computer but cannot be solved by a classical polynomial-time computer under the LWE assumption. This test has lead to several cryptographic applications. In particular, it has been applied to producing certifiable randomness from a single untrusted quantum device, self-testing a single quantum device and device-independent quantum key distribution.  In this paper, we show that this test of quantumness, and essentially all the above applications, can actually be implemented by a very weak class of quantum circuits: constant-depth quantum circuits combined with logarithmic-depth classical computation. This reveals novel complexity-theoretic properties of this fundamental test of quantumness and gives new concrete evidence of the superiority of small-depth quantum circuits over classical computation.},
+  url          = {http://arxiv.org/abs/2105.05393v1},
+  abstract     = {Broadbent and Islam (TCC '20) proposed a quantum cryptographic primitive called quantum encryption with certified deletion. In this primitive, a receiver in possession of a quantum ciphertext can generate a classical certificate that the encrypted message is deleted. Although their construction is information-theoretically secure, it is limited to the setting of one-time symmetric key encryption (SKE), where a sender and receiver have to share a common key in advance and the key can be used only once. Moreover, the sender has to generate a quantum state and send it to the receiver over a quantum channel in their construction. Although deletion certificates are privately verifiable, which means a verification key for a certificate has to be kept secret, in the definition by Broadbent and Islam, we can also consider public verifiability.  In this work, we present various constructions of encryption with certified deletion.  - Quantum communication case: We achieve (reusable-key) public key encryption (PKE) and attribute-based encryption (ABE) with certified deletion. Our PKE scheme with certified deletion is constructed assuming the existence of IND-CPA secure PKE, and our ABE scheme with certified deletion is constructed assuming the existence of indistinguishability obfuscation and one-way function. These two schemes are privately verifiable.  - Classical communication case: We also achieve PKE with certified deletion that uses only classical communication. We give two schemes, a privately verifiable one and a publicly verifiable one. The former is constructed assuming the LWE assumption in the quantum random oracle model. The latter is constructed assuming the existence of one-shot signatures and extractable witness encryption.},
   archivePrefix= {arXiv},
-  eprint       = {2105.05500},
+  eprint       = {2105.05393},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/HG21test.pdf}
-  }
+}
