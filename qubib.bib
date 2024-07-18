@@ -3416,6 +3416,19 @@ pages[normalize_page_numbers]
 	Year = 2002
 }
 
+@article{BCJ23iqp,
+	author = {Bremner, Michael J. and Cheng, Bin and Ji, Zhengfeng},
+	title = {Iqp Sampling and Verifiable Quantum Advantage: Stabilizer Scheme and Classical Security},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2308.07152v1},
+	abstract = {Sampling problems demonstrating beyond classical computing power with noisy intermediate-scale quantum (NISQ) devices have been experimentally realized. In those realizations, however, our trust that the quantum devices faithfully solve the claimed sampling problems is usually limited to simulations of smaller-scale instances and is, therefore, indirect. The problem of verifiable quantum advantage aims to resolve this critical issue and provides us with greater confidence in a claimed advantage. Instantaneous quantum polynomial-time (IQP) sampling has been proposed to achieve beyond classical capabilities with a verifiable scheme based on quadratic-residue codes (QRC).  Unfortunately, this verification scheme was recently broken by an attack proposed by Kahanamoku-Meyer. In this work, we revive IQP-based verifiable quantum advantage by making two major contributions. Firstly, we introduce a family of IQP sampling protocols called the \emph{stabilizer scheme}, which builds on results linking IQP circuits, the stabilizer formalism, coding theory, and an efficient characterization of IQP circuit correlation functions.  This construction extends the scope of existing IQP-based schemes while maintaining their simplicity and verifiability. Secondly, we introduce the \emph{Hidden Structured Code} (HSC) problem as a well-defined mathematical challenge that underlies the stabilizer scheme. To assess classical security, we explore a class of attacks based on secret extraction, including the Kahanamoku-Meyer's attack as a special case. We provide evidence of the security of the stabilizer scheme, assuming the hardness of the HSC problem. We also point out that the vulnerability observed in the original QRC scheme is primarily attributed to inappropriate parameter choices, which can be naturally rectified with proper parameter settings.},
+	archivePrefix = {arXiv},
+	eprint = {2308.07152},
+	primaryClass = {quant-ph},
+	file = {BCJ23iqp.pdf}
+}
+
 @inproceedings{BCJL93quantum,
 	Address = {Los Alamitos, CA},
 	Author = {Brassard, G. and Cr{\'e}peau, C. and Josza, R. and Langlois, D.},
@@ -7464,6 +7477,20 @@ pages[normalize_page_numbers]
 	Title = {Unification of Perturbation Theory, Random Matrix Theory, and Semiclassical Considerations in the Study of Parametrically Dependent Eigenstates},
 	Volume = 84,
 	Year = 2000
+}
+
+@InProceedings{CHIN24classical,
+	file = {CHIN24classical.pdf},
+	timestamp = {2024-07-18 17:52:15 (CEST)},
+	author = {Caro, Matthias C. and Hinsche, Marcel and Ioannou, Marios and Nietner, Alexander and Sweke, Ryan},
+	title = {Classical Verification of Quantum Learning},
+	year = 2024,
+	language = {en},
+	publisher = {Schloss Dagstuhl – Leibniz-Zentrum für Informatik},
+	doi = {10.4230/LIPICS.ITCS.2024.24},
+	url = {https://arxiv.org/pdf/2306.04843},
+	keywords = {computational learning theory, quantum learning theory, interactive proofs, quantum oracles, agnostic learning, Theory of computation → Machine learning theory, Theory of computation → Quantum computation theory, Theory of computation → Interactive proof systems},
+	copyright = {Creative Commons Attribution 4.0 International license}
 }
 
 @article{CHPZ23local,
@@ -33279,18 +33306,6 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{BCJ23iqp,
-  author       = {Bremner, Michael J. and Cheng, Bin and Ji, Zhengfeng},
-  title        = {Iqp Sampling and Verifiable Quantum Advantage: Stabilizer Scheme and Classical Security},
-  journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2308.07152v1},
-  abstract     = {Sampling problems demonstrating beyond classical computing power with noisy intermediate-scale quantum (NISQ) devices have been experimentally realized. In those realizations, however, our trust that the quantum devices faithfully solve the claimed sampling problems is usually limited to simulations of smaller-scale instances and is, therefore, indirect. The problem of verifiable quantum advantage aims to resolve this critical issue and provides us with greater confidence in a claimed advantage. Instantaneous quantum polynomial-time (IQP) sampling has been proposed to achieve beyond classical capabilities with a verifiable scheme based on quadratic-residue codes (QRC).  Unfortunately, this verification scheme was recently broken by an attack proposed by Kahanamoku-Meyer. In this work, we revive IQP-based verifiable quantum advantage by making two major contributions. Firstly, we introduce a family of IQP sampling protocols called the \emph{stabilizer scheme}, which builds on results linking IQP circuits, the stabilizer formalism, coding theory, and an efficient characterization of IQP circuit correlation functions.  This construction extends the scope of existing IQP-based schemes while maintaining their simplicity and verifiability. Secondly, we introduce the \emph{Hidden Structured Code} (HSC) problem as a well-defined mathematical challenge that underlies the stabilizer scheme. To assess classical security, we explore a class of attacks based on secret extraction, including the Kahanamoku-Meyer's attack as a special case. We provide evidence of the security of the stabilizer scheme, assuming the hardness of the HSC problem. We also point out that the vulnerability observed in the original QRC scheme is primarily attributed to inappropriate parameter choices, which can be naturally rectified with proper parameter settings.},
-  archivePrefix= {arXiv},
-  eprint       = {2308.07152},
-  primaryClass = {quant-ph},
-  file = {BCJ23iqp.pdf}
-}
 @article{GRZ23quantum,
   author       = {Girish, Uma and Raz, Ran and Zhan, Wei},
   title        = {Quantum Logspace Computations Are Verifiable},
@@ -33301,5 +33316,4 @@ pages[normalize_page_numbers]
   archivePrefix= {arXiv},
   eprint       = {2307.11083},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/GRZ23quantum.pdf}
-  }
+}
