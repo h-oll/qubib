@@ -1635,6 +1635,21 @@ pages[normalize_page_numbers]
 	Year = 1990
 }
 
+@InBook{APV23revocable,
+	file = {APV23revocable.pdf},
+	timestamp = {2024-07-18 18:23:01 (CEST)},
+	title = {Revocable Cryptography from Learning with Errors},
+	year = 2023,
+	author = {Ananth, Prabhanjan and Poremba, Alexander and Vaikuntanathan, Vinod},
+	booktitle = {Lecture Notes in Computer Science},
+	publisher = {Springer Nature Switzerland},
+	isbn = 9783031486241,
+	pages = {93–122},
+	doi = {10.1007/978-3-031-48624-1_4},
+	url = {http://arxiv.org/pdf/2302.14860},
+	ISSN = {1611-3349}
+}
+
 @misc{APZ0deconstructing-decoherence,
 	Author = {Anglin, J. R. and Paz, J.-P. and Zurek, W. H.},
 	Date-Modified = {2006-01-03 17:41:43 +1000},
@@ -5115,6 +5130,19 @@ pages[normalize_page_numbers]
 	Title = {Algorithmic cooling and scalable {NMR} quantum computers},
 	Volume = 99,
 	Year = 2002
+}
+
+@article{BMZ23quantum,
+	file = {BMZ23quantum.pdf},
+	author = {Broadbent, Anne and Mehta, Arthur and Zhao, Yuming},
+	title = {Quantum Delegation With an Off-The-Shelf Device},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/pdf/2304.03448},
+	abstract = {Given that reliable cloud quantum computers are becoming closer to reality, the concept of delegation of quantum computations and its verifiability is of central interest. Many models have been proposed, each with specific strengths and weaknesses. Here, we put forth a new model where the client trusts only its classical processing, makes no computational assumptions, and interacts with a quantum server in a single round. In addition, during a set-up phase, the client specifies the size $n$ of the computation and receives an untrusted, off-the-shelf (OTS) quantum device that is used to report the outcome of a single measurement.  We show how to delegate polynomial-time quantum computations in the OTS model. This also yields an interactive proof system for all of QMA, which, furthermore, we show can be accomplished in statistical zero-knowledge. This provides the first relativistic (one-round), two-prover zero-knowledge proof system for QMA.  As a proof approach, we provide a new self-test for n EPR pairs using only constant-sized Pauli measurements, and show how it provides a new avenue for the use of simulatable codes for local Hamiltonian verification. Along the way, we also provide an enhanced version of a well-known stability result due to Gowers and Hatami and show how it completes a common argument used in self-testing.},
+	archivePrefix = {arXiv},
+	eprint = {2304.03448},
+	primaryClass = {quant-ph}
 }
 
 @Article{BNS19quantum,
@@ -13933,6 +13961,19 @@ pages[normalize_page_numbers]
 	Year = 1986
 }
 
+@article{GRZ23quantum,
+	author = {Girish, Uma and Raz, Ran and Zhan, Wei},
+	title = {Quantum Logspace Computations Are Verifiable},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2307.11083v1},
+	abstract = {In this note, we observe that quantum logspace computations are verifiable by classical logspace algorithms, with unconditional security. More precisely, every language in BQL has an (information-theoretically secure) streaming proof with a quantum logspace prover and a classical logspace verifier. The prover provides a polynomial-length proof that is streamed to the verifier. The verifier has a read-once one-way access to that proof and is able to verify that the computation was performed correctly. That is, if the input is in the language and the prover is honest, the verifier accepts with high probability, and, if the input is not in the language, the verifier rejects with high probability even if the prover is adversarial. Moreover, the verifier uses only $O(\log n)$ random bits.},
+	archivePrefix = {arXiv},
+	eprint = {2307.11083},
+	primaryClass = {quant-ph},
+	file = {GRZ23quantum.pdf}
+}
+
 @misc{GS00emergence,
 	Author = {Georgeot, B. and Shepelyansky, D. L.},
 	Eprint = {quant-ph/0005015},
@@ -14980,6 +15021,22 @@ pages[normalize_page_numbers]
 	archivePrefix = {arXiv},
 	eprint = {2105.05500},
 	primaryClass = {quant-ph}
+}
+
+@Article{HG24bell,
+	file = {HG24bell.pdf},
+	timestamp = {2024-07-18 18:15:03 (CEST)},
+	author = {Hangleiter, Dominik and Gullans, Michael J.},
+	title = {Bell Sampling from Quantum Circuits},
+	journal = {Physical Review Letters},
+	year = 2024,
+	volume = 133,
+	number = 2,
+	month = jul,
+	issn = {1079-7114},
+	doi = {10.1103/physrevlett.133.020601},
+	url = {http://dx.doi.org/10.1103/PhysRevLett.133.020601},
+	publisher = {American Physical Society (APS)}
 }
 
 @techreport{HH02quantum,
@@ -23405,6 +23462,19 @@ pages[normalize_page_numbers]
 	Title = {Between entropy and subentropy},
 	Volume = 3,
 	Year = 2003
+}
+
+@InProceedings{NZ23bounding,
+	file = {NZ23bounding.pdf},
+	timestamp = {2024-07-18 18:17:08 (CEST)},
+	author = {Natarajan, Anand and Zhang, Tina},
+	title = {Bounding the Quantum Value of Compiled Nonlocal Games: From CHSH to BQP Verification},
+	year = 2023,
+	booktitle = {2023 IEEE 64th Annual Symposium on Foundations of Computer Science (FOCS)},
+	publisher = {IEEE},
+	month = nov,
+	doi = {10.1109/focs57990.2023.00081},
+	url = {https://arxiv.org/pdf/2303.01545}
 }
 
 @article{NZRS98uniform,
@@ -33306,26 +33376,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{GRZ23quantum,
-  author       = {Girish, Uma and Raz, Ran and Zhan, Wei},
-  title        = {Quantum Logspace Computations Are Verifiable},
+@article{ABFG22quantum-pseudoentanglement,
+  author       = {Aaronson, Scott and Bouland, Adam and Fefferman, Bill and Ghosh, Soumik and Vazirani, Umesh and Zhang, Chenyi and Zhou, Zixin},
+  title        = {Quantum Pseudoentanglement},
   journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2307.11083v1},
-  abstract     = {In this note, we observe that quantum logspace computations are verifiable by classical logspace algorithms, with unconditional security. More precisely, every language in BQL has an (information-theoretically secure) streaming proof with a quantum logspace prover and a classical logspace verifier. The prover provides a polynomial-length proof that is streamed to the verifier. The verifier has a read-once one-way access to that proof and is able to verify that the computation was performed correctly. That is, if the input is in the language and the prover is honest, the verifier accepts with high probability, and, if the input is not in the language, the verifier rejects with high probability even if the prover is adversarial. Moreover, the verifier uses only $O(\log n)$ random bits.},
+  year         = 2022,
+  url          = {http://arxiv.org/abs/2211.00747v2},
+  abstract     = {Entanglement is a quantum resource, in some ways analogous to randomness in classical computation. Inspired by recent work of Gheorghiu and Hoban, we define the notion of "pseudoentanglement'', a property exhibited by ensembles of efficiently constructible quantum states which are indistinguishable from quantum states with maximal entanglement. Our construction relies on the notion of quantum pseudorandom states -- first defined by Ji, Liu and Song -- which are efficiently constructible states indistinguishable from (maximally entangled) Haar-random states. Specifically, we give a construction of pseudoentangled states with entanglement entropy arbitrarily close to $\log n$ across every cut, a tight bound providing an exponential separation between computational vs information theoretic quantum pseudorandomness. We discuss applications of this result to Matrix Product State testing, entanglement distillation, and the complexity of the AdS/CFT correspondence. As compared with a previous version of this manuscript (arXiv:2211.00747v1) this version introduces a new pseudorandom state construction, has a simpler proof of correctness, and achieves a technically stronger result of low entanglement across all cuts simultaneously.},
   archivePrefix= {arXiv},
-  eprint       = {2307.11083},
-  primaryClass = {quant-ph},
-  file = {GRZ23quantum.pdf}
-}
-@article{BMZ23quantum,
-  author       = {Broadbent, Anne and Mehta, Arthur and Zhao, Yuming},
-  title        = {Quantum Delegation With an Off-The-Shelf Device},
-  journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/pdf/2304.03448},
-  abstract     = {Given that reliable cloud quantum computers are becoming closer to reality, the concept of delegation of quantum computations and its verifiability is of central interest. Many models have been proposed, each with specific strengths and weaknesses. Here, we put forth a new model where the client trusts only its classical processing, makes no computational assumptions, and interacts with a quantum server in a single round. In addition, during a set-up phase, the client specifies the size $n$ of the computation and receives an untrusted, off-the-shelf (OTS) quantum device that is used to report the outcome of a single measurement.  We show how to delegate polynomial-time quantum computations in the OTS model. This also yields an interactive proof system for all of QMA, which, furthermore, we show can be accomplished in statistical zero-knowledge. This provides the first relativistic (one-round), two-prover zero-knowledge proof system for QMA.  As a proof approach, we provide a new self-test for n EPR pairs using only constant-sized Pauli measurements, and show how it provides a new avenue for the use of simulatable codes for local Hamiltonian verification. Along the way, we also provide an enhanced version of a well-known stability result due to Gowers and Hatami and show how it completes a common argument used in self-testing.},
-  archivePrefix= {arXiv},
-  eprint       = {2304.03448},
+  eprint       = {2211.00747},
   primaryClass = {quant-ph},
 }
