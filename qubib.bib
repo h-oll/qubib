@@ -4163,6 +4163,19 @@ pages[normalize_page_numbers]
 	Year = 2002
 }
 
+@article{BGKP23simple,
+	author = {Brakerski, Zvika and Gheorghiu, Alexandru and Kahanamoku-Meyer, Gregory D. and Porat, Eitan and Vidick, Thomas},
+	title = {Simple Tests of Quantumness Also Certify Qubits},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2303.01293v2},
+	abstract = {A test of quantumness is a protocol that allows a classical verifier to certify (only) that a prover is not classical. We show that tests of quantumness that follow a certain template, which captures recent proposals such as (Kalai et al., 2022), can in fact do much more. Namely, the same protocols can be used for certifying a qubit, a building-block that stands at the heart of applications such as certifiable randomness and classical delegation of quantum computation.  Certifying qubits was previously only known to be possible based on the hardness of the Learning with Errors problem and the use of adaptive hardcore (Brakerski et al., 2018). Our framework allows certification of qubits based only on the existence of post-quantum trapdoor claw-free functions, or on quantum fully homomorphic encryption. These can be instantiated, for example, from Ring Learning with Errors.  On the technical side, we show that the quantum soundness of any such protocol can be reduced to proving a bound on a simple algorithmic task: informally, answering ``two challenges simultaneously'' in the protocol. Our reduction formalizes the intuition that these protocols demonstrate quantumness by leveraging the impossibility of rewinding a general quantum prover. This allows us to prove tight bounds on the quantum soundness of (Kahanamoku-Meyer et al., 2021) and (Kalai et al., 2022), showing that no quantum polynomial-time prover can succeed with probability larger than $\cos^2 \frac{\pi}{8}\approx 0.853$. Previously, only an upper bound on the success probability of classical provers, and a lower bound on the success probability of quantum provers, were known. We then extend this proof of quantum soundness to show that provers that approach the quantum soundness bound must perform almost anti-commuting measurements. This certifies that the prover holds a qubit.},
+	archivePrefix = {arXiv},
+	eprint = {2303.01293},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/BGKP23simple.pdf}
+}
+
 @inproceedings{BGKW88multi,
 	source = {Luka Music, 2021-09-16},
 	author = {Ben-Or, Michael and Goldwasser, Shafi and Kilian, Joe and Wigderson, Avi},
@@ -5427,6 +5440,21 @@ pages[normalize_page_numbers]
 	pages = {351--382},
 	year = 2016,
 	publisher = {Springer}
+}
+
+@InProceedings{BS20post,
+	file = {BS20post.pdf},
+	timestamp = {2024-07-18 16:31:01 (CEST)},
+	author = {Bitansky, Nir and Shmueli, Omri},
+	title = {Post-quantum zero knowledge in constant rounds},
+	year = 2020,
+	booktitle = {Proceedings of the 52nd Annual ACM SIGACT Symposium on Theory of Computing},
+	series = {STOC ’20},
+	publisher = {ACM},
+	month = jun,
+	doi = {10.1145/3357713.3384324},
+	url = {http://arxiv.org/pdf/1912.04769},
+	collection = {STOC ’20}
 }
 
 @article{BS82c,
@@ -6790,6 +6818,21 @@ pages[normalize_page_numbers]
 	eprint = {2010.07925},
 	primaryClass = {quant-ph},
 	file = {CCKM20secure.pdf}
+}
+
+@InBook{CCY20classical,
+	file = {CCY20classical.pdf},
+	timestamp = {2024-07-18 16:35:50 (CEST)},
+	title = {Classical Verification of Quantum Computations with Efficient Verifier},
+	year = 2020,
+	author = {Chia, Nai-Hui and Chung, Kai-Min and Yamakawa, Takashi},
+	booktitle = {Lecture Notes in Computer Science},
+	publisher = {Springer International Publishing},
+	isbn = 9783030643812,
+	pages = {181–206},
+	doi = {10.1007/978-3-030-64381-2_7},
+	url = {https://link.springer.com/content/pdf/10.1007/978-3-030-64381-2_7.pdf},
+	ISSN = {1611-3349}
 }
 
 @Article{CD20pseudo,
@@ -13073,6 +13116,18 @@ pages[normalize_page_numbers]
 	Year = 2001
 }
 
+@article{GH20estimating,
+	author = {Gheorghiu, Alexandru and Hoban, Matty J.},
+	title = {Estimating the Entropy of Shallow Circuit Outputs Is Hard},
+	journal = {CoRR},
+	year = 2020,
+	url = {http://arxiv.org/abs/2002.12814v1},
+	abstract = {The decision problem version of estimating the Shannon entropy is the Entropy Difference problem (ED): given descriptions of two circuits, determine which circuit produces more entropy in its output when acting on a uniformly random input. The analogous problem with quantum circuits (QED) is to determine which circuit produces the state with greater von Neumann entropy, when acting on a fixed input state and after tracing out part of the output. Based on plausible complexity-theoretic assumptions, both of these problems are believed to be intractable for polynomial-time quantum computation. In this paper, we investigate the hardness of these problems in the case where the input circuits have logarithmic and constant depth, respectively. We show that, relative to an oracle, these problems cannot be as hard as their counterparts with polynomial-size circuits. Furthermore, we show that if a certain type of reduction from QED to the log-depth version exists, it implies that any polynomial-time quantum computation can be performed in log depth. While this suggests that having shallow circuits makes entropy estimation easier, we give indication that the problem remains intractable for polynomial-time quantum computation by proving a reduction from Learning-With-Errors (LWE) to constant-depth ED. We then consider a potential application of our results to quantum gravity research. First, we introduce a Hamiltonian version of QED where one is given two local Hamiltonians and asked to estimate the entanglement entropy difference in their ground states. We show that this problem is at least as hard as the circuit version and then discuss a potential experiment that would make use of the AdS/CFT correspondence to solve LWE efficiently. We conjecture that unless the AdS/CFT bulk to boundary map is exponentially complex, this experiment would violate the intractability assumption of LWE.},
+	archivePrefix = {arXiv},
+	eprint = {2002.12814},
+	primaryClass = {quant-ph}
+}
+
 @inproceedings{GH90quantum,
 	Author = {Gell-Mann, M. and Hartle, J. B.},
 	Booktitle = {Complexity, Entropy, and the Physics of Information},
@@ -13286,6 +13341,23 @@ pages[normalize_page_numbers]
 	issn = {1433-0490},
 	doi = {10.1007/s00224-018-9872-3},
 	url = {https://link.springer.com/content/pdf/10.1007/s00224-018-9872-3.pdf}
+}
+
+@Article{GKL21owards,
+	file = {GKL21owards.pdf},
+	timestamp = {2024-07-18 16:21:27 (CEST)},
+	author = {Green, Ayal and Kindler, Guy and Liu, Yupan},
+	title = {owards a quantum-inspired proof for IP = PSPACE},
+	journal = {Quantum Information and Computation},
+	year = 2021,
+	volume = 21,
+	number = {5 & 6},
+	month = may,
+	pages = {377–386},
+	issn = {1533-7146},
+	doi = {10.26421/qic21.5-6-2},
+	url = {https://arxiv.org/pdf/1912.11611},
+	publisher = {Rinton Press}
 }
 
 @misc{GKLC01separability,
@@ -16976,6 +17048,22 @@ pages[normalize_page_numbers]
 	publisher = {American Physical Society},
 	doi = {10.1103/PhysRevX.11.031057},
 	url = {https://link.aps.org/doi/10.1103/PhysRevX.11.031057}
+}
+
+@Article{K23forging,
+	file = {K23forging.pdf},
+	timestamp = {2024-07-18 16:27:09 (CEST)},
+	author = {Kahanamoku-Meyer, Gregory D.},
+	title = {Forging quantum data: classically defeating an IQP-based quantum test},
+	journal = {Quantum},
+	year = 2023,
+	volume = 7,
+	month = sep,
+	pages = 1107,
+	issn = {2521-327X},
+	doi = {10.22331/q-2023-09-11-1107},
+	url = {https://quantum-journal.org/papers/q-2023-09-11-1107/pdf},
+	publisher = {Verein zur Forderung des Open Access Publizierens in den Quantenwissenschaften}
 }
 
 @article{K42translocation,
@@ -33122,26 +33210,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{BGKP23simple,
-  author       = {Brakerski, Zvika and Gheorghiu, Alexandru and Kahanamoku-Meyer, Gregory D. and Porat, Eitan and Vidick, Thomas},
-  title        = {Simple Tests of Quantumness Also Certify Qubits},
+@article{BCMV18cryptographic,
+  author       = {Brakerski, Zvika and Christiano, Paul and Mahadev, Urmila and Vazirani, Umesh and Vidick, Thomas},
+  title        = {A Cryptographic Test of Quantumness and Certifiable Randomness From a Single Quantum Device},
   journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2303.01293v2},
-  abstract     = {A test of quantumness is a protocol that allows a classical verifier to certify (only) that a prover is not classical. We show that tests of quantumness that follow a certain template, which captures recent proposals such as (Kalai et al., 2022), can in fact do much more. Namely, the same protocols can be used for certifying a qubit, a building-block that stands at the heart of applications such as certifiable randomness and classical delegation of quantum computation.  Certifying qubits was previously only known to be possible based on the hardness of the Learning with Errors problem and the use of adaptive hardcore (Brakerski et al., 2018). Our framework allows certification of qubits based only on the existence of post-quantum trapdoor claw-free functions, or on quantum fully homomorphic encryption. These can be instantiated, for example, from Ring Learning with Errors.  On the technical side, we show that the quantum soundness of any such protocol can be reduced to proving a bound on a simple algorithmic task: informally, answering ``two challenges simultaneously'' in the protocol. Our reduction formalizes the intuition that these protocols demonstrate quantumness by leveraging the impossibility of rewinding a general quantum prover. This allows us to prove tight bounds on the quantum soundness of (Kahanamoku-Meyer et al., 2021) and (Kalai et al., 2022), showing that no quantum polynomial-time prover can succeed with probability larger than $\cos^2 \frac{\pi}{8}\approx 0.853$. Previously, only an upper bound on the success probability of classical provers, and a lower bound on the success probability of quantum provers, were known. We then extend this proof of quantum soundness to show that provers that approach the quantum soundness bound must perform almost anti-commuting measurements. This certifies that the prover holds a qubit.},
+  year         = 2018,
+  url          = {http://arxiv.org/abs/1804.00640v4},
+  abstract     = {We consider a new model for the testing of untrusted quantum devices, consisting of a single polynomial-time bounded quantum device interacting with a classical polynomial-time verifier. In this model we propose solutions to two tasks - a protocol for efficient classical verification that the untrusted device is "truly quantum," and a protocol for producing certifiable randomness from a single untrusted quantum device. Our solution relies on the existence of a new cryptographic primitive for constraining the power of an untrusted quantum device: post-quantum secure trapdoor claw-free functions which must satisfy an adaptive hardcore bit property. We show how to construct this primitive based on the hardness of the learning with errors (LWE) problem.},
   archivePrefix= {arXiv},
-  eprint       = {2303.01293},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/BGKP23simple.pdf}
-  }
-@article{GH20estimating,
-  author       = {Gheorghiu, Alexandru and Hoban, Matty J.},
-  title        = {Estimating the Entropy of Shallow Circuit Outputs Is Hard},
-  journal      = {CoRR},
-  year         = 2020,
-  url          = {http://arxiv.org/abs/2002.12814v1},
-  abstract     = {The decision problem version of estimating the Shannon entropy is the Entropy Difference problem (ED): given descriptions of two circuits, determine which circuit produces more entropy in its output when acting on a uniformly random input. The analogous problem with quantum circuits (QED) is to determine which circuit produces the state with greater von Neumann entropy, when acting on a fixed input state and after tracing out part of the output. Based on plausible complexity-theoretic assumptions, both of these problems are believed to be intractable for polynomial-time quantum computation. In this paper, we investigate the hardness of these problems in the case where the input circuits have logarithmic and constant depth, respectively. We show that, relative to an oracle, these problems cannot be as hard as their counterparts with polynomial-size circuits. Furthermore, we show that if a certain type of reduction from QED to the log-depth version exists, it implies that any polynomial-time quantum computation can be performed in log depth. While this suggests that having shallow circuits makes entropy estimation easier, we give indication that the problem remains intractable for polynomial-time quantum computation by proving a reduction from Learning-With-Errors (LWE) to constant-depth ED. We then consider a potential application of our results to quantum gravity research. First, we introduce a Hamiltonian version of QED where one is given two local Hamiltonians and asked to estimate the entanglement entropy difference in their ground states. We show that this problem is at least as hard as the circuit version and then discuss a potential experiment that would make use of the AdS/CFT correspondence to solve LWE efficiently. We conjecture that unless the AdS/CFT bulk to boundary map is exponentially complex, this experiment would violate the intractability assumption of LWE.},
-  archivePrefix= {arXiv},
-  eprint       = {2002.12814},
+  eprint       = {1804.00640},
   primaryClass = {quant-ph},
 }
