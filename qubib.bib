@@ -4626,6 +4626,20 @@ pages[normalize_page_numbers]
 	publisher = {APS}
 }
 
+@InProceedings{BKVV20simpler,
+	file = {BKVV20simpler.pdf},
+	timestamp = {2024-07-18 15:01:28 (CEST)},
+	author = {Brakerski, Zvika and Koppula, Venkata and Vazirani, Umesh and Vidick, Thomas},
+	title = {Simpler Proofs of Quantumness},
+	year = 2020,
+	language = {en},
+	publisher = {Schloss Dagstuhl – Leibniz-Zentrum für Informatik},
+	doi = {10.4230/LIPICS.TQC.2020.8},
+	url = {https://drops.dagstuhl.de/storage/00lipics/lipics-vol158-tqc2020/LIPIcs.TQC.2020.8/LIPIcs.TQC.2020.8.pdf},
+	keywords = {Proof of Quantumness, Random Oracle, Learning with Errors, Theory of computation → Cryptographic protocols, Theory of computation → Quantum complexity theory},
+	copyright = {Creative Commons Attribution 3.0 Unported license}
+}
+
 @article{BKZ97time,
 	Author = {Braun, D. and Ku\'s, M. and Zyczkowski, K.},
 	Date-Modified = {2006-01-04 13:56:24 +1000},
@@ -7271,15 +7285,20 @@ pages[normalize_page_numbers]
 	journal = {Proceedings of the Royal Society A}
 }
 
-@article{CGKM21efficient,
-	title = {Efficient verification of Boson sampling},
-	author = {Chabaud, Ulysse and Grosshans, Fr{\'e}d{\'e}ric and Kashefi, Elham and Markham, Damian},
+@Article{CGKM21efficient,
+	file = {CGKM21efficientb.pdf},
+	timestamp = {2024-07-18 14:47:25 (CEST)},
+	author = {Chabaud, Ulysse and Grosshans, Frédéric and Kashefi, Elham and Markham, Damian},
+	title = {Efficient verification of Boson Sampling},
 	journal = {Quantum},
-	volume = 5,
-	pages = 578,
 	year = 2021,
-	publisher = {Verein zur F{\"o}rderung des Open Access Publizierens in den Quantenwissenschaften},
-	doi = {10.22331/q-2021-11-15-578}
+	volume = 5,
+	month = nov,
+	pages = 578,
+	issn = {2521-327X},
+	doi = {10.22331/q-2021-11-15-578},
+	url = {https://quantum-journal.org/papers/q-2021-11-15-578/pdf/},
+	publisher = {Verein zur Forderung des Open Access Publizierens in den Quantenwissenschaften}
 }
 
 @article{CGL99how,
@@ -30471,6 +30490,21 @@ pages[normalize_page_numbers]
 	publisher = {Verein zur Forderung des Open Access Publizierens in den Quantenwissenschaften}
 }
 
+@InBook{VZ21classical,
+	file = {VZ21classical.pdf},
+	timestamp = {2024-07-18 15:08:49 (CEST)},
+	title = {Classical Proofs of Quantum Knowledge},
+	year = 2021,
+	author = {Vidick, Thomas and Zhang, Tina},
+	booktitle = {Advances in Cryptology – EUROCRYPT 2021},
+	publisher = {Springer International Publishing},
+	isbn = 9783030778866,
+	pages = {630–660},
+	doi = {10.1007/978-3-030-77886-6_22},
+	url = {https://link.springer.com/content/pdf/10.1007/978-3-030-77886-6_22.pdf},
+	ISSN = {1611-3349}
+}
+
 @misc{W00extrinsic,
 	Author = {Winter, A.},
 	Eprint = {quant-ph/0109050},
@@ -33088,3 +33122,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
+@article{BGKP23simple,
+  author       = {Brakerski, Zvika and Gheorghiu, Alexandru and Kahanamoku-Meyer, Gregory D. and Porat, Eitan and Vidick, Thomas},
+  title        = {Simple Tests of Quantumness Also Certify Qubits},
+  journal      = {CoRR},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2303.01293v2},
+  abstract     = {A test of quantumness is a protocol that allows a classical verifier to certify (only) that a prover is not classical. We show that tests of quantumness that follow a certain template, which captures recent proposals such as (Kalai et al., 2022), can in fact do much more. Namely, the same protocols can be used for certifying a qubit, a building-block that stands at the heart of applications such as certifiable randomness and classical delegation of quantum computation.  Certifying qubits was previously only known to be possible based on the hardness of the Learning with Errors problem and the use of adaptive hardcore (Brakerski et al., 2018). Our framework allows certification of qubits based only on the existence of post-quantum trapdoor claw-free functions, or on quantum fully homomorphic encryption. These can be instantiated, for example, from Ring Learning with Errors.  On the technical side, we show that the quantum soundness of any such protocol can be reduced to proving a bound on a simple algorithmic task: informally, answering ``two challenges simultaneously'' in the protocol. Our reduction formalizes the intuition that these protocols demonstrate quantumness by leveraging the impossibility of rewinding a general quantum prover. This allows us to prove tight bounds on the quantum soundness of (Kahanamoku-Meyer et al., 2021) and (Kalai et al., 2022), showing that no quantum polynomial-time prover can succeed with probability larger than $\cos^2 \frac{\pi}{8}\approx 0.853$. Previously, only an upper bound on the success probability of classical provers, and a lower bound on the success probability of quantum provers, were known. We then extend this proof of quantum soundness to show that provers that approach the quantum soundness bound must perform almost anti-commuting measurements. This certifies that the prover holds a qubit.},
+  archivePrefix= {arXiv},
+  eprint       = {2303.01293},
+  primaryClass = {quant-ph},
+}
