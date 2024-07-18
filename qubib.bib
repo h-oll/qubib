@@ -839,6 +839,8 @@ pages[normalize_page_numbers]
 }
 
 @InProceedings{ACGH20non,
+	file = {ACGH20non.pdf},
+	url = {http://arxiv.org/pdf/1911.08101},
 	author = {Gorjan Alagic and Andrew M. Childs and Alex B. Grilo and Shih-Han Hung},
 	title = {Non-interactive Classical Verification of Quantum Computation},
 	booktitle = {Theory of Cryptography. TCC 2020},
@@ -3543,6 +3545,19 @@ pages[normalize_page_numbers]
 	Note = {Proceedings of MFCS98 --- extended abstract of arXiv, quant-ph/9806031},
 	Title = {The Security of Quantum Bit Commitment Schemes},
 	year = 1998
+}
+
+@article{BCMV18cryptographic,
+	author = {Brakerski, Zvika and Christiano, Paul and Mahadev, Urmila and Vazirani, Umesh and Vidick, Thomas},
+	title = {A Cryptographic Test of Quantumness and Certifiable Randomness From a Single Quantum Device},
+	journal = {CoRR},
+	year = 2018,
+	url = {http://arxiv.org/abs/1804.00640v4},
+	abstract = {We consider a new model for the testing of untrusted quantum devices, consisting of a single polynomial-time bounded quantum device interacting with a classical polynomial-time verifier. In this model we propose solutions to two tasks - a protocol for efficient classical verification that the untrusted device is "truly quantum," and a protocol for producing certifiable randomness from a single untrusted quantum device. Our solution relies on the existence of a new cryptographic primitive for constraining the power of an untrusted quantum device: post-quantum secure trapdoor claw-free functions which must satisfy an adaptive hardcore bit property. We show how to construct this primitive based on the hardness of the learning with errors (LWE) problem.},
+	archivePrefix = {arXiv},
+	eprint = {1804.00640},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/BCMV18cryptographic.pdf}
 }
 
 @Article{BCS21noise,
@@ -6818,6 +6833,21 @@ pages[normalize_page_numbers]
 	eprint = {2010.07925},
 	primaryClass = {quant-ph},
 	file = {CCKM20secure.pdf}
+}
+
+@InBook{CCKW19qfactory,
+	file = {Cojocaru_2019.pdf},
+	timestamp = {2024-07-18 17:22:18 (CEST)},
+	title = {QFactory: Classically-Instructed Remote Secret Qubits Preparation},
+	year = 2019,
+	author = {Cojocaru, Alexandru and Colisson, Léo and Kashefi, Elham and Wallden, Petros},
+	booktitle = {Advances in Cryptology – ASIACRYPT 2019},
+	publisher = {Springer International Publishing},
+	isbn = 9783030345785,
+	pages = {615–645},
+	doi = {10.1007/978-3-030-34578-5_22},
+	url = {https://arxiv.org/pdf/1904.06303},
+	ISSN = {1611-3349}
 }
 
 @InBook{CCY20classical,
@@ -12996,6 +13026,22 @@ pages[normalize_page_numbers]
 	doi = {10.21468/scipostphyslectnotes.72},
 	url = {https://scipost.org/SciPostPhysLectNotes.72/pdf},
 	publisher = {Stichting SciPost}
+}
+
+@Article{GDRJ21cross,
+	file = {GDRJ21cross.pdf},
+	timestamp = {2024-07-18 17:18:06 (CEST)},
+	author = {Greganti, C. and Demarie, T. F. and Ringbauer, M. and Jones, J. A. and Saggio, V. and Calafell, I. Alonso and Rozema, L. A. and Erhard, A. and Meth, M. and Postler, L. and Stricker, R. and Schindler, P. and Blatt, R. and Monz, T. and Walther, P. and Fitzsimons, J. F.},
+	title = {Cross-Verification of Independent Quantum Devices},
+	journal = {Physical Review X},
+	year = 2021,
+	volume = 11,
+	number = 3,
+	month = sep,
+	issn = {2160-3308},
+	doi = {10.1103/physrevx.11.031049},
+	url = {https://arxiv.org/pdf/1905.09790},
+	publisher = {American Physical Society (APS)}
 }
 
 @article{GEB99average,
@@ -29962,15 +30008,21 @@ pages[normalize_page_numbers]
 	year = 2007
 }
 
-@article{V20verifying,
-	oldkey = vidick2020verifying,
-	title = {Verifying Quantum computations at scale: A cryptographic leash on quantum devices},
+@Article{V19verifying,
+	file = {V19verifying.pdf},
+	timestamp = {2024-07-18 17:08:27 (CEST)},
 	author = {Vidick, Thomas},
+	title = {Verifying quantum computations at scale: A cryptographic leash on quantum devices},
 	journal = {Bulletin of the American Mathematical Society},
+	year = 2019,
 	volume = 57,
 	number = 1,
-	pages = {39--76},
-	year = 2020
+	month = oct,
+	pages = {39–76},
+	issn = {1088-9485},
+	doi = {10.1090/bull/1678},
+	url = {https://www.ams.org/journals/bull/2020-57-01/S0273-0979-2019-01678-4/S0273-0979-2019-01678-4.pdf},
+	publisher = {American Mathematical Society (AMS)}
 }
 
 @article{V67error,
@@ -33210,15 +33262,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{BCMV18cryptographic,
-  author       = {Brakerski, Zvika and Christiano, Paul and Mahadev, Urmila and Vazirani, Umesh and Vidick, Thomas},
-  title        = {A Cryptographic Test of Quantumness and Certifiable Randomness From a Single Quantum Device},
+@article{BCJ23iqp,
+  author       = {Bremner, Michael J. and Cheng, Bin and Ji, Zhengfeng},
+  title        = {Iqp Sampling and Verifiable Quantum Advantage: Stabilizer Scheme and Classical Security},
   journal      = {CoRR},
-  year         = 2018,
-  url          = {http://arxiv.org/abs/1804.00640v4},
-  abstract     = {We consider a new model for the testing of untrusted quantum devices, consisting of a single polynomial-time bounded quantum device interacting with a classical polynomial-time verifier. In this model we propose solutions to two tasks - a protocol for efficient classical verification that the untrusted device is "truly quantum," and a protocol for producing certifiable randomness from a single untrusted quantum device. Our solution relies on the existence of a new cryptographic primitive for constraining the power of an untrusted quantum device: post-quantum secure trapdoor claw-free functions which must satisfy an adaptive hardcore bit property. We show how to construct this primitive based on the hardness of the learning with errors (LWE) problem.},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2308.07152v1},
+  abstract     = {Sampling problems demonstrating beyond classical computing power with noisy intermediate-scale quantum (NISQ) devices have been experimentally realized. In those realizations, however, our trust that the quantum devices faithfully solve the claimed sampling problems is usually limited to simulations of smaller-scale instances and is, therefore, indirect. The problem of verifiable quantum advantage aims to resolve this critical issue and provides us with greater confidence in a claimed advantage. Instantaneous quantum polynomial-time (IQP) sampling has been proposed to achieve beyond classical capabilities with a verifiable scheme based on quadratic-residue codes (QRC).  Unfortunately, this verification scheme was recently broken by an attack proposed by Kahanamoku-Meyer. In this work, we revive IQP-based verifiable quantum advantage by making two major contributions. Firstly, we introduce a family of IQP sampling protocols called the \emph{stabilizer scheme}, which builds on results linking IQP circuits, the stabilizer formalism, coding theory, and an efficient characterization of IQP circuit correlation functions.  This construction extends the scope of existing IQP-based schemes while maintaining their simplicity and verifiability. Secondly, we introduce the \emph{Hidden Structured Code} (HSC) problem as a well-defined mathematical challenge that underlies the stabilizer scheme. To assess classical security, we explore a class of attacks based on secret extraction, including the Kahanamoku-Meyer's attack as a special case. We provide evidence of the security of the stabilizer scheme, assuming the hardness of the HSC problem. We also point out that the vulnerability observed in the original QRC scheme is primarily attributed to inappropriate parameter choices, which can be naturally rectified with proper parameter settings.},
   archivePrefix= {arXiv},
-  eprint       = {1804.00640},
+  eprint       = {2308.07152 },
   primaryClass = {quant-ph},
-  file = {~/shared/papers/BCMV18cryptographic.pdf}
-  }
+}
