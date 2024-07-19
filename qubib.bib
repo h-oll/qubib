@@ -13891,6 +13891,20 @@ pages[normalize_page_numbers]
 	url = {http://link.aps.org/doi/10.1103/PhysRevLett.111.230501}
 }
 
+@InProceedings{GMP23quantum,
+	file = {GMP23quantum.pdf},
+	timestamp = {2024-07-18 19:42:15 (CEST)},
+	author = {Gheorghiu, Alexandru and Metger, Tony and Poremba, Alexander},
+	title = {Quantum Cryptography with Classical Communication: Parallel Remote State Preparation for Copy-Protection, Verification, and More},
+	year = 2023,
+	language = {en},
+	publisher = {Schloss Dagstuhl – Leibniz-Zentrum für Informatik},
+	doi = {10.4230/LIPICS.ICALP.2023.67},
+	url = {https://arxiv.org/pdf/2201.13445},
+	keywords = {Quantum cryptography, Remote state preparation, Self-testing, Learning with errors, Quantum copy-protection, Unclonable encryption, Quantum verification, Theory of computation, Theory of computation → Cryptographic protocols},
+	copyright = {Creative Commons Attribution 4.0 International license}
+}
+
 @article{GMR89knowledge,
 	source = {Luka Music, 2021-09-16},
 	author = {Goldwasser, S. and Micali, S. and Rackoff, C.},
@@ -22797,6 +22811,19 @@ pages[normalize_page_numbers]
 	publisher = {Verein zur Forderung des Open Access Publizierens in den Quantenwissenschaften}
 }
 
+@article{MVV22efficient,
+	author = {Mahadev, Urmila and Vazirani, Umesh and Vidick, Thomas},
+	title = {Efficient Certifiable Randomness From a Single Quantum Device},
+	journal = {CoRR},
+	year = 2022,
+	url = {http://arxiv.org/abs/2204.11353v1},
+	abstract = {Brakerski et. al [BCM+18] introduced the model of cryptographic testing of a single untrusted quantum device and gave a protocol for certifiable randomness generation. We use the leakage resilience properties of the Learning With Errors problem to address a key issue left open in previous work - the rate of generation of randomness. Our new protocol can certify $\Omega(n)$ fresh bits of randomness in constant rounds, where $n$ is a parameter of the protocol and the total communication is $O(n)$, thus achieving a nearly optimal rate. The proof that the output is statistically random is conceptually simple and technically elementary.},
+	archivePrefix = {arXiv},
+	eprint = {2204.11353},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/MVV22efficient.pdf}
+}
+
 @InProceedings{MVW13optimal,
 	author = {Molina, Abel and Vidick, Thomas and Watrous, John},
 	editor = {Iwama, Kazuo and Kawano, Yasuhito and Murao, Mio},
@@ -27903,6 +27930,23 @@ pages[normalize_page_numbers]
 	Year = 1987
 }
 
+@Article{SCRP24towards,
+	file = {SCRP24towards.pdf},
+	timestamp = {2024-07-18 19:33:18 (CEST)},
+	author = {Stricker, Roman and Carrasco, Jose and Ringbauer, Martin and Postler, Lukas and Meth, Michael and Edmunds, Claire and Schindler, Philipp and Blatt, Rainer and Zoller, Peter and Kraus, Barbara and Monz, Thomas},
+	title = {Towards experimental classical verification of quantum computation},
+	journal = {Quantum Science and Technology},
+	year = 2024,
+	volume = 9,
+	number = 2,
+	month = feb,
+	pages = {02LT01},
+	issn = {2058-9565},
+	doi = {10.1088/2058-9565/ad2986},
+	url = {http://arxiv.org/pdf/2203.07395},
+	publisher = {IOP Publishing}
+}
+
 @article{SCZ24stabilizer,
 	author = {Sun, Jiace and Cheng, Lixue and Zhang, Shi-Xin},
 	title = {Stabilizer Ground States: Theory, Algorithms and Applications},
@@ -32680,6 +32724,19 @@ pages[normalize_page_numbers]
 	doi = {10.1145/3406325.3451082}
 }
 
+@InProceedings{Z22classical,
+	file = {Z22classical.pdf},
+	timestamp = {2024-07-18 19:38:35 (CEST)},
+	author = {Zhang, Jiayu},
+	title = {Classical Verification of Quantum Computations in Linear Time},
+	year = 2022,
+	booktitle = {2022 IEEE 63rd Annual Symposium on Foundations of Computer Science (FOCS)},
+	publisher = {IEEE},
+	month = oct,
+	doi = {10.1109/focs54457.2022.00012},
+	url = {https://arxiv.org/pdf/2202.13997}
+}
+
 @article{Z23quantum,
 	author = {Zhang, Jiayu},
 	title = {A Quantum Approach for Reducing Communications in Classical Cryptographic Primitives},
@@ -33569,15 +33626,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{MVV22efficient,
-  author       = {Mahadev, Urmila and Vazirani, Umesh and Vidick, Thomas},
-  title        = {Efficient Certifiable Randomness From a Single Quantum Device},
+@article{VFP22study,
+  author       = {Vikst{\aa}l, Pontus and Ferrini, Giulia and Puri, Shruti},
+  title        = {Study of Noise in Virtual Distillation Circuits for Quantum Error Mitigation},
   journal      = {CoRR},
   year         = 2022,
-  url          = {http://arxiv.org/abs/2204.11353v1},
-  abstract     = {Brakerski et. al [BCM+18] introduced the model of cryptographic testing of a single untrusted quantum device and gave a protocol for certifiable randomness generation. We use the leakage resilience properties of the Learning With Errors problem to address a key issue left open in previous work - the rate of generation of randomness. Our new protocol can certify $\Omega(n)$ fresh bits of randomness in constant rounds, where $n$ is a parameter of the protocol and the total communication is $O(n)$, thus achieving a nearly optimal rate. The proof that the output is statistically random is conceptually simple and technically elementary.},
+  url          = {http://arxiv.org/abs/2210.15317v2},
+  abstract     = {Virtual distillation has been proposed as an error mitigation protocol for estimating the expectation values of observables in quantum algorithms. It proceeds by creating a cyclic permutation of $M$ noisy copies of a quantum state using a sequence of controlled-swap gates. If the noise does not shift the dominant eigenvector of the density operator away from the ideal state, then the error in expectation-value estimation can be exponentially reduced with $M$. In practice, subsequent error mitigation techniques are required to suppress the effect of noise in the cyclic permutation circuit itself, leading to increased experimental complexity. Here, we perform a careful analysis of the effect of uncorrelated, identical noise in the cyclic permutation circuit and find that the estimation of expectation value of observables are robust against dephasing noise. We support the analytical result with numerical simulations and find that $67\%$ of errors are reduced for $M=2$, with physical dephasing error probabilities as high as $10\%$. Our results imply that a broad class of quantum algorithms can be implemented with higher accuracy in the near-term with qubit platforms where non-dephasing errors are suppressed, such as superconducting bosonic qubits and Rydberg atoms.},
   archivePrefix= {arXiv},
-  eprint       = {2204.11353},
+  eprint       = {2210.15317},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/MVV22efficient.pdf}
-  }
+}
