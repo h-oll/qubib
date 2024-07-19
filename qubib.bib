@@ -5540,6 +5540,19 @@ pages[normalize_page_numbers]
 	Year = 2005
 }
 
+@article{BRVC19local,
+	author = {Bharti, Kishor and Ray, Maharshi and Varvitsiotis, Antonios and Cabello, Ad{\'a}n and Kwek, Leong-Chuan},
+	title = {Local Certification of Programmable Quantum Devices of Arbitrary High Dimensionality},
+	journal = {CoRR},
+	year = 2019,
+	url = {http://arxiv.org/abs/1911.09448v1},
+	abstract = {The onset of the era of fully-programmable error-corrected quantum computers will be marked by major breakthroughs in all areas of science and engineering.  These devices promise to have significant technological and societal impact, notable examples being the analysis of big data through better machine learning algorithms and the design of new materials. Nevertheless, the capacity of quantum computers to faithfully implement quantum algorithms relies crucially on their ability to prepare specific high-dimensional and high-purity quantum states, together with suitable quantum measurements. Thus, the unambiguous certification of these requirements without assumptions on the inner workings of the quantum computer is critical to the development of trusted quantum processors. One of the most important approaches for benchmarking quantum devices is through the mechanism of self-testing that requires a pair of entangled non-communicating quantum devices. Nevertheless, although computation typically happens in a localized fashion, no local self-testing scheme is known to benchmark high dimensional states and measurements. Here, we show that the quantum self-testing paradigm can be employed to an individual quantum computer that is modelled as a programmable black box by introducing a noise-tolerant certification scheme. We substantiate the applicability of our scheme by providing a family of outcome statistics whose observation certifies that the computer is producing specific high-dimensional quantum states and implementing specific measurements.},
+	archivePrefix = {arXiv},
+	eprint = {1911.09448},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/BRVC19local.pdf}
+}
+
 @article{BRW61clifford,
 	Author = {Bolt, B. and Room, T. G. and Wall, G. E.},
 	Date-Added = {2005-12-16 11:23:50 +1000},
@@ -17974,9 +17987,10 @@ pages[normalize_page_numbers]
 }
 
 @article{KD19nonadaptive,
+	file = {KD19nonadaptive.pdf},
 	source = {Luka Music, 2021-09-16},
 	doi = {10.22331/q-2019-07-12-164},
-	url = {https://doi.org/10.22331/q-2019-07-12-164},
+	url = {https://quantum-journal.org/papers/q-2019-07-12-164/pdf/},
 	title = {Nonadaptive fault-tolerant verification of quantum supremacy with noise},
 	author = {Kapourniotis, Theodoros and Datta, Animesh},
 	journal = {{Quantum}},
@@ -26592,6 +26606,20 @@ pages[normalize_page_numbers]
 	abstract = {In the light of the Busch, Lathi and Werner proposal, we explore, for the first time, the joint measurements and confirmation of uncertainty relations for three incompatible observables that reflect the original spirit proposed by Heisenberg in 1927. We first develop the error trade-off relations theoretically and then demonstrate the first experimental witness of joint measurements using a single ultracold 40Ca\&\#x002B; ion trapped in a harmonic potential. In addition, we report, that in contrast to the case of two observables, scarifying accuracy of any one of the three observables the rest of two can be measured with ultimate accuracy.}
 }
 
+@InProceedings{RY22interactive,
+	file = {RY22interactive.pdf},
+	timestamp = {2024-07-19 15:59:19 (CEST)},
+	author = {Rosenthal, Gregory and Yuen, Henry},
+	title = {Interactive Proofs for Synthesizing Quantum States and Unitaries},
+	year = 2022,
+	language = {en},
+	publisher = {Schloss Dagstuhl – Leibniz-Zentrum für Informatik},
+	doi = {10.4230/LIPICS.ITCS.2022.112},
+	url = {http://www.arxiv.org/pdf/2108.07192},
+	keywords = {interactive proofs, quantum state complexity, quantum unitary complexity, Theory of computation → Interactive proof systems, Theory of computation → Quantum complexity theory},
+	copyright = {Creative Commons Attribution 4.0 International license}
+}
+
 @misc{RZ00decomposition,
 	Author = {Raptis, I. and Zapatrin, R. R.},
 	Eprint = {quant-ph/0010104},
@@ -30566,6 +30594,19 @@ pages[normalize_page_numbers]
 	Year = 2000
 }
 
+@article{VFP22study,
+	author = {Vikst{\aa}l, Pontus and Ferrini, Giulia and Puri, Shruti},
+	title = {Study of Noise in Virtual Distillation Circuits for Quantum Error Mitigation},
+	journal = {CoRR},
+	year = 2022,
+	url = {http://arxiv.org/abs/2210.15317v2},
+	abstract = {Virtual distillation has been proposed as an error mitigation protocol for estimating the expectation values of observables in quantum algorithms. It proceeds by creating a cyclic permutation of $M$ noisy copies of a quantum state using a sequence of controlled-swap gates. If the noise does not shift the dominant eigenvector of the density operator away from the ideal state, then the error in expectation-value estimation can be exponentially reduced with $M$. In practice, subsequent error mitigation techniques are required to suppress the effect of noise in the cyclic permutation circuit itself, leading to increased experimental complexity. Here, we perform a careful analysis of the effect of uncorrelated, identical noise in the cyclic permutation circuit and find that the estimation of expectation value of observables are robust against dephasing noise. We support the analytical result with numerical simulations and find that $67\%$ of errors are reduced for $M=2$, with physical dephasing error probabilities as high as $10\%$. Our results imply that a broad class of quantum algorithms can be implemented with higher accuracy in the near-term with qubit platforms where non-dephasing errors are suppressed, such as superconducting bosonic qubits and Rydberg atoms.},
+	archivePrefix = {arXiv},
+	eprint = {2210.15317},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/VFP22study.pdf}
+}
+
 @article{VFPK01experimental,
 	Author = {Viola, L. and Fortunato, E. M. and Pravia, M. A. and Knill, E. and Laflamme, R. and Cory, D. G.},
 	Journal = {Science},
@@ -33626,27 +33667,11 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{VFP22study,
-  author       = {Vikst{\aa}l, Pontus and Ferrini, Giulia and Puri, Shruti},
-  title        = {Study of Noise in Virtual Distillation Circuits for Quantum Error Mitigation},
-  journal      = {CoRR},
-  year         = 2022,
-  url          = {http://arxiv.org/abs/2210.15317v2},
-  abstract     = {Virtual distillation has been proposed as an error mitigation protocol for estimating the expectation values of observables in quantum algorithms. It proceeds by creating a cyclic permutation of $M$ noisy copies of a quantum state using a sequence of controlled-swap gates. If the noise does not shift the dominant eigenvector of the density operator away from the ideal state, then the error in expectation-value estimation can be exponentially reduced with $M$. In practice, subsequent error mitigation techniques are required to suppress the effect of noise in the cyclic permutation circuit itself, leading to increased experimental complexity. Here, we perform a careful analysis of the effect of uncorrelated, identical noise in the cyclic permutation circuit and find that the estimation of expectation value of observables are robust against dephasing noise. We support the analytical result with numerical simulations and find that $67\%$ of errors are reduced for $M=2$, with physical dephasing error probabilities as high as $10\%$. Our results imply that a broad class of quantum algorithms can be implemented with higher accuracy in the near-term with qubit platforms where non-dephasing errors are suppressed, such as superconducting bosonic qubits and Rydberg atoms.},
-  archivePrefix= {arXiv},
-  eprint       = {2210.15317},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/VFP22study.pdf}
-  }
-@article{BRVC19local,
-  author       = {Bharti, Kishor and Ray, Maharshi and Varvitsiotis, Antonios and Cabello, Ad{\'a}n and Kwek, Leong-Chuan},
-  title        = {Local Certification of Programmable Quantum Devices of Arbitrary High Dimensionality},
-  journal      = {CoRR},
-  year         = 2019,
-  url          = {http://arxiv.org/abs/1911.09448v1},
-  abstract     = {The onset of the era of fully-programmable error-corrected quantum computers will be marked by major breakthroughs in all areas of science and engineering.  These devices promise to have significant technological and societal impact, notable examples being the analysis of big data through better machine learning algorithms and the design of new materials. Nevertheless, the capacity of quantum computers to faithfully implement quantum algorithms relies crucially on their ability to prepare specific high-dimensional and high-purity quantum states, together with suitable quantum measurements. Thus, the unambiguous certification of these requirements without assumptions on the inner workings of the quantum computer is critical to the development of trusted quantum processors. One of the most important approaches for benchmarking quantum devices is through the mechanism of self-testing that requires a pair of entangled non-communicating quantum devices. Nevertheless, although computation typically happens in a localized fashion, no local self-testing scheme is known to benchmark high dimensional states and measurements. Here, we show that the quantum self-testing paradigm can be employed to an individual quantum computer that is modelled as a programmable black box by introducing a noise-tolerant certification scheme. We substantiate the applicability of our scheme by providing a family of outcome statistics whose observation certifies that the computer is producing specific high-dimensional quantum states and implementing specific measurements.},
-  archivePrefix= {arXiv},
-  eprint       = {1911.09448},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/BRVC19local.pdf}
-  }
+@misc{cryptoeprint:2020/1454,
+      author = {Orestis Chardouvelis and Nico Doettling and Giulio Malavolta},
+      title = {Rate-1 Quantum Fully Homomorphic Encryption},
+      howpublished = {Cryptology ePrint Archive, Paper 2020/1454},
+      year = {2020},
+      note = {\url{https://eprint.iacr.org/2020/1454}},
+      url = {https://eprint.iacr.org/2020/1454}
+}
