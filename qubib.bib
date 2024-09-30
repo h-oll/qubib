@@ -33971,3 +33971,14 @@ pages[normalize_page_numbers]
   primaryClass = {quant-ph},
   file = {~/shared/papers/G24resources.pdf}
   }
+@article{RGLM24ldpc,
+  author       = {Ruiz, Diego and Guillaud, J{\'e}r{\'e}mie and Leverrier, Anthony and Mirrahimi, Mazyar and Vuillot, Christophe},
+  title        = {Ldpc-Cat Codes for Low-Overhead Quantum Computing in 2d},
+  journal      = {CoRR},
+  year         = 2024,
+  url          = {http://arxiv.org/abs/2401.09541v2},
+  abstract     = {Quantum low-density parity-check (qLDPC) codes are a promising construction for drastically reducing the overhead of fault-tolerant quantum computing (FTQC) architectures. However, all of the known hardware implementations of these codes require advanced technologies, such as long-range qubit connectivity, high-weight stabilizers, or multi-layered chip layouts. An alternative approach to reduce the hardware overhead of fault-tolerance is to use bosonic cat qubits where bit-flip errors are exponentially suppressed by design. In this work, we combine both approaches and propose an architecture based on cat qubits concatenated in classical LDPC codes correcting for phase-flips. We find that employing such phase-flip LDPC codes provides two major advantages. First, the hardware implementation of the code can be realised using short-range qubit interactions in 2D and low-weight stabilizers, which makes it readily compatible with current superconducting circuit technologies. Second, we demonstrate how to implement a fault-tolerant universal set of logical gates with a second layer of cat qubits while maintaining the local connectivity. We conduct a numerical brute force optimisation of these classical codes to find the ones with the best encoding rate for algorithmically relevant code distances. We discover that some of the best codes benefit from a cellular automaton structure. This allows us to define families of codes with high encoding rates and distances. Finally, we numerically assess the performance of our codes under circuit-level noise.  Assuming a physical phase-flip error probability $\epsilon \approx 0.1\%$, our $[165+8\ell, 34+2\ell, 22]$ code family allows to encode $100$ logical qubits with a total logical error probability (including both logical phase-flip and bit-flip) per cycle and per logical qubit $\epsilon_L \leq 10^{-8}$ on a $758$ cat qubit chip.},
+  archivePrefix= {arXiv},
+  eprint       = {2401.09541},
+  primaryClass = {quant-ph},
+}
