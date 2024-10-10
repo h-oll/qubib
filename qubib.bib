@@ -12014,6 +12014,7 @@ pages[normalize_page_numbers]
 }
 
 @article{FK17unconditionally,
+	file = {FK17unconditionally.pdf},
 	source = {Luka Music, 2021-09-16},
 	title = {Unconditionally verifiable blind quantum computation},
 	author = {Fitzsimons, Joseph F. and Kashefi, Elham},
@@ -12026,7 +12027,7 @@ pages[normalize_page_numbers]
 	month = {Jul},
 	publisher = {American Physical Society},
 	doi = {10.1103/PhysRevA.96.012303},
-	url = {https://link.aps.org/doi/10.1103/PhysRevA.96.012303}
+	url = {https://journals.aps.org/pra/pdf/10.1103/PhysRevA.96.012303}
 }
 
 @article{FK94proof,
@@ -12780,6 +12781,19 @@ pages[normalize_page_numbers]
 	keywords = {Quantum Physics (quant-ph), Computational Complexity (cs.CC), FOS: Physical sciences, FOS: Physical sciences, FOS: Computer and information sciences, FOS: Computer and information sciences},
 	publisher = {arXiv},
 	copyright = {arXiv.org perpetual, non-exclusive license}
+}
+
+@article{G24resources,
+	author = {Gour, Gilad},
+	title = {Resources of the Quantum World},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2402.05474v1},
+	abstract = {This book delves into the burgeoning field of quantum resource theories, a novel and vibrant area of research within quantum information science that seeks to unify diverse quantum phenomena under a single framework. By recognizing various attributes of physical systems as "resources," this approach offers a fresh perspective on quantum phenomena, transforming our understanding and application of concepts such as quantum entanglement, coherence, and more. With a focus on the pedagogical, the book aims to equip readers with the advanced mathematical tools and physical principles needed to navigate and contribute to this rapidly evolving field. It covers a wide range of topics, from the foundational aspects of quantum mechanics and quantum information to detailed explorations of specific resource theories, including entanglement, asymmetry, and thermodynamics. Through rigorous mathematical exposition and a unique axiomatic approach, the book provides deep insights into the operational and conceptual frameworks that underpin quantum resource theories, making it an invaluable resource for graduate students, early-career researchers, and anyone interested in the cutting-edge developments in quantum information science.},
+	archivePrefix = {arXiv},
+	eprint = {2402.05474},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/G24resources.pdf}
 }
 
 @article{G57measures,
@@ -26312,6 +26326,19 @@ pages[normalize_page_numbers]
 	Year = 2002
 }
 
+@article{RGLM24ldpc,
+	author = {Ruiz, Diego and Guillaud, J{\'e}r{\'e}mie and Leverrier, Anthony and Mirrahimi, Mazyar and Vuillot, Christophe},
+	title = {Ldpc-Cat Codes for Low-Overhead Quantum Computing in 2d},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2401.09541v2},
+	abstract = {Quantum low-density parity-check (qLDPC) codes are a promising construction for drastically reducing the overhead of fault-tolerant quantum computing (FTQC) architectures. However, all of the known hardware implementations of these codes require advanced technologies, such as long-range qubit connectivity, high-weight stabilizers, or multi-layered chip layouts. An alternative approach to reduce the hardware overhead of fault-tolerance is to use bosonic cat qubits where bit-flip errors are exponentially suppressed by design. In this work, we combine both approaches and propose an architecture based on cat qubits concatenated in classical LDPC codes correcting for phase-flips. We find that employing such phase-flip LDPC codes provides two major advantages. First, the hardware implementation of the code can be realised using short-range qubit interactions in 2D and low-weight stabilizers, which makes it readily compatible with current superconducting circuit technologies. Second, we demonstrate how to implement a fault-tolerant universal set of logical gates with a second layer of cat qubits while maintaining the local connectivity. We conduct a numerical brute force optimisation of these classical codes to find the ones with the best encoding rate for algorithmically relevant code distances. We discover that some of the best codes benefit from a cellular automaton structure. This allows us to define families of codes with high encoding rates and distances. Finally, we numerically assess the performance of our codes under circuit-level noise.  Assuming a physical phase-flip error probability $\epsilon \approx 0.1\%$, our $[165+8\ell, 34+2\ell, 22]$ code family allows to encode $100$ logical qubits with a total logical error probability (including both logical phase-flip and bit-flip) per cycle and per logical qubit $\epsilon_L \leq 10^{-8}$ on a $758$ cat qubit chip.},
+	archivePrefix = {arXiv},
+	eprint = {2401.09541},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/RGLM24ldpc.pdf}
+}
+
 @article{RGS01assymptotic,
 	Author = {Rowe, D. J. and de Guise, H. and Sanders, B. C.},
 	Date-Added = {2005-05-09 15:37:39 +1000},
@@ -26467,6 +26494,14 @@ pages[normalize_page_numbers]
 	Title = {Coherent Operation of a Tunable Quantum Phase Gate in Cavity {QED}},
 	Volume = 83,
 	Year = 1999
+}
+
+@Article{RO24low,
+	year = {2024},
+	journal = {In preparation},
+	title = {Low bit-flip rate probabilistic error cancellation},
+	author = {Rennela, Mathys and Ollivier, Harold},
+	timestamp = {2024-10-02 08:56:11 (CEST)}
 }
 
 @misc{RP01simple,
@@ -33959,27 +33994,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{G24resources,
-  author       = {Gour, Gilad},
-  title        = {Resources of the Quantum World},
+@article{YEZL18theory,
+  author       = {Yuan, Xiao and Endo, Suguru and Zhao, Qi and Li, Ying and Benjamin, Simon},
+  title        = {Theory of Variational Quantum Simulation},
   journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2402.05474v1},
-  abstract     = {This book delves into the burgeoning field of quantum resource theories, a novel and vibrant area of research within quantum information science that seeks to unify diverse quantum phenomena under a single framework. By recognizing various attributes of physical systems as "resources," this approach offers a fresh perspective on quantum phenomena, transforming our understanding and application of concepts such as quantum entanglement, coherence, and more. With a focus on the pedagogical, the book aims to equip readers with the advanced mathematical tools and physical principles needed to navigate and contribute to this rapidly evolving field. It covers a wide range of topics, from the foundational aspects of quantum mechanics and quantum information to detailed explorations of specific resource theories, including entanglement, asymmetry, and thermodynamics. Through rigorous mathematical exposition and a unique axiomatic approach, the book provides deep insights into the operational and conceptual frameworks that underpin quantum resource theories, making it an invaluable resource for graduate students, early-career researchers, and anyone interested in the cutting-edge developments in quantum information science.},
+  year         = 2018,
+  url          = {http://arxiv.org/abs/1812.08767v4},
+  abstract     = {The variational method is a versatile tool for classical simulation of a variety of quantum systems. Great efforts have recently been devoted to its extension to quantum computing for efficiently solving static many-body problems and simulating real and imaginary time dynamics. In this work, we first review the conventional variational principles, including the Rayleigh-Ritz method for solving static problems, and the Dirac and Frenkel variational principle, the McLachlan's variational principle, and the time-dependent variational principle, for simulating real time dynamics. We focus on the simulation of dynamics and discuss the connections of the three variational principles. Previous works mainly focus on the unitary evolution of pure states. In this work, we introduce variational quantum simulation of mixed states under general stochastic evolution. We show how the results can be reduced to the pure state case with a correction term that takes accounts of global phase alignment. For variational simulation of imaginary time evolution, we also extend it to the mixed state scenario and discuss variational Gibbs state preparation. We further elaborate on the design of ansatz that is compatible with post-selection measurement and the implementation of the generalised variational algorithms with quantum circuits. Our work completes the theory of variational quantum simulation of general real and imaginary time evolution and it is applicable to near-term quantum hardware.},
   archivePrefix= {arXiv},
-  eprint       = {2402.05474},
+  eprint       = {1812.08767},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/G24resources.pdf}
-  }
-@article{RGLM24ldpc,
-  author       = {Ruiz, Diego and Guillaud, J{\'e}r{\'e}mie and Leverrier, Anthony and Mirrahimi, Mazyar and Vuillot, Christophe},
-  title        = {Ldpc-Cat Codes for Low-Overhead Quantum Computing in 2d},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2401.09541v2},
-  abstract     = {Quantum low-density parity-check (qLDPC) codes are a promising construction for drastically reducing the overhead of fault-tolerant quantum computing (FTQC) architectures. However, all of the known hardware implementations of these codes require advanced technologies, such as long-range qubit connectivity, high-weight stabilizers, or multi-layered chip layouts. An alternative approach to reduce the hardware overhead of fault-tolerance is to use bosonic cat qubits where bit-flip errors are exponentially suppressed by design. In this work, we combine both approaches and propose an architecture based on cat qubits concatenated in classical LDPC codes correcting for phase-flips. We find that employing such phase-flip LDPC codes provides two major advantages. First, the hardware implementation of the code can be realised using short-range qubit interactions in 2D and low-weight stabilizers, which makes it readily compatible with current superconducting circuit technologies. Second, we demonstrate how to implement a fault-tolerant universal set of logical gates with a second layer of cat qubits while maintaining the local connectivity. We conduct a numerical brute force optimisation of these classical codes to find the ones with the best encoding rate for algorithmically relevant code distances. We discover that some of the best codes benefit from a cellular automaton structure. This allows us to define families of codes with high encoding rates and distances. Finally, we numerically assess the performance of our codes under circuit-level noise.  Assuming a physical phase-flip error probability $\epsilon \approx 0.1\%$, our $[165+8\ell, 34+2\ell, 22]$ code family allows to encode $100$ logical qubits with a total logical error probability (including both logical phase-flip and bit-flip) per cycle and per logical qubit $\epsilon_L \leq 10^{-8}$ on a $758$ cat qubit chip.},
-  archivePrefix= {arXiv},
-  eprint       = {2401.09541},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/RGLM24ldpc.pdf}
-  }
+}
