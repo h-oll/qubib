@@ -3891,6 +3891,19 @@ pages[normalize_page_numbers]
 	Year = 1995
 }
 
+@article{BDJK20prospects,
+	author = {Bouland, Adam and Dam, Wim van and Joorati, Hamed and Kerenidis, Iordanis and Prakash, Anupam},
+	title = {Prospects and Challenges of Quantum Finance},
+	journal = {CoRR},
+	year = 2020,
+	url = {http://arxiv.org/abs/2011.06492v1},
+	abstract = {Quantum computers are expected to have substantial impact on the finance industry, as they will be able to solve certain problems considerably faster than the best known classical algorithms. In this article we describe such potential applications of quantum computing to finance, starting with the state-of-the-art and focusing in particular on recent works by the QC Ware team. We consider quantum speedups for Monte Carlo methods, portfolio optimization, and machine learning. For each application we describe the extent of quantum speedup possible and estimate the quantum resources required to achieve a practical speedup. The near-term relevance of these quantum finance algorithms varies widely across applications - some of them are heuristic algorithms designed to be amenable to near-term prototype quantum computers, while others are proven speedups which require larger-scale quantum computers to implement. We also describe powerful ways to bring these speedups closer to experimental feasibility - in particular describing lower depth algorithms for Monte Carlo methods and quantum machine learning, as well as quantum annealing heuristics for portfolio optimization. This article is targeted at financial professionals and no particular background in quantum computation is assumed.},
+	archivePrefix = {arXiv},
+	eprint = {2011.06492},
+	primaryClass = {q-fin.CP},
+	file = {~/shared/papers/BDJK20prospects.pdf}
+}
+
 @article{BDK06phase,
 	author = {Beaudrap, Niel de and Danos, Vincent and Kashefi, Elham},
 	title = {Phase Map Decompositions for Unitaries},
@@ -5938,6 +5951,18 @@ pages[normalize_page_numbers]
 	Title = {Automatic error correction},
 	Volume = 85,
 	Year = 2000
+}
+
+@article{BW23randomized,
+	author = {Beale, Stefanie J. and Wallman, Joel J.},
+	title = {Randomized Compiling in Fault-Tolerant Quantum Computation},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2306.13752v1},
+	abstract = {Studies of quantum error correction (QEC) typically focus on stochastic Pauli errors because the existence of a threshold error rate below which stochastic Pauli errors can be corrected implies that there exists a threshold below which generic errors can be corrected. However, rigorous estimates of the threshold for generic errors are typically orders of magnitude worse than the threshold for stochastic Pauli errors. Specifically, coherent errors have a particularly harmful impact on the encoded space because they can map encoded states to superpositions of logical and error states. Further, coherent errors can add up and interfere over multiple rounds of error correction or between syndrome measurements, which may result in significantly worse errors than expected under a stochastic Pauli error model. In this paper, we present an algorithm which decoheres noise at the logical level, projecting the state of the system onto a logical state with a well-defined error. The algorithm does not significantly increase the depth of the logical circuit (and usually does not lead to any increase in depth), and applies generally to most fault-tolerant gadgets and error correction steps.},
+	archivePrefix = {arXiv},
+	eprint = {2306.13752},
+	primaryClass = {quant-ph}
 }
 
 @book{BW87principles,
@@ -11430,6 +11455,19 @@ pages[normalize_page_numbers]
 	year = 2015,
 	file = {F15quantum.pdf},
 	url = {https://perso.ens-lyon.fr/omar.fawzi/talks/qcmi.pdf}
+}
+
+@InProceedings{F22averaged,
+	timestamp = {2024-10-12 19:04:58 (CEST)},
+	author = {Flammia, Steven T.},
+	title = {Averaged Circuit Eigenvalue Sampling},
+	year = 2022,
+	language = {en},
+	publisher = {Schloss Dagstuhl – Leibniz-Zentrum für Informatik},
+	doi = {10.4230/LIPICS.TQC.2022.4},
+	url = {https://arxiv.org/pdf/2108.05803},
+	keywords = {Quantum noise estimation, quantum benchmarking, QCVV, Hardware → Quantum computation},
+	copyright = {Creative Commons Attribution 4.0 International license}
 }
 
 @article{F28verallgemeinerung,
@@ -34020,26 +34058,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{BDJK20prospects,
-  author       = {Bouland, Adam and Dam, Wim van and Joorati, Hamed and Kerenidis, Iordanis and Prakash, Anupam},
-  title        = {Prospects and Challenges of Quantum Finance},
+@article{HDH24scalable,
+  author       = {Hockings, Evan T. and Doherty, Andrew C. and Harper, Robin},
+  title        = {Scalable Noise Characterisation of Syndrome Extraction Circuits With Averaged Circuit Eigenvalue Sampling},
   journal      = {CoRR},
-  year         = 2020,
-  url          = {http://arxiv.org/abs/2011.06492v1},
-  abstract     = {Quantum computers are expected to have substantial impact on the finance industry, as they will be able to solve certain problems considerably faster than the best known classical algorithms. In this article we describe such potential applications of quantum computing to finance, starting with the state-of-the-art and focusing in particular on recent works by the QC Ware team. We consider quantum speedups for Monte Carlo methods, portfolio optimization, and machine learning. For each application we describe the extent of quantum speedup possible and estimate the quantum resources required to achieve a practical speedup. The near-term relevance of these quantum finance algorithms varies widely across applications - some of them are heuristic algorithms designed to be amenable to near-term prototype quantum computers, while others are proven speedups which require larger-scale quantum computers to implement. We also describe powerful ways to bring these speedups closer to experimental feasibility - in particular describing lower depth algorithms for Monte Carlo methods and quantum machine learning, as well as quantum annealing heuristics for portfolio optimization. This article is targeted at financial professionals and no particular background in quantum computation is assumed.},
+  year         = 2024,
+  url          = {http://arxiv.org/abs/2404.06545v1},
+  abstract     = {Characterising the performance of noisy quantum circuits is central to the production of prototype quantum computers and can enable improved quantum error correction that exploits noise biases identified in a quantum device. We describe an implementation of averaged circuit eigenvalue sampling (ACES), a general framework for the scalable noise characterisation of quantum circuits.  ACES is capable of simultaneously estimating the Pauli error probabilities of all gates in a Clifford circuit, and captures averaged spatial correlations between gates implemented simultaneously in the circuit. By rigorously analysing the performance of ACES experiments, we derive a figure of merit for their expected performance, allowing us to optimise ACES experimental designs and improve the precision to which we estimate noise given fixed experimental resources. Since the syndrome extraction circuits of quantum error correcting codes are representative components of a fault-tolerant architecture, we demonstrate the scalability and performance of our ACES protocol through circuit-level numerical simulations of the entire noise characterisation procedure for the syndrome extraction circuit of a distance 25 surface code with over 1000 qubits. Our results indicate that detailed noise characterisation methods are scalable to near-term quantum devices. We release our code in the form of the Julia package AveragedCircuitEigenvalueSampling.jl.},
   archivePrefix= {arXiv},
-  eprint       = {2011.06492},
-  primaryClass = {q-fin.CP},
-  file = {~/shared/papers/BDJK20prospects.pdf}
-  }
-@article{BW23randomized,
-  author       = {Beale, Stefanie J. and Wallman, Joel J.},
-  title        = {Randomized Compiling in Fault-Tolerant Quantum Computation},
-  journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2306.13752v1},
-  abstract     = {Studies of quantum error correction (QEC) typically focus on stochastic Pauli errors because the existence of a threshold error rate below which stochastic Pauli errors can be corrected implies that there exists a threshold below which generic errors can be corrected. However, rigorous estimates of the threshold for generic errors are typically orders of magnitude worse than the threshold for stochastic Pauli errors. Specifically, coherent errors have a particularly harmful impact on the encoded space because they can map encoded states to superpositions of logical and error states. Further, coherent errors can add up and interfere over multiple rounds of error correction or between syndrome measurements, which may result in significantly worse errors than expected under a stochastic Pauli error model. In this paper, we present an algorithm which decoheres noise at the logical level, projecting the state of the system onto a logical state with a well-defined error. The algorithm does not significantly increase the depth of the logical circuit (and usually does not lead to any increase in depth), and applies generally to most fault-tolerant gadgets and error correction steps.},
-  archivePrefix= {arXiv},
-  eprint       = {2306.13752},
+  eprint       = {2404.06545},
   primaryClass = {quant-ph},
 }
