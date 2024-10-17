@@ -6894,6 +6894,22 @@ pages[normalize_page_numbers]
 	Year = 1988
 }
 
+@Article{CAL19simple,
+	file = {CAL19simple.pdf},
+	timestamp = {2024-10-14 10:33:05 (CEST)},
+	author = {Curty, Marcos and Azuma, Koji and Lo, Hoi-Kwong},
+	title = {Simple security proof of twin-field type quantum key distribution protocol},
+	journal = {npj Quantum Information},
+	year = 2019,
+	volume = 5,
+	number = 1,
+	month = jul,
+	issn = {2056-6387},
+	doi = {10.1038/s41534-019-0175-6},
+	url = {https://arxiv.org/pdf/1807.07667},
+	publisher = {Springer Science and Business Media LLC}
+}
+
 @Article{CASR14experimental,
 	oldkey = CASR+14,
 	source = {Luka Music, 2021-09-16},
@@ -13995,6 +14011,19 @@ pages[normalize_page_numbers]
 	Year = 1997
 }
 
+@article{GMBM24bounding,
+	author = {Govia, L. C. G. and Majumder, S. and Barron, S. V. and Mitchell, B. and Seif, A. and Kim, Y. and Wood, C. J. and Pritchett, E. J. and Merkel, S. T. and McKay, D. C.},
+	title = {Bounding the Systematic Error in Quantum Error Mitigation Due To Model Violation},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2408.10985v1},
+	abstract = {Quantum error mitigation is a promising route to achieving quantum utility, and potentially quantum advantage in the near-term. Many state-of-the-art error mitigation schemes use knowledge of the errors in the quantum processor, which opens the question to what extent inaccuracy in the error model impacts the performance of error mitigation. In this work, we develop a methodology to efficiently compute upper bounds on the impact of error-model inaccuracy in error mitigation. Our protocols require no additional experiments, and instead rely on comparisons between the error model and the error-learning data from which the model is generated. We demonstrate the efficacy of our methodology by deploying it on an IBM Quantum superconducting qubit quantum processor, and through numerical simulation of standard error models. We show that our estimated upper bounds are typically close to the worst observed performance of error mitigation on random circuits. Our methodology can also be understood as an operationally meaningful metric to assess the quality of error models, and we further extend our methodology to allow for comparison between error models.  Finally, contrary to what one might expect we show that observable error in noisy layered circuits of sufficient depth is not always maximized by a Clifford circuit, which may be of independent interest.},
+	archivePrefix = {arXiv},
+	eprint = {2408.10985},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/GMBM24bounding.pdf}
+}
+
 @article{GMGS01bohmian,
 	Author = {Ghose, P. and Majumdar, A. S. and Guha, S. and Sau, J.},
 	Journal = {Phys. Lett. A},
@@ -15252,6 +15281,19 @@ pages[normalize_page_numbers]
 	Source = {H. Ollivier, 2005-12-07},
 	Title = {Stabilizer states and Clifford operations for systems of arbitrary dimensions, and modular arithmetic},
 	Year = 2004
+}
+
+@article{HDH24scalable,
+	author = {Hockings, Evan T. and Doherty, Andrew C. and Harper, Robin},
+	title = {Scalable Noise Characterisation of Syndrome Extraction Circuits With Averaged Circuit Eigenvalue Sampling},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2404.06545v1},
+	abstract = {Characterising the performance of noisy quantum circuits is central to the production of prototype quantum computers and can enable improved quantum error correction that exploits noise biases identified in a quantum device. We describe an implementation of averaged circuit eigenvalue sampling (ACES), a general framework for the scalable noise characterisation of quantum circuits.  ACES is capable of simultaneously estimating the Pauli error probabilities of all gates in a Clifford circuit, and captures averaged spatial correlations between gates implemented simultaneously in the circuit. By rigorously analysing the performance of ACES experiments, we derive a figure of merit for their expected performance, allowing us to optimise ACES experimental designs and improve the precision to which we estimate noise given fixed experimental resources. Since the syndrome extraction circuits of quantum error correcting codes are representative components of a fault-tolerant architecture, we demonstrate the scalability and performance of our ACES protocol through circuit-level numerical simulations of the entire noise characterisation procedure for the syndrome extraction circuit of a distance 25 surface code with over 1000 qubits. Our results indicate that detailed noise characterisation methods are scalable to near-term quantum devices. We release our code in the form of the Julia package AveragedCircuitEigenvalueSampling.jl.},
+	archivePrefix = {arXiv},
+	eprint = {2404.06545},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/HDH24scalable.pdf}
 }
 
 @misc{HE01direct,
@@ -23881,6 +23923,19 @@ pages[normalize_page_numbers]
 	Source = {H. Ollivier 2005-12-07},
 	Title = {The Invariants of the Clifford Groups},
 	year = 0000
+}
+
+@article{NSBB24benchmarking,
+	author = {Nation, Paul D. and Saki, Abdullah Ash and Brandhofer, Sebastian and Bello, Luciano and Garion, Shelly and Treinish, Matthew and Javadi-Abhari, Ali},
+	title = {Benchmarking the Performance of Quantum Computing Software},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2409.08844v1},
+	abstract = {We present Benchpress, a benchmarking suite for evaluating the performance and range of functionality of multiple quantum computing software development kits. This suite consists of a collection of over $1000$ tests measuring key performance metrics for a wide variety of operations on quantum circuits comprised of up to $930$ qubits and $\mathcal{O}(10^{6})$ two-qubit gates, as well as an execution framework for running the tests over multiple quantum software packages in a unified manner. We give a detailed overview of the benchmark suite, its methodology, and generate representative results over seven different quantum software packages. The flexibility of the Benchpress framework allows for benchmarking that not only keeps pace with quantum hardware improvements but can preemptively gauge the quantum circuit processing costs of future device architectures. Being open-source, Benchpress ensures the transparency and verification of performance claims.},
+	archivePrefix = {arXiv},
+	eprint = {2409.08844},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/NSBB24benchmarking.pdf}
 }
 
 @article{NSD86shelved,
@@ -34075,40 +34130,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-
-@article{HDH24scalable,
-  author       = {Hockings, Evan T. and Doherty, Andrew C. and Harper, Robin},
-  title        = {Scalable Noise Characterisation of Syndrome Extraction Circuits With Averaged Circuit Eigenvalue Sampling},
+@article{HPS24certifying,
+  author       = {Huang, Hsin-Yuan and Preskill, John and Soleimanifar, Mehdi},
+  title        = {Certifying Almost All Quantum States With Few Single-Qubit Measurements},
   journal      = {CoRR},
   year         = 2024,
-  url          = {http://arxiv.org/abs/2404.06545v1},
-  abstract     = {Characterising the performance of noisy quantum circuits is central to the production of prototype quantum computers and can enable improved quantum error correction that exploits noise biases identified in a quantum device. We describe an implementation of averaged circuit eigenvalue sampling (ACES), a general framework for the scalable noise characterisation of quantum circuits.  ACES is capable of simultaneously estimating the Pauli error probabilities of all gates in a Clifford circuit, and captures averaged spatial correlations between gates implemented simultaneously in the circuit. By rigorously analysing the performance of ACES experiments, we derive a figure of merit for their expected performance, allowing us to optimise ACES experimental designs and improve the precision to which we estimate noise given fixed experimental resources. Since the syndrome extraction circuits of quantum error correcting codes are representative components of a fault-tolerant architecture, we demonstrate the scalability and performance of our ACES protocol through circuit-level numerical simulations of the entire noise characterisation procedure for the syndrome extraction circuit of a distance 25 surface code with over 1000 qubits. Our results indicate that detailed noise characterisation methods are scalable to near-term quantum devices. We release our code in the form of the Julia package AveragedCircuitEigenvalueSampling.jl.},
+  url          = {http://arxiv.org/abs/2404.07281v1},
+  abstract     = {Certifying that an n-qubit state synthesized in the lab is close to the target state is a fundamental task in quantum information science. However, existing rigorous protocols either require deep quantum circuits or exponentially many single-qubit measurements. In this work, we prove that almost all n-qubit target states, including those with exponential circuit complexity, can be certified from only O(n^2) single-qubit measurements. This result is established by a new technique that relates certification to the mixing time of a random walk. Our protocol has applications for benchmarking quantum systems, for optimizing quantum circuits to generate a desired target state, and for learning and verifying neural networks, tensor networks, and various other representations of quantum states using only single-qubit measurements. We show that such verified representations can be used to efficiently predict highly non-local properties that would otherwise require an exponential number of measurements. We demonstrate these applications in numerical experiments with up to 120 qubits, and observe advantage over existing methods such as cross-entropy benchmarking (XEB).},
   archivePrefix= {arXiv},
-  eprint       = {2404.06545},
+  eprint       = {2404.07281},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/HDH24scalable.pdf}
-  }
-@article{GMBM24bounding,
-  author       = {Govia, L. C. G. and Majumder, S. and Barron, S. V. and Mitchell, B. and Seif, A. and Kim, Y. and Wood, C. J. and Pritchett, E. J. and Merkel, S. T. and McKay, D. C.},
-  title        = {Bounding the Systematic Error in Quantum Error Mitigation Due To Model Violation},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2408.10985v1},
-  abstract     = {Quantum error mitigation is a promising route to achieving quantum utility, and potentially quantum advantage in the near-term. Many state-of-the-art error mitigation schemes use knowledge of the errors in the quantum processor, which opens the question to what extent inaccuracy in the error model impacts the performance of error mitigation. In this work, we develop a methodology to efficiently compute upper bounds on the impact of error-model inaccuracy in error mitigation. Our protocols require no additional experiments, and instead rely on comparisons between the error model and the error-learning data from which the model is generated. We demonstrate the efficacy of our methodology by deploying it on an IBM Quantum superconducting qubit quantum processor, and through numerical simulation of standard error models. We show that our estimated upper bounds are typically close to the worst observed performance of error mitigation on random circuits. Our methodology can also be understood as an operationally meaningful metric to assess the quality of error models, and we further extend our methodology to allow for comparison between error models.  Finally, contrary to what one might expect we show that observable error in noisy layered circuits of sufficient depth is not always maximized by a Clifford circuit, which may be of independent interest.},
-  archivePrefix= {arXiv},
-  eprint       = {2408.10985},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/GMBM24bounding.pdf}
-  }
-@article{NSBB24benchmarking,
-  author       = {Nation, Paul D. and Saki, Abdullah Ash and Brandhofer, Sebastian and Bello, Luciano and Garion, Shelly and Treinish, Matthew and Javadi-Abhari, Ali},
-  title        = {Benchmarking the Performance of Quantum Computing Software},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2409.08844v1},
-  abstract     = {We present Benchpress, a benchmarking suite for evaluating the performance and range of functionality of multiple quantum computing software development kits. This suite consists of a collection of over $1000$ tests measuring key performance metrics for a wide variety of operations on quantum circuits comprised of up to $930$ qubits and $\mathcal{O}(10^{6})$ two-qubit gates, as well as an execution framework for running the tests over multiple quantum software packages in a unified manner. We give a detailed overview of the benchmark suite, its methodology, and generate representative results over seven different quantum software packages. The flexibility of the Benchpress framework allows for benchmarking that not only keeps pace with quantum hardware improvements but can preemptively gauge the quantum circuit processing costs of future device architectures. Being open-source, Benchpress ensures the transparency and verification of performance claims.},
-  archivePrefix= {arXiv},
-  eprint       = {2409.08844},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/NSBB24benchmarking.pdf}
-  }
+}
