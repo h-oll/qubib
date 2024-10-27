@@ -8023,6 +8023,19 @@ pages[normalize_page_numbers]
 	year = 2021
 }
 
+@article{CLLZ21hidden,
+	author = {Coladangelo, Andrea and Liu, Jiahui and Liu, Qipeng and Zhandry, Mark},
+	title = {Hidden Cosets and Applications To Unclonable Cryptography},
+	journal = {CoRR},
+	year = 2021,
+	url = {http://arxiv.org/abs/2107.05692v3},
+	abstract = {In this work, we study a generalization of hidden subspace states to hidden coset states (first introduced by Aaronson and Christiano [STOC '12]). This notion was considered independently by Vidick and Zhang [Eurocrypt '21], in the context of proofs of quantum knowledge from quantum money schemes. We explore unclonable properties of coset states and several applications: - We show that assuming indistinguishability obfuscation (iO), hidden coset states possess a certain direct product hardness property, which immediately implies a tokenized signature scheme in the plain model. Previously, it was known only relative to an oracle, from a work of Ben-David and Sattath [QCrypt '17].  - Combining a tokenized signature scheme with extractable witness encryption, we give a construction of an unclonable decryption scheme in the plain model.  The latter primitive was recently proposed by Georgiou and Zhandry [ePrint '20], who gave a construction relative to a classical oracle.  - We conjecture that coset states satisfy a certain natural (information-theoretic) monogamy-of-entanglement property. Assuming this conjecture is true, we remove the requirement for extractable witness encryption in our unclonable decryption construction, by relying instead on compute-and-compare obfuscation for the class of unpredictable distributions.  This conjecture was later proved by Culf and Vidick in a follow-up work.  - Finally, we give a construction of a copy-protection scheme for pseudorandom functions (PRFs) in the plain model. Our scheme is secure either assuming iO, OWF, and extractable witness encryption, or assuming iO, OWF, compute-and-compare obfuscation for the class of unpredictable distributions, and the conjectured monogamy property mentioned above. This is the first example of a copy-protection scheme with provable security in the plain model for a class of functions that is not evasive.},
+	archivePrefix = {arXiv},
+	eprint = {2107.05692},
+	primaryClass = {cs.CR},
+	file = {~/shared/papers/CLLZ21hidden.pdf}
+}
+
 @misc{CLMP01measuring,
 	oldkey = CLM+01a,
 	Author = {Cucchietti, F. and Lewenkopf, C.H. and Mucciolo, E.R. and Pastawski, H. and Vallejos, R.O.},
@@ -8364,6 +8377,19 @@ pages[normalize_page_numbers]
 	Title = {Von {N}eumann algebra automorphism and time-thermodynamics relation in general covariant quantum theories},
 	Volume = 11,
 	Year = 1994
+}
+
+@article{CRK19certified,
+	author = {Cohen, Jeremy M and Rosenfeld, Elan and Kolter, J. Zico},
+	title = {Certified Adversarial Robustness Via Randomized Smoothing},
+	journal = {CoRR},
+	year = 2019,
+	url = {http://arxiv.org/abs/1902.02918v2},
+	abstract = {We show how to turn any classifier that classifies well under Gaussian noise into a new classifier that is certifiably robust to adversarial perturbations under the $\ell_2$ norm. This "randomized smoothing" technique has been proposed recently in the literature, but existing guarantees are loose. We prove a tight robustness guarantee in $\ell_2$ norm for smoothing with Gaussian noise. We use randomized smoothing to obtain an ImageNet classifier with e.g. a certified top-1 accuracy of 49 \% under adversarial perturbations with $\ell_2$ norm less than 0.5 (=127/255). No certified defense has been shown feasible on ImageNet except for smoothing. On smaller-scale datasets where competing approaches to certified $\ell_2$ robustness are viable, smoothing delivers higher certified accuracies. Our strong empirical results suggest that randomized smoothing is a promising direction for future research into adversarially robust classification. Code and models are available at http://github.com/locuslab/smoothing.},
+	archivePrefix = {arXiv},
+	eprint = {1902.02918},
+	primaryClass = {cs.LG},
+	file = {~/shared/papers/CRK19certified.pdf}
 }
 
 @article{CRSS97quantum,
@@ -16057,6 +16083,19 @@ pages[normalize_page_numbers]
 	Title = {Device-Independent Verifiable Blind Quantum Computation},
 	Year = 2015,
 	note = {Eprint:\href{http://arxiv.org/abs/1502.02563}{arXiv:1502.02563}}
+}
+
+@article{HPS24certifying,
+	author = {Huang, Hsin-Yuan and Preskill, John and Soleimanifar, Mehdi},
+	title = {Certifying Almost All Quantum States With Few Single-Qubit Measurements},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2404.07281v1},
+	abstract = {Certifying that an n-qubit state synthesized in the lab is close to the target state is a fundamental task in quantum information science. However, existing rigorous protocols either require deep quantum circuits or exponentially many single-qubit measurements. In this work, we prove that almost all n-qubit target states, including those with exponential circuit complexity, can be certified from only O(n^2) single-qubit measurements. This result is established by a new technique that relates certification to the mixing time of a random walk. Our protocol has applications for benchmarking quantum systems, for optimizing quantum circuits to generate a desired target state, and for learning and verifying neural networks, tensor networks, and various other representations of quantum states using only single-qubit measurements. We show that such verified representations can be used to efficiently predict highly non-local properties that would otherwise require an exponential number of measurements. We demonstrate these applications in numerical experiments with up to 120 qubits, and observe advantage over existing methods such as cross-entropy benchmarking (XEB).},
+	archivePrefix = {arXiv},
+	eprint = {2404.07281},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/HPS24certifying.pdf}
 }
 
 @article{HPZ92quantum,
@@ -27453,6 +27492,21 @@ pages[normalize_page_numbers]
 	primaryClass = {quant-ph}
 }
 
+@InBook{S22semi,
+	file = {S22semi.pdf},
+	timestamp = {2024-10-26 07:39:45 (CEST)},
+	title = {Semi-quantum Tokenized Signatures},
+	year = 2022,
+	author = {Shmueli, Omri},
+	booktitle = {Advances in Cryptology – CRYPTO 2022},
+	publisher = {Springer Nature Switzerland},
+	isbn = 9783031158025,
+	pages = {296–319},
+	doi = {10.1007/978-3-031-15802-5_11},
+	url = {https://eprint.iacr.org/2022/228.pdf},
+	ISSN = {1611-3349}
+}
+
 @article{S29decrease,
 	Author = {Szilard, L.},
 	Journal = {Z. Phys.},
@@ -32493,6 +32547,19 @@ pages[normalize_page_numbers]
 	Year = 2003
 }
 
+@article{WSGS11natural,
+	author = {Wierstra, Daan and Schaul, Tom and Glasmachers, Tobias and Sun, Yi and Schmidhuber, J{\"u}rgen},
+	title = {Natural Evolution Strategies},
+	journal = {CoRR},
+	year = 2011,
+	url = {http://arxiv.org/abs/1106.4487v1},
+	abstract = {This paper presents Natural Evolution Strategies (NES), a recent family of algorithms that constitute a more principled approach to black-box optimization than established evolutionary algorithms. NES maintains a parameterized distribution on the set of solution candidates, and the natural gradient is used to update the distribution's parameters in the direction of higher expected fitness. We introduce a collection of techniques that address issues of convergence, robustness, sample complexity, computational complexity and sensitivity to hyperparameters. This paper explores a number of implementations of the NES family, ranging from general-purpose multi-variate normal distributions to heavy-tailed and separable distributions tailored towards global optimization and search in high dimensional spaces, respectively.  Experimental results show best published performance on various standard benchmarks, as well as competitive performance on others.},
+	archivePrefix = {arXiv},
+	eprint = {1106.4487},
+	primaryClass = {stat.ML},
+	file = {~/shared/papers/WSGS11natural.pdf}
+}
+
 @article{WSHV00local,
 	Author = {Walgate, J. and Short, A. J. and Hardy, L. and Vedral, V.},
 	Date-Modified = {2006-01-03 17:54:44 +1000},
@@ -32861,6 +32928,18 @@ pages[normalize_page_numbers]
 	eprint = {1812.08767},
 	primaryClass = {quant-ph},
 	file = {~/shared/papers/YEZL18theory.pdf}
+}
+
+@article{YEZL18theoryb,
+	author = {Yuan, Xiao and Endo, Suguru and Zhao, Qi and Li, Ying and Benjamin, Simon},
+	title = {Theory of Variational Quantum Simulation},
+	journal = {CoRR},
+	year = 2018,
+	url = {http://arxiv.org/abs/1812.08767v4},
+	abstract = {The variational method is a versatile tool for classical simulation of a variety of quantum systems. Great efforts have recently been devoted to its extension to quantum computing for efficiently solving static many-body problems and simulating real and imaginary time dynamics. In this work, we first review the conventional variational principles, including the Rayleigh-Ritz method for solving static problems, and the Dirac and Frenkel variational principle, the McLachlan's variational principle, and the time-dependent variational principle, for simulating real time dynamics. We focus on the simulation of dynamics and discuss the connections of the three variational principles. Previous works mainly focus on the unitary evolution of pure states. In this work, we introduce variational quantum simulation of mixed states under general stochastic evolution. We show how the results can be reduced to the pure state case with a correction term that takes accounts of global phase alignment. For variational simulation of imaginary time evolution, we also extend it to the mixed state scenario and discuss variational Gibbs state preparation. We further elaborate on the design of ansatz that is compatible with post-selection measurement and the implementation of the generalised variational algorithms with quantum circuits. Our work completes the theory of variational quantum simulation of general real and imaginary time evolution and it is applicable to near-term quantum hardware.},
+	archivePrefix = {arXiv},
+	eprint = {1812.08767},
+	primaryClass = {quant-ph}
 }
 
 @techreport{YFW01bethe,
@@ -34130,62 +34209,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{HPS24certifying,
-  author       = {Huang, Hsin-Yuan and Preskill, John and Soleimanifar, Mehdi},
-  title        = {Certifying Almost All Quantum States With Few Single-Qubit Measurements},
+@article{CFRB24measurement,
+  author       = {Calder{\'o}n, Luis Mantilla and Feldmann, Polina and Raussendorf, Robert and Bondarenko, Dmytro},
+  title        = {Measurement-Based Quantum Machine Learning},
   journal      = {CoRR},
   year         = 2024,
-  url          = {http://arxiv.org/abs/2404.07281v1},
-  abstract     = {Certifying that an n-qubit state synthesized in the lab is close to the target state is a fundamental task in quantum information science. However, existing rigorous protocols either require deep quantum circuits or exponentially many single-qubit measurements. In this work, we prove that almost all n-qubit target states, including those with exponential circuit complexity, can be certified from only O(n^2) single-qubit measurements. This result is established by a new technique that relates certification to the mixing time of a random walk. Our protocol has applications for benchmarking quantum systems, for optimizing quantum circuits to generate a desired target state, and for learning and verifying neural networks, tensor networks, and various other representations of quantum states using only single-qubit measurements. We show that such verified representations can be used to efficiently predict highly non-local properties that would otherwise require an exponential number of measurements. We demonstrate these applications in numerical experiments with up to 120 qubits, and observe advantage over existing methods such as cross-entropy benchmarking (XEB).},
+  url          = {http://arxiv.org/abs/2405.08319v1},
+  abstract     = {A quantum neural network (QNN) is an object that extends the notion of a classical neural network to quantum models for quantum data. We can create a QNN by parametrizing a quantum process and then using it to model unknown relations between quantum states. In this paper, we explore how to use measurement-based quantum computation for quantum machine learning problems and propose a universal QNN in this framework which we call the multiple-triangle ansatz (MuTA). Using the proposed QNN, we solve several tasks, including learning a universal set of gates, optimizing measurement with post-processing, learning a quantum instrument, and the classification of classical data.  Finally, we discuss how to train an ansatz under the hardware constraints imposed by photonic Gottesman-Kitaev-Preskill qubits. Our work demonstrates the feasibility of using measurement-based quantum computation as a framework for quantum machine learning algorithms.},
   archivePrefix= {arXiv},
-  eprint       = {2404.07281},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/HPS24certifying.pdf}
-  }
-@article{YEZL18theory,
-  author       = {Yuan, Xiao and Endo, Suguru and Zhao, Qi and Li, Ying and Benjamin, Simon},
-  title        = {Theory of Variational Quantum Simulation},
-  journal      = {CoRR},
-  year         = 2018,
-  url          = {http://arxiv.org/abs/1812.08767v4},
-  abstract     = {The variational method is a versatile tool for classical simulation of a variety of quantum systems. Great efforts have recently been devoted to its extension to quantum computing for efficiently solving static many-body problems and simulating real and imaginary time dynamics. In this work, we first review the conventional variational principles, including the Rayleigh-Ritz method for solving static problems, and the Dirac and Frenkel variational principle, the McLachlan's variational principle, and the time-dependent variational principle, for simulating real time dynamics. We focus on the simulation of dynamics and discuss the connections of the three variational principles. Previous works mainly focus on the unitary evolution of pure states. In this work, we introduce variational quantum simulation of mixed states under general stochastic evolution. We show how the results can be reduced to the pure state case with a correction term that takes accounts of global phase alignment. For variational simulation of imaginary time evolution, we also extend it to the mixed state scenario and discuss variational Gibbs state preparation. We further elaborate on the design of ansatz that is compatible with post-selection measurement and the implementation of the generalised variational algorithms with quantum circuits. Our work completes the theory of variational quantum simulation of general real and imaginary time evolution and it is applicable to near-term quantum hardware.},
-  archivePrefix= {arXiv},
-  eprint       = {1812.08767},
+  eprint       = {2405.08319},
   primaryClass = {quant-ph},
 }
-@article{CRK19certified,
-  author       = {Cohen, Jeremy M and Rosenfeld, Elan and Kolter, J. Zico},
-  title        = {Certified Adversarial Robustness Via Randomized Smoothing},
-  journal      = {CoRR},
-  year         = 2019,
-  url          = {http://arxiv.org/abs/1902.02918v2},
-  abstract     = {We show how to turn any classifier that classifies well under Gaussian noise into a new classifier that is certifiably robust to adversarial perturbations under the $\ell_2$ norm. This "randomized smoothing" technique has been proposed recently in the literature, but existing guarantees are loose. We prove a tight robustness guarantee in $\ell_2$ norm for smoothing with Gaussian noise. We use randomized smoothing to obtain an ImageNet classifier with e.g. a certified top-1 accuracy of 49 \% under adversarial perturbations with $\ell_2$ norm less than 0.5 (=127/255). No certified defense has been shown feasible on ImageNet except for smoothing. On smaller-scale datasets where competing approaches to certified $\ell_2$ robustness are viable, smoothing delivers higher certified accuracies. Our strong empirical results suggest that randomized smoothing is a promising direction for future research into adversarially robust classification. Code and models are available at http://github.com/locuslab/smoothing.},
-  archivePrefix= {arXiv},
-  eprint       = {1902.02918},
-  primaryClass = {cs.LG},
-  file = {~/shared/papers/CRK19certified.pdf}
-  }
-@article{WSGS11natural,
-  author       = {Wierstra, Daan and Schaul, Tom and Glasmachers, Tobias and Sun, Yi and Schmidhuber, J{\"u}rgen},
-  title        = {Natural Evolution Strategies},
-  journal      = {CoRR},
-  year         = 2011,
-  url          = {http://arxiv.org/abs/1106.4487v1},
-  abstract     = {This paper presents Natural Evolution Strategies (NES), a recent family of algorithms that constitute a more principled approach to black-box optimization than established evolutionary algorithms. NES maintains a parameterized distribution on the set of solution candidates, and the natural gradient is used to update the distribution's parameters in the direction of higher expected fitness. We introduce a collection of techniques that address issues of convergence, robustness, sample complexity, computational complexity and sensitivity to hyperparameters. This paper explores a number of implementations of the NES family, ranging from general-purpose multi-variate normal distributions to heavy-tailed and separable distributions tailored towards global optimization and search in high dimensional spaces, respectively.  Experimental results show best published performance on various standard benchmarks, as well as competitive performance on others.},
-  archivePrefix= {arXiv},
-  eprint       = {1106.4487},
-  primaryClass = {stat.ML},
-  file = {~/shared/papers/WSGS11natural.pdf}
-  }
-@article{CLLZ21hidden,
-  author       = {Coladangelo, Andrea and Liu, Jiahui and Liu, Qipeng and Zhandry, Mark},
-  title        = {Hidden Cosets and Applications To Unclonable Cryptography},
-  journal      = {CoRR},
-  year         = 2021,
-  url          = {http://arxiv.org/abs/2107.05692v3},
-  abstract     = {In this work, we study a generalization of hidden subspace states to hidden coset states (first introduced by Aaronson and Christiano [STOC '12]). This notion was considered independently by Vidick and Zhang [Eurocrypt '21], in the context of proofs of quantum knowledge from quantum money schemes. We explore unclonable properties of coset states and several applications: - We show that assuming indistinguishability obfuscation (iO), hidden coset states possess a certain direct product hardness property, which immediately implies a tokenized signature scheme in the plain model. Previously, it was known only relative to an oracle, from a work of Ben-David and Sattath [QCrypt '17].  - Combining a tokenized signature scheme with extractable witness encryption, we give a construction of an unclonable decryption scheme in the plain model.  The latter primitive was recently proposed by Georgiou and Zhandry [ePrint '20], who gave a construction relative to a classical oracle.  - We conjecture that coset states satisfy a certain natural (information-theoretic) monogamy-of-entanglement property. Assuming this conjecture is true, we remove the requirement for extractable witness encryption in our unclonable decryption construction, by relying instead on compute-and-compare obfuscation for the class of unpredictable distributions.  This conjecture was later proved by Culf and Vidick in a follow-up work.  - Finally, we give a construction of a copy-protection scheme for pseudorandom functions (PRFs) in the plain model. Our scheme is secure either assuming iO, OWF, and extractable witness encryption, or assuming iO, OWF, compute-and-compare obfuscation for the class of unpredictable distributions, and the conjectured monogamy property mentioned above. This is the first example of a copy-protection scheme with provable security in the plain model for a class of functions that is not evasive.},
-  archivePrefix= {arXiv},
-  eprint       = {2107.05692},
-  primaryClass = {cs.CR},
-  file = {~/shared/papers/CLLZ21hidden.pdf}
-  }
