@@ -2326,6 +2326,17 @@ pages[normalize_page_numbers]
 	school = {University of Cambridge}
 }
 
+@Book{B24learning,
+	file = {B24learning.pdf},
+	url = {https://www.di.ens.fr/~fbach/ltfp_book.pdf},
+	series = {Adaptive Computation and Machine Learning},
+	year = {2024},
+	publisher = {MIT Press},
+	title = {Learning Theory from First Principles },
+	author = {Bach, Francis},
+	timestamp = {2024-10-27 23:14:31 (CET)}
+}
+
 @inproceedings{B27,
 	oldkey = Boh27a,
 	Address = {Como-Pavia-Roma},
@@ -7353,6 +7364,19 @@ pages[normalize_page_numbers]
 	Title = {Entanglement of formation of an arbitrary state of two rebits},
 	Volume = 14,
 	Year = 2001
+}
+
+@article{CFRB24measurement,
+	author = {Calder{\'o}n, Luis Mantilla and Feldmann, Polina and Raussendorf, Robert and Bondarenko, Dmytro},
+	title = {Measurement-Based Quantum Machine Learning},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2405.08319v1},
+	abstract = {A quantum neural network (QNN) is an object that extends the notion of a classical neural network to quantum models for quantum data. We can create a QNN by parametrizing a quantum process and then using it to model unknown relations between quantum states. In this paper, we explore how to use measurement-based quantum computation for quantum machine learning problems and propose a universal QNN in this framework which we call the multiple-triangle ansatz (MuTA). Using the proposed QNN, we solve several tasks, including learning a universal set of gates, optimizing measurement with post-processing, learning a quantum instrument, and the classification of classical data.  Finally, we discuss how to train an ansatz under the hardware constraints imposed by photonic Gottesman-Kitaev-Preskill qubits. Our work demonstrates the feasibility of using measurement-based quantum computation as a framework for quantum machine learning algorithms.},
+	archivePrefix = {arXiv},
+	eprint = {2405.08319},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/CFRB24measurement.pdf}
 }
 
 @article{CFS02conditions,
@@ -34209,15 +34233,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{CFRB24measurement,
-  author       = {Calder{\'o}n, Luis Mantilla and Feldmann, Polina and Raussendorf, Robert and Bondarenko, Dmytro},
-  title        = {Measurement-Based Quantum Machine Learning},
+@article{FKLO24heuristic,
+  author       = {Frank, Johannes and Kashefi, Elham and Leichtle, Dominik and Oliveira, Michael de},
+  title        = {Heuristic-Free Verification-Inspired Quantum Benchmarking},
   journal      = {CoRR},
   year         = 2024,
-  url          = {http://arxiv.org/abs/2405.08319v1},
-  abstract     = {A quantum neural network (QNN) is an object that extends the notion of a classical neural network to quantum models for quantum data. We can create a QNN by parametrizing a quantum process and then using it to model unknown relations between quantum states. In this paper, we explore how to use measurement-based quantum computation for quantum machine learning problems and propose a universal QNN in this framework which we call the multiple-triangle ansatz (MuTA). Using the proposed QNN, we solve several tasks, including learning a universal set of gates, optimizing measurement with post-processing, learning a quantum instrument, and the classification of classical data.  Finally, we discuss how to train an ansatz under the hardware constraints imposed by photonic Gottesman-Kitaev-Preskill qubits. Our work demonstrates the feasibility of using measurement-based quantum computation as a framework for quantum machine learning algorithms.},
+  url          = {http://arxiv.org/abs/2404.10739v1},
+  abstract     = {In this paper, we introduce a new approach to quantum benchmarking inspired by quantum verification motivating new paradigms of quantum benchmarking. Our proposed benchmark not only serves as a robust indicator of computational capability but also offers scalability, customizability, and universality. By providing formal statements regarding the quality of quantum devices while assuming device consistency, we eliminate the reliance on heuristics. We establish a deep connection between quantum verification and quantum benchmarking. For practical application, we present a concrete benchmarking protocol derived from a quantum verification protocol, and prove it to match our redefined standards for quantum benchmarking.},
   archivePrefix= {arXiv},
-  eprint       = {2405.08319},
+  eprint       = {2404.10739},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/CFRB24measurement.pdf}
-  }
+}
