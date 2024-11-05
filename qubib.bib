@@ -12181,6 +12181,19 @@ pages[normalize_page_numbers]
 	booktitle = {Codes, Systems, and Graphical Models}
 }
 
+@article{FKLO24heuristic,
+	author = {Frank, Johannes and Kashefi, Elham and Leichtle, Dominik and Oliveira, Michael de},
+	title = {Heuristic-Free Verification-Inspired Quantum Benchmarking},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2404.10739v1},
+	abstract = {In this paper, we introduce a new approach to quantum benchmarking inspired by quantum verification motivating new paradigms of quantum benchmarking. Our proposed benchmark not only serves as a robust indicator of computational capability but also offers scalability, customizability, and universality. By providing formal statements regarding the quality of quantum devices while assuming device consistency, we eliminate the reliance on heuristics. We establish a deep connection between quantum verification and quantum benchmarking. For practical application, we present a concrete benchmarking protocol derived from a quantum verification protocol, and prove it to match our redefined standards for quantum benchmarking.},
+	archivePrefix = {arXiv},
+	eprint = {2404.10739},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/FKLO24heuristic.pdf}
+}
+
 @misc{FKLW01topological,
 	Author = {Freedman, M. H. and Kitaev, A. and Larsen, M. and Wang, Z.},
 	Eprint = {quant-ph/0101025},
@@ -18411,8 +18424,9 @@ pages[normalize_page_numbers]
 }
 
 @Article{KKLM22unifying,
+	file = {KKLM22unifying.pdf},
 	doi = {10.1088/2058-9565/ad466d},
-	url = {https://dx.doi.org/10.1088/2058-9565/ad466d},
+	url = {https://arxiv.org/pdf/2206.00631},
 	year = {2024},
 	month = {May},
 	publisher = {IOP Publishing},
@@ -32497,6 +32511,19 @@ pages[normalize_page_numbers]
 	Year = 1994
 }
 
+@article{WMHP24let,
+	author = {Wang, Peiyong and Myers, Casey. R. and Hollenberg, Lloyd C. L. and Parampalli, Udaya},
+	title = {Let the Quantum Creep In: Designing Quantum Neural Network Models By Gradually Swapping Out Classical Components},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2409.17583v1},
+	abstract = {Artificial Intelligence (AI), with its multiplier effect and wide applications in multiple areas, could potentially be an important application of quantum computing. Since modern AI systems are often built on neural networks, the design of quantum neural networks becomes a key challenge in integrating quantum computing into AI. To provide a more fine-grained characterisation of the impact of quantum components on the performance of neural networks, we propose a framework where classical neural network layers are gradually replaced by quantum layers that have the same type of input and output while keeping the flow of information between layers unchanged, different from most current research in quantum neural network, which favours an end-to-end quantum model. We start with a simple three-layer classical neural network without any normalisation layers or activation functions, and gradually change the classical layers to the corresponding quantum versions. We conduct numerical experiments on image classification datasets such as the MNIST, FashionMNIST and CIFAR-10 datasets to demonstrate the change of performance brought by the systematic introduction of quantum components.  Through this framework, our research sheds new light on the design of future quantum neural network models where it could be more favourable to search for methods and frameworks that harness the advantages from both the classical and quantum worlds.},
+	archivePrefix = {arXiv},
+	eprint = {2409.17583},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/WMHP24let.pdf}
+}
+
 @article{WMIL98experimental,
 	Author = {Wineland, D. J. and Monroe, C. and Itano, W. M. and Leibfield, D. and King, B. E. and Meekof, D. M},
 	Journal = {J. Res. Natl. Inst. Stand. Technol.},
@@ -34233,27 +34260,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{FKLO24heuristic,
-  author       = {Frank, Johannes and Kashefi, Elham and Leichtle, Dominik and Oliveira, Michael de},
-  title        = {Heuristic-Free Verification-Inspired Quantum Benchmarking},
+@article{GLMM24chip,
+  author       = {Gustiani, Cica and Leichtle, Dominik and Mills, Daniel and Miller, Jonathan and Grassie, Ross and Kashefi, Elham},
+  title        = {On-Chip Verified Quantum Computation With an Ion-Trap Quantum Processing Unit},
   journal      = {CoRR},
   year         = 2024,
-  url          = {http://arxiv.org/abs/2404.10739v1},
-  abstract     = {In this paper, we introduce a new approach to quantum benchmarking inspired by quantum verification motivating new paradigms of quantum benchmarking. Our proposed benchmark not only serves as a robust indicator of computational capability but also offers scalability, customizability, and universality. By providing formal statements regarding the quality of quantum devices while assuming device consistency, we eliminate the reliance on heuristics. We establish a deep connection between quantum verification and quantum benchmarking. For practical application, we present a concrete benchmarking protocol derived from a quantum verification protocol, and prove it to match our redefined standards for quantum benchmarking.},
+  url          = {http://arxiv.org/abs/2410.24133v1},
+  abstract     = {We present and experimentally demonstrate a novel approach to verification and benchmarking of quantum computing, implementing it on an ion-trap quantum computer. Unlike previous information-theoretically secure verification protocols, which typically require quantum communication between client and server, our approach is implemented entirely on-chip. This eliminates the need for a quantum client and significantly enhances practicality.  We perform tomography to justify the additionally required assumption that the noise is independent of the secret used to prepare the Server's single-qubit states. We quantify the soundness error which may be caused by residual secret dependencies. We demonstrate our protocol on the 20-qubit Quantinuum H1-1 ion-trap quantum processing unit, using qubit measurements and resets to construct measurement patterns with up to 52 vertices. To our knowledge, these are the largest verified measurement-based quantum computations performed to date.  Our results pave the way for more accessible and efficient verification and benchmarking strategies in near-term quantum devices, enabling robust performance assessment without the added cost of external quantum infrastructure.},
   archivePrefix= {arXiv},
-  eprint       = {2404.10739},
+  eprint       = {2410.24133},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/FKLO24heuristic.pdf}
-  }
-@article{WMHP24let,
-  author       = {Wang, Peiyong and Myers, Casey. R. and Hollenberg, Lloyd C. L. and Parampalli, Udaya},
-  title        = {Let the Quantum Creep In: Designing Quantum Neural Network Models By Gradually Swapping Out Classical Components},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2409.17583v1},
-  abstract     = {Artificial Intelligence (AI), with its multiplier effect and wide applications in multiple areas, could potentially be an important application of quantum computing. Since modern AI systems are often built on neural networks, the design of quantum neural networks becomes a key challenge in integrating quantum computing into AI. To provide a more fine-grained characterisation of the impact of quantum components on the performance of neural networks, we propose a framework where classical neural network layers are gradually replaced by quantum layers that have the same type of input and output while keeping the flow of information between layers unchanged, different from most current research in quantum neural network, which favours an end-to-end quantum model. We start with a simple three-layer classical neural network without any normalisation layers or activation functions, and gradually change the classical layers to the corresponding quantum versions. We conduct numerical experiments on image classification datasets such as the MNIST, FashionMNIST and CIFAR-10 datasets to demonstrate the change of performance brought by the systematic introduction of quantum components.  Through this framework, our research sheds new light on the design of future quantum neural network models where it could be more favourable to search for methods and frameworks that harness the advantages from both the classical and quantum worlds.},
-  archivePrefix= {arXiv},
-  eprint       = {2409.17583},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/WMHP24let.pdf}
-  }
+}
