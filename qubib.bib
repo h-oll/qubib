@@ -51,6 +51,55 @@ pages[normalize_page_numbers]
 	title = {Proceedings of the 2017 Conference on Innovations in Theoretical Computer Science, ITCS'17, Berkeley, CA, USA, January 9-11, 2017}
 }
 
+@article{GLMM24chip,
+  author       = {Gustiani, Cica and Leichtle, Dominik and Mills, Daniel and Miller, Jonathan and Grassie, Ross and Kashefi, Elham},
+  title        = {On-Chip Verified Quantum Computation With an Ion-Trap Quantum Processing Unit},
+  journal      = {CoRR},
+  year         = 2024,
+  url          = {http://arxiv.org/abs/2410.24133v1},
+  abstract     = {We present and experimentally demonstrate a novel approach to verification and benchmarking of quantum computing, implementing it on an ion-trap quantum computer. Unlike previous information-theoretically secure verification protocols, which typically require quantum communication between client and server, our approach is implemented entirely on-chip. This eliminates the need for a quantum client and significantly enhances practicality.  We perform tomography to justify the additionally required assumption that the noise is independent of the secret used to prepare the Server's single-qubit states. We quantify the soundness error which may be caused by residual secret dependencies. We demonstrate our protocol on the 20-qubit Quantinuum H1-1 ion-trap quantum processing unit, using qubit measurements and resets to construct measurement patterns with up to 52 vertices. To our knowledge, these are the largest verified measurement-based quantum computations performed to date.  Our results pave the way for more accessible and efficient verification and benchmarking strategies in near-term quantum devices, enabling robust performance assessment without the added cost of external quantum infrastructure.},
+  archivePrefix= {arXiv},
+  eprint       = {2410.24133},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/GLMM24chip.pdf}
+  }
+@article{ZSM24advantage,
+  author       = {Zhong, Weishun and Shtanko, Oles and Movassagh, Ramis},
+  title        = {Advantage of Quantum Neural Networks As Quantum Information Decoders},
+  journal      = {CoRR},
+  year         = 2024,
+  url          = {http://arxiv.org/abs/2401.06300v1},
+  abstract     = {A promising strategy to protect quantum information from noise-induced errors is to encode it into the low-energy states of a topological quantum memory device. However, readout errors from such memory under realistic settings is less understood. We study the problem of decoding quantum information encoded in the groundspaces of topological stabilizer Hamiltonians in the presence of generic perturbations, such as quenched disorder. We first prove that the standard stabilizer-based error correction and decoding schemes work adequately well in such perturbed quantum codes by showing that the decoding error diminishes exponentially in the distance of the underlying unperturbed code. We then prove that Quantum Neural Network (QNN) decoders provide an almost quadratic improvement on the readout error. Thus, we demonstrate provable advantage of using QNNs for decoding realistic quantum error-correcting codes, and our result enables the exploration of a wider range of non-stabilizer codes in the near-term laboratory settings.},
+  archivePrefix= {arXiv},
+  eprint       = {2401.06300},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/ZSM24advantage.pdf}
+  }
+@article{MAGK24noise,
+  author       = {Mele, Antonio Anna and Angrisani, Armando and Ghosh, Soumik and Khatri, Sumeet and Eisert, Jens and Fran{\c{c}}a, Daniel Stilck and Quek, Yihui},
+  title        = {Noise-Induced Shallow Circuits and Absence of Barren Plateaus},
+  journal      = {CoRR},
+  year         = 2024,
+  url          = {http://arxiv.org/abs/2403.13927v2},
+  abstract     = {Motivated by realistic hardware considerations of the pre-fault-tolerant era, we comprehensively study the impact of uncorrected noise on quantum circuits.  We first show that any noise `truncates' most quantum circuits to effectively logarithmic depth, in the task of estimating observable expectation values. We then prove that quantum circuits under any non-unital noise exhibit lack of barren plateaus for cost functions composed of local observables. But, by leveraging the effective shallowness, we also design an efficient classical algorithm to estimate observable expectation values within any constant additive accuracy, with high probability over the choice of the circuit, in any circuit architecture. The runtime of the algorithm is independent of circuit depth, and for any inverse-polynomial target accuracy, it operates in polynomial time in the number of qubits for one-dimensional architectures and quasi-polynomial time for higher-dimensional ones. Taken together, our results showcase that, unless we carefully engineer the circuits to take advantage of the noise, it is unlikely that noisy quantum circuits are preferable over shallow quantum circuits for algorithms that output observable expectation value estimates, like many variational quantum machine learning proposals.  Moreover, we anticipate that our work could provide valuable insights into the fundamental open question about the complexity of sampling from (possibly non-unital) noisy random circuits.},
+  archivePrefix= {arXiv},
+  eprint       = {2403.13927},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/MAGK24noise.pdf}
+  }
+@article{JGM23informationrq,
+  author       = {Jain, Prabhav and Gachechiladze, Mariami and Miklin, Nikolai},
+  title        = {Information Causality As a Tool for Bounding the Set of Quantum Correlations},
+  journal      = {CoRR},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2308.02478v2},
+  abstract     = {Information causality was initially proposed as a physical principle aimed at deriving the predictions of quantum mechanics on the type of correlations observed in the Bell experiment. In the same work, information causality was famously shown to imply the Uffink inequality that approximates the set of quantum correlations and rederives Tsirelson's bound of the Clauser-Horne-Shimony-Holt inequality. This result found limited generalizations due to the difficulty of deducing implications of the information causality principle on the set of nonlocal correlations. In this paper, we present a simple technique for obtaining polynomial inequalities from information causality bounding the set of physical correlations in any bipartite Bell scenario. This result makes information causality an efficient tool for approximating the set of quantum correlations. To demonstrate our method, we derive a family of inequalities which non-trivially constrains the set of nonlocal correlations in Bell scenarios with binary outcomes and equal number of measurement settings. Finally, we propose an improved statement of the information causality principle and obtain a tighter constraint for the simplest Bell scenario, that goes beyond the Uffink inequality and recovers a part of the boundary of the quantum set.},
+  archivePrefix= {arXiv},
+  eprint       = {2308.02478},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/JGM23information.pdf}
+  }
+
 @Article{A00quantum,
 	author = {Averin, D.V.},
 	title = {Quantum Computing and Quantum Measurement with Mesoscopic Josephson Junctions},
@@ -14006,6 +14055,19 @@ pages[normalize_page_numbers]
 	Year = 2004
 }
 
+@article{GLMM24chip,
+	author = {Gustiani, Cica and Leichtle, Dominik and Mills, Daniel and Miller, Jonathan and Grassie, Ross and Kashefi, Elham},
+	title = {On-Chip Verified Quantum Computation With an Ion-Trap Quantum Processing Unit},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2410.24133v1},
+	abstract = {We present and experimentally demonstrate a novel approach to verification and benchmarking of quantum computing, implementing it on an ion-trap quantum computer. Unlike previous information-theoretically secure verification protocols, which typically require quantum communication between client and server, our approach is implemented entirely on-chip. This eliminates the need for a quantum client and significantly enhances practicality.  We perform tomography to justify the additionally required assumption that the noise is independent of the secret used to prepare the Server's single-qubit states. We quantify the soundness error which may be caused by residual secret dependencies. We demonstrate our protocol on the 20-qubit Quantinuum H1-1 ion-trap quantum processing unit, using qubit measurements and resets to construct measurement patterns with up to 52 vertices. To our knowledge, these are the largest verified measurement-based quantum computations performed to date.  Our results pave the way for more accessible and efficient verification and benchmarking strategies in near-term quantum devices, enabling robust performance assessment without the added cost of external quantum infrastructure.},
+	archivePrefix = {arXiv},
+	eprint = {2410.24133},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/GLMM24chip.pdf}
+}
+
 @article{GLP98quantum,
 	Author = {Grangier, P. and Levenson, {J. A.} and Poizat, {J.-P.}},
 	Date-Modified = {2006-01-03 17:45:19 +1000},
@@ -16905,6 +16967,19 @@ pages[normalize_page_numbers]
 	Title = {Comparison of quantum and semiclassical radiation theory with application to the beam maser},
 	Volume = 51,
 	Year = 1963
+}
+
+@article{JGM23information,
+	author = {Jain, Prabhav and Gachechiladze, Mariami and Miklin, Nikolai},
+	title = {Information Causality As a Tool for Bounding the Set of Quantum Correlations},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2308.02478v2},
+	abstract = {Information causality was initially proposed as a physical principle aimed at deriving the predictions of quantum mechanics on the type of correlations observed in the Bell experiment. In the same work, information causality was famously shown to imply the Uffink inequality that approximates the set of quantum correlations and rederives Tsirelson's bound of the Clauser-Horne-Shimony-Holt inequality. This result found limited generalizations due to the difficulty of deducing implications of the information causality principle on the set of nonlocal correlations. In this paper, we present a simple technique for obtaining polynomial inequalities from information causality bounding the set of physical correlations in any bipartite Bell scenario. This result makes information causality an efficient tool for approximating the set of quantum correlations. To demonstrate our method, we derive a family of inequalities which non-trivially constrains the set of nonlocal correlations in Bell scenarios with binary outcomes and equal number of measurement settings. Finally, we propose an improved statement of the information causality principle and obtain a tighter constraint for the simplest Bell scenario, that goes beyond the Uffink inequality and recovers a part of the boundary of the quantum set.},
+	archivePrefix = {arXiv},
+	eprint = {2308.02478},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/JGM23information.pdf}
 }
 
 @article{JHM98quantum,
@@ -21963,6 +22038,19 @@ pages[normalize_page_numbers]
 	Title = {Bargmann invariants, null phase curves, and a theory of the geometric phase},
 	Volume = 67,
 	Year = 2003
+}
+
+@article{MAGK24noise,
+	author = {Mele, Antonio Anna and Angrisani, Armando and Ghosh, Soumik and Khatri, Sumeet and Eisert, Jens and Fran{\c{c}}a, Daniel Stilck and Quek, Yihui},
+	title = {Noise-Induced Shallow Circuits and Absence of Barren Plateaus},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2403.13927v2},
+	abstract = {Motivated by realistic hardware considerations of the pre-fault-tolerant era, we comprehensively study the impact of uncorrected noise on quantum circuits.  We first show that any noise `truncates' most quantum circuits to effectively logarithmic depth, in the task of estimating observable expectation values. We then prove that quantum circuits under any non-unital noise exhibit lack of barren plateaus for cost functions composed of local observables. But, by leveraging the effective shallowness, we also design an efficient classical algorithm to estimate observable expectation values within any constant additive accuracy, with high probability over the choice of the circuit, in any circuit architecture. The runtime of the algorithm is independent of circuit depth, and for any inverse-polynomial target accuracy, it operates in polynomial time in the number of qubits for one-dimensional architectures and quasi-polynomial time for higher-dimensional ones. Taken together, our results showcase that, unless we carefully engineer the circuits to take advantage of the noise, it is unlikely that noisy quantum circuits are preferable over shallow quantum circuits for algorithms that output observable expectation value estimates, like many variational quantum machine learning proposals.  Moreover, we anticipate that our work could provide valuable insights into the fundamental open question about the complexity of sampling from (possibly non-unital) noisy random circuits.},
+	archivePrefix = {arXiv},
+	eprint = {2403.13927},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/MAGK24noise.pdf}
 }
 
 @article{MB03measure,
@@ -34179,6 +34267,19 @@ pages[normalize_page_numbers]
 	Year = 2001
 }
 
+@article{ZSM24advantage,
+	author = {Zhong, Weishun and Shtanko, Oles and Movassagh, Ramis},
+	title = {Advantage of Quantum Neural Networks As Quantum Information Decoders},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2401.06300v1},
+	abstract = {A promising strategy to protect quantum information from noise-induced errors is to encode it into the low-energy states of a topological quantum memory device. However, readout errors from such memory under realistic settings is less understood. We study the problem of decoding quantum information encoded in the groundspaces of topological stabilizer Hamiltonians in the presence of generic perturbations, such as quenched disorder. We first prove that the standard stabilizer-based error correction and decoding schemes work adequately well in such perturbed quantum codes by showing that the decoding error diminishes exponentially in the distance of the underlying unperturbed code. We then prove that Quantum Neural Network (QNN) decoders provide an almost quadratic improvement on the readout error. Thus, we demonstrate provable advantage of using QNNs for decoding realistic quantum error-correcting codes, and our result enables the exploration of a wider range of non-stabilizer codes in the near-term laboratory settings.},
+	archivePrefix = {arXiv},
+	eprint = {2401.06300},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/ZSM24advantage.pdf}
+}
+
 @article{ZSS18resource,
 	Author = {Zhuang, Quntao and Shor, Peter W and Shapiro, Jeffrey H},
 	Date-Added = {2019-07-08 16:26:12 +0200},
@@ -34260,51 +34361,3 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{GLMM24chip,
-  author       = {Gustiani, Cica and Leichtle, Dominik and Mills, Daniel and Miller, Jonathan and Grassie, Ross and Kashefi, Elham},
-  title        = {On-Chip Verified Quantum Computation With an Ion-Trap Quantum Processing Unit},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2410.24133v1},
-  abstract     = {We present and experimentally demonstrate a novel approach to verification and benchmarking of quantum computing, implementing it on an ion-trap quantum computer. Unlike previous information-theoretically secure verification protocols, which typically require quantum communication between client and server, our approach is implemented entirely on-chip. This eliminates the need for a quantum client and significantly enhances practicality.  We perform tomography to justify the additionally required assumption that the noise is independent of the secret used to prepare the Server's single-qubit states. We quantify the soundness error which may be caused by residual secret dependencies. We demonstrate our protocol on the 20-qubit Quantinuum H1-1 ion-trap quantum processing unit, using qubit measurements and resets to construct measurement patterns with up to 52 vertices. To our knowledge, these are the largest verified measurement-based quantum computations performed to date.  Our results pave the way for more accessible and efficient verification and benchmarking strategies in near-term quantum devices, enabling robust performance assessment without the added cost of external quantum infrastructure.},
-  archivePrefix= {arXiv},
-  eprint       = {2410.24133},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/GLMM24chip.pdf}
-  }
-@article{ZSM24advantage,
-  author       = {Zhong, Weishun and Shtanko, Oles and Movassagh, Ramis},
-  title        = {Advantage of Quantum Neural Networks As Quantum Information Decoders},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2401.06300v1},
-  abstract     = {A promising strategy to protect quantum information from noise-induced errors is to encode it into the low-energy states of a topological quantum memory device. However, readout errors from such memory under realistic settings is less understood. We study the problem of decoding quantum information encoded in the groundspaces of topological stabilizer Hamiltonians in the presence of generic perturbations, such as quenched disorder. We first prove that the standard stabilizer-based error correction and decoding schemes work adequately well in such perturbed quantum codes by showing that the decoding error diminishes exponentially in the distance of the underlying unperturbed code. We then prove that Quantum Neural Network (QNN) decoders provide an almost quadratic improvement on the readout error. Thus, we demonstrate provable advantage of using QNNs for decoding realistic quantum error-correcting codes, and our result enables the exploration of a wider range of non-stabilizer codes in the near-term laboratory settings.},
-  archivePrefix= {arXiv},
-  eprint       = {2401.06300},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/ZSM24advantage.pdf}
-  }
-@article{MAGK24noise,
-  author       = {Mele, Antonio Anna and Angrisani, Armando and Ghosh, Soumik and Khatri, Sumeet and Eisert, Jens and Fran{\c{c}}a, Daniel Stilck and Quek, Yihui},
-  title        = {Noise-Induced Shallow Circuits and Absence of Barren Plateaus},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2403.13927v2},
-  abstract     = {Motivated by realistic hardware considerations of the pre-fault-tolerant era, we comprehensively study the impact of uncorrected noise on quantum circuits.  We first show that any noise `truncates' most quantum circuits to effectively logarithmic depth, in the task of estimating observable expectation values. We then prove that quantum circuits under any non-unital noise exhibit lack of barren plateaus for cost functions composed of local observables. But, by leveraging the effective shallowness, we also design an efficient classical algorithm to estimate observable expectation values within any constant additive accuracy, with high probability over the choice of the circuit, in any circuit architecture. The runtime of the algorithm is independent of circuit depth, and for any inverse-polynomial target accuracy, it operates in polynomial time in the number of qubits for one-dimensional architectures and quasi-polynomial time for higher-dimensional ones. Taken together, our results showcase that, unless we carefully engineer the circuits to take advantage of the noise, it is unlikely that noisy quantum circuits are preferable over shallow quantum circuits for algorithms that output observable expectation value estimates, like many variational quantum machine learning proposals.  Moreover, we anticipate that our work could provide valuable insights into the fundamental open question about the complexity of sampling from (possibly non-unital) noisy random circuits.},
-  archivePrefix= {arXiv},
-  eprint       = {2403.13927},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/MAGK24noise.pdf}
-  }
-@article{JGM23informationrq,
-  author       = {Jain, Prabhav and Gachechiladze, Mariami and Miklin, Nikolai},
-  title        = {Information Causality As a Tool for Bounding the Set of Quantum Correlations},
-  journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2308.02478v2},
-  abstract     = {Information causality was initially proposed as a physical principle aimed at deriving the predictions of quantum mechanics on the type of correlations observed in the Bell experiment. In the same work, information causality was famously shown to imply the Uffink inequality that approximates the set of quantum correlations and rederives Tsirelson's bound of the Clauser-Horne-Shimony-Holt inequality. This result found limited generalizations due to the difficulty of deducing implications of the information causality principle on the set of nonlocal correlations. In this paper, we present a simple technique for obtaining polynomial inequalities from information causality bounding the set of physical correlations in any bipartite Bell scenario. This result makes information causality an efficient tool for approximating the set of quantum correlations. To demonstrate our method, we derive a family of inequalities which non-trivially constrains the set of nonlocal correlations in Bell scenarios with binary outcomes and equal number of measurement settings. Finally, we propose an improved statement of the information causality principle and obtain a tighter constraint for the simplest Bell scenario, that goes beyond the Uffink inequality and recovers a part of the boundary of the quantum set.},
-  archivePrefix= {arXiv},
-  eprint       = {2308.02478},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/JGM23information.pdf}
-  }
