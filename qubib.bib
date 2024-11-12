@@ -9953,6 +9953,19 @@ pages[normalize_page_numbers]
 	Year = 1999
 }
 
+@article{DIVF24design,
+	author = {Donne, Carlo Delle and Iuliano, Mariagrazia and Vecht, Bart van der and Ferreira, Guilherme Maciel and Jirovsk{\'a}, Hana and Steenhoven, Thom van der and Dahlberg, Axel and Skrzypczyk, Matt and Fioretto, Dario and Teller, Markus and Filippov, Pavel and Montblanch, Alejandro Rodr{\'i}guez-Pardo and Fischer, Julius and Ommen, Benjamin van and Demetriou, Nicolas and Leichtle, Dominik and Music, Luka and Ollivier, Harold and Raa, Ingmar te and Kozlowski, Wojciech and Taminiau, Tim and Pawełczak, Przemysław and Northup, Tracy and Hanson, Ronald and Wehner, Stephanie},
+	title = {Design and Demonstration of an Operating System for Executing Applications on Quantum Network Nodes},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2407.18306v1},
+	abstract = {The goal of future quantum networks is to enable new internet applications that are impossible to achieve using solely classical communication. Up to now, demonstrations of quantum network applications and functionalities on quantum processors have been performed in ad-hoc software that was specific to the experimental setup, programmed to perform one single task (the application experiment) directly into low-level control devices using expertise in experimental physics. Here, we report on the design and implementation of the first architecture capable of executing quantum network applications on quantum processors in platform-independent high-level software. We demonstrate the architecture's capability to execute applications in high-level software, by implementing it as a quantum network operating system -- QNodeOS -- and executing test programs including a delegated computation from a client to a server on two quantum network nodes based on nitrogen-vacancy (NV) centers in diamond. We show how our architecture allows us to maximize the use of quantum network hardware, by multitasking different applications on a quantum network for the first time. Our architecture can be used to execute programs on any quantum processor platform corresponding to our system model, which we illustrate by demonstrating an additional driver for QNodeOS for a trapped-ion quantum network node based on a single $^{40}\text{Ca}^+$ atom. Our architecture lays the groundwork for computer science research in the domain of quantum network programming, and paves the way for the development of software that can bring quantum network technology to society.},
+	archivePrefix = {arXiv},
+	eprint = {2407.18306},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/DIVF24design.pdf}
+}
+
 @article{DJ92rapid,
 	source = {Luka Music, 2021-09-16},
 	title = {Rapid solution of problems by quantum computation},
@@ -14030,6 +14043,19 @@ pages[normalize_page_numbers]
 	eprint = {2410.24133},
 	primaryClass = {quant-ph},
 	file = {~/shared/papers/GLMM24chip.pdf}
+}
+
+@InProceedings{GLMO24composably,
+	timestamp = {2024-11-12 16:03:42 (CET)},
+	author = {Garnier, Maxime and Leichtle, Dominik and Music, Luka and Ollivier, Harold},
+	title = {Composably Secure Delegated Quantum Computation with Weak Coherent Pulses},
+	year = 2024,
+	booktitle = {2024 International Conference on Quantum Communications, Networking, and Computing (QCNC)},
+	publisher = {IEEE},
+	month = jul,
+	pages = {221–225},
+	doi = {10.1109/qcnc62729.2024.00042},
+	url = {http://dx.doi.org/10.1109/QCNC62729.2024.00042}
 }
 
 @article{GLP98quantum,
@@ -34381,15 +34407,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{DIVF24design,
-  author       = {Donne, Carlo Delle and Iuliano, Mariagrazia and Vecht, Bart van der and Ferreira, Guilherme Maciel and Jirovsk{\'a}, Hana and Steenhoven, Thom van der and Dahlberg, Axel and Skrzypczyk, Matt and Fioretto, Dario and Teller, Markus and Filippov, Pavel and Montblanch, Alejandro Rodr{\'i}guez-Pardo and Fischer, Julius and Ommen, Benjamin van and Demetriou, Nicolas and Leichtle, Dominik and Music, Luka and Ollivier, Harold and Raa, Ingmar te and Kozlowski, Wojciech and Taminiau, Tim and Pawełczak, Przemysław and Northup, Tracy and Hanson, Ronald and Wehner, Stephanie},
-  title        = {Design and Demonstration of an Operating System for Executing Applications on Quantum Network Nodes},
+@article{SDMD23towards,
+  author       = {Singh, Shraddha and Doosti, Mina and Mathur, Natansh and Delavar, Mahshid and Mantri, Atul and Ollivier, Harold and Kashefi, Elham},
+  title        = {Towards a Unified Quantum Protocol Framework: Classification, Implementation, and Use Cases},
   journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2407.18306v1},
-  abstract     = {The goal of future quantum networks is to enable new internet applications that are impossible to achieve using solely classical communication. Up to now, demonstrations of quantum network applications and functionalities on quantum processors have been performed in ad-hoc software that was specific to the experimental setup, programmed to perform one single task (the application experiment) directly into low-level control devices using expertise in experimental physics. Here, we report on the design and implementation of the first architecture capable of executing quantum network applications on quantum processors in platform-independent high-level software. We demonstrate the architecture's capability to execute applications in high-level software, by implementing it as a quantum network operating system -- QNodeOS -- and executing test programs including a delegated computation from a client to a server on two quantum network nodes based on nitrogen-vacancy (NV) centers in diamond. We show how our architecture allows us to maximize the use of quantum network hardware, by multitasking different applications on a quantum network for the first time. Our architecture can be used to execute programs on any quantum processor platform corresponding to our system model, which we illustrate by demonstrating an additional driver for QNodeOS for a trapped-ion quantum network node based on a single $^{40}\text{Ca}^+$ atom. Our architecture lays the groundwork for computer science research in the domain of quantum network programming, and paves the way for the development of software that can bring quantum network technology to society.},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2310.12780v2},
+  abstract     = {We present a framework for the unification and standardization of quantum network protocols, making their realization easier and expanding their use cases to a broader range of communities interested in quantum technologies. Our framework is available as an open-source repository, the Quantum Protocol Zoo.  We follow a modular approach by identifying two key components: Functionality, which connects real-world applications; and Protocol, which is a set of instructions between two or many parties, at least one of which has a quantum device. Based on the different stages of the quantum internet and use-case in the commercialization of quantum communication, our framework classifies quantum cryptographic functionalities and the various protocol designs implementing these functionalities. Towards this classification, we introduce a novel concept of resource visualization for quantum protocols, which includes two interfaces: one to identify the building blocks for implementing a given protocol and another to identify accessible protocols when certain physical resources or functionalities are available. Such classification provides a hierarchy of quantum protocols based on their use-case and resource allocation.  We have identified various valuable tools to improve its representation with a range of techniques, from abstract cryptography to graphical visualizations of the resource hierarchy in quantum networks. We elucidate the structure of the zoo and its primary features in this article to a broader class of quantum information scientists, physicists, computer science theorists and end-users.  Since its introduction in 2018, the quantum protocol zoo has been a cornerstone in serving the quantum networks community in its ability to establish the use cases of emerging quantum internet networks. In that spirit we also provide some of the applications of our framework from different perspectives.},
   archivePrefix= {arXiv},
-  eprint       = {2407.18306},
+  eprint       = {2310.12780},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/DIVF24design.pdf}
-  }
+}
