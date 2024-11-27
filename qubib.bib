@@ -34500,4 +34500,16 @@ pages[normalize_page_numbers]
   archivePrefix= {arXiv},
   eprint       = {quant-ph/9809004},
   primaryClass = {quant-ph},
+  file = {~/shared/papers/FW98quantum.pdf}
+  }
+@article{BA23efficient,
+  author       = {Bagherimehrab, Mohsen and Aspuru-Guzik, Alan},
+  title        = {Efficient Quantum Algorithm for All Quantum Wavelet Transforms},
+  journal      = {CoRR},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2309.09350v2},
+  abstract     = {Wavelet transforms are widely used in various fields of science and engineering as a mathematical tool with features that reveal information ignored by the Fourier transform. Unlike the Fourier transform, which is unique, a wavelet transform is specified by a sequence of numbers associated with the type of wavelet used and an order parameter specifying the length of the sequence. While the quantum Fourier transform, a quantum analog of the classical Fourier transform, has been pivotal in quantum computing, prior works on quantum wavelet transforms~(QWTs) were limited to the second and fourth order of a particular wavelet, the Daubechies wavelet. Here we develop a simple yet efficient quantum algorithm for executing any wavelet transform on a quantum computer. Our approach is to decompose the kernel matrix of a wavelet transform as a linear combination of unitaries (LCU) that are compilable by easy-to-implement modular quantum arithmetic operations and use the LCU technique to construct a probabilistic procedure to implement a QWT with a \textit{known} success probability. We then use properties of wavelets to make this approach deterministic by a few executions of the amplitude amplification strategy. We extend our approach to a multilevel wavelet transform and a generalized version, the packet wavelet transform, establishing computational complexities in terms of three parameters: the wavelet order $M$, the dimension $N$ of the transformation matrix, and the transformation level $d$. We show the cost is logarithmic in $N$, linear in $d$ and superlinear in $M$. Moreover, we show the cost is independent of $M$ for practical applications. Our proposed quantum wavelet transforms could be used in quantum computing algorithms in a similar manner to their well-established counterpart, the quantum Fourier transform.},
+  archivePrefix= {arXiv},
+  eprint       = {2309.09350},
+  primaryClass = {quant-ph},
 }
