@@ -834,12 +834,13 @@ pages[normalize_page_numbers]
 }
 
 @misc{ACCH20round,
+	file = {ACCH20round.pdf},
 	author = {Bar Alon and Hao Chung and Kai-Min Chung and Mi-Ying Huang and Yi Lee and Yu-Ching Shen},
 	title = {Round Efficient Secure Multiparty Quantum Computation with Identifiable Abort},
 	journal = {Cryptology ePrint Archive, Report 2020/1464},
 	month = nov,
 	year = 2020,
-	url = {https://eprint.iacr.org/2020.1464}
+	url = {https://eprint.iacr.org/2020/1464.pdf}
 }
 
 @article{ACF03generalized,
@@ -2907,6 +2908,19 @@ pages[normalize_page_numbers]
 	Publisher = {Springer-Verlag},
 	Title = {Quantum computing and communications},
 	Year = 1999
+}
+
+@article{BA23efficient,
+	author = {Bagherimehrab, Mohsen and Aspuru-Guzik, Alan},
+	title = {Efficient Quantum Algorithm for All Quantum Wavelet Transforms},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2309.09350v2},
+	abstract = {Wavelet transforms are widely used in various fields of science and engineering as a mathematical tool with features that reveal information ignored by the Fourier transform. Unlike the Fourier transform, which is unique, a wavelet transform is specified by a sequence of numbers associated with the type of wavelet used and an order parameter specifying the length of the sequence. While the quantum Fourier transform, a quantum analog of the classical Fourier transform, has been pivotal in quantum computing, prior works on quantum wavelet transforms~(QWTs) were limited to the second and fourth order of a particular wavelet, the Daubechies wavelet. Here we develop a simple yet efficient quantum algorithm for executing any wavelet transform on a quantum computer. Our approach is to decompose the kernel matrix of a wavelet transform as a linear combination of unitaries (LCU) that are compilable by easy-to-implement modular quantum arithmetic operations and use the LCU technique to construct a probabilistic procedure to implement a QWT with a \textit{known} success probability. We then use properties of wavelets to make this approach deterministic by a few executions of the amplitude amplification strategy. We extend our approach to a multilevel wavelet transform and a generalized version, the packet wavelet transform, establishing computational complexities in terms of three parameters: the wavelet order $M$, the dimension $N$ of the transformation matrix, and the transformation level $d$. We show the cost is logarithmic in $N$, linear in $d$ and superlinear in $M$. Moreover, we show the cost is independent of $M$ for practical applications. Our proposed quantum wavelet transforms could be used in quantum computing algorithms in a similar manner to their well-established counterpart, the quantum Fourier transform.},
+	archivePrefix = {arXiv},
+	eprint = {2309.09350},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/BA23efficient.pdf}
 }
 
 @misc{BB01meaning,
@@ -7783,6 +7797,19 @@ pages[normalize_page_numbers]
 	url = {http://link.aps.org/doi/10.1103/PhysRevLett.23.880}
 }
 
+@article{CHTZ22best,
+	author = {Chung, Kai-Min and Huang, Mi-Ying and Tang, Er-Cheng and Zhang, Jiapeng},
+	title = {Best-Of-Both-Worlds Multiparty Quantum Computation With Publicly Verifiable Identifiable Abort},
+	journal = {CoRR},
+	year = 2022,
+	url = {http://arxiv.org/abs/2211.01665v3},
+	abstract = {Alon et al. (CRYPTO 2021) introduced a multiparty quantum computation protocol that is secure with identifiable abort (MPQC-SWIA). However, their protocol allows only inside MPQC parties to know the identity of malicious players. This becomes problematic when two groups of people disagree and need a third party, like a jury, to verify who the malicious party is. This issue takes on heightened significance in the quantum setting, given that quantum states may exist in only a single copy. Thus, we emphasize the necessity of a protocol with publicly verifiable identifiable abort (PVIA), enabling outside observers with only classical computational power to agree on the identity of the malicious party in case of an abort. However, achieving MPQC with PVIA poses significant challenges due to the no-cloning theorem, and previous works proposed by Mahadev (STOC 2018) and Chung et al. (Eurocrypt 2022) for classical verification of quantum computation fall short.  In this paper, we obtain the first MPQC-PVIA protocol assuming post-quantum oblivious transfer and a classical broadcast channel. The core component of our construction is a new authentication primitive called auditable quantum authentication (AQA) that identifies the malicious sender with overwhelming probability. Additionally, we provide the first MPQC protocol with best-of-both-worlds (BoBW) security, which guarantees output delivery with an honest majority and remains secure with abort even if the majority is dishonest. Our best-of-both-worlds MPQC protocol also satisfies PVIA upon abort.},
+	archivePrefix = {arXiv},
+	eprint = {2211.01665v3},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/CHTZ22best.pdf}
+}
+
 @InBook{CHTZ24best,
 	file = {CHTZ24best.pdf},
 	timestamp = {2024-07-18 18:30:36 (CEST)},
@@ -12597,6 +12624,19 @@ pages[normalize_page_numbers]
 	doi = {10.1145/3408039},
 	url = {https://arxiv.org/pdf/1907.12976.pdf},
 	publisher = {Association for Computing Machinery (ACM)}
+}
+
+@article{FW98quantum,
+	author = {Fijany, Amir and Williams, Colin P.},
+	title = {Quantum Wavelet Transforms: Fast Algorithms and Complete Circuits},
+	journal = {CoRR},
+	year = 1998,
+	url = {http://arxiv.org/abs/quant-ph/9809004v1},
+	abstract = {The quantum Fourier transform (QFT), a quantum analog of the classical Fourier transform, has been shown to be a powerful tool in developing quantum algorithms. However, in classical computing there is another class of unitary transforms, the wavelet transforms, which are every bit as useful as the Fourier transform. Wavelet transforms are used to expose the multi-scale structure of a signal and are likely to be useful for quantum image processing and quantum data compression. In this paper, we derive efficient, complete, quantum circuits for two representative quantum wavelet transforms, the quantum Haar and quantum Daubechies $D^{(4)}$ transforms. Our approach is to factor the operators for these transforms into direct sums, direct products and dot products of unitary matrices. In so doing, we find that permutation matrices, a particular class of unitary matrices, play a pivotal role. Surprisingly, we find that operations that are easy and inexpensive to implement classically are not always easy and inexpensive to implement quantum mechanically, and vice versa. In particular, the computational cost of performing certain permutation matrices is ignored classically because they can be avoided explicitly.  However, quantum mechanically, these permutation operations must be performed explicitly and hence their cost enters into the full complexity measure of the quantum transform. We consider the particular set of permutation matrices arising in quantum wavelet transforms and develop efficient quantum circuits that implement them. This allows us to design efficient, complete quantum circuits for the quantum wavelet transform.},
+	archivePrefix = {arXiv},
+	eprint = {quant-ph/9809004},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/FW98quantum.pdf}
 }
 
 @article{FZFM99experimental,
@@ -34478,39 +34518,3 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{CHTZ22best,
-  author       = {Chung, Kai-Min and Huang, Mi-Ying and Tang, Er-Cheng and Zhang, Jiapeng},
-  title        = {Best-Of-Both-Worlds Multiparty Quantum Computation With Publicly Verifiable Identifiable Abort},
-  journal      = {CoRR},
-  year         = 2022,
-  url          = {http://arxiv.org/abs/2211.01665v3},
-  abstract     = {Alon et al. (CRYPTO 2021) introduced a multiparty quantum computation protocol that is secure with identifiable abort (MPQC-SWIA). However, their protocol allows only inside MPQC parties to know the identity of malicious players. This becomes problematic when two groups of people disagree and need a third party, like a jury, to verify who the malicious party is. This issue takes on heightened significance in the quantum setting, given that quantum states may exist in only a single copy. Thus, we emphasize the necessity of a protocol with publicly verifiable identifiable abort (PVIA), enabling outside observers with only classical computational power to agree on the identity of the malicious party in case of an abort. However, achieving MPQC with PVIA poses significant challenges due to the no-cloning theorem, and previous works proposed by Mahadev (STOC 2018) and Chung et al. (Eurocrypt 2022) for classical verification of quantum computation fall short.  In this paper, we obtain the first MPQC-PVIA protocol assuming post-quantum oblivious transfer and a classical broadcast channel. The core component of our construction is a new authentication primitive called auditable quantum authentication (AQA) that identifies the malicious sender with overwhelming probability. Additionally, we provide the first MPQC protocol with best-of-both-worlds (BoBW) security, which guarantees output delivery with an honest majority and remains secure with abort even if the majority is dishonest. Our best-of-both-worlds MPQC protocol also satisfies PVIA upon abort.},
-  archivePrefix= {arXiv},
-  eprint       = {2211.01665v3},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/CHTZ22best.pdf}
-  }
-@article{FW98quantum,
-  author       = {Fijany, Amir and Williams, Colin P.},
-  title        = {Quantum Wavelet Transforms: Fast Algorithms and Complete Circuits},
-  journal      = {CoRR},
-  year         = 1998,
-  url          = {http://arxiv.org/abs/quant-ph/9809004v1},
-  abstract     = {The quantum Fourier transform (QFT), a quantum analog of the classical Fourier transform, has been shown to be a powerful tool in developing quantum algorithms. However, in classical computing there is another class of unitary transforms, the wavelet transforms, which are every bit as useful as the Fourier transform. Wavelet transforms are used to expose the multi-scale structure of a signal and are likely to be useful for quantum image processing and quantum data compression. In this paper, we derive efficient, complete, quantum circuits for two representative quantum wavelet transforms, the quantum Haar and quantum Daubechies $D^{(4)}$ transforms. Our approach is to factor the operators for these transforms into direct sums, direct products and dot products of unitary matrices. In so doing, we find that permutation matrices, a particular class of unitary matrices, play a pivotal role. Surprisingly, we find that operations that are easy and inexpensive to implement classically are not always easy and inexpensive to implement quantum mechanically, and vice versa. In particular, the computational cost of performing certain permutation matrices is ignored classically because they can be avoided explicitly.  However, quantum mechanically, these permutation operations must be performed explicitly and hence their cost enters into the full complexity measure of the quantum transform. We consider the particular set of permutation matrices arising in quantum wavelet transforms and develop efficient quantum circuits that implement them. This allows us to design efficient, complete quantum circuits for the quantum wavelet transform.},
-  archivePrefix= {arXiv},
-  eprint       = {quant-ph/9809004},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/FW98quantum.pdf}
-  }
-@article{BA23efficient,
-  author       = {Bagherimehrab, Mohsen and Aspuru-Guzik, Alan},
-  title        = {Efficient Quantum Algorithm for All Quantum Wavelet Transforms},
-  journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2309.09350v2},
-  abstract     = {Wavelet transforms are widely used in various fields of science and engineering as a mathematical tool with features that reveal information ignored by the Fourier transform. Unlike the Fourier transform, which is unique, a wavelet transform is specified by a sequence of numbers associated with the type of wavelet used and an order parameter specifying the length of the sequence. While the quantum Fourier transform, a quantum analog of the classical Fourier transform, has been pivotal in quantum computing, prior works on quantum wavelet transforms~(QWTs) were limited to the second and fourth order of a particular wavelet, the Daubechies wavelet. Here we develop a simple yet efficient quantum algorithm for executing any wavelet transform on a quantum computer. Our approach is to decompose the kernel matrix of a wavelet transform as a linear combination of unitaries (LCU) that are compilable by easy-to-implement modular quantum arithmetic operations and use the LCU technique to construct a probabilistic procedure to implement a QWT with a \textit{known} success probability. We then use properties of wavelets to make this approach deterministic by a few executions of the amplitude amplification strategy. We extend our approach to a multilevel wavelet transform and a generalized version, the packet wavelet transform, establishing computational complexities in terms of three parameters: the wavelet order $M$, the dimension $N$ of the transformation matrix, and the transformation level $d$. We show the cost is logarithmic in $N$, linear in $d$ and superlinear in $M$. Moreover, we show the cost is independent of $M$ for practical applications. Our proposed quantum wavelet transforms could be used in quantum computing algorithms in a similar manner to their well-established counterpart, the quantum Fourier transform.},
-  archivePrefix= {arXiv},
-  eprint       = {2309.09350},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/BA23efficient.pdf}
-  }
