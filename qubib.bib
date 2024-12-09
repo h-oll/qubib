@@ -34539,3 +34539,14 @@ pages[normalize_page_numbers]
   eprint       = {2403.08441},
   primaryClass = {quant-ph},
 }
+@article{BBCA24distributed,
+  author       = {Balliu, Alkida and Brandt, Sebastian and Coiteux-Roy, Xavier and d'Amore, Francesco and Equi, Massimo and Gall, Fran{\c{c}}ois Le and Lievonen, Henrik and Modanese, Augusto and Olivetti, Dennis and Renou, Marc-Olivier and Suomela, Jukka and Tendick, Lucas and Veeren, Isadora},
+  title        = {Distributed Quantum Advantage for Local Problems},
+  journal      = {CoRR},
+  year         = 2024,
+  url          = {http://arxiv.org/abs/2411.03240v1},
+  abstract     = {We present the first local problem that shows a super-constant separation between the classical randomized LOCAL model of distributed computing and its quantum counterpart. By prior work, such a separation was known only for an artificial graph problem with an inherently global definition [Le Gall et al.  2019]. We present a problem that we call iterated GHZ, which is defined using only local constraints. Formally, it is a family of locally checkable labeling problems [Naor and Stockmeyer 1995]; in particular, solutions can be verified with a constant-round distributed algorithm. We show that in graphs of maximum degree $\Delta$, any classical (deterministic or randomized) LOCAL model algorithm will require $\Omega(\Delta)$ rounds to solve the iterated GHZ problem, while the problem can be solved in $1$ round in quantum-LOCAL. We use the round elimination technique to prove that the iterated GHZ problem requires $\Omega(\Delta)$ rounds for classical algorithms. This is the first work that shows that round elimination is indeed able to separate the two models, and this also demonstrates that round elimination cannot be used to prove lower bounds for quantum-LOCAL. To apply round elimination, we introduce a new technique that allows us to discover appropriate problem relaxations in a mechanical way; it turns out that this new technique extends beyond the scope of the iterated GHZ problem and can be used to e.g. reproduce prior results on maximal matchings [FOCS 2019, PODC 2020] in a systematic manner.},
+  archivePrefix= {arXiv},
+  eprint       = {2411.03240},
+  primaryClass = {cs.DC},
+}
