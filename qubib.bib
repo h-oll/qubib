@@ -3035,6 +3035,19 @@ pages[normalize_page_numbers]
 	Year = 1982
 }
 
+@article{BBCA24distributed,
+	author = {Balliu, Alkida and Brandt, Sebastian and Coiteux-Roy, Xavier and d'Amore, Francesco and Equi, Massimo and Gall, Fran{\c{c}}ois Le and Lievonen, Henrik and Modanese, Augusto and Olivetti, Dennis and Renou, Marc-Olivier and Suomela, Jukka and Tendick, Lucas and Veeren, Isadora},
+	title = {Distributed Quantum Advantage for Local Problems},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2411.03240v1},
+	abstract = {We present the first local problem that shows a super-constant separation between the classical randomized LOCAL model of distributed computing and its quantum counterpart. By prior work, such a separation was known only for an artificial graph problem with an inherently global definition [Le Gall et al.  2019]. We present a problem that we call iterated GHZ, which is defined using only local constraints. Formally, it is a family of locally checkable labeling problems [Naor and Stockmeyer 1995]; in particular, solutions can be verified with a constant-round distributed algorithm. We show that in graphs of maximum degree $\Delta$, any classical (deterministic or randomized) LOCAL model algorithm will require $\Omega(\Delta)$ rounds to solve the iterated GHZ problem, while the problem can be solved in $1$ round in quantum-LOCAL. We use the round elimination technique to prove that the iterated GHZ problem requires $\Omega(\Delta)$ rounds for classical algorithms. This is the first work that shows that round elimination is indeed able to separate the two models, and this also demonstrates that round elimination cannot be used to prove lower bounds for quantum-LOCAL. To apply round elimination, we introduce a new technique that allows us to discover appropriate problem relaxations in a mechanical way; it turns out that this new technique extends beyond the scope of the iterated GHZ problem and can be used to e.g. reproduce prior results on maximal matchings [FOCS 2019, PODC 2020] in a systematic manner.},
+	archivePrefix = {arXiv},
+	eprint = {2411.03240},
+	primaryClass = {cs.DC},
+	file = {~/shared/papers/BBCA24distributed.pdf}
+}
+
 @article{BBCD95elementary,
 	Author = {Barenco, D. and Bennett, C. H. and Cleve, R. and DiVincenzo, D. P. and Margolus, N. and Shor, P. and Sleator, T. and Smolin, J. and Weinfurter, H.},
 	Eprint = {quant-ph/9503016},
@@ -3697,6 +3710,22 @@ pages[normalize_page_numbers]
 	doi = {10.1145/3441309},
 	url = {http://dx.doi.org/10.1145/3441309},
 	publisher = {Association for Computing Machinery (ACM)}
+}
+
+@Article{BCPS14bell-nonlocality,
+	timestamp = {2024-12-09 07:14:09 (CET)},
+	author = {Brunner, Nicolas and Cavalcanti, Daniel and Pironio, Stefano and Scarani, Valerio and Wehner, Stephanie},
+	title = {Bell nonlocality},
+	journal = {Reviews of Modern Physics},
+	year = 2014,
+	volume = 86,
+	number = 2,
+	month = apr,
+	pages = {419–478},
+	issn = {1539-0756},
+	doi = {10.1103/revmodphys.86.419},
+	url = {http://dx.doi.org/10.1103/revmodphys.86.419},
+	publisher = {American Physical Society (APS)}
 }
 
 @Article{BCS21noise,
@@ -28685,6 +28714,18 @@ pages[normalize_page_numbers]
 	file = {SCZ24stabilizer.pdf}
 }
 
+@article{SCZ24stabilizerb,
+	author = {Sun, Jiace and Cheng, Lixue and Zhang, Shi-Xin},
+	title = {Stabilizer Ground States for Simulating Quantum Many-Body Physics: Theory, Algorithms, and Applications},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2403.08441v3},
+	abstract = {Stabilizer states, which are also known as the Clifford states, have been commonly utilized in quantum information, quantum error correction, and quantum circuit simulation due to their simple mathematical structure. In this work, we apply stabilizer states to tackle quantum many-body ground state problems and introduce the concept of stabilizer ground states. We establish an equivalence formalism for identifying stabilizer ground states of general Pauli Hamiltonians. Moreover, we develop an exact and linear-scaled algorithm to obtain stabilizer ground states of 1D local Hamiltonians and thus free from discrete optimization. This proposed equivalence formalism and linear-scaled algorithm are not only applicable to finite-size systems, but also adaptable to infinite periodic systems. The scalability and efficiency of the algorithms are numerically benchmarked on different Hamiltonians. Finally, we demonstrate that stabilizer ground states are promising tools for not only qualitative understanding of quantum systems, but also cornerstones of more advanced classical or quantum algorithms.},
+	archivePrefix = {arXiv},
+	eprint = {2403.08441},
+	primaryClass = {quant-ph}
+}
+
 @article{SD94experimental,
 	Author = {Svensmark, H. and Dimon, P.},
 	Journal = {Phys. Rev. Lett.},
@@ -30164,13 +30205,13 @@ pages[normalize_page_numbers]
 }
 
 @misc{TFMI17fault,
-      title={Fault-tolerant verifiable blind quantum computing with logical state remote preparation}, 
-      author={Yuki Takeuchi and Keisuke Fujii and Tomoyuki Morimae and Nobuyuki Imoto},
-      year={2017},
-      eprint={1607.01568},
-      archivePrefix={arXiv},
-      primaryClass={quant-ph},
-      url={https://arxiv.org/abs/1607.01568}
+	title = {Fault-tolerant verifiable blind quantum computing with logical state remote preparation},
+	author = {Yuki Takeuchi and Keisuke Fujii and Tomoyuki Morimae and Nobuyuki Imoto},
+	year = {2017},
+	eprint = {1607.01568},
+	archivePrefix = {arXiv},
+	primaryClass = {quant-ph},
+	url = {https://arxiv.org/abs/1607.01568}
 }
 
 @article{TG65correlation,
@@ -34528,26 +34569,3 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{SCZ24stabilizer,
-  author       = {Sun, Jiace and Cheng, Lixue and Zhang, Shi-Xin},
-  title        = {Stabilizer Ground States for Simulating Quantum Many-Body Physics: Theory, Algorithms, and Applications},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2403.08441v3},
-  abstract     = {Stabilizer states, which are also known as the Clifford states, have been commonly utilized in quantum information, quantum error correction, and quantum circuit simulation due to their simple mathematical structure. In this work, we apply stabilizer states to tackle quantum many-body ground state problems and introduce the concept of stabilizer ground states. We establish an equivalence formalism for identifying stabilizer ground states of general Pauli Hamiltonians. Moreover, we develop an exact and linear-scaled algorithm to obtain stabilizer ground states of 1D local Hamiltonians and thus free from discrete optimization. This proposed equivalence formalism and linear-scaled algorithm are not only applicable to finite-size systems, but also adaptable to infinite periodic systems. The scalability and efficiency of the algorithms are numerically benchmarked on different Hamiltonians. Finally, we demonstrate that stabilizer ground states are promising tools for not only qualitative understanding of quantum systems, but also cornerstones of more advanced classical or quantum algorithms.},
-  archivePrefix= {arXiv},
-  eprint       = {2403.08441},
-  primaryClass = {quant-ph},
-}
-@article{BBCA24distributed,
-  author       = {Balliu, Alkida and Brandt, Sebastian and Coiteux-Roy, Xavier and d'Amore, Francesco and Equi, Massimo and Gall, Fran{\c{c}}ois Le and Lievonen, Henrik and Modanese, Augusto and Olivetti, Dennis and Renou, Marc-Olivier and Suomela, Jukka and Tendick, Lucas and Veeren, Isadora},
-  title        = {Distributed Quantum Advantage for Local Problems},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2411.03240v1},
-  abstract     = {We present the first local problem that shows a super-constant separation between the classical randomized LOCAL model of distributed computing and its quantum counterpart. By prior work, such a separation was known only for an artificial graph problem with an inherently global definition [Le Gall et al.  2019]. We present a problem that we call iterated GHZ, which is defined using only local constraints. Formally, it is a family of locally checkable labeling problems [Naor and Stockmeyer 1995]; in particular, solutions can be verified with a constant-round distributed algorithm. We show that in graphs of maximum degree $\Delta$, any classical (deterministic or randomized) LOCAL model algorithm will require $\Omega(\Delta)$ rounds to solve the iterated GHZ problem, while the problem can be solved in $1$ round in quantum-LOCAL. We use the round elimination technique to prove that the iterated GHZ problem requires $\Omega(\Delta)$ rounds for classical algorithms. This is the first work that shows that round elimination is indeed able to separate the two models, and this also demonstrates that round elimination cannot be used to prove lower bounds for quantum-LOCAL. To apply round elimination, we introduce a new technique that allows us to discover appropriate problem relaxations in a mechanical way; it turns out that this new technique extends beyond the scope of the iterated GHZ problem and can be used to e.g. reproduce prior results on maximal matchings [FOCS 2019, PODC 2020] in a systematic manner.},
-  archivePrefix= {arXiv},
-  eprint       = {2411.03240},
-  primaryClass = {cs.DC},
-  file = {~/shared/papers/BBCA24distributed.pdf}
-  }
