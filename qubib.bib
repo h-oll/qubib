@@ -211,6 +211,7 @@ pages[normalize_page_numbers]
 }
 
 @Misc{A07scott,
+	url = {http://www.scottaaronson.com/blog/?p=284},
 	source = {Luka Music, 2021-09-16},
 	author = {Scott Aaronson},
 	title = {{T}he {S}cott {A}aronson 25.00\$ {P}rize},
@@ -4644,6 +4645,19 @@ pages[normalize_page_numbers]
 	Year = 1998
 }
 
+@article{BHTT21synchronicity,
+	author = {Brannan, Michael and Harris, Samuel J. and Todorov, Ivan G. and Turowska, Lyudmila},
+	title = {Synchronicity for Quantum Non-Local Games},
+	journal = {CoRR},
+	year = 2021,
+	url = {http://arxiv.org/abs/2106.11489v1},
+	abstract = {We introduce concurrent quantum non-local games, quantum output mirror games and concurrent classical-to-quantum non-local games, as quantum versions of synchronous non-local games, and provide tracial characterisations of their perfect strategies belonging to various correlation classes. We define *-algebras and C*-algebras of concurrent classical-to-quantum and concurrent quantum non-local games, and algebraic versions of the orthogonal rank of a graph. We show that quantum homomorphisms of quantum graphs can be viewed as entanglement assisted classical homomorphisms of the graphs, and give descriptions of the perfect quantum commuting and the perfect approximately quantum strategies for the quantum graph homomorphism game. We specialise the latter results to the case where the inputs of the game are based on a classical graph.},
+	archivePrefix = {arXiv},
+	eprint = {2106.11489},
+	primaryClass = {math.OA},
+	file = {~/shared/papers/BHTT21synchronicity.pdf}
+}
+
 @article{BHW00universal,
 	Author = {Bu{\v{z}}ek, V. and Hillery, M. and Werner, F.},
 	Date-Modified = {2006-01-04 13:21:28 +1000},
@@ -7088,6 +7102,21 @@ pages[normalize_page_numbers]
 	Title = {Quantum Ergodicity and Localization in Conservative Systems: the Wigner Band Random Matrix Model},
 	Volume = 223,
 	Year = 1996
+}
+
+@Article{CCK24single,
+	timestamp = {2024-12-13 09:50:48 (CET)},
+	author = {Caha, Libor and Coiteux-Roy, Xavier and Koenig, Robert},
+	title = {Single-qubit gate teleportation provides a quantum advantage},
+	journal = {Quantum},
+	year = 2024,
+	volume = 8,
+	month = dec,
+	pages = 1548,
+	issn = {2521-327X},
+	doi = {10.22331/q-2024-12-04-1548},
+	url = {http://dx.doi.org/10.22331/q-2024-12-04-1548},
+	publisher = {Verein zur Forderung des Open Access Publizierens in den Quantenwissenschaften}
 }
 
 @article{CCKM20secure,
@@ -12682,6 +12711,19 @@ pages[normalize_page_numbers]
 	eprint = {quant-ph/9809004},
 	primaryClass = {quant-ph},
 	file = {~/shared/papers/FW98quantum.pdf}
+}
+
+@article{FWM23variational,
+	author = {Furches, Jim and Wiebe, Nathan and Marrero, Carlos Ortiz},
+	title = {Variational Methods for Computing Non-Local Quantum Strategies},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2311.01363v2},
+	abstract = {In a nonlocal game, two noncommunicating players cooperate to convince a referee that they possess a strategy that does not violate the rules of the game. Quantum strategies allow players to optimally win some games by performing joint measurements on a shared entangled state, but computing these strategies can be challenging. We develop a variational algorithm for computing strategies of nonlocal games and show that it can yield optimal strategies for small examples of both convex and non-convex games. We show that our algorithm is capable of generating a short-depth circuit that implements an optimal quantum strategy for a graph coloring game. Moreover, we describe how this technique can be run on quantum computers and argue that such circuits will be useful for benchmarking because of their sensitivity to 2-qubit gate noise and application to self-testing. Finally, we demonstrate the use of these strategies experimentally on 11 IBM quantum computers.},
+	archivePrefix = {arXiv},
+	eprint = {2311.01363},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/FWM23variational.pdf}
 }
 
 @article{FZFM99experimental,
@@ -23177,6 +23219,32 @@ pages[normalize_page_numbers]
 	url = {https://crypto.ethz.ch/publications/files/MauRen11.pdf}
 }
 
+@article{MR12graph,
+	author = {Man{\v{c}}inska, Laura and Roberson, David E.},
+	title = {Graph Homomorphisms for Quantum Players},
+	journal = {CoRR},
+	year = 2012,
+	url = {http://arxiv.org/abs/1212.1724v2},
+	abstract = {A homomorphism from a graph $X$ to a graph $Y$ is an adjacency preserving mapping $f:V(X) \rightarrow V(Y)$. We consider a nonlocal game in which Alice and Bob are trying to convince a verifier with certainty that a graph $X$ admits a homomorphism to $Y$. This is a generalization of the well-studied graph coloring game. Via systematic study of quantum homomorphisms we prove new results for graph coloring. Most importantly, we show that the Lov\'{a}sz theta number of the complement lower bounds the quantum chromatic number, which itself is not known to be computable. We also show that some of our newly introduced graph parameters, namely quantum independence and clique numbers, can differ from their classical counterparts while others, namely quantum odd girth, cannot. Finally, we show that quantum homomorphisms closely relate to zero-error channel capacity. In particular, we use quantum homomorphisms to construct graphs for which entanglement-assistance increases their one-shot zero-error capacity.},
+	archivePrefix = {arXiv},
+	eprint = {1212.1724},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/MR12graph.pdf}
+}
+
+@article{MR18oddities,
+	author = {Man{\v{c}}inska, Laura and Roberson, David E.},
+	title = {Oddities of Quantum Colorings},
+	journal = {CoRR},
+	year = 2018,
+	url = {http://arxiv.org/abs/1801.03542v1},
+	abstract = {We study quantum analogs of graph colorings and chromatic number. Initially defined via an interactive protocol, quantum colorings can also be viewed as a natural operator relaxation of graph coloring. Since there is no known algorithm for producing nontrivial quantum colorings, the existing examples rely on ad hoc constructions. Almost all of the known constructions of quantum $d$-colorings start from $d$-dimensional orthogonal representations. We show the limitations of this method by exhibiting, for the first time, a graph with a 3-dimensional orthogonal representation which cannot be quantum 3-colored, and a graph that can be quantum 3-colored but has no 3-dimensional orthogonal representation. Together these examples show that the quantum chromatic number and orthogonal rank are not directly comparable as graph parameters. The former graph also provides an example of several interesting, and previously unknown, properties of quantum colorings. The most striking of these is that adding a new vertex adjacent to all other vertices does not necessarily increase the quantum chromatic number of a graph. This is in stark contrast to the chromatic number and many of its variants. This graph also provides the smallest known example (14 vertices) exhibiting a separation between chromatic number and its quantum analog.},
+	archivePrefix = {arXiv},
+	eprint = {1801.03542},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/MR18oddities.pdf}
+}
+
 @misc{MR91nonabelians,
 	Author = {Moore, G. and Read, N.},
 	Pages = {362--396},
@@ -27244,6 +27312,19 @@ pages[normalize_page_numbers]
 	pages = {456-460}
 }
 
+@article{RV12quantum,
+	author = {Regev, Oded and Vidick, Thomas},
+	title = {Quantum Xor Games},
+	journal = {CoRR},
+	year = 2012,
+	url = {http://arxiv.org/abs/1207.4939v1},
+	abstract = {We introduce quantum XOR games, a model of two-player one-round games that extends the model of XOR games by allowing the referee's questions to the players to be quantum states. We give examples showing that quantum XOR games exhibit a wide range of behaviors that are known not to exist for standard XOR games, such as cases in which the use of entanglement leads to an arbitrarily large advantage over the use of no entanglement. By invoking two deep extensions of Grothendieck's inequality, we present an efficient algorithm that gives a constant-factor approximation to the best performance players can obtain in a given game, both in case they have no shared entanglement and in case they share unlimited entanglement. As a byproduct of the algorithm we prove some additional interesting properties of quantum XOR games, such as the fact that sharing a maximally entangled state of arbitrary dimension gives only a small advantage over having no entanglement at all.},
+	archivePrefix = {arXiv},
+	eprint = {1207.4939},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/RV12quantum.pdf}
+}
+
 @article{RVH95comparison,
 	Author = {Robertson, P. and Villebrun, E. and Hoeher, P.},
 	Journal = {IEEE Trans. Info. Theor.},
@@ -28722,7 +28803,7 @@ pages[normalize_page_numbers]
 	title = {Stabilizer Ground States: Theory, Algorithms and Applications},
 	journal = {CoRR},
 	year = 2024,
-	url = {http://arxiv.org/abs/2403.08441v1},
+	url = {http://arxiv.org/abs/2403.08441},
 	abstract = {Stabilizer states have been commonly utilized in quantum information, quantum error correction, and quantum circuit simulation due to their simple mathematical structure. In this work, we apply stabilizer states to tackle quantum many-body problems and introduce the concept of stabilizer ground states. We present a simplified equivalent formalism for identifying stabilizer ground states of general Pauli Hamiltonians. Moreover, we also develop an exact and linear-scaled algorithm to obtain stabilizer ground states of 1D local Hamiltonians and thus free from discrete optimization. This proposed theoretical formalism and linear-scaled algorithm are not only applicable to finite-size systems, but also adaptable to infinite periodic systems. The scalability and efficiency of the algorithms are numerically benchmarked on different Hamiltonians. Finally, we demonstrate that stabilizer ground states can find various promising applications including better design on variational quantum algorithms, qualitative understanding of phase transitions, and cornerstones for more advanced ground state ansatzes.},
 	archivePrefix = {arXiv},
 	eprint = {2403.08441},
@@ -28730,17 +28811,6 @@ pages[normalize_page_numbers]
 	file = {SCZ24stabilizer.pdf}
 }
 
-@article{SCZ24stabilizerb,
-	author = {Sun, Jiace and Cheng, Lixue and Zhang, Shi-Xin},
-	title = {Stabilizer Ground States for Simulating Quantum Many-Body Physics: Theory, Algorithms, and Applications},
-	journal = {CoRR},
-	year = 2024,
-	url = {http://arxiv.org/abs/2403.08441v3},
-	abstract = {Stabilizer states, which are also known as the Clifford states, have been commonly utilized in quantum information, quantum error correction, and quantum circuit simulation due to their simple mathematical structure. In this work, we apply stabilizer states to tackle quantum many-body ground state problems and introduce the concept of stabilizer ground states. We establish an equivalence formalism for identifying stabilizer ground states of general Pauli Hamiltonians. Moreover, we develop an exact and linear-scaled algorithm to obtain stabilizer ground states of 1D local Hamiltonians and thus free from discrete optimization. This proposed equivalence formalism and linear-scaled algorithm are not only applicable to finite-size systems, but also adaptable to infinite periodic systems. The scalability and efficiency of the algorithms are numerically benchmarked on different Hamiltonians. Finally, we demonstrate that stabilizer ground states are promising tools for not only qualitative understanding of quantum systems, but also cornerstones of more advanced classical or quantum algorithms.},
-	archivePrefix = {arXiv},
-	eprint = {2403.08441},
-	primaryClass = {quant-ph}
-}
 
 @article{SD94experimental,
 	Author = {Svensmark, H. and Dimon, P.},
@@ -34585,63 +34655,3 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{BHTT21synchronicity,
-  author       = {Brannan, Michael and Harris, Samuel J. and Todorov, Ivan G. and Turowska, Lyudmila},
-  title        = {Synchronicity for Quantum Non-Local Games},
-  journal      = {CoRR},
-  year         = 2021,
-  url          = {http://arxiv.org/abs/2106.11489v1},
-  abstract     = {We introduce concurrent quantum non-local games, quantum output mirror games and concurrent classical-to-quantum non-local games, as quantum versions of synchronous non-local games, and provide tracial characterisations of their perfect strategies belonging to various correlation classes. We define *-algebras and C*-algebras of concurrent classical-to-quantum and concurrent quantum non-local games, and algebraic versions of the orthogonal rank of a graph. We show that quantum homomorphisms of quantum graphs can be viewed as entanglement assisted classical homomorphisms of the graphs, and give descriptions of the perfect quantum commuting and the perfect approximately quantum strategies for the quantum graph homomorphism game. We specialise the latter results to the case where the inputs of the game are based on a classical graph.},
-  archivePrefix= {arXiv},
-  eprint       = {2106.11489},
-  primaryClass = {math.OA},
-  file = {~/shared/papers/BHTT21synchronicity.pdf}
-  }
-@article{FWM23variational,
-  author       = {Furches, Jim and Wiebe, Nathan and Marrero, Carlos Ortiz},
-  title        = {Variational Methods for Computing Non-Local Quantum Strategies},
-  journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2311.01363v2},
-  abstract     = {In a nonlocal game, two noncommunicating players cooperate to convince a referee that they possess a strategy that does not violate the rules of the game. Quantum strategies allow players to optimally win some games by performing joint measurements on a shared entangled state, but computing these strategies can be challenging. We develop a variational algorithm for computing strategies of nonlocal games and show that it can yield optimal strategies for small examples of both convex and non-convex games. We show that our algorithm is capable of generating a short-depth circuit that implements an optimal quantum strategy for a graph coloring game. Moreover, we describe how this technique can be run on quantum computers and argue that such circuits will be useful for benchmarking because of their sensitivity to 2-qubit gate noise and application to self-testing. Finally, we demonstrate the use of these strategies experimentally on 11 IBM quantum computers.},
-  archivePrefix= {arXiv},
-  eprint       = {2311.01363},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/FWM23variational.pdf}
-  }
-@article{RV12quantum,
-  author       = {Regev, Oded and Vidick, Thomas},
-  title        = {Quantum Xor Games},
-  journal      = {CoRR},
-  year         = 2012,
-  url          = {http://arxiv.org/abs/1207.4939v1},
-  abstract     = {We introduce quantum XOR games, a model of two-player one-round games that extends the model of XOR games by allowing the referee's questions to the players to be quantum states. We give examples showing that quantum XOR games exhibit a wide range of behaviors that are known not to exist for standard XOR games, such as cases in which the use of entanglement leads to an arbitrarily large advantage over the use of no entanglement. By invoking two deep extensions of Grothendieck's inequality, we present an efficient algorithm that gives a constant-factor approximation to the best performance players can obtain in a given game, both in case they have no shared entanglement and in case they share unlimited entanglement. As a byproduct of the algorithm we prove some additional interesting properties of quantum XOR games, such as the fact that sharing a maximally entangled state of arbitrary dimension gives only a small advantage over having no entanglement at all.},
-  archivePrefix= {arXiv},
-  eprint       = {1207.4939},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/RV12quantum.pdf}
-  }
-@article{MR12graph,
-  author       = {Man{\v{c}}inska, Laura and Roberson, David E.},
-  title        = {Graph Homomorphisms for Quantum Players},
-  journal      = {CoRR},
-  year         = 2012,
-  url          = {http://arxiv.org/abs/1212.1724v2},
-  abstract     = {A homomorphism from a graph $X$ to a graph $Y$ is an adjacency preserving mapping $f:V(X) \rightarrow V(Y)$. We consider a nonlocal game in which Alice and Bob are trying to convince a verifier with certainty that a graph $X$ admits a homomorphism to $Y$. This is a generalization of the well-studied graph coloring game. Via systematic study of quantum homomorphisms we prove new results for graph coloring. Most importantly, we show that the Lov\'{a}sz theta number of the complement lower bounds the quantum chromatic number, which itself is not known to be computable. We also show that some of our newly introduced graph parameters, namely quantum independence and clique numbers, can differ from their classical counterparts while others, namely quantum odd girth, cannot. Finally, we show that quantum homomorphisms closely relate to zero-error channel capacity. In particular, we use quantum homomorphisms to construct graphs for which entanglement-assistance increases their one-shot zero-error capacity.},
-  archivePrefix= {arXiv},
-  eprint       = {1212.1724},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/MR12graph.pdf}
-  }
-@article{MR18oddities,
-  author       = {Man{\v{c}}inska, Laura and Roberson, David E.},
-  title        = {Oddities of Quantum Colorings},
-  journal      = {CoRR},
-  year         = 2018,
-  url          = {http://arxiv.org/abs/1801.03542v1},
-  abstract     = {We study quantum analogs of graph colorings and chromatic number. Initially defined via an interactive protocol, quantum colorings can also be viewed as a natural operator relaxation of graph coloring. Since there is no known algorithm for producing nontrivial quantum colorings, the existing examples rely on ad hoc constructions. Almost all of the known constructions of quantum $d$-colorings start from $d$-dimensional orthogonal representations. We show the limitations of this method by exhibiting, for the first time, a graph with a 3-dimensional orthogonal representation which cannot be quantum 3-colored, and a graph that can be quantum 3-colored but has no 3-dimensional orthogonal representation. Together these examples show that the quantum chromatic number and orthogonal rank are not directly comparable as graph parameters. The former graph also provides an example of several interesting, and previously unknown, properties of quantum colorings. The most striking of these is that adding a new vertex adjacent to all other vertices does not necessarily increase the quantum chromatic number of a graph. This is in stark contrast to the chromatic number and many of its variants. This graph also provides the smallest known example (14 vertices) exhibiting a separation between chromatic number and its quantum analog.},
-  archivePrefix= {arXiv},
-  eprint       = {1801.03542},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/MR18oddities.pdf}
-  }
