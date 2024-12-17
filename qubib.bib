@@ -34665,4 +34665,16 @@ pages[normalize_page_numbers]
   archivePrefix= {arXiv},
   eprint       = {2403.14912},
   primaryClass = {quant-ph},
+  file = {~/shared/papers/GOL24doped.pdf}
+  }
+@article{RGDK22cafqa,
+  author       = {Ravi, Gokul Subramanian and Gokhale, Pranav and Ding, Yi and Kirby, William M. and Smith, Kaitlin N. and Baker, Jonathan M. and Love, Peter J. and Hoffmann, Henry and Brown, Kenneth R. and Chong, Frederic T.},
+  title        = {Cafqa: a Classical Simulation Bootstrap for Variational Quantum Algorithms},
+  journal      = {CoRR},
+  year         = 2022,
+  url          = {http://arxiv.org/abs/2202.12924v4},
+  abstract     = {This work tackles the problem of finding a good ansatz initialization for Variational Quantum Algorithms (VQAs), by proposing CAFQA, a Clifford Ansatz For Quantum Accuracy. The CAFQA ansatz is a hardware-efficient circuit built with only Clifford gates. In this ansatz, the parameters for the tunable gates are chosen by searching efficiently through the Clifford parameter space via classical simulation. The resulting initial states always equal or outperform traditional classical initialization (e.g., Hartree-Fock), and enable high-accuracy VQA estimations. CAFQA is well-suited to classical computation because: a) Clifford-only quantum circuits can be exactly simulated classically in polynomial time, and b) the discrete Clifford space is searched efficiently via Bayesian Optimization.  For the Variational Quantum Eigensolver (VQE) task of molecular ground state energy estimation (up to 18 qubits), CAFQA's Clifford Ansatz achieves a mean accuracy of nearly 99 \% and recovers as much as 99.99 \% of the molecular correlation energy that is lost in Hartree-Fock initialization. CAFQA achieves mean accuracy improvements of 6.4x and 56.8x, over the state-of-the-art, on different metrics. The scalability of the approach allows for preliminary ground state energy estimation of the challenging chromium dimer (Cr$_2$) molecule. With CAFQA's high-accuracy initialization, the convergence of VQAs is shown to accelerate by 2.5x, even for small molecules.  Furthermore, preliminary exploration of allowing a limited number of non-Clifford (T) gates in the CAFQA framework, shows that as much as 99.9 \% of the correlation energy can be recovered at bond lengths for which Clifford-only CAFQA accuracy is relatively limited, while remaining classically simulable.},
+  archivePrefix= {arXiv},
+  eprint       = {2202.12924},
+  primaryClass = {quant-ph},
 }
