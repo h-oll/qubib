@@ -21492,6 +21492,20 @@ pages[normalize_page_numbers]
 	publisher = {Verein zur Forderung des Open Access Publizierens in den Quantenwissenschaften}
 }
 
+@InBook{LW25estimating,
+	timestamp = {2025-02-01 22:12:04 (CET)},
+	title = {On Estimating the Trace of Quantum State Powers},
+	year = 2025,
+	author = {Liu, Yupan and Wang, Qisheng},
+	booktitle = {Proceedings of the 2025 Annual ACM-SIAM Symposium on Discrete Algorithms (SODA)},
+	publisher = {Society for Industrial and Applied Mathematics},
+	isbn = 9781611978322,
+	pages = {947–993},
+	doi = {10.1137/1.9781611978322.28},
+	url = {http://dx.doi.org/10.1137/1.9781611978322.28},
+	month = jan
+}
+
 @inproceedings{LW98mixing-times,
 	Author = {Lovasz, L. and Winkler, P.},
 	Booktitle = {Microsurveys in Discrete Probability},
@@ -33490,6 +33504,19 @@ pages[normalize_page_numbers]
 	Year = 2002
 }
 
+@article{WZ06several,
+	author = {Wocjan, Pawel and Zhang, Shengyu},
+	title = {Several Natural Bqp-Complete Problems},
+	journal = {CoRR},
+	year = 2006,
+	url = {http://arxiv.org/abs/quant-ph/0606179v1},
+	abstract = {A central problem in quantum computing is to identify computational tasks which can be solved substantially faster on a quantum computer than on any classical computer. By studying the hardest such tasks, known as BQP-complete problems, we deepen our understanding of the power and limitations of quantum computers. We present several BQP-complete problems, including Local Hamiltonian Eigenvalue Sampling and Phase Estimation Sampling. Different than the previous known BQP-complete problems (the Quadratically Signed Weight Enumerator problem [KL01] and the Approximation of Jones Polynomials [FKW02, FLW02, AJL06]), our problems are of a basic linear algebra nature and are closely related to the well-known quantum algorithm and quantum complexity theories.},
+	archivePrefix = {arXiv},
+	eprint = {quant-ph/0606179},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/WZ06several.pdf}
+}
+
 @misc{WZ0appearance,
 	Author = {Wilczek, F. and Zee, A.},
 	Journal = {Phys. Rev. Lett.},
@@ -34993,15 +35020,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{WZ06several,
-  author       = {Wocjan, Pawel and Zhang, Shengyu},
-  title        = {Several Natural Bqp-Complete Problems},
+@article{MHPC23benchmarking,
+  author       = {McKay, David C. and Hincks, Ian and Pritchett, Emily J. and Carroll, Malcolm and Govia, Luke C. G. and Merkel, Seth T.},
+  title        = {Benchmarking Quantum Processor Performance At Scale},
   journal      = {CoRR},
-  year         = 2006,
-  url          = {http://arxiv.org/abs/quant-ph/0606179v1},
-  abstract     = {A central problem in quantum computing is to identify computational tasks which can be solved substantially faster on a quantum computer than on any classical computer. By studying the hardest such tasks, known as BQP-complete problems, we deepen our understanding of the power and limitations of quantum computers. We present several BQP-complete problems, including Local Hamiltonian Eigenvalue Sampling and Phase Estimation Sampling. Different than the previous known BQP-complete problems (the Quadratically Signed Weight Enumerator problem [KL01] and the Approximation of Jones Polynomials [FKW02, FLW02, AJL06]), our problems are of a basic linear algebra nature and are closely related to the well-known quantum algorithm and quantum complexity theories.},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2311.05933v1},
+  abstract     = {As quantum processors grow, new performance benchmarks are required to capture the full quality of the devices at scale. While quantum volume is an excellent benchmark, it focuses on the highest quality subset of the device and so is unable to indicate the average performance over a large number of connected qubits. Furthermore, it is a discrete pass/fail and so is not reflective of continuous improvements in hardware nor does it provide quantitative direction to large-scale algorithms. For example, there may be value in error mitigated Hamiltonian simulation at scale with devices unable to pass strict quantum volume tests. Here we discuss a scalable benchmark which measures the fidelity of a connecting set of two-qubit gates over $N$ qubits by measuring gate errors using simultaneous direct randomized benchmarking in disjoint layers. Our layer fidelity can be easily related to algorithmic run time, via $\gamma$ defined in Ref.\cite{berg2022probabilistic} that can be used to estimate the number of circuits required for error mitigation. The protocol is efficient and obtains all the pair rates in the layered structure. Compared to regular (isolated) RB this approach is sensitive to crosstalk. As an example we measure a $N=80~(100)$ qubit layer fidelity on a 127 qubit fixed-coupling "Eagle" processor (ibm\_sherbrooke) of 0.26(0.19) and on the 133 qubit tunable-coupling "Heron" processor (ibm\_montecarlo) of 0.61(0.26). This can easily be expressed as a layer size independent quantity, error per layered gate (EPLG), which is here $1.7\times10^{-2}(1.7\times10^{-2})$ for ibm\_sherbrooke and $6.2\times10^{-3}(1.2\times10^{-2})$ for ibm\_montecarlo.},
   archivePrefix= {arXiv},
-  eprint       = {quant-ph/0606179},
+  eprint       = {2311.05933},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/WZ06several.pdf}
-  }
+}
