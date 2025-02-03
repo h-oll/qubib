@@ -14298,6 +14298,13 @@ pages[normalize_page_numbers]
 	url = {http://dx.doi.org/10.1109/QCNC62729.2024.00042}
 }
 
+@Misc{GLMO25multi,
+	year = {2025},
+	title = {Multi-pulse protocol for securely preparing a single (qu)bit (In Preparation)},
+	author = {Garnier, Maxime and Leichtle, Dominik and Music, Luka and Ollivier, Harold},
+	timestamp = {2025-02-03 11:15:43 (CET)}
+}
+
 @article{GLP98quantum,
 	Author = {Grangier, P. and Levenson, {J. A.} and Poizat, {J.-P.}},
 	Date-Modified = {2006-01-03 17:45:19 +1000},
@@ -21493,6 +21500,7 @@ pages[normalize_page_numbers]
 }
 
 @InBook{LW25estimating,
+	file = {LW25estimating.pdf},
 	timestamp = {2025-02-01 22:12:04 (CET)},
 	title = {On Estimating the Trace of Quantum State Powers},
 	year = 2025,
@@ -21502,7 +21510,7 @@ pages[normalize_page_numbers]
 	isbn = 9781611978322,
 	pages = {947–993},
 	doi = {10.1137/1.9781611978322.28},
-	url = {http://dx.doi.org/10.1137/1.9781611978322.28},
+	url = {https://epubs.siam.org/doi/pdf/10.1137/1.9781611978322.28},
 	month = jan
 }
 
@@ -22803,6 +22811,19 @@ pages[normalize_page_numbers]
 	Title = {Quantum Memory with a Single Photon in Cavity},
 	Volume = 79,
 	Year = 1997
+}
+
+@article{MHPC23benchmarking,
+	author = {McKay, David C. and Hincks, Ian and Pritchett, Emily J. and Carroll, Malcolm and Govia, Luke C. G. and Merkel, Seth T.},
+	title = {Benchmarking Quantum Processor Performance At Scale},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2311.05933v1},
+	abstract = {As quantum processors grow, new performance benchmarks are required to capture the full quality of the devices at scale. While quantum volume is an excellent benchmark, it focuses on the highest quality subset of the device and so is unable to indicate the average performance over a large number of connected qubits. Furthermore, it is a discrete pass/fail and so is not reflective of continuous improvements in hardware nor does it provide quantitative direction to large-scale algorithms. For example, there may be value in error mitigated Hamiltonian simulation at scale with devices unable to pass strict quantum volume tests. Here we discuss a scalable benchmark which measures the fidelity of a connecting set of two-qubit gates over $N$ qubits by measuring gate errors using simultaneous direct randomized benchmarking in disjoint layers. Our layer fidelity can be easily related to algorithmic run time, via $\gamma$ defined in Ref.\cite{berg2022probabilistic} that can be used to estimate the number of circuits required for error mitigation. The protocol is efficient and obtains all the pair rates in the layered structure. Compared to regular (isolated) RB this approach is sensitive to crosstalk. As an example we measure a $N=80~(100)$ qubit layer fidelity on a 127 qubit fixed-coupling "Eagle" processor (ibm\_sherbrooke) of 0.26(0.19) and on the 133 qubit tunable-coupling "Heron" processor (ibm\_montecarlo) of 0.61(0.26). This can easily be expressed as a layer size independent quantity, error per layered gate (EPLG), which is here $1.7\times10^{-2}(1.7\times10^{-2})$ for ibm\_sherbrooke and $6.2\times10^{-3}(1.2\times10^{-2})$ for ibm\_montecarlo.},
+	archivePrefix = {arXiv},
+	eprint = {2311.05933},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/MHPC23benchmarking.pdf}
 }
 
 @misc{MJ99counterfactual-computation,
@@ -35020,15 +35041,3 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{MHPC23benchmarking,
-  author       = {McKay, David C. and Hincks, Ian and Pritchett, Emily J. and Carroll, Malcolm and Govia, Luke C. G. and Merkel, Seth T.},
-  title        = {Benchmarking Quantum Processor Performance At Scale},
-  journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2311.05933v1},
-  abstract     = {As quantum processors grow, new performance benchmarks are required to capture the full quality of the devices at scale. While quantum volume is an excellent benchmark, it focuses on the highest quality subset of the device and so is unable to indicate the average performance over a large number of connected qubits. Furthermore, it is a discrete pass/fail and so is not reflective of continuous improvements in hardware nor does it provide quantitative direction to large-scale algorithms. For example, there may be value in error mitigated Hamiltonian simulation at scale with devices unable to pass strict quantum volume tests. Here we discuss a scalable benchmark which measures the fidelity of a connecting set of two-qubit gates over $N$ qubits by measuring gate errors using simultaneous direct randomized benchmarking in disjoint layers. Our layer fidelity can be easily related to algorithmic run time, via $\gamma$ defined in Ref.\cite{berg2022probabilistic} that can be used to estimate the number of circuits required for error mitigation. The protocol is efficient and obtains all the pair rates in the layered structure. Compared to regular (isolated) RB this approach is sensitive to crosstalk. As an example we measure a $N=80~(100)$ qubit layer fidelity on a 127 qubit fixed-coupling "Eagle" processor (ibm\_sherbrooke) of 0.26(0.19) and on the 133 qubit tunable-coupling "Heron" processor (ibm\_montecarlo) of 0.61(0.26). This can easily be expressed as a layer size independent quantity, error per layered gate (EPLG), which is here $1.7\times10^{-2}(1.7\times10^{-2})$ for ibm\_sherbrooke and $6.2\times10^{-3}(1.2\times10^{-2})$ for ibm\_montecarlo.},
-  archivePrefix= {arXiv},
-  eprint       = {2311.05933},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/MHPC23benchmarking.pdf}
-  }
