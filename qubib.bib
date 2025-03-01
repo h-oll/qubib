@@ -35210,3 +35210,14 @@ pages[normalize_page_numbers]
   primaryClass = {quant-ph},
   file = {~/shared/papers/J22quantum.pdf}
   }
+@article{BJY23taming,
+  author       = {Belovs, Aleksandrs and Jeffery, Stacey and Yolcu, Duyal},
+  title        = {Taming Quantum Time Complexity},
+  journal      = {CoRR},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2311.15873v3},
+  abstract     = {Quantum query complexity has several nice properties with respect to composition. First, bounded-error quantum query algorithms can be composed without incurring log factors through error reduction (exactness). Second, through careful accounting (thriftiness), the total query complexity is smaller if subroutines are mostly run on cheaper inputs -- a property that is much less obvious in quantum algorithms than in their classical counterparts. While these properties were previously seen through the model of span programs (alternatively, the dual adversary bound), a recent work by two of the authors (Belovs, Yolcu 2023) showed how to achieve these benefits without converting to span programs, by defining quantum Las Vegas query complexity. Independently, recent works, including by one of the authors (Jeffery 2022), have worked towards bringing thriftiness to the more practically significant setting of quantum time complexity.  In this work, we show how to achieve both exactness and thriftiness in the setting of time complexity. We generalize the quantum subroutine composition results of Jeffery 2022 so that, in particular, no error reduction is needed.  We give a time complexity version of the well-known result in quantum query complexity, $Q(f\circ g)=O(Q(f)\cdot Q(g))$, without log factors.  We achieve this by employing a novel approach to the design of quantum algorithms based on what we call transducers, and which we think is of large independent interest. While a span program is a completely different computational model, a transducer is a direct generalisation of a quantum algorithm, which allows for much greater transparency and control. Transducers naturally characterize general state conversion, rather than only decision problems; provide a very simple treatment of other quantum primitives such as quantum walks; and lend themselves well to time complexity analysis.},
+  archivePrefix= {arXiv},
+  eprint       = {2311.15873},
+  primaryClass = {quant-ph},
+}
