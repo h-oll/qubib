@@ -35172,4 +35172,16 @@ pages[normalize_page_numbers]
   archivePrefix= {arXiv},
   eprint       = {2008.00841},
   primaryClass = {quant-ph},
+  file = {~/shared/papers/SHMR20exchange.pdf}
+  }
+@article{BJ25space,
+  author       = {Belovs, Aleksandrs and Jeffery, Stacey},
+  title        = {Space-Efficient Quantum Error Reduction Without Log Factors},
+  journal      = {CoRR},
+  year         = 2025,
+  url          = {http://arxiv.org/abs/2502.09249v1},
+  abstract     = {Given an algorithm that outputs the correct answer with bounded error, say $1/3$, it is sometimes desirable to reduce this error to some arbitrarily small $\varepsilon$ -- for example, if one wants to call the algorithm many times as a subroutine. The usual method, for both quantum and randomized algorithms, is a procedure called majority voting, which incurs a multiplicative overhead of $O(\log\frac{1}{\varepsilon})$ from calling the algorithm this many times.  A recent paper introduced a model of quantum computation called \emph{transducers}, and showed how to reduce the ``error'' of a transducer arbitrarily with only constant overhead, using a construction analogous to majority voting called \emph{purification}. Even error-free transducers map to bounded-error quantum algorithms, so this does not let you reduce algorithmic error for free, but it does allow bounded-error quantum algorithms to be composed without incurring log factors.  In this paper, we present a new highly simplified construction of a purifier, that can be understood as a weighted walk on a line similar to a random walk interpretation of majority voting. In addition to providing a new perspective that is easier to contrast with majority voting, our purifier has exponentially better space complexity than the previous one, and quadratically better dependence on the soundness-completeness gap of the algorithm being purified.  Our new purifier has nearly optimal query complexity, even down to the constant, which matters when one composes quantum algorithms to super-constant depth.},
+  archivePrefix= {arXiv},
+  eprint       = {2502.09249},
+  primaryClass = {quant-ph},
 }
