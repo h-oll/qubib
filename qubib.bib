@@ -35198,3 +35198,14 @@ pages[normalize_page_numbers]
   primaryClass = {quant-ph},
   file = {~/shared/papers/J25composing.pdf}
   }
+@article{J22quantum,
+  author       = {Jeffery, Stacey},
+  title        = {Quantum Subroutine Composition},
+  journal      = {CoRR},
+  year         = 2022,
+  url          = {http://arxiv.org/abs/2209.14146v3},
+  abstract     = {An important tool in algorithm design is the ability to build algorithms from other algorithms that run as subroutines. In the case of quantum algorithms, a subroutine may be called on a superposition of different inputs, which complicates things. For example, a classical algorithm that calls a subroutine $Q$ times, where the average probability of querying the subroutine on input $i$ is $p_i$, and the cost of the subroutine on input $i$ is $T_i$, incurs expected cost $Q\sum_i p_i E[T_i]$ from all subroutine queries. While this statement is obvious for classical algorithms, for quantum algorithms, it is much less so, since naively, if we run a quantum subroutine on a superposition of inputs, we need to wait for all branches of the superposition to terminate before we can apply the next operation. We nonetheless show an analogous quantum statement (*): If $q_i$ is the average query weight on $i$ over all queries, the cost from all quantum subroutine queries is $Q\sum_i q_i E[T_i]$.  Here the query weight on $i$ for a particular query is the probability of measuring $i$ in the input register if we were to measure right before the query.  We prove this result using the technique of multidimensional quantum walks, recently introduced in arXiv:2208.13492. We present a more general version of their quantum walk edge composition result, which yields variable-time quantum walks, generalizing variable-time quantum search, by, for example, replacing the update cost with $\sqrt{\sum_{u,v}\pi_u P_{u,v} E[T_{u,v}^2]}$, where $T_{u,v}$ is the cost to move from vertex $u$ to vertex $v$. The same technique that allows us to compose quantum subroutines in quantum walks can also be used to compose in any quantum algorithm, which is how we prove (*).},
+  archivePrefix= {arXiv},
+  eprint       = {2209.14146},
+  primaryClass = {quant-ph},
+}
