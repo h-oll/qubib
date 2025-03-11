@@ -4742,6 +4742,19 @@ pages[normalize_page_numbers]
 	primaryClass = {quant-ph}
 }
 
+@article{BJ25space,
+	author = {Belovs, Aleksandrs and Jeffery, Stacey},
+	title = {Space-Efficient Quantum Error Reduction Without Log Factors},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2502.09249v1},
+	abstract = {Given an algorithm that outputs the correct answer with bounded error, say $1/3$, it is sometimes desirable to reduce this error to some arbitrarily small $\varepsilon$ -- for example, if one wants to call the algorithm many times as a subroutine. The usual method, for both quantum and randomized algorithms, is a procedure called majority voting, which incurs a multiplicative overhead of $O(\log\frac{1}{\varepsilon})$ from calling the algorithm this many times.  A recent paper introduced a model of quantum computation called \emph{transducers}, and showed how to reduce the ``error'' of a transducer arbitrarily with only constant overhead, using a construction analogous to majority voting called \emph{purification}. Even error-free transducers map to bounded-error quantum algorithms, so this does not let you reduce algorithmic error for free, but it does allow bounded-error quantum algorithms to be composed without incurring log factors.  In this paper, we present a new highly simplified construction of a purifier, that can be understood as a weighted walk on a line similar to a random walk interpretation of majority voting. In addition to providing a new perspective that is easier to contrast with majority voting, our purifier has exponentially better space complexity than the previous one, and quadratically better dependence on the soundness-completeness gap of the algorithm being purified.  Our new purifier has nearly optimal query complexity, even down to the constant, which matters when one composes quantum algorithms to super-constant depth.},
+	archivePrefix = {arXiv},
+	eprint = {2502.09249},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/BJ25space.pdf}
+}
+
 @article{BJ99learning,
 	Author = {Bshouty, N. H. and Jackson, J. C.},
 	Pages = {1136-1153},
@@ -4763,6 +4776,19 @@ pages[normalize_page_numbers]
 	number = 2126,
 	pages = 459,
 	year = 2011
+}
+
+@article{BJY23taming,
+	author = {Belovs, Aleksandrs and Jeffery, Stacey and Yolcu, Duyal},
+	title = {Taming Quantum Time Complexity},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2311.15873v3},
+	abstract = {Quantum query complexity has several nice properties with respect to composition. First, bounded-error quantum query algorithms can be composed without incurring log factors through error reduction (exactness). Second, through careful accounting (thriftiness), the total query complexity is smaller if subroutines are mostly run on cheaper inputs -- a property that is much less obvious in quantum algorithms than in their classical counterparts. While these properties were previously seen through the model of span programs (alternatively, the dual adversary bound), a recent work by two of the authors (Belovs, Yolcu 2023) showed how to achieve these benefits without converting to span programs, by defining quantum Las Vegas query complexity. Independently, recent works, including by one of the authors (Jeffery 2022), have worked towards bringing thriftiness to the more practically significant setting of quantum time complexity.  In this work, we show how to achieve both exactness and thriftiness in the setting of time complexity. We generalize the quantum subroutine composition results of Jeffery 2022 so that, in particular, no error reduction is needed.  We give a time complexity version of the well-known result in quantum query complexity, $Q(f\circ g)=O(Q(f)\cdot Q(g))$, without log factors.  We achieve this by employing a novel approach to the design of quantum algorithms based on what we call transducers, and which we think is of large independent interest. While a span program is a completely different computational model, a transducer is a direct generalisation of a quantum algorithm, which allows for much greater transparency and control. Transducers naturally characterize general state conversion, rather than only decision problems; provide a very simple treatment of other quantum primitives such as quantum walks; and lend themselves well to time complexity analysis.},
+	archivePrefix = {arXiv},
+	eprint = {2311.15873},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/BJY23taming.pdf}
 }
 
 @misc{BK00fermionic,
@@ -9164,6 +9190,17 @@ pages[normalize_page_numbers]
 	Year = 2005
 }
 
+@Article{D25public,
+	file = {D25public.pdf},
+	url = {https://eprint.iacr.org/2025/092.pdf},
+	number = {092},
+	year = {2025},
+	journal = {eprint.iacr.org},
+	title = {Public-Key Quantum Money From Standard Assumptions},
+	author = {Doliskan, Jake},
+	timestamp = {2025-03-11 09:26:39 (CET)}
+}
+
 @book{D47principles,
 	Address = {Oxford},
 	Author = {Dirac, P. A. M.},
@@ -10265,6 +10302,19 @@ pages[normalize_page_numbers]
 	archivePrefix = {arXiv},
 	eprint = {1604.01586},
 	primaryClass = {quant-ph}
+}
+
+@article{DK24efficient,
+	author = {Davies, Ethan and Kay, Alastair},
+	title = {Efficient Post-Quantum Secured Blind Computation},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2404.07052v1},
+	abstract = {In the medium term, quantum computing must tackle two key challenges: fault tolerance and security. Fault tolerance will be solved with sufficiently high quality experiments on large numbers of qubits, but the scale and complexity of these devices means that a cloud-based access model is likely to dominate. How can we risk evaluating valuable computations on an untrusted server? Here we detail a verifiable circuit-based model that only requires classical communication between parties. The server is blind to the details of the computation, which is computationally secure.},
+	archivePrefix = {arXiv},
+	eprint = {2404.07052},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/DK24efficient.pdf}
 }
 
 @article{DK96consistent,
@@ -17079,6 +17129,32 @@ pages[normalize_page_numbers]
 	Title = {-?-},
 	Volume = 41,
 	Year = 1910
+}
+
+@article{J22quantum,
+	author = {Jeffery, Stacey},
+	title = {Quantum Subroutine Composition},
+	journal = {CoRR},
+	year = 2022,
+	url = {http://arxiv.org/abs/2209.14146v3},
+	abstract = {An important tool in algorithm design is the ability to build algorithms from other algorithms that run as subroutines. In the case of quantum algorithms, a subroutine may be called on a superposition of different inputs, which complicates things. For example, a classical algorithm that calls a subroutine $Q$ times, where the average probability of querying the subroutine on input $i$ is $p_i$, and the cost of the subroutine on input $i$ is $T_i$, incurs expected cost $Q\sum_i p_i E[T_i]$ from all subroutine queries. While this statement is obvious for classical algorithms, for quantum algorithms, it is much less so, since naively, if we run a quantum subroutine on a superposition of inputs, we need to wait for all branches of the superposition to terminate before we can apply the next operation. We nonetheless show an analogous quantum statement (*): If $q_i$ is the average query weight on $i$ over all queries, the cost from all quantum subroutine queries is $Q\sum_i q_i E[T_i]$.  Here the query weight on $i$ for a particular query is the probability of measuring $i$ in the input register if we were to measure right before the query.  We prove this result using the technique of multidimensional quantum walks, recently introduced in arXiv:2208.13492. We present a more general version of their quantum walk edge composition result, which yields variable-time quantum walks, generalizing variable-time quantum search, by, for example, replacing the update cost with $\sqrt{\sum_{u,v}\pi_u P_{u,v} E[T_{u,v}^2]}$, where $T_{u,v}$ is the cost to move from vertex $u$ to vertex $v$. The same technique that allows us to compose quantum subroutines in quantum walks can also be used to compose in any quantum algorithm, which is how we prove (*).},
+	archivePrefix = {arXiv},
+	eprint = {2209.14146},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/J22quantum.pdf}
+}
+
+@article{J25composing,
+	author = {Jeffery, Stacey},
+	title = {Composing Quantum Algorithms},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2502.09240v1},
+	abstract = {Composition is something we take for granted in classical algorithms design, and in particular, we take it as a basic axiom that composing ``efficient'' algorithms should result in an ``efficient'' algorithm -- even using this intuition to justify our definition of ``efficient.'' Composing quantum algorithms is a much more subtle affair than composing classical algorithms. It has long been known that zero-error quantum algorithms \emph{do not} compose, but it turns out that, using the right algorithmic lens, bounded-error quantum algorithms do. In fact, in the bounded-error setting, quantum algorithms can even avoid the log factor needed in composing bounded-error randomized algorithms that comes from amplifying the success probability via majority voting. In this article, aimed at a general computer science audience, we try to give some intuition for these results: why composing quantum algorithms is tricky, particularly in the zero-error setting, but why it nonetheless works \emph{better} than classical composition in the bounded-error setting.},
+	archivePrefix = {arXiv},
+	eprint = {2502.09240},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/J25composing.pdf}
 }
 
 @book{J63dynamic,
@@ -29394,6 +29470,19 @@ pages[normalize_page_numbers]
 	file = {SHG23deterministic.pdf}
 }
 
+@article{SHMR20exchange,
+	author = {Salih, Hatim and Hance, Jonte R. and McCutcheon, Will and Rudolph, Terry and Rarity, John},
+	title = {Exchange-Free Computation on an Unknown Qubit At a Distance},
+	journal = {CoRR},
+	year = 2020,
+	url = {http://arxiv.org/abs/2008.00841v4},
+	abstract = {We present a way of directly manipulating an arbitrary qubit, without the exchange of any particles. This includes as an application the exchange-free preparation of an arbitrary quantum state at Alice by a remote classical Bob.  As a result, we are able to propose a protocol that allows one party to directly enact, by means of a suitable program, any computation exchange-free on a remote second party's unknown qubit. Further, we show how to use this for the exchange-free control of a universal two-qubit gate, thus opening the possibility of directly enacting any desired algorithm remotely on a programmable quantum circuit.},
+	archivePrefix = {arXiv},
+	eprint = {2008.00841},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/SHMR20exchange.pdf}
+}
+
 @Article{SJA19expressibility,
 	file = {SJA19expressibility.pdf},
 	author = {Sim, Sukin and Johnson, Peter D. and Aspuru‐Guzik, Alán},
@@ -31046,6 +31135,19 @@ pages[normalize_page_numbers]
 	Title = {Indecomposable positive maps in matrix algebra},
 	Volume = 31,
 	Year = 1988
+}
+
+@article{TTNK25qkd,
+	author = {Tupkary, Devashish and Tan, Ernest Y. -Z. and Nahar, Shlok and Kamin, Lars and L{\"u}tkenhaus, Norbert},
+	title = {Qkd Security Proofs for Decoy-State Bb84: Protocol Variations, Proof Techniques, Gaps and Limitations},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2502.10340v1},
+	abstract = {We discuss the status of security proofs for practical decoy-state Quantum Key Distribution using the BB84 protocol, pertaining to optical implementations using weak coherent pulses and threshold photo-detectors. Our focus is on the gaps in the existing literature. Gaps might result, for example, from a mismatch of protocol detail choices and proof technique elements, from proofs relying on earlier results that made different assumptions, or from protocol choices that do not consider real-world requirements. While substantial progress has been made, our overview draws attention to the details that still require our attention.},
+	archivePrefix = {arXiv},
+	eprint = {2502.10340},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/TTNK25qkd.pdf}
 }
 
 @inproceedings{TU97ensemble,
@@ -34676,6 +34778,19 @@ pages[normalize_page_numbers]
 	Year = 1998
 }
 
+@article{ZKHB25myths,
+	author = {Zimbor{\'a}s, Zolt{\'a}n and Koczor, B{\'a}lint and Holmes, Zo{\"e} and Borrelli, Elsi-Mari and Gily{\'e}n, Andr{\'a}s and Huang, Hsin-Yuan and Cai, Zhenyu and Ac{\'i}n, Antonio and Aolita, Leandro and Banchi, Leonardo and Brandão, Fernando G. S. L. and Cavalcanti, Daniel and Cubitt, Toby and Filippov, Sergey N. and Garc{\'i}a-P{\'e}rez, Guillermo and Goold, John and K{\'a}lm{\'a}n, Orsolya and Kyoseva, Elica and Rossi, Matteo A. C. and Sokolov, Boris and Tavernelli, Ivano and Maniscalco, Sabrina},
+	title = {Myths Around Quantum Computation Before Full Fault Tolerance: What No-Go Theorems Rule Out and What They Don't},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2501.05694v1},
+	abstract = {In this perspective article, we revisit and critically evaluate prevailing viewpoints on the capabilities and limitations of near-term quantum computing and its potential transition toward fully fault-tolerant quantum computing. We examine theoretical no-go results and their implications, addressing misconceptions about the practicality of quantum error mitigation techniques and variational quantum algorithms. By emphasizing the nuances of error scaling, circuit depth, and algorithmic feasibility, we highlight viable near-term applications and synergies between error mitigation and early fault-tolerant architectures. Our discussion explores strategies for addressing current challenges, such as barren plateaus in variational circuits and the integration of quantum error mitigation and quantum error correction techniques. We aim to underscore the importance of continued innovation in hardware and algorithmic design to bridge the gap between theoretical potential and practical utility, paving the way for meaningful quantum advantage in the era of late noisy intermediate scale and early fault-tolerant quantum devices.},
+	archivePrefix = {arXiv},
+	eprint = {2501.05694},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/ZKHB25myths.pdf}
+}
+
 @article{ZKLN21interactive,
 	author = {Zhu, Daiwei and Kahanamoku-Meyer, Gregory D. and Lewis, Laura and Noel, Crystal and Katz, Or and Harraz, Bahaa and Wang, Qingfeng and Risinger, Andrew and Feng, Lei and Biswas, Debopriyo and Egan, Laird and Gheorghiu, Alexandru and Nam, Yunseong and Vidick, Thomas and Vazirani, Umesh and Yao, Norman Y. and Cetina, Marko and Monroe, Christopher},
 	title = {Interactive Protocols for Classically-Verifiable Quantum Advantage},
@@ -35126,99 +35241,14 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{TTNK25qkd,
-  author       = {Tupkary, Devashish and Tan, Ernest Y. -Z. and Nahar, Shlok and Kamin, Lars and L{\"u}tkenhaus, Norbert},
-  title        = {Qkd Security Proofs for Decoy-State Bb84: Protocol Variations, Proof Techniques, Gaps and Limitations},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2502.10340v1},
-  abstract     = {We discuss the status of security proofs for practical decoy-state Quantum Key Distribution using the BB84 protocol, pertaining to optical implementations using weak coherent pulses and threshold photo-detectors. Our focus is on the gaps in the existing literature. Gaps might result, for example, from a mismatch of protocol detail choices and proof technique elements, from proofs relying on earlier results that made different assumptions, or from protocol choices that do not consider real-world requirements. While substantial progress has been made, our overview draws attention to the details that still require our attention.},
-  archivePrefix= {arXiv},
-  eprint       = {2502.10340},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/TTNK25qkd.pdf}
-  }
-@article{DK24efficient,
-  author       = {Davies, Ethan and Kay, Alastair},
-  title        = {Efficient Post-Quantum Secured Blind Computation},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2404.07052v1},
-  abstract     = {In the medium term, quantum computing must tackle two key challenges: fault tolerance and security. Fault tolerance will be solved with sufficiently high quality experiments on large numbers of qubits, but the scale and complexity of these devices means that a cloud-based access model is likely to dominate. How can we risk evaluating valuable computations on an untrusted server? Here we detail a verifiable circuit-based model that only requires classical communication between parties. The server is blind to the details of the computation, which is computationally secure.},
-  archivePrefix= {arXiv},
-  eprint       = {2404.07052},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/DK24efficient.pdf}
-  }
-@article{ZKHB25myths,
-  author       = {Zimbor{\'a}s, Zolt{\'a}n and Koczor, B{\'a}lint and Holmes, Zo{\"e} and Borrelli, Elsi-Mari and Gily{\'e}n, Andr{\'a}s and Huang, Hsin-Yuan and Cai, Zhenyu and Ac{\'i}n, Antonio and Aolita, Leandro and Banchi, Leonardo and Brandão, Fernando G. S. L. and Cavalcanti, Daniel and Cubitt, Toby and Filippov, Sergey N. and Garc{\'i}a-P{\'e}rez, Guillermo and Goold, John and K{\'a}lm{\'a}n, Orsolya and Kyoseva, Elica and Rossi, Matteo A. C. and Sokolov, Boris and Tavernelli, Ivano and Maniscalco, Sabrina},
-  title        = {Myths Around Quantum Computation Before Full Fault Tolerance: What No-Go Theorems Rule Out and What They Don't},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2501.05694v1},
-  abstract     = {In this perspective article, we revisit and critically evaluate prevailing viewpoints on the capabilities and limitations of near-term quantum computing and its potential transition toward fully fault-tolerant quantum computing. We examine theoretical no-go results and their implications, addressing misconceptions about the practicality of quantum error mitigation techniques and variational quantum algorithms. By emphasizing the nuances of error scaling, circuit depth, and algorithmic feasibility, we highlight viable near-term applications and synergies between error mitigation and early fault-tolerant architectures. Our discussion explores strategies for addressing current challenges, such as barren plateaus in variational circuits and the integration of quantum error mitigation and quantum error correction techniques. We aim to underscore the importance of continued innovation in hardware and algorithmic design to bridge the gap between theoretical potential and practical utility, paving the way for meaningful quantum advantage in the era of late noisy intermediate scale and early fault-tolerant quantum devices.},
-  archivePrefix= {arXiv},
-  eprint       = {2501.05694},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/ZKHB25myths.pdf}
-  }
-@article{SHMR20exchange,
-  author       = {Salih, Hatim and Hance, Jonte R. and McCutcheon, Will and Rudolph, Terry and Rarity, John},
-  title        = {Exchange-Free Computation on an Unknown Qubit At a Distance},
-  journal      = {CoRR},
-  year         = 2020,
-  url          = {http://arxiv.org/abs/2008.00841v4},
-  abstract     = {We present a way of directly manipulating an arbitrary qubit, without the exchange of any particles. This includes as an application the exchange-free preparation of an arbitrary quantum state at Alice by a remote classical Bob.  As a result, we are able to propose a protocol that allows one party to directly enact, by means of a suitable program, any computation exchange-free on a remote second party's unknown qubit. Further, we show how to use this for the exchange-free control of a universal two-qubit gate, thus opening the possibility of directly enacting any desired algorithm remotely on a programmable quantum circuit.},
-  archivePrefix= {arXiv},
-  eprint       = {2008.00841},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/SHMR20exchange.pdf}
-  }
-@article{BJ25space,
-  author       = {Belovs, Aleksandrs and Jeffery, Stacey},
-  title        = {Space-Efficient Quantum Error Reduction Without Log Factors},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2502.09249v1},
-  abstract     = {Given an algorithm that outputs the correct answer with bounded error, say $1/3$, it is sometimes desirable to reduce this error to some arbitrarily small $\varepsilon$ -- for example, if one wants to call the algorithm many times as a subroutine. The usual method, for both quantum and randomized algorithms, is a procedure called majority voting, which incurs a multiplicative overhead of $O(\log\frac{1}{\varepsilon})$ from calling the algorithm this many times.  A recent paper introduced a model of quantum computation called \emph{transducers}, and showed how to reduce the ``error'' of a transducer arbitrarily with only constant overhead, using a construction analogous to majority voting called \emph{purification}. Even error-free transducers map to bounded-error quantum algorithms, so this does not let you reduce algorithmic error for free, but it does allow bounded-error quantum algorithms to be composed without incurring log factors.  In this paper, we present a new highly simplified construction of a purifier, that can be understood as a weighted walk on a line similar to a random walk interpretation of majority voting. In addition to providing a new perspective that is easier to contrast with majority voting, our purifier has exponentially better space complexity than the previous one, and quadratically better dependence on the soundness-completeness gap of the algorithm being purified.  Our new purifier has nearly optimal query complexity, even down to the constant, which matters when one composes quantum algorithms to super-constant depth.},
-  archivePrefix= {arXiv},
-  eprint       = {2502.09249},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/BJ25space.pdf}
-  }
-@article{J25composing,
-  author       = {Jeffery, Stacey},
-  title        = {Composing Quantum Algorithms},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2502.09240v1},
-  abstract     = {Composition is something we take for granted in classical algorithms design, and in particular, we take it as a basic axiom that composing ``efficient'' algorithms should result in an ``efficient'' algorithm -- even using this intuition to justify our definition of ``efficient.'' Composing quantum algorithms is a much more subtle affair than composing classical algorithms. It has long been known that zero-error quantum algorithms \emph{do not} compose, but it turns out that, using the right algorithmic lens, bounded-error quantum algorithms do. In fact, in the bounded-error setting, quantum algorithms can even avoid the log factor needed in composing bounded-error randomized algorithms that comes from amplifying the success probability via majority voting. In this article, aimed at a general computer science audience, we try to give some intuition for these results: why composing quantum algorithms is tricky, particularly in the zero-error setting, but why it nonetheless works \emph{better} than classical composition in the bounded-error setting.},
-  archivePrefix= {arXiv},
-  eprint       = {2502.09240},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/J25composing.pdf}
-  }
-@article{J22quantum,
-  author       = {Jeffery, Stacey},
-  title        = {Quantum Subroutine Composition},
-  journal      = {CoRR},
-  year         = 2022,
-  url          = {http://arxiv.org/abs/2209.14146v3},
-  abstract     = {An important tool in algorithm design is the ability to build algorithms from other algorithms that run as subroutines. In the case of quantum algorithms, a subroutine may be called on a superposition of different inputs, which complicates things. For example, a classical algorithm that calls a subroutine $Q$ times, where the average probability of querying the subroutine on input $i$ is $p_i$, and the cost of the subroutine on input $i$ is $T_i$, incurs expected cost $Q\sum_i p_i E[T_i]$ from all subroutine queries. While this statement is obvious for classical algorithms, for quantum algorithms, it is much less so, since naively, if we run a quantum subroutine on a superposition of inputs, we need to wait for all branches of the superposition to terminate before we can apply the next operation. We nonetheless show an analogous quantum statement (*): If $q_i$ is the average query weight on $i$ over all queries, the cost from all quantum subroutine queries is $Q\sum_i q_i E[T_i]$.  Here the query weight on $i$ for a particular query is the probability of measuring $i$ in the input register if we were to measure right before the query.  We prove this result using the technique of multidimensional quantum walks, recently introduced in arXiv:2208.13492. We present a more general version of their quantum walk edge composition result, which yields variable-time quantum walks, generalizing variable-time quantum search, by, for example, replacing the update cost with $\sqrt{\sum_{u,v}\pi_u P_{u,v} E[T_{u,v}^2]}$, where $T_{u,v}$ is the cost to move from vertex $u$ to vertex $v$. The same technique that allows us to compose quantum subroutines in quantum walks can also be used to compose in any quantum algorithm, which is how we prove (*).},
-  archivePrefix= {arXiv},
-  eprint       = {2209.14146},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/J22quantum.pdf}
-  }
-@article{BJY23taming,
-  author       = {Belovs, Aleksandrs and Jeffery, Stacey and Yolcu, Duyal},
-  title        = {Taming Quantum Time Complexity},
+@article{CMS23oblivious,
+  author       = {Colisson, L{\'e}o and Muguruza, Garazi and Speelman, Florian},
+  title        = {Oblivious Transfer From Zero-Knowledge Proofs, Or How To Achieve Round-Optimal Quantum Oblivious Transfer and Zero-Knowledge Proofs on Quantum States},
   journal      = {CoRR},
   year         = 2023,
-  url          = {http://arxiv.org/abs/2311.15873v3},
-  abstract     = {Quantum query complexity has several nice properties with respect to composition. First, bounded-error quantum query algorithms can be composed without incurring log factors through error reduction (exactness). Second, through careful accounting (thriftiness), the total query complexity is smaller if subroutines are mostly run on cheaper inputs -- a property that is much less obvious in quantum algorithms than in their classical counterparts. While these properties were previously seen through the model of span programs (alternatively, the dual adversary bound), a recent work by two of the authors (Belovs, Yolcu 2023) showed how to achieve these benefits without converting to span programs, by defining quantum Las Vegas query complexity. Independently, recent works, including by one of the authors (Jeffery 2022), have worked towards bringing thriftiness to the more practically significant setting of quantum time complexity.  In this work, we show how to achieve both exactness and thriftiness in the setting of time complexity. We generalize the quantum subroutine composition results of Jeffery 2022 so that, in particular, no error reduction is needed.  We give a time complexity version of the well-known result in quantum query complexity, $Q(f\circ g)=O(Q(f)\cdot Q(g))$, without log factors.  We achieve this by employing a novel approach to the design of quantum algorithms based on what we call transducers, and which we think is of large independent interest. While a span program is a completely different computational model, a transducer is a direct generalisation of a quantum algorithm, which allows for much greater transparency and control. Transducers naturally characterize general state conversion, rather than only decision problems; provide a very simple treatment of other quantum primitives such as quantum walks; and lend themselves well to time complexity analysis.},
+  url          = {http://arxiv.org/abs/2303.01476v3},
+  abstract     = {We provide a generic construction to turn any classical Zero-Knowledge (ZK) protocol into a composable (quantum) oblivious transfer (OT) protocol, mostly lifting the round-complexity properties and security guarantees (plain-model/statistical security/unstructured functions...) of the ZK protocol to the resulting OT protocol. Such a construction is unlikely to exist classically as Cryptomania is believed to be different from Minicrypt.  In particular, by instantiating our construction using Non-Interactive ZK (NIZK), we provide the first round-optimal (2-message) quantum OT protocol secure in the random oracle model, and round-optimal extensions to string and k-out-of-n OT.  At the heart of our construction lies a new method that allows us to prove properties on a received quantum state without revealing additional information on it, even in a non-interactive way, without public-key primitives, and/or with statistical guarantees when using an appropriate classical ZK protocol. We can notably prove that a state has been partially measured (with arbitrary constraints on the set of measured qubits), without revealing any additional information on this set. This notion can be seen as an analog of ZK to quantum states, and we expect it to be of independent interest as it extends complexity theory to quantum languages, as illustrated by the two new complexity classes we introduce, ZKstatesQIP and ZKstatesQMA.},
   archivePrefix= {arXiv},
-  eprint       = {2311.15873},
+  eprint       = {2303.01476},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/BJY23taming.pdf}
-  }
+}
