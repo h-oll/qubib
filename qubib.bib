@@ -35265,3 +35265,93 @@ pages[normalize_page_numbers]
   primaryClass = {quant-ph},
   file = {~/shared/papers/AHY23im.pdf}
   }
+
+@article{MHPC23benchmarking,
+  author       = {McKay, David C. and Hincks, Ian and Pritchett, Emily J. and Carroll, Malcolm and Govia, Luke C. G. and Merkel, Seth T.},
+  title        = {Benchmarking Quantum Processor Performance At Scale},
+  journal      = {CoRR},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2311.05933v1},
+  abstract     = {As quantum processors grow, new performance benchmarks are required to capture the full quality of the devices at scale. While quantum volume is an excellent benchmark, it focuses on the highest quality subset of the device and so is unable to indicate the average performance over a large number of connected qubits. Furthermore, it is a discrete pass/fail and so is not reflective of continuous improvements in hardware nor does it provide quantitative direction to large-scale algorithms. For example, there may be value in error mitigated Hamiltonian simulation at scale with devices unable to pass strict quantum volume tests. Here we discuss a scalable benchmark which measures the fidelity of a connecting set of two-qubit gates over $N$ qubits by measuring gate errors using simultaneous direct randomized benchmarking in disjoint layers. Our layer fidelity can be easily related to algorithmic run time, via $\gamma$ defined in Ref.\cite{berg2022probabilistic} that can be used to estimate the number of circuits required for error mitigation. The protocol is efficient and obtains all the pair rates in the layered structure. Compared to regular (isolated) RB this approach is sensitive to crosstalk. As an example we measure a $N=80~(100)$ qubit layer fidelity on a 127 qubit fixed-coupling "Eagle" processor (ibm\_sherbrooke) of 0.26(0.19) and on the 133 qubit tunable-coupling "Heron" processor (ibm\_montecarlo) of 0.61(0.26). This can easily be expressed as a layer size independent quantity, error per layered gate (EPLG), which is here $1.7\times10^{-2}(1.7\times10^{-2})$ for ibm\_sherbrooke and $6.2\times10^{-3}(1.2\times10^{-2})$ for ibm\_montecarlo.},
+  archivePrefix= {arXiv},
+  eprint       = {2311.05933},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/MHPC23benchmarking.pdf}
+  }
+
+%%% MG additions
+
+@misc{Sunami_Graphix_2023,
+author = {Sunami, Shinichi and Fukushima, Masato},
+doi = {10.5281/zenodo.7861382},
+month = apr,
+title = {{Graphix}},
+url = {https://github.com/TeamGraphix/graphix},
+version = {v0.2.1},
+year = {2023}
+}
+
+@article{SM22graphix,
+	author = {Sunami, Shinichi and Fukushima, Masato},
+	title = {{Graphix: optimizing and simulating measurement-based quantum computation on local-Clifford decorated graph}},
+	journal = {arXiv},
+	year = {2022},
+	month = dec,
+	eprint = {2212.11975},
+	doi = {10.48550/arXiv.2212.11975}
+}
+
+@article{FMGOS25graphix,
+	author = {Fukushima, Masato and Thierry Martinez and Garnier Maxime and Harold Ollivier and Sunami, Shinichi},
+	title = {{Graphix: a native compiler and simulator for measurement-based quantum computation}},
+	journal = {arXiv},
+	year = {2025}
+}
+%,
+	print = {2212.11975},
+	doi = {10.48550/arXiv.2212.11975}
+}
+
+@article{Gidney21stim,
+    source = {M. Garnier, 2025-03},
+	author = {Gidney, Craig},
+	title = {{Stim: a fast stabilizer circuit simulator}},
+	journal = {Quantum},
+	volume = {5},
+	pages = {497},
+	year = {2021},
+	month = jul,
+	publisher = {Verein zur F{\ifmmode\ddot{o}\else\"{o}\fi}rderung des Open Access Publizierens in den Quantenwissenschaften},
+	eprint = {2103.02202v3},
+	doi = {10.22331/q-2021-07-06-497}
+}
+
+@article{gustiani2023virtual,
+source = {M. Garnier, 2025-03},
+  title={The Virtual Quantum Device (VQD): A tool for detailed emulation of quantum computers},
+  author={Gustiani, Cica and Jones, Tyson and Benjamin, Simon C},
+  journal={arXiv preprint arXiv:2306.07342},
+  year={2023}
+}
+
+
+@article{PS16:realMBQC,
+	author = {Perdrix, Simon and Sanselme, Luc},
+	title = {{Determinism and Computational Power of Real Measurement-based Quantum Computation}},
+	journal = {arXiv},
+	year = {2016},
+	month = oct,
+	eprint = {1610.02824},
+	doi = {10.48550/arXiv.1610.02824}
+}
+
+@article{MPS22:shadowPauli,
+        source = {M. Garnier, 2025-03},
+	author = {Mhalla, Mehdi and Perdrix, Simon and Sanselme, Luc},
+	title = {{Shadow Pauli Flow: Characterising Determinism in MBQCs involving Pauli Measurements}},
+	journal = {arXiv},
+	year = {2022},
+	month = jul,
+	eprint = {2207.09368},
+	doi = {10.48550/arXiv.2207.09368}
+}
