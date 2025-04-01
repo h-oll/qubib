@@ -1,5 +1,3 @@
-B@Comment{HOW TO ADD NEW ENTRIES}
-
 @Comment{GENERATE YOUR KEY}
 
 @Comment{The idea is to follow the following rule so that keys are permanent}
@@ -5655,6 +5653,19 @@ pages[normalize_page_numbers]
 	Local-Url = {file://localhost/Volumes/IoData/ollivier/Work/Qubib/Epapers/BPS+01.pdf},
 	Title = {Probabilistic Instantaneous Quantum Computation},
 	Year = 2001
+}
+
+@article{BPY25quantum,
+	author = {Blume-Kohout, Robin and Proctor, Timothy and Young, Kevin},
+	title = {Quantum Characterization, Verification, and Validation},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2503.16383v1},
+	abstract = {Quantum characterization, verification, and validation (QCVV) is a set of techniques to probe, describe, and assess the behavior of quantum bits (qubits), quantum information-processing registers, and quantum computers. QCVV protocols probe and describe the effects of unwanted decoherence so that it can be eliminated or mitigated. They can be usefully divided into characterization techniques that estimate predictive models for a device's behavior from data, and benchmarking techniques that assess overall performance of a device. In this introductory article, we briefly summarize the history of QCVV, introduce the mathematical models and metrics upon which it relies, and then summarize the foundational fields of tomography, randomized benchmarking, and holistic benchmarks. We conclude with brief descriptions of (and references to) advanced topics including gate set tomography, phase estimation, Pauli noise learning, characterization of mid-circuit measurements and non-Markovianity, classical shadows, verification and certification, and logical qubit assessment.},
+	archivePrefix = {arXiv},
+	eprint = {2503.16383},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/BPY25quantum.pdf}
 }
 
 @inproceedings{BPZ99generalized,
@@ -12119,6 +12130,19 @@ pages[normalize_page_numbers]
 	Year = 2002
 }
 
+@article{FCHW23application,
+	author = {Furches, Jim and Chehade, Sarah and Hamilton, Kathleen and Wiebe, Nathan and Marrero, Carlos Ortiz},
+	title = {Application-Level Benchmarking of Quantum Computers Using Nonlocal Game Strategies},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2311.01363v4},
+	abstract = {In a nonlocal game, two noncommunicating players cooperate to convince a referee that they possess a strategy that does not violate the rules of the game. Quantum strategies allow players to optimally win some games by performing joint measurements on a shared entangled state, but computing these strategies can be challenging. We present a variational quantum algorithm to compute quantum strategies for nonlocal games by encoding the rules of a nonlocal game into a Hamiltonian. We show how this algorithm can generate a short-depth optimal quantum strategy for a graph coloring game with a quantum advantage. This quantum strategy is then evaluated on fourteen different quantum hardware platforms to demonstrate its utility as a benchmark. Finally, we discuss potential sources of errors that can explain the observed decreased performance of the executed task and derive an expression for the number of samples required to accurately estimate the win rate in the presence of noise.},
+	archivePrefix = {arXiv},
+	eprint = {2311.01363},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/FCHW23application.pdf}
+}
+
 @article{FCIC96wigner,
 	Author = {Fyodorov, Y.V. and Chubykalo, O.A. and Izrailev, F.M. and Casati, G.},
 	Journal = {Phys. Rev. Lett.},
@@ -17052,6 +17076,19 @@ pages[normalize_page_numbers]
 	Year = 2003
 }
 
+@article{IP17small,
+	author = {Iyer, Pavithran S. and Poulin, David},
+	title = {A Small Quantum Computer Is Needed To Optimize Fault-Tolerant Protocols},
+	journal = {CoRR},
+	year = 2017,
+	url = {http://arxiv.org/abs/1711.04736v1},
+	abstract = {As far as we know, a useful quantum computer will require fault-tolerant gates, and existing schemes demand a prohibitively large space and time overhead. We argue that a first generation quantum computer will be very valuable to design, test, and optimize fault-tolerant protocols tailored to the noise processes of the hardware. Our argument is essentially a critical analysis of the current methods envisioned to optimize fault-tolerant schemes, which rely on hardware characterization, noise modelling, and numerical simulations. We show that, even within a very restricted set of noise models, error correction protocols depend strongly on the details of the noise model.  Combined to the intrinsic difficulty of hardware characterization and of numerical simulations of fault-tolerant protocols, we arrive at the conclusion that the currently envisioned optimization cycle is of very limited scope. On the other hand, the direct characterization of a fault-tolerant scheme on a small quantum computer bypasses these difficulties, and could provide a bootstrapping path to full-scale fault-tolerant quantum computation.},
+	archivePrefix = {arXiv},
+	eprint = {1711.04736},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/IP17small.pdf}
+}
+
 @article{IU62quantum,
 	Author = {Ingarden, R.S. and Urbanik, K.},
 	Date-Modified = {2006-01-04 12:46:28 +1000},
@@ -20450,6 +20487,19 @@ pages[normalize_page_numbers]
 	Year = 1999
 }
 
+@article{LAZL25review,
+	author = {Lall, Deep and Agarwal, Abhishek and Zhang, Weixi and Lindoy, Lachlan and Lindstr{\"o}m, Tobias and Webster, Stephanie and Hall, Simon and Chancellor, Nicholas and Wallden, Petros and Garcia-Patron, Raul and Kashefi, Elham and Kendon, Viv and Pritchard, Jonathan and Rossi, Alessandro and Datta, Animesh and Kapourniotis, Theodoros and Georgopoulos, Konstantinos and Rungger, Ivan},
+	title = {A Review and Collection of Metrics and Benchmarks for Quantum Computers: Definitions, Methodologies and Software},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2502.06717v1},
+	abstract = {Quantum computers have the potential to provide an advantage over classical computers in a number of areas. Numerous metrics to benchmark the performance of quantum computers, ranging from their individual hardware components to entire applications, have been proposed over the years. Navigating the resulting extensive literature can be overwhelming. Objective comparisons are further hampered in practice as different variations of the same metric are used, and the data disclosed together with a reported metric value is often not sufficient to reproduce the measurements. This article addresses these challenges by providing a review of metrics and benchmarks for quantum computers and 1) a comprehensive collection of benchmarks allowing holistic comparisons of quantum computers, 2) a consistent format of the definitions across all metrics including a transparent description of the methodology and of the main assumptions and limitations, and 3) a reproducible approach by linking the metrics to open-source software used to evaluate them.  We identify five areas where international standardization working groups could be established, namely: i) the identification and agreement on the categories of metrics that comprehensively benchmark device performance; ii) the identification and agreement on a set of well-established metrics that together comprehensively benchmark performance; iii) the identification of metrics specific to hardware platforms, including non-gate-based quantum computers; iv) inter-laboratory comparison studies to develop best practice guides for measurement methodology; and v) agreement on what data and software should be reported together with a metric value to ensure trust, transparency and reproducibility. We provide potential routes to advancing these areas. We expect this compendium to accelerate the progress of quantum computing hardware towards quantum advantage.},
+	archivePrefix = {arXiv},
+	eprint = {2502.06717},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/LAZL25review.pdf}
+}
+
 @Article{LB20bitter,
 	file = {LB20bitter.pdf},
 	timestamp = {2024-04-19 14:31:00 (CEST)},
@@ -21019,6 +21069,19 @@ pages[normalize_page_numbers]
 	doi = {10.1103/physrevlett.94.230504},
 	url = {https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.94.230504},
 	publisher = {American Physical Society (APS)}
+}
+
+@article{LMER25systematic,
+	author = {Lorenz, Jeanette Miriam and Monz, Thomas and Eisert, Jens and Reitzner, Daniel and Schopfer, F{\'e}licien and Barbaresco, Fr{\'e}d{\'e}ric and Kurowski, Krzysztof and Schoot, Ward van der and Strohm, Thomas and Senellart, Jean and Perrault, C{\'e}cile M. and Knufinke, Martin and Amodjee, Ziyad and Giardini, Mattia},
+	title = {Systematic Benchmarking of Quantum Computers: Status and Recommendations},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2503.04905v1},
+	abstract = {Architectures for quantum computing can only be scaled up when they are accompanied by suitable benchmarking techniques. The document provides a comprehensive overview of the state and recommendations for systematic benchmarking of quantum computers. Benchmarking is crucial for assessing the performance of quantum computers, including the hardware, software, as well as algorithms and applications. The document highlights key aspects such as component-level, system-level, software-level, HPC-level, and application-level benchmarks. Component-level benchmarks focus on the performance of individual qubits and gates, while system-level benchmarks evaluate the entire quantum processor. Software-level benchmarks consider the compiler's efficiency and error mitigation techniques. HPC-level and cloud benchmarks address integration with classical systems and cloud platforms, respectively. Application-level benchmarks measure performance in real-world use cases. The document also discusses the importance of standardization to ensure reproducibility and comparability of benchmarks, and highlights ongoing efforts in the quantum computing community towards establishing these benchmarks. Recommendations for future steps emphasize the need for developing standardized evaluation routines and integrating benchmarks with broader quantum technology activities.},
+	archivePrefix = {arXiv},
+	eprint = {2503.04905},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/LMER25systematic.pdf}
 }
 
 @article{LMKO21verifying,
@@ -25347,6 +25410,19 @@ pages[normalize_page_numbers]
 	Title = {Trellises for stabilizer codes: definition and uses},
 	Volume = 74,
 	Year = 2006
+}
+
+@article{OYM25scaling,
+	author = {Olle, Jan and Yevtushenko, Oleg M. and Marquardt, Florian},
+	title = {Scaling the Automated Discovery of Quantum Circuits Via Reinforcement Learning With Gadgets},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2503.11638v1},
+	abstract = {Reinforcement Learning (RL) has established itself as a powerful tool for designing quantum circuits, which are essential for processing quantum information. RL applications have typically focused on circuits of small to intermediate complexity, as computation times tend to increase exponentially with growing circuit complexity. This computational explosion severely limits the scalability of RL and casts significant doubt on its broader applicability.  In this paper, we propose a principled approach based on the systematic discovery and introduction of composite gates -- {\it gadgets}, that enables RL scalability, thereby expanding its potential applications. As a case study, we explore the discovery of Clifford encoders for Quantum Error Correction. We demonstrate that incorporating gadgets in the form of composite Clifford gates, in addition to standard CNOT and Hadamard gates, significantly enhances the efficiency of RL agents. Specifically, the computation speed increases (by one or even two orders of magnitude), enabling RL to discover highly complex quantum codes without previous knowledge. We illustrate this advancement with examples of QEC code discovery with parameters $ [[n,1,d]] $ for $ d \leq 7 $ and $ [[n,k,6]] $ for $ k \leq 7 $. We note that the most complicated circuits of these classes were not previously found. We highlight the advantages and limitations of the gadget-based approach. Our method paves the way for scaling the RL-based automatic discovery of complicated quantum circuits for various tasks, which may include designing logical operations between logical qubits or discovering quantum algorithms.},
+	archivePrefix = {arXiv},
+	eprint = {2503.11638},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/OYM25scaling.pdf}
 }
 
 @article{OZ02quantum-discord,
@@ -32633,6 +32709,20 @@ pages[normalize_page_numbers]
 	file = {W19from.pdf}
 }
 
+@InBook{W13quantum,
+	file = {W13quantum.pdf},
+	timestamp = {2025-03-28 13:38:34 (CET)},
+	title = {Quantum convolutional codes},
+	year = 2013,
+	author = {Wilde, Mark},
+	booktitle = {Quantum Error Correction},
+	publisher = {Cambridge University Press},
+	pages = {231–260},
+	doi = {10.1017/cbo9781139034807.011},
+	url = {http://dx.doi.org/10.1017/CBO9781139034807.011},
+	month = sep
+}
+
 @Book{W16quantum,
 	file = {W16quantum.pdf},
 	author = {Peter Wittek},
@@ -35366,75 +35456,14 @@ pages[normalize_page_numbers]
 	year = {2023}
 }
 
-@article{LMER25systematic,
-  author       = {Lorenz, Jeanette Miriam and Monz, Thomas and Eisert, Jens and Reitzner, Daniel and Schopfer, F{\'e}licien and Barbaresco, Fr{\'e}d{\'e}ric and Kurowski, Krzysztof and Schoot, Ward van der and Strohm, Thomas and Senellart, Jean and Perrault, C{\'e}cile M. and Knufinke, Martin and Amodjee, Ziyad and Giardini, Mattia},
-  title        = {Systematic Benchmarking of Quantum Computers: Status and Recommendations},
+@article{BFHS14sparse,
+  author       = {Bacon, Dave and Flammia, Steven T. and Harrow, Aram W. and Shi, Jonathan},
+  title        = {Sparse Quantum Codes From Quantum Circuits},
   journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2503.04905v1},
-  abstract     = {Architectures for quantum computing can only be scaled up when they are accompanied by suitable benchmarking techniques. The document provides a comprehensive overview of the state and recommendations for systematic benchmarking of quantum computers. Benchmarking is crucial for assessing the performance of quantum computers, including the hardware, software, as well as algorithms and applications. The document highlights key aspects such as component-level, system-level, software-level, HPC-level, and application-level benchmarks. Component-level benchmarks focus on the performance of individual qubits and gates, while system-level benchmarks evaluate the entire quantum processor. Software-level benchmarks consider the compiler's efficiency and error mitigation techniques. HPC-level and cloud benchmarks address integration with classical systems and cloud platforms, respectively. Application-level benchmarks measure performance in real-world use cases. The document also discusses the importance of standardization to ensure reproducibility and comparability of benchmarks, and highlights ongoing efforts in the quantum computing community towards establishing these benchmarks. Recommendations for future steps emphasize the need for developing standardized evaluation routines and integrating benchmarks with broader quantum technology activities.},
+  year         = 2014,
+  url          = {http://arxiv.org/abs/1411.3334v5},
+  abstract     = {We describe a general method for turning quantum circuits into sparse quantum subsystem codes. The idea is to turn each circuit element into a set of low-weight gauge generators that enforce the input-output relations of that circuit element. Using this prescription, we can map an arbitrary stabilizer code into a new subsystem code with the same distance and number of encoded qubits but where all the generators have constant weight, at the cost of adding some ancilla qubits. With an additional overhead of ancilla qubits, the new code can also be made spatially local.  Applying our construction to certain concatenated stabilizer codes yields families of subsystem codes with constant-weight generators and with minimum distance $d = n^{1-\epsilon}$, where $\epsilon = O(1/\sqrt{\log n})$. For spatially local codes in $D$ dimensions we nearly saturate a bound due to Bravyi and Terhal and achieve $d = n^{1-\epsilon-1/D}$. Previously the best code distance achievable with constant-weight generators in any dimension, due to Freedman, Meyer and Luo, was $O(\sqrt{n\log n})$ for a stabilizer code.},
   archivePrefix= {arXiv},
-  eprint       = {2503.04905},
+  eprint       = {1411.3334},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/LMER25systematic.pdf}
-  }
-@article{LAZL25review,
-  author       = {Lall, Deep and Agarwal, Abhishek and Zhang, Weixi and Lindoy, Lachlan and Lindstr{\"o}m, Tobias and Webster, Stephanie and Hall, Simon and Chancellor, Nicholas and Wallden, Petros and Garcia-Patron, Raul and Kashefi, Elham and Kendon, Viv and Pritchard, Jonathan and Rossi, Alessandro and Datta, Animesh and Kapourniotis, Theodoros and Georgopoulos, Konstantinos and Rungger, Ivan},
-  title        = {A Review and Collection of Metrics and Benchmarks for Quantum Computers: Definitions, Methodologies and Software},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2502.06717v1},
-  abstract     = {Quantum computers have the potential to provide an advantage over classical computers in a number of areas. Numerous metrics to benchmark the performance of quantum computers, ranging from their individual hardware components to entire applications, have been proposed over the years. Navigating the resulting extensive literature can be overwhelming. Objective comparisons are further hampered in practice as different variations of the same metric are used, and the data disclosed together with a reported metric value is often not sufficient to reproduce the measurements. This article addresses these challenges by providing a review of metrics and benchmarks for quantum computers and 1) a comprehensive collection of benchmarks allowing holistic comparisons of quantum computers, 2) a consistent format of the definitions across all metrics including a transparent description of the methodology and of the main assumptions and limitations, and 3) a reproducible approach by linking the metrics to open-source software used to evaluate them.  We identify five areas where international standardization working groups could be established, namely: i) the identification and agreement on the categories of metrics that comprehensively benchmark device performance; ii) the identification and agreement on a set of well-established metrics that together comprehensively benchmark performance; iii) the identification of metrics specific to hardware platforms, including non-gate-based quantum computers; iv) inter-laboratory comparison studies to develop best practice guides for measurement methodology; and v) agreement on what data and software should be reported together with a metric value to ensure trust, transparency and reproducibility. We provide potential routes to advancing these areas. We expect this compendium to accelerate the progress of quantum computing hardware towards quantum advantage.},
-  archivePrefix= {arXiv},
-  eprint       = {2502.06717},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/LAZL25review.pdf}
-  }
-@article{FCHW23application,
-  author       = {Furches, Jim and Chehade, Sarah and Hamilton, Kathleen and Wiebe, Nathan and Marrero, Carlos Ortiz},
-  title        = {Application-Level Benchmarking of Quantum Computers Using Nonlocal Game Strategies},
-  journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2311.01363v4},
-  abstract     = {In a nonlocal game, two noncommunicating players cooperate to convince a referee that they possess a strategy that does not violate the rules of the game. Quantum strategies allow players to optimally win some games by performing joint measurements on a shared entangled state, but computing these strategies can be challenging. We present a variational quantum algorithm to compute quantum strategies for nonlocal games by encoding the rules of a nonlocal game into a Hamiltonian. We show how this algorithm can generate a short-depth optimal quantum strategy for a graph coloring game with a quantum advantage. This quantum strategy is then evaluated on fourteen different quantum hardware platforms to demonstrate its utility as a benchmark. Finally, we discuss potential sources of errors that can explain the observed decreased performance of the executed task and derive an expression for the number of samples required to accurately estimate the win rate in the presence of noise.},
-  archivePrefix= {arXiv},
-  eprint       = {2311.01363},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/FCHW23application.pdf}
-  }
-@article{OYM25scaling,
-  author       = {Olle, Jan and Yevtushenko, Oleg M. and Marquardt, Florian},
-  title        = {Scaling the Automated Discovery of Quantum Circuits Via Reinforcement Learning With Gadgets},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2503.11638v1},
-  abstract     = {Reinforcement Learning (RL) has established itself as a powerful tool for designing quantum circuits, which are essential for processing quantum information. RL applications have typically focused on circuits of small to intermediate complexity, as computation times tend to increase exponentially with growing circuit complexity. This computational explosion severely limits the scalability of RL and casts significant doubt on its broader applicability.  In this paper, we propose a principled approach based on the systematic discovery and introduction of composite gates -- {\it gadgets}, that enables RL scalability, thereby expanding its potential applications. As a case study, we explore the discovery of Clifford encoders for Quantum Error Correction. We demonstrate that incorporating gadgets in the form of composite Clifford gates, in addition to standard CNOT and Hadamard gates, significantly enhances the efficiency of RL agents. Specifically, the computation speed increases (by one or even two orders of magnitude), enabling RL to discover highly complex quantum codes without previous knowledge. We illustrate this advancement with examples of QEC code discovery with parameters $ [[n,1,d]] $ for $ d \leq 7 $ and $ [[n,k,6]] $ for $ k \leq 7 $. We note that the most complicated circuits of these classes were not previously found. We highlight the advantages and limitations of the gadget-based approach. Our method paves the way for scaling the RL-based automatic discovery of complicated quantum circuits for various tasks, which may include designing logical operations between logical qubits or discovering quantum algorithms.},
-  archivePrefix= {arXiv},
-  eprint       = {2503.11638},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/OYM25scaling.pdf}
-  }
-@article{IP17small,
-  author       = {Iyer, Pavithran S. and Poulin, David},
-  title        = {A Small Quantum Computer Is Needed To Optimize Fault-Tolerant Protocols},
-  journal      = {CoRR},
-  year         = 2017,
-  url          = {http://arxiv.org/abs/1711.04736v1},
-  abstract     = {As far as we know, a useful quantum computer will require fault-tolerant gates, and existing schemes demand a prohibitively large space and time overhead. We argue that a first generation quantum computer will be very valuable to design, test, and optimize fault-tolerant protocols tailored to the noise processes of the hardware. Our argument is essentially a critical analysis of the current methods envisioned to optimize fault-tolerant schemes, which rely on hardware characterization, noise modelling, and numerical simulations. We show that, even within a very restricted set of noise models, error correction protocols depend strongly on the details of the noise model.  Combined to the intrinsic difficulty of hardware characterization and of numerical simulations of fault-tolerant protocols, we arrive at the conclusion that the currently envisioned optimization cycle is of very limited scope. On the other hand, the direct characterization of a fault-tolerant scheme on a small quantum computer bypasses these difficulties, and could provide a bootstrapping path to full-scale fault-tolerant quantum computation.},
-  archivePrefix= {arXiv},
-  eprint       = {1711.04736},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/IP17small.pdf}
-  }
-@article{BPY25quantum,
-  author       = {Blume-Kohout, Robin and Proctor, Timothy and Young, Kevin},
-  title        = {Quantum Characterization, Verification, and Validation},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2503.16383v1},
-  abstract     = {Quantum characterization, verification, and validation (QCVV) is a set of techniques to probe, describe, and assess the behavior of quantum bits (qubits), quantum information-processing registers, and quantum computers. QCVV protocols probe and describe the effects of unwanted decoherence so that it can be eliminated or mitigated. They can be usefully divided into characterization techniques that estimate predictive models for a device's behavior from data, and benchmarking techniques that assess overall performance of a device. In this introductory article, we briefly summarize the history of QCVV, introduce the mathematical models and metrics upon which it relies, and then summarize the foundational fields of tomography, randomized benchmarking, and holistic benchmarks. We conclude with brief descriptions of (and references to) advanced topics including gate set tomography, phase estimation, Pauli noise learning, characterization of mid-circuit measurements and non-Markovianity, classical shadows, verification and certification, and logical qubit assessment.},
-  archivePrefix= {arXiv},
-  eprint       = {2503.16383},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/BPY25quantum.pdf}
-  }
+}
