@@ -4262,6 +4262,19 @@ pages[normalize_page_numbers]
 	eprint = {https://doi.org/10.1021/ja00398a044}
 }
 
+@article{BFHS14sparse,
+	author = {Bacon, Dave and Flammia, Steven T. and Harrow, Aram W. and Shi, Jonathan},
+	title = {Sparse Quantum Codes From Quantum Circuits},
+	journal = {CoRR},
+	year = 2014,
+	url = {http://arxiv.org/abs/1411.3334v5},
+	abstract = {We describe a general method for turning quantum circuits into sparse quantum subsystem codes. The idea is to turn each circuit element into a set of low-weight gauge generators that enforce the input-output relations of that circuit element. Using this prescription, we can map an arbitrary stabilizer code into a new subsystem code with the same distance and number of encoded qubits but where all the generators have constant weight, at the cost of adding some ancilla qubits. With an additional overhead of ancilla qubits, the new code can also be made spatially local.  Applying our construction to certain concatenated stabilizer codes yields families of subsystem codes with constant-weight generators and with minimum distance $d = n^{1-\epsilon}$, where $\epsilon = O(1/\sqrt{\log n})$. For spatially local codes in $D$ dimensions we nearly saturate a bound due to Bravyi and Terhal and achieve $d = n^{1-\epsilon-1/D}$. Previously the best code distance achievable with constant-weight generators in any dimension, due to Freedman, Meyer and Luo, was $O(\sqrt{n\log n})$ for a stabilizer code.},
+	archivePrefix = {arXiv},
+	eprint = {1411.3334},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/BFHS14sparse.pdf}
+}
+
 @misc{BFJS96general,
 	Author = {Barnum, H. and Fuchs, C.A. and Jozsa, R. and Schumacher, B.},
 	Date-Modified = {2006-01-03 17:42:27 +1000},
@@ -10712,6 +10725,19 @@ pages[normalize_page_numbers]
 	Year = 2003
 }
 
+@article{DP23spacetime,
+	author = {Delfosse, Nicolas and Paetznick, Adam},
+	title = {Spacetime Codes of Clifford Circuits},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2304.05943v2},
+	abstract = {We propose a scheme for detecting and correcting faults in any Clifford circuit. The scheme is based on the observation that the set of all possible outcome bit-strings of a Clifford circuit is a linear code, which we call the outcome code. From the outcome code we construct a corresponding stabilizer code, the spacetime code. Our construction extends the circuit-to-code construction of Bacon, Flammia, Harrow and Shi [2], revisited recently by Gottesman [16], to include intermediate and multi-qubit measurements. With this correspondence, we reduce the problem of correcting faults in a circuit to the well-studied problem of correcting errors in a stabilizer code. More precisely, a most likely error decoder for the spacetime code can be transformed into a most likely fault decoder for the circuit. We give efficient algorithms to construct the outcome and spacetime codes. We also identify conditions under which these codes are LDPC, and give an algorithm to generate low-weight checks, which can then be combined with effcient LDPC code decoders.},
+	archivePrefix = {arXiv},
+	eprint = {2304.05943},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/DP23spacetime.pdf}
+}
+
 @article{DP97quantum,
 	Address = {IBM T. J. Watson Research Center, Yorktown Heights, NY 10598},
 	Author = {DiVincenzo, D. P. and Peres, A.},
@@ -16679,6 +16705,22 @@ pages[normalize_page_numbers]
 	Year = 2001
 }
 
+@Article{HRON22optimized,
+	file = {HRON22optimized.pdf},
+	timestamp = {2025-04-07 21:18:23 (CEST)},
+	author = {Hashim, Akel and Rines, Rich and Omole, Victory and Naik, Ravi K. and Kreikebaum, John Mark and Santiago, David I. and Chong, Frederic T. and Siddiqi, Irfan and Gokhale, Pranav},
+	title = {Optimized SWAP networks with equivalent circuit averaging for QAOA},
+	journal = {Physical Review Research},
+	year = 2022,
+	volume = 4,
+	number = 3,
+	month = jul,
+	issn = {2643-1564},
+	doi = {10.1103/physrevresearch.4.033028},
+	url = {https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.4.033028},
+	publisher = {American Physical Society (APS)}
+}
+
 @article{HRRO93geometric,
 	Author = {Hariharan, P. and Roy, M. and Robinson, P. A. and Obyrne, J. W.},
 	Journal = {J. Mod. Opt.},
@@ -18720,6 +18762,19 @@ pages[normalize_page_numbers]
 	Title = {Time optimal control in spin systems},
 	Volume = 63,
 	Year = 2001
+}
+
+@article{KBG25mixed,
+	author = {Koska, Oc{\'e}ane and Baboulin, Marc and Gazda, Arnaud},
+	title = {A Mixed-Precision Quantum-Classical Algorithm for Solving Linear Systems},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2502.02212v1},
+	abstract = {We address the problem of solving a system of linear equations via the Quantum Singular Value Transformation (QSVT). One drawback of the QSVT algorithm is that it requires huge quantum resources if we want to achieve an acceptable accuracy. To reduce the quantum cost, we propose a hybrid quantum-classical algorithm that improves the accuracy and reduces the cost of the QSVT by adding iterative refinement in mixed-precision A first quantum solution is computed using the QSVT, in low precision, and then refined in higher precision until we get a satisfactory accuracy. For this solver, we present an error and complexity analysis, and first experiments using the quantum software stack myQLM.},
+	archivePrefix = {arXiv},
+	eprint = {2502.02212},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/KBG25mixed.pdf}
 }
 
 @article{KBI00entangled-webs,
@@ -35456,39 +35511,14 @@ pages[normalize_page_numbers]
 	year = {2023}
 }
 
-@article{BFHS14sparse,
-  author       = {Bacon, Dave and Flammia, Steven T. and Harrow, Aram W. and Shi, Jonathan},
-  title        = {Sparse Quantum Codes From Quantum Circuits},
+@article{SHH24reducing,
+  author       = {Scheiber, Timon and Haubenwallner, Paul and Heller, Matthias},
+  title        = {Reducing Pec Overhead By Pauli Error Propagation},
   journal      = {CoRR},
-  year         = 2014,
-  url          = {http://arxiv.org/abs/1411.3334v5},
-  abstract     = {We describe a general method for turning quantum circuits into sparse quantum subsystem codes. The idea is to turn each circuit element into a set of low-weight gauge generators that enforce the input-output relations of that circuit element. Using this prescription, we can map an arbitrary stabilizer code into a new subsystem code with the same distance and number of encoded qubits but where all the generators have constant weight, at the cost of adding some ancilla qubits. With an additional overhead of ancilla qubits, the new code can also be made spatially local.  Applying our construction to certain concatenated stabilizer codes yields families of subsystem codes with constant-weight generators and with minimum distance $d = n^{1-\epsilon}$, where $\epsilon = O(1/\sqrt{\log n})$. For spatially local codes in $D$ dimensions we nearly saturate a bound due to Bravyi and Terhal and achieve $d = n^{1-\epsilon-1/D}$. Previously the best code distance achievable with constant-weight generators in any dimension, due to Freedman, Meyer and Luo, was $O(\sqrt{n\log n})$ for a stabilizer code.},
+  year         = 2024,
+  url          = {http://arxiv.org/abs/2412.01311v2},
+  abstract     = {Quantum error mitigation is regarded as a possible path to near-term quantum utility. The methods under the quantum error mitigation umbrella term, such as probabilistic error cancellation, zero-noise extrapolation or Clifford data regression are able to significantly reduce the error for the estimation of expectation values, although at an exponentially scaling cost, i.e., in the sampling overhead. In this work, we present a straightforward method for reducing the sampling overhead of PEC on Clifford circuits (and Clifford subcircuits) via Pauli error propagation alongside some classical preprocessing. While the methods presented in this work are restricted to Clifford circuits, we argue that Clifford sub circuits often occur in relevant calculations as for example the resource state generation in measurement based quantum computing.},
   archivePrefix= {arXiv},
-  eprint       = {1411.3334},
+  eprint       = {2412.01311},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/BFHS14sparse.pdf}
-  }
-@article{DP23spacetime,
-  author       = {Delfosse, Nicolas and Paetznick, Adam},
-  title        = {Spacetime Codes of Clifford Circuits},
-  journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2304.05943v2},
-  abstract     = {We propose a scheme for detecting and correcting faults in any Clifford circuit. The scheme is based on the observation that the set of all possible outcome bit-strings of a Clifford circuit is a linear code, which we call the outcome code. From the outcome code we construct a corresponding stabilizer code, the spacetime code. Our construction extends the circuit-to-code construction of Bacon, Flammia, Harrow and Shi [2], revisited recently by Gottesman [16], to include intermediate and multi-qubit measurements. With this correspondence, we reduce the problem of correcting faults in a circuit to the well-studied problem of correcting errors in a stabilizer code. More precisely, a most likely error decoder for the spacetime code can be transformed into a most likely fault decoder for the circuit. We give efficient algorithms to construct the outcome and spacetime codes. We also identify conditions under which these codes are LDPC, and give an algorithm to generate low-weight checks, which can then be combined with effcient LDPC code decoders.},
-  archivePrefix= {arXiv},
-  eprint       = {2304.05943},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/DP23spacetime.pdf}
 }
-@article{KBG25mixed,
-  author       = {Koska, Oc{\'e}ane and Baboulin, Marc and Gazda, Arnaud},
-  title        = {A Mixed-Precision Quantum-Classical Algorithm for Solving Linear Systems},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2502.02212v1},
-  abstract     = {We address the problem of solving a system of linear equations via the Quantum Singular Value Transformation (QSVT). One drawback of the QSVT algorithm is that it requires huge quantum resources if we want to achieve an acceptable accuracy. To reduce the quantum cost, we propose a hybrid quantum-classical algorithm that improves the accuracy and reduces the cost of the QSVT by adding iterative refinement in mixed-precision A first quantum solution is computed using the QSVT, in low precision, and then refined in higher precision until we get a satisfactory accuracy. For this solver, we present an error and complexity analysis, and first experiments using the quantum software stack myQLM.},
-  archivePrefix= {arXiv},
-  eprint       = {2502.02212},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/KBG25mixed.pdf}
-  }
