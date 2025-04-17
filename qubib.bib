@@ -12198,6 +12198,7 @@ pages[normalize_page_numbers]
 }
 
 @Article{FDBJ21measurement,
+	file = {FDBJ21measurement.pdf},
 	timestamp = {2024-03-26 13:41:22 (CET)},
 	author = {Ferguson, R. R. and Dellantonio, L. and Balushi, A. Al and Jansen, K. and Dür, W. and Muschik, C. A.},
 	title = {Measurement-Based Variational Quantum Eigensolver},
@@ -12208,7 +12209,7 @@ pages[normalize_page_numbers]
 	month = jun,
 	issn = {1079-7114},
 	doi = {10.1103/physrevlett.126.220501},
-	url = {https://journals.aps.org/prl/pdf/10.1103/PhysRevLett.126.220501},
+	url = {https://arxiv.org/pdf/2010.13940},
 	publisher = {American Physical Society (APS)}
 }
 
@@ -29514,7 +29515,7 @@ pages[normalize_page_numbers]
 	title = {Stabilizer Ground States: Theory, Algorithms and Applications},
 	journal = {CoRR},
 	year = 2024,
-	url = {http://arxiv.org/abs/2403.08441},
+	url = {http://arxiv.org/pdf/2403.08441},
 	abstract = {Stabilizer states have been commonly utilized in quantum information, quantum error correction, and quantum circuit simulation due to their simple mathematical structure. In this work, we apply stabilizer states to tackle quantum many-body problems and introduce the concept of stabilizer ground states. We present a simplified equivalent formalism for identifying stabilizer ground states of general Pauli Hamiltonians. Moreover, we also develop an exact and linear-scaled algorithm to obtain stabilizer ground states of 1D local Hamiltonians and thus free from discrete optimization. This proposed theoretical formalism and linear-scaled algorithm are not only applicable to finite-size systems, but also adaptable to infinite periodic systems. The scalability and efficiency of the algorithms are numerically benchmarked on different Hamiltonians. Finally, we demonstrate that stabilizer ground states can find various promising applications including better design on variational quantum algorithms, qualitative understanding of phase transitions, and cornerstones for more advanced ground state ansatzes.},
 	archivePrefix = {arXiv},
 	eprint = {2403.08441},
@@ -29696,6 +29697,19 @@ pages[normalize_page_numbers]
 	eprint = {2312.13241},
 	primaryClass = {quant-ph},
 	file = {SHG23deterministic.pdf}
+}
+
+@article{SHH24reducing,
+	author = {Scheiber, Timon and Haubenwallner, Paul and Heller, Matthias},
+	title = {Reducing Pec Overhead By Pauli Error Propagation},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2412.01311v2},
+	abstract = {Quantum error mitigation is regarded as a possible path to near-term quantum utility. The methods under the quantum error mitigation umbrella term, such as probabilistic error cancellation, zero-noise extrapolation or Clifford data regression are able to significantly reduce the error for the estimation of expectation values, although at an exponentially scaling cost, i.e., in the sampling overhead. In this work, we present a straightforward method for reducing the sampling overhead of PEC on Clifford circuits (and Clifford subcircuits) via Pauli error propagation alongside some classical preprocessing. While the methods presented in this work are restricted to Clifford circuits, we argue that Clifford sub circuits often occur in relevant calculations as for example the resource state generation in measurement based quantum computing.},
+	archivePrefix = {arXiv},
+	eprint = {2412.01311},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/SHH24reducing.pdf}
 }
 
 @article{SHMR20exchange,
@@ -35511,15 +35525,14 @@ pages[normalize_page_numbers]
 	year = {2023}
 }
 
-@article{SHH24reducing,
-  author       = {Scheiber, Timon and Haubenwallner, Paul and Heller, Matthias},
-  title        = {Reducing Pec Overhead By Pauli Error Propagation},
+@article{OHRW19generalized,
+  author       = {O'Gorman, Bryan and Huggins, William J. and Rieffel, Eleanor G. and Whaley, K. Birgitta},
+  title        = {Generalized Swap Networks for Near-Term Quantum Computing},
   journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2412.01311v2},
-  abstract     = {Quantum error mitigation is regarded as a possible path to near-term quantum utility. The methods under the quantum error mitigation umbrella term, such as probabilistic error cancellation, zero-noise extrapolation or Clifford data regression are able to significantly reduce the error for the estimation of expectation values, although at an exponentially scaling cost, i.e., in the sampling overhead. In this work, we present a straightforward method for reducing the sampling overhead of PEC on Clifford circuits (and Clifford subcircuits) via Pauli error propagation alongside some classical preprocessing. While the methods presented in this work are restricted to Clifford circuits, we argue that Clifford sub circuits often occur in relevant calculations as for example the resource state generation in measurement based quantum computing.},
+  year         = 2019,
+  url          = {http://arxiv.org/abs/1905.05118v1},
+  abstract     = {The practical use of many types of near-term quantum computers requires accounting for their limited connectivity. One way of overcoming limited connectivity is to insert swaps in the circuit so that logical operations can be performed on physically adjacent qubits, which we refer to as solving the `routing via matchings' problem. We address the routing problem for families of quantum circuits defined by a hypergraph wherein each hyperedge corresponds to a potential gate. Our main result is that any unordered set of $k$-qubit gates on distinct $k$-qubit subsets of $n$ logical qubits can be ordered and parallelized in $O(n^{k-1})$ depth using a linear arrangement of $n$ physical qubits; the construction is completely general and achieves optimal scaling in the case where gates acting on all $\binom{n}{k}$ sets of $k$ qubits are desired. We highlight two classes of problems for which our method is particularly useful. First, it applies to sets of mutually commuting gates, as in the (diagonal) phase separators of Quantum Alternating Operator Ansatz (Quantum Approximate Optimization Algorithm) circuits. For example, a single level of a QAOA circuit for Maximum Cut can be implemented in linear depth, and a single level for $3$-SAT in quadratic depth. Second, it applies to sets of gates that do not commute but for which compilation efficiency is the dominant criterion in their ordering. In particular, it can be adapted to Trotterized time-evolution of fermionic Hamiltonians under the Jordan-Wigner transformation, and also to non-standard mixers in QAOA. Using our method, a single Trotter step of the electronic structure Hamiltonian in an arbitrary basis of $n$ orbitals can be done in $O(n^3)$ depth while a Trotter step of the unitary coupled cluster singles and doubles method can be implemented in $O(n^2 \eta)$ depth, where $\eta$ is the number of electrons.},
   archivePrefix= {arXiv},
-  eprint       = {2412.01311},
+  eprint       = {1905.05118},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/SHH24reducing.pdf}
-  }
+}
