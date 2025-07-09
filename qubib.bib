@@ -3543,6 +3543,8 @@ pages[normalize_page_numbers]
 }
 
 @inproceedings{BCGS02authentication,
+	file = {BCGS02authentication.pdf},
+	doi = {10.1109/SFCS.2002.1181969},
 	source = {Luka Music, 2021-09-16},
 	author = {Barnum, Howard and Cr{\'e}peau, Claude and Gottesman, Daniel and Smith, Adam and Tapp, Alain},
 	title = {Authentication of Quantum Messages},
@@ -3552,7 +3554,7 @@ pages[normalize_page_numbers]
 	isbn = {0-7695-1822-2},
 	pages = {449--458},
 	numpages = 10,
-	url = {http://dl.acm.org/citation.cfm?id=645413.652153},
+	url = {https://arxiv.org/pdf/quant-ph/0205128},
 	acmid = 652153,
 	publisher = {IEEE Computer Society},
 	address = {Washington, DC, USA},
@@ -4009,18 +4011,6 @@ pages[normalize_page_numbers]
 	eprint = {2011.06492},
 	primaryClass = {q-fin.CP},
 	file = {~/shared/papers/BDJK20prospects.pdf}
-}
-
-@article{BDJK20prospectsb,
-	author = {Bouland, Adam and Dam, Wim van and Joorati, Hamed and Kerenidis, Iordanis and Prakash, Anupam},
-	title = {Prospects and Challenges of Quantum Finance},
-	journal = {CoRR},
-	year = 2020,
-	url = {http://arxiv.org/abs/2011.06492v1},
-	abstract = {Quantum computers are expected to have substantial impact on the finance industry, as they will be able to solve certain problems considerably faster than the best known classical algorithms. In this article we describe such potential applications of quantum computing to finance, starting with the state-of-the-art and focusing in particular on recent works by the QC Ware team. We consider quantum speedups for Monte Carlo methods, portfolio optimization, and machine learning. For each application we describe the extent of quantum speedup possible and estimate the quantum resources required to achieve a practical speedup. The near-term relevance of these quantum finance algorithms varies widely across applications - some of them are heuristic algorithms designed to be amenable to near-term prototype quantum computers, while others are proven speedups which require larger-scale quantum computers to implement. We also describe powerful ways to bring these speedups closer to experimental feasibility - in particular describing lower depth algorithms for Monte Carlo methods and quantum machine learning, as well as quantum annealing heuristics for portfolio optimization. This article is targeted at financial professionals and no particular background in quantum computation is assumed.},
-	archivePrefix = {arXiv},
-	eprint = {2011.06492},
-	primaryClass = {q-fin.CP}
 }
 
 @article{BDK06phase,
@@ -4979,6 +4969,8 @@ pages[normalize_page_numbers]
 }
 
 @misc{BKOS03subsystem,
+	file = {BKOS03subsystem.pdf},
+	url = {https://arxiv.org/pdf/quant-ph/0305023},
 	Author = {Barnum, H. and Knill, E. and Ortiz, G. and Somma, R. and Viola, L.},
 	Date-Added = {2005-09-28 17:26:35 +1000},
 	Date-Modified = {2006-01-03 17:42:38 +1000},
@@ -25274,6 +25266,19 @@ pages[normalize_page_numbers]
 	Year = 1985
 }
 
+@article{OHRW19generalized,
+	author = {O'Gorman, Bryan and Huggins, William J. and Rieffel, Eleanor G. and Whaley, K. Birgitta},
+	title = {Generalized Swap Networks for Near-Term Quantum Computing},
+	journal = {CoRR},
+	year = 2019,
+	url = {http://arxiv.org/abs/1905.05118v1},
+	abstract = {The practical use of many types of near-term quantum computers requires accounting for their limited connectivity. One way of overcoming limited connectivity is to insert swaps in the circuit so that logical operations can be performed on physically adjacent qubits, which we refer to as solving the `routing via matchings' problem. We address the routing problem for families of quantum circuits defined by a hypergraph wherein each hyperedge corresponds to a potential gate. Our main result is that any unordered set of $k$-qubit gates on distinct $k$-qubit subsets of $n$ logical qubits can be ordered and parallelized in $O(n^{k-1})$ depth using a linear arrangement of $n$ physical qubits; the construction is completely general and achieves optimal scaling in the case where gates acting on all $\binom{n}{k}$ sets of $k$ qubits are desired. We highlight two classes of problems for which our method is particularly useful. First, it applies to sets of mutually commuting gates, as in the (diagonal) phase separators of Quantum Alternating Operator Ansatz (Quantum Approximate Optimization Algorithm) circuits. For example, a single level of a QAOA circuit for Maximum Cut can be implemented in linear depth, and a single level for $3$-SAT in quadratic depth. Second, it applies to sets of gates that do not commute but for which compilation efficiency is the dominant criterion in their ordering. In particular, it can be adapted to Trotterized time-evolution of fermionic Hamiltonians under the Jordan-Wigner transformation, and also to non-standard mixers in QAOA. Using our method, a single Trotter step of the electronic structure Hamiltonian in an arbitrary basis of $n$ orbitals can be done in $O(n^3)$ depth while a Trotter step of the unitary coupled cluster singles and doubles method can be implemented in $O(n^2 \eta)$ depth, where $\eta$ is the number of electrons.},
+	archivePrefix = {arXiv},
+	eprint = {1905.05118},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/OHRW19generalized.pdf}
+}
+
 @article{OM03proposal,
 	Author = {Ollivier, H. and Milman, P.},
 	Correct_Ref = {Yes},
@@ -35525,18 +35530,6 @@ pages[normalize_page_numbers]
 	year = {2023}
 }
 
-@article{OHRW19generalized,
-  author       = {O'Gorman, Bryan and Huggins, William J. and Rieffel, Eleanor G. and Whaley, K. Birgitta},
-  title        = {Generalized Swap Networks for Near-Term Quantum Computing},
-  journal      = {CoRR},
-  year         = 2019,
-  url          = {http://arxiv.org/abs/1905.05118v1},
-  abstract     = {The practical use of many types of near-term quantum computers requires accounting for their limited connectivity. One way of overcoming limited connectivity is to insert swaps in the circuit so that logical operations can be performed on physically adjacent qubits, which we refer to as solving the `routing via matchings' problem. We address the routing problem for families of quantum circuits defined by a hypergraph wherein each hyperedge corresponds to a potential gate. Our main result is that any unordered set of $k$-qubit gates on distinct $k$-qubit subsets of $n$ logical qubits can be ordered and parallelized in $O(n^{k-1})$ depth using a linear arrangement of $n$ physical qubits; the construction is completely general and achieves optimal scaling in the case where gates acting on all $\binom{n}{k}$ sets of $k$ qubits are desired. We highlight two classes of problems for which our method is particularly useful. First, it applies to sets of mutually commuting gates, as in the (diagonal) phase separators of Quantum Alternating Operator Ansatz (Quantum Approximate Optimization Algorithm) circuits. For example, a single level of a QAOA circuit for Maximum Cut can be implemented in linear depth, and a single level for $3$-SAT in quadratic depth. Second, it applies to sets of gates that do not commute but for which compilation efficiency is the dominant criterion in their ordering. In particular, it can be adapted to Trotterized time-evolution of fermionic Hamiltonians under the Jordan-Wigner transformation, and also to non-standard mixers in QAOA. Using our method, a single Trotter step of the electronic structure Hamiltonian in an arbitrary basis of $n$ orbitals can be done in $O(n^3)$ depth while a Trotter step of the unitary coupled cluster singles and doubles method can be implemented in $O(n^2 \eta)$ depth, where $\eta$ is the number of electrons.},
-  archivePrefix= {arXiv},
-  eprint       = {1905.05118},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/OHRW19generalized.pdf}
-  }
 @article{MMW25benchmarking,
   author       = {Meirom, Dekel and Mor, Tal and Weinstein, Yossi},
   title        = {Benchmarking Quantum Computers Via Protocols},
@@ -35549,3 +35542,4 @@ pages[normalize_page_numbers]
   primaryClass = {quant-ph},
   file = {~/shared/papers/MMW25benchmarking.pdf}
   }
+
