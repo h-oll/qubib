@@ -35738,3 +35738,14 @@ pages[normalize_page_numbers]
   primaryClass = {quant-ph},
   file = {~/shared/papers/KSST25quantum.pdf}
   }
+@article{DT24low,
+  author       = {Delfosse, Nicolas and Tham, Edwin},
+  title        = {Low-Cost Noise Reduction for Clifford Circuits},
+  journal      = {CoRR},
+  year         = 2024,
+  url          = {http://arxiv.org/abs/2407.06583v1},
+  abstract     = {We propose a Clifford noise reduction (CliNR) scheme that provides a reduction of the logical error rate of Clifford circuit with lower overhead than error correction and without the exponential sampling overhead of error mitigation. CliNR implements Clifford circuits by splitting them into sub-circuits that are performed using gate teleportation. A few random stabilizer measurements are used to detect errors in the resources states consumed by the gate teleportation. This can be seen as a teleported version of the CPC scheme, with offline fault-detection making it scalable. We prove that CliNR achieves a vanishing logical error rate for families of $n$-qubit Clifford circuits with size $s$ such that $nsp^2$ goes to 0, where $p$ is the physical error rate, meaning that it reaches the regime $ns = o(1/p^2)$ whereas the direct implementation is limited to $s = o(1/p)$. Moreover, CliNR uses only $3n+1$ qubits, $2s + o(s)$ gates and has zero rejection rate. This small overhead makes it more practical than quantum error correction in the near term and our numerical simulations show that CliNR provides a reduction of the logical error rate in relevant noise regimes.},
+  archivePrefix= {arXiv},
+  eprint       = {2407.06583},
+  primaryClass = {quant-ph},
+}
