@@ -1,2 +1,2 @@
-((nil . ((mode . git-auto-commit  0))))
+((nil . ((mode . git-auto-commit 0))))
 
