@@ -4990,19 +4990,6 @@ pages[normalize_page_numbers]
   file         = {~/shared/papers/BKOS03subsystem.pdf}
 }
 
-@article{BKOS03subsystem,
-  author       = {Barnum, Howard and Knill, Emanuel and Ortiz, Gerardo and Somma, Rolando and Viola, Lorenza},
-  title        = {A Subsystem-Independent Generalization of Entanglement},
-  journal      = {CoRR},
-  year         = 2003,
-  url          = {http://arxiv.org/abs/quant-ph/0305023v1},
-  abstract     = {We introduce a generalization of entanglement based on the idea that entanglement is relative to a distinguished subspace of observables rather than a distinguished subsystem decomposition. A pure quantum state is entangled relative to such a subspace if its expectations are a proper mixture of those of other states. Many information-theoretic aspects of entanglement can be extended to the general setting, suggesting new ways of measuring and classifying entanglement in multipartite systems. By going beyond the distinguishable-subsystem framework, generalized entanglement also provides novel tools for probing quantum correlations in interacting many-body systems.},
-  archivePrefix= {arXiv},
-  eprint       = {quant-ph/0305023},
-  primaryClass = {quant-ph},
-  file         = {~/shared/papers/BKOS03subsystem.pdf}
-}
-
 @article{BKS21cost,
   title        = {Cost of universality: A comparative study of the overhead of state distillation and code switching with color codes},
   author       = {Beverland, Michael E and Kubica, Aleksander and Svore, Krysta M},
@@ -14169,26 +14156,6 @@ pages[normalize_page_numbers]
   Title        = {Quantum chaos of ${S}{U}(3)$ observables},
   Volume       = 33,
   Year         = 2000
-}
-
-@article{GHK18simple,
-  source       = {Luka Music, 2021-09-16},
-  doi          = {10.1088/2058-9565/aaeeb3},
-  url          = {https://doi.org/10.1088/2058-9565/aaeeb3},
-  year         = 2018,
-  month        = {nov},
-  publisher    = {{IOP} Publishing},
-  volume       = 4,
-  number       = 1,
-  pages        = 015009,
-  author       = {Alexandru Gheorghiu and Matty J Hoban and Elham Kashefi},
-  title        = {A simple protocol for fault tolerant verification of quantum computation},
-  journal      = {Quantum Science and Technology},
-  abstract     = {With experimental quantum computing technologies now in their infancy, the search for efficient means of testing the correctness of these quantum computations is becoming more pressing. An approach to the verification of quantum computation within the framework of interactive proofs has been fruitful for addressing this problem. Specifically, an untrusted agent (prover) alleging to perform quantum computations can have his claims verified by another agent (verifier) who only has access to classical computation and a small quantum device for preparing or measuring single qubits. However, when this quantum device is prone to errors, verification becomes challenging and often existing protocols address this by adding extra assumptions, such as requiring the noise in the device to be uncorrelated with the noise on the prover’s devices. In this paper, we present a simple protocol for verifying quantum computations, in the presence of noisy devices, with no extra assumptions. This protocol is based on post hoc techniques for verification, which allow for the prover to know the desired quantum computation and its input. We also perform a simulation of the protocol, for a one-qubit computation, and find the error thresholds when using the qubit repetition code as well as the Steane code.},
-  archivePrefix= {arXiv},
-  eprint       = {1804.06105},
-  primaryClass = {quant-ph},
-  file         = {~/shared/papers/GHK18simple.pdf}
 }
 
 @article{GHK18simple,
@@ -23632,19 +23599,6 @@ pages[normalize_page_numbers]
   file         = {~/shared/papers/MMW25benchmarking.pdf}
 }
 
-@article{MMW25benchmarking,
-  author       = {Meirom, Dekel and Mor, Tal and Weinstein, Yossi},
-  title        = {Benchmarking Quantum Computers Via Protocols},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2505.12441v1},
-  abstract     = {Benchmarking quantum computers often deals with the parameters of single qubits or gates and sometimes deals with algorithms run on an entire chip or a noisy simulator of a chip.  Here we propose the idea of using protocols to benchmark quantum computers.  The advantage of using protocols, especially the seven suggested here, over other benchmarking methods is that there is a clear cutoff (i.e., a threshold) distinguishing quantumness from classicality for each of our protocols.  The protocols we suggest enable a comparison among various circuit-based quantum computers, and also between real chips and their noisy simulators. This latter method may then be used to better understand the various types of noise of the real chips. We use some of these protocols to answer an important question: ``How many effective qubits are there in this N-qubit quantum computer/simulator?'', and we then conclude which effective sub-chips can be named ``truly-quantum''.},
-  archivePrefix= {arXiv},
-  eprint       = {2505.12441},
-  primaryClass = {quant-ph},
-  file         = {~/shared/papers/MMW25benchmarking.pdf}
-}
-
 @misc{MN05quantum,
   Author       = {Magniez, F. and Nayak, A.},
   Date-Added   = {2005-07-26 09:44:29 -0400},
@@ -25484,19 +25438,6 @@ pages[normalize_page_numbers]
   Title        = {On the matrix reordering ${\Gamma}$ and ${\Psi}$},
   Volume       = 69,
   Year         = 1985
-}
-
-@article{OHRW19generalized,
-  author       = {O'Gorman, Bryan and Huggins, William J. and Rieffel, Eleanor G. and Whaley, K. Birgitta},
-  title        = {Generalized Swap Networks for Near-Term Quantum Computing},
-  journal      = {CoRR},
-  year         = 2019,
-  url          = {http://arxiv.org/abs/1905.05118v1},
-  abstract     = {The practical use of many types of near-term quantum computers requires accounting for their limited connectivity. One way of overcoming limited connectivity is to insert swaps in the circuit so that logical operations can be performed on physically adjacent qubits, which we refer to as solving the `routing via matchings' problem. We address the routing problem for families of quantum circuits defined by a hypergraph wherein each hyperedge corresponds to a potential gate. Our main result is that any unordered set of $k$-qubit gates on distinct $k$-qubit subsets of $n$ logical qubits can be ordered and parallelized in $O(n^{k-1})$ depth using a linear arrangement of $n$ physical qubits; the construction is completely general and achieves optimal scaling in the case where gates acting on all $\binom{n}{k}$ sets of $k$ qubits are desired. We highlight two classes of problems for which our method is particularly useful. First, it applies to sets of mutually commuting gates, as in the (diagonal) phase separators of Quantum Alternating Operator Ansatz (Quantum Approximate Optimization Algorithm) circuits. For example, a single level of a QAOA circuit for Maximum Cut can be implemented in linear depth, and a single level for $3$-SAT in quadratic depth. Second, it applies to sets of gates that do not commute but for which compilation efficiency is the dominant criterion in their ordering. In particular, it can be adapted to Trotterized time-evolution of fermionic Hamiltonians under the Jordan-Wigner transformation, and also to non-standard mixers in QAOA. Using our method, a single Trotter step of the electronic structure Hamiltonian in an arbitrary basis of $n$ orbitals can be done in $O(n^3)$ depth while a Trotter step of the unitary coupled cluster singles and doubles method can be implemented in $O(n^2 \eta)$ depth, where $\eta$ is the number of electrons.},
-  archivePrefix= {arXiv},
-  eprint       = {1905.05118},
-  primaryClass = {quant-ph},
-  file         = {~/shared/papers/OHRW19generalized.pdf}
 }
 
 @article{OHRW19generalized,
