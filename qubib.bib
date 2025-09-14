@@ -30,17 +30,6 @@ pages[normalize_page_numbers]
 @Comment{https://github.com/org-roam/org-roam-bibtex/issues/105}
 
 
-@inproceedings{KP17quantum,
-	Author = {Iordanis Kerenidis and Anupam Prakash},
-	Crossref = {ITCS17:proceedings},
-	Date-Added = {2019-02-24 13:05:01 +0100},
-	Date-Modified = {2019-02-24 13:05:01 +0100},
-	Keywords = {c-acti,irif,Kerenidis,eq-ac,selected},
-	Title = {Quantum recommendation systems},
-	Year = 2017,
-	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2688073.2688097}
-}
-
 @proceedings{17proceedings,
 	url = {arxiv.org/pdf/2207.09368},
 	Date-Added = {2019-02-24 # 13:05:01 # +0100},
@@ -4989,6 +4978,32 @@ pages[normalize_page_numbers]
 	Year = 2000
 }
 
+@article{BKOS03subsystem,
+  author       = {Barnum, Howard and Knill, Emanuel and Ortiz, Gerardo and Somma, Rolando and Viola, Lorenza},
+  title        = {A Subsystem-Independent Generalization of Entanglement},
+  journal      = {CoRR},
+  year         = 2003,
+  url          = {http://arxiv.org/abs/quant-ph/0305023v1},
+  abstract     = {We introduce a generalization of entanglement based on the idea that entanglement is relative to a distinguished subspace of observables rather than a distinguished subsystem decomposition. A pure quantum state is entangled relative to such a subspace if its expectations are a proper mixture of those of other states. Many information-theoretic aspects of entanglement can be extended to the general setting, suggesting new ways of measuring and classifying entanglement in multipartite systems. By going beyond the distinguishable-subsystem framework, generalized entanglement also provides novel tools for probing quantum correlations in interacting many-body systems.},
+  archivePrefix= {arXiv},
+  eprint       = {quant-ph/0305023},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/BKOS03subsystem.pdf}
+  }
+
+@article{BKOS03subsystem,
+  author       = {Barnum, Howard and Knill, Emanuel and Ortiz, Gerardo and Somma, Rolando and Viola, Lorenza},
+  title        = {A Subsystem-Independent Generalization of Entanglement},
+  journal      = {CoRR},
+  year         = 2003,
+  url          = {http://arxiv.org/abs/quant-ph/0305023v1},
+  abstract     = {We introduce a generalization of entanglement based on the idea that entanglement is relative to a distinguished subspace of observables rather than a distinguished subsystem decomposition. A pure quantum state is entangled relative to such a subspace if its expectations are a proper mixture of those of other states. Many information-theoretic aspects of entanglement can be extended to the general setting, suggesting new ways of measuring and classifying entanglement in multipartite systems. By going beyond the distinguishable-subsystem framework, generalized entanglement also provides novel tools for probing quantum correlations in interacting many-body systems.},
+  archivePrefix= {arXiv},
+  eprint       = {quant-ph/0305023},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/BKOS03subsystem.pdf}
+  }
+
 @article{BKS21cost,
 	title = {Cost of universality: A comparative study of the overhead of state distillation and code switching with color codes},
 	author = {Beverland, Michael E and Kubica, Aleksander and Svore, Krysta M},
@@ -6249,6 +6264,19 @@ pages[normalize_page_numbers]
 	Volume = 82,
 	Year = 1999
 }
+
+@article{BWMS25designing,
+  author       = {Baranes, Gefen and Wang, Iria W. and Machado, Francisco and Suleymanzade, Aziza and Stas, Pieter-Jan and Wei, Yan-Cheng and Yelin, Susanne F. and Borregaard, Johannes and Lukin, Mikhail D.},
+  title        = {Designing Fault-Tolerant Blind Quantum Computation},
+  journal      = {CoRR},
+  year         = 2025,
+  url          = {http://arxiv.org/abs/2505.21621v1},
+  abstract     = {Blind quantum computing (BQC) is a computational paradigm that allows a client with limited quantum capabilities to delegate quantum computations to a more powerful server while keeping both the algorithm and data hidden. However, in practice, existing BQC protocols face significant challenges when scaling to large-scale computations due to photon losses, low efficiencies, and high overheads associated with fault-tolerant operations, requiring the client to compile both logical operations and error correction primitives. We use a recently demonstrated hybrid light-matter approach [PRL 132, 150604 (2024); Science 388, 509-513 (2025)] to develop an architecture for scalable fault-tolerant blind quantum computation. By combining high-fidelity local gates on the server's matter qubits with delegated blind rotations using photons, we construct loss-tolerant delegated gates that enable efficient algorithm compilation strategies and a scalable approach for fault-tolerant blind logical algorithms. Our approach improves the error-correction threshold and increases the speed and depth of blind logical circuits. Finally, we outline how this architecture can be implemented on state-of-the-art quantum hardware, including neutral atom arrays and solid-state spin defects. These new capabilities open up new opportunities for deep circuit blind quantum computing.},
+  archivePrefix= {arXiv},
+  eprint       = {2505.21621},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/BWMS25designing.pdf}
+  }
 
 @article{BZ01conceptual,
 	Author = {Brukner, \v{C}. and Zeilinger, A.},
@@ -8804,6 +8832,19 @@ pages[normalize_page_numbers]
 	Year = 1996
 }
 
+@article{CSP25taming,
+  author       = {Chang, Kathleen and Su, Qile and Puri, Shruti},
+  title        = {Taming Coherent Noise With Teleportation},
+  journal      = {CoRR},
+  year         = 2025,
+  url          = {http://arxiv.org/abs/2508.04947v1},
+  abstract     = {Compared to the more widely studied Pauli errors, coherent errors present several new challenges in quantum computing and quantum error correction (QEC).  For example, coherent errors may interfere constructively over a long circuit and significantly increase the overall failure rate compared to Pauli noise.  Additionally, there is so far no analytical proof for a topological code threshold under coherent errors. Moreover, it is hard to even numerically estimate the performance of QEC under coherent errors as their effect in a Clifford circuit cannot be efficiently classically simulated. In this work, we demonstrate that teleportation effectively tailors coherent errors into Pauli errors, for which analytical and numerical results are abundant. We first show that repeated teleportation of a single qubit decoheres errors, and the average infidelity grows at worst linearly with the number of teleportations, similar to Pauli errors. We then analyze a physically motivated pure $Z$-coherent error model for teleported CSS codes in which over-rotation errors accompany every gate, and find that such an error model is equivalent to a Pauli error model.  Our result implies that the performance of a CSS code implemented via teleportation-based error correction or measurement-based error correction with such coherent noise can be efficiently simulated on a classical computer and has an analytically provable threshold. The intrinsic noise-tailoring property of teleportation may ultimately remove the need for randomized compiling in teleportation-based quantum computing schemes.},
+  archivePrefix= {arXiv},
+  eprint       = {2508.04947},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/CSP25taming.pdf}
+  }
+
 @book{CT91elements,
 	oldkey = CT91a,
 	Address = {New York},
@@ -10980,6 +11021,19 @@ pages[normalize_page_numbers]
 	Title = {Product Bases in Quantum Information Theory},
 	Year = 2000
 }
+
+@article{DT24low,
+  author       = {Delfosse, Nicolas and Tham, Edwin},
+  title        = {Low-Cost Noise Reduction for Clifford Circuits},
+  journal      = {CoRR},
+  year         = 2024,
+  url          = {http://arxiv.org/abs/2407.06583v1},
+  abstract     = {We propose a Clifford noise reduction (CliNR) scheme that provides a reduction of the logical error rate of Clifford circuit with lower overhead than error correction and without the exponential sampling overhead of error mitigation. CliNR implements Clifford circuits by splitting them into sub-circuits that are performed using gate teleportation. A few random stabilizer measurements are used to detect errors in the resources states consumed by the gate teleportation. This can be seen as a teleported version of the CPC scheme, with offline fault-detection making it scalable. We prove that CliNR achieves a vanishing logical error rate for families of $n$-qubit Clifford circuits with size $s$ such that $nsp^2$ goes to 0, where $p$ is the physical error rate, meaning that it reaches the regime $ns = o(1/p^2)$ whereas the direct implementation is limited to $s = o(1/p)$. Moreover, CliNR uses only $3n+1$ qubits, $2s + o(s)$ gates and has zero rejection rate. This small overhead makes it more practical than quantum error correction in the near term and our numerical simulations show that CliNR provides a reduction of the logical error rate in relevant noise regimes.},
+  archivePrefix= {arXiv},
+  eprint       = {2407.06583},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/DT24low.pdf}
+  }
 
 @booklet{DT95eigenvalues,
 	Author = {Delorme, C. and Tillich, J. P.},
@@ -14138,6 +14192,26 @@ pages[normalize_page_numbers]
 	file = {~/shared/papers/GHK18simple.pdf}
 }
 
+@article{GHK18simple,
+	source = {Luka Music, 2021-09-16},
+	doi = {10.1088/2058-9565/aaeeb3},
+	url = {https://doi.org/10.1088/2058-9565/aaeeb3},
+	year = 2018,
+	month = {nov},
+	publisher = {{IOP} Publishing},
+	volume = 4,
+	number = 1,
+	pages = 015009,
+	author = {Alexandru Gheorghiu and Matty J Hoban and Elham Kashefi},
+	title = {A simple protocol for fault tolerant verification of quantum computation},
+	journal = {Quantum Science and Technology},
+	abstract = {With experimental quantum computing technologies now in their infancy, the search for efficient means of testing the correctness of these quantum computations is becoming more pressing. An approach to the verification of quantum computation within the framework of interactive proofs has been fruitful for addressing this problem. Specifically, an untrusted agent (prover) alleging to perform quantum computations can have his claims verified by another agent (verifier) who only has access to classical computation and a small quantum device for preparing or measuring single qubits. However, when this quantum device is prone to errors, verification becomes challenging and often existing protocols address this by adding extra assumptions, such as requiring the noise in the device to be uncorrelated with the noise on the prover’s devices. In this paper, we present a simple protocol for verifying quantum computations, in the presence of noisy devices, with no extra assumptions. This protocol is based on post hoc techniques for verification, which allow for the prover to know the desired quantum computation and its input. We also perform a simulation of the protocol, for a one-qubit computation, and find the error thresholds when using the qubit repetition code as well as the Steane code.},
+  archivePrefix= {arXiv},
+  eprint       = {1804.06105},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/GHK18simple.pdf}
+}
+
 @InProceedings{GHS16semantic,
 	source = {Luka Music, 2021-09-16},
 	author = "Gagliardoni, Tommaso and H{\"u}lsing, Andreas and Schaffner, Christian",
@@ -16203,6 +16277,7 @@ pages[normalize_page_numbers]
 	Year = 1999
 }
 
+
 @article{HHHH09quantum-entanglement,
 	title = {Quantum entanglement},
 	author = {Horodecki, Ryszard and Horodecki, Pawe{\l} and Horodecki, Micha{\l} and Horodecki, Karol},
@@ -16257,7 +16332,6 @@ pages[normalize_page_numbers]
   doi = {10.1103/PhysRevA.51.1863},
   url = {https://link.aps.org/doi/10.1103/PhysRevA.51.1863}
 }
-
 
 @book{HJ85matrix-analysis,
 	Author = {Horn, R. and Johnson, C.},
@@ -19683,6 +19757,17 @@ pages[normalize_page_numbers]
 	number = 2
 }
 
+@inproceedings{KP17quantum,
+	Author = {Iordanis Kerenidis and Anupam Prakash},
+	Crossref = {ITCS17:proceedings},
+	Date-Added = {2019-02-24 13:05:01 +0100},
+	Date-Modified = {2019-02-24 13:05:01 +0100},
+	Keywords = {c-acti,irif,Kerenidis,eq-ac,selected},
+	Title = {Quantum recommendation systems},
+	Year = 2017,
+	Bdsk-Url-1 = {http://doi.acm.org/10.1145/2688073.2688097}
+}
+
 @Conference{KP19local,
 	file = {KP19local.pdf},
 	url = {http://theory.caltech.edu/~preskill/ph219/20_local_Hamiltonian_problem.pdf},
@@ -19796,6 +19881,19 @@ pages[normalize_page_numbers]
 	title = {The Quantum Protocol Zoo},
 	year = 2019
 }
+
+@article{KSST25quantum,
+  author       = {Kaikov, Oleg and Saporiti, Theo and Sazonov, Vasily and Tamaazousti, Mohamed},
+  title        = {Quantum Error Mitigation By Global Randomized Error Cancellation for Adiabatic Evolution in the Schwinger Model},
+  journal      = {CoRR},
+  year         = 2025,
+  url          = {http://arxiv.org/abs/2507.06601v1},
+  abstract     = {We extend the global randomized error cancellation (GREC) method for quantum error mitigation (QEM) in an application to adiabatic evolution of states on a noisy quantum device. We apply the adiabatic GREC method to the evolution of eigenstates in the lattice Schwinger model on a simulated quantum device with custom noise. Our results suggest that the corresponding QEM learned in one parameter regime of the model successfully transfers to a different parameter regime. In particular, our findings indicate that it transfers between different phases of the model. We observe that adiabatic GREC produces a smaller error than zero noise extrapolation (ZNE). Furthermore, in general, adiabatic GREC can be more cost-efficient in terms of the total number of gates used for the simulations. We comment on approaches to further reduce the necessary quantum computational resources. We also outline extensions of the introduced adiabatic GREC QEM method.},
+  archivePrefix= {arXiv},
+  eprint       = {2507.06601},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/KSST25quantum.pdf}
+  }
 
 @book{KSV02classical,
 	file = {kitaev_book.pdf},
@@ -23536,6 +23634,19 @@ pages[normalize_page_numbers]
 	file = {~/shared/papers/MMW25benchmarking.pdf}
 }
 
+@article{MMW25benchmarking,
+  author       = {Meirom, Dekel and Mor, Tal and Weinstein, Yossi},
+  title        = {Benchmarking Quantum Computers Via Protocols},
+  journal      = {CoRR},
+  year         = 2025,
+  url          = {http://arxiv.org/abs/2505.12441v1},
+  abstract     = {Benchmarking quantum computers often deals with the parameters of single qubits or gates and sometimes deals with algorithms run on an entire chip or a noisy simulator of a chip.  Here we propose the idea of using protocols to benchmark quantum computers.  The advantage of using protocols, especially the seven suggested here, over other benchmarking methods is that there is a clear cutoff (i.e., a threshold) distinguishing quantumness from classicality for each of our protocols.  The protocols we suggest enable a comparison among various circuit-based quantum computers, and also between real chips and their noisy simulators. This latter method may then be used to better understand the various types of noise of the real chips. We use some of these protocols to answer an important question: ``How many effective qubits are there in this N-qubit quantum computer/simulator?'', and we then conclude which effective sub-chips can be named ``truly-quantum''.},
+  archivePrefix= {arXiv},
+  eprint       = {2505.12441},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/MMW25benchmarking.pdf}
+  }
+
 @misc{MN05quantum,
 	Author = {Magniez, F. and Nayak, A.},
 	Date-Added = {2005-07-26 09:44:29 -0400},
@@ -25389,6 +25500,19 @@ pages[normalize_page_numbers]
 	primaryClass = {quant-ph},
 	file = {~/shared/papers/OHRW19generalized.pdf}
 }
+
+@article{OHRW19generalized,
+  author       = {O'Gorman, Bryan and Huggins, William J. and Rieffel, Eleanor G. and Whaley, K. Birgitta},
+  title        = {Generalized Swap Networks for Near-Term Quantum Computing},
+  journal      = {CoRR},
+  year         = 2019,
+  url          = {http://arxiv.org/abs/1905.05118v1},
+  abstract     = {The practical use of many types of near-term quantum computers requires accounting for their limited connectivity. One way of overcoming limited connectivity is to insert swaps in the circuit so that logical operations can be performed on physically adjacent qubits, which we refer to as solving the `routing via matchings' problem. We address the routing problem for families of quantum circuits defined by a hypergraph wherein each hyperedge corresponds to a potential gate. Our main result is that any unordered set of $k$-qubit gates on distinct $k$-qubit subsets of $n$ logical qubits can be ordered and parallelized in $O(n^{k-1})$ depth using a linear arrangement of $n$ physical qubits; the construction is completely general and achieves optimal scaling in the case where gates acting on all $\binom{n}{k}$ sets of $k$ qubits are desired. We highlight two classes of problems for which our method is particularly useful. First, it applies to sets of mutually commuting gates, as in the (diagonal) phase separators of Quantum Alternating Operator Ansatz (Quantum Approximate Optimization Algorithm) circuits. For example, a single level of a QAOA circuit for Maximum Cut can be implemented in linear depth, and a single level for $3$-SAT in quadratic depth. Second, it applies to sets of gates that do not commute but for which compilation efficiency is the dominant criterion in their ordering. In particular, it can be adapted to Trotterized time-evolution of fermionic Hamiltonians under the Jordan-Wigner transformation, and also to non-standard mixers in QAOA. Using our method, a single Trotter step of the electronic structure Hamiltonian in an arbitrary basis of $n$ orbitals can be done in $O(n^3)$ depth while a Trotter step of the unitary coupled cluster singles and doubles method can be implemented in $O(n^2 \eta)$ depth, where $\eta$ is the number of electrons.},
+  archivePrefix= {arXiv},
+  eprint       = {1905.05118},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/OHRW19generalized.pdf}
+  }
 
 @article{OM03proposal,
 	Author = {Ollivier, H. and Milman, P.},
@@ -35553,7 +35677,6 @@ pages[normalize_page_numbers]
 	primaryClass = {quant-ph},
 	file = {~/shared/papers/ZSM24advantage.pdf}
 }
-
 @article{ZSS18resource,
 	Author = {Zhuang, Quntao and Shor, Peter W and Shapiro, Jeffrey H},
 	Date-Added = {2019-07-08 16:26:12 +0200},
@@ -35566,7 +35689,6 @@ pages[normalize_page_numbers]
 	Volume = 97,
 	Year = 2018
 }
-
 @article{ZTCZ03experimental,
 	Author = {Zhao, Z. and T.Yang and Chen, Y.-A. and Zhang, A.-N. and Zukowski, M. and Pan, J-W.},
 	Eprint = {quant-ph/0302137},
@@ -35576,6 +35698,7 @@ pages[normalize_page_numbers]
 	Volume = 91,
 	Year = 2003
 }
+
 
 @article{ZVWS03geometric,
 	Author = {Zhang, J. and Vala, J. and Whaley, K.B. and Sastry, S.},
@@ -35587,7 +35710,6 @@ pages[normalize_page_numbers]
 	Volume = 67,
 	Year = 2003
 }
-
 @article{ZW03unconventional,
 	Author = {Zhu, S. L. and Wang, Z. D.},
 	Journal = {Phys. Rev. Lett.},
@@ -35597,7 +35719,6 @@ pages[normalize_page_numbers]
 	Volume = 91,
 	Year = 2003
 }
-
 @article{ZWZ05geometric,
 	Author = {Zhu, Shi-Liang and Wang, Z. D. and Zanardi, Paolo},
 	Date-Modified = {2006-01-05 16:15:41 -0500},
@@ -35614,7 +35735,6 @@ pages[normalize_page_numbers]
 	Volume = 94,
 	Year = 2005
 }
-
 @article{ZZF00entangling,
 	Author = {Zanardi, P. and Zalka, C. and Faoro, L.},
 	Date-Modified = {2006-01-04 16:35:25 +1000},
@@ -35625,7 +35745,6 @@ pages[normalize_page_numbers]
 	Volume = 62,
 	Year = 2000
 }
-
 @article{ZZHE93event,
 	Author = {Zukowski, M. and Zeilinger, A. and Horne, M.A. and Ekert, A.K.},
 	Journal = {Phys. Rev. Lett.},
@@ -35634,132 +35753,13 @@ pages[normalize_page_numbers]
 	Volume = 71,
 	Year = 1993
 }
-
+  
 @article{gustiani2023virtual,
 	source = {M. Garnier, 2025-03},
 	title = {The Virtual Quantum Device (VQD): A tool for detailed emulation of quantum computers},
 	author = {Gustiani, Cica and Jones, Tyson and Benjamin, Simon C},
 	journal = {arXiv preprint arXiv:2306.07342},
 	year = {2023}
-}
-
-@article{OHRW19generalized,
-  author       = {O'Gorman, Bryan and Huggins, William J. and Rieffel, Eleanor G. and Whaley, K. Birgitta},
-  title        = {Generalized Swap Networks for Near-Term Quantum Computing},
-  journal      = {CoRR},
-  year         = 2019,
-  url          = {http://arxiv.org/abs/1905.05118v1},
-  abstract     = {The practical use of many types of near-term quantum computers requires accounting for their limited connectivity. One way of overcoming limited connectivity is to insert swaps in the circuit so that logical operations can be performed on physically adjacent qubits, which we refer to as solving the `routing via matchings' problem. We address the routing problem for families of quantum circuits defined by a hypergraph wherein each hyperedge corresponds to a potential gate. Our main result is that any unordered set of $k$-qubit gates on distinct $k$-qubit subsets of $n$ logical qubits can be ordered and parallelized in $O(n^{k-1})$ depth using a linear arrangement of $n$ physical qubits; the construction is completely general and achieves optimal scaling in the case where gates acting on all $\binom{n}{k}$ sets of $k$ qubits are desired. We highlight two classes of problems for which our method is particularly useful. First, it applies to sets of mutually commuting gates, as in the (diagonal) phase separators of Quantum Alternating Operator Ansatz (Quantum Approximate Optimization Algorithm) circuits. For example, a single level of a QAOA circuit for Maximum Cut can be implemented in linear depth, and a single level for $3$-SAT in quadratic depth. Second, it applies to sets of gates that do not commute but for which compilation efficiency is the dominant criterion in their ordering. In particular, it can be adapted to Trotterized time-evolution of fermionic Hamiltonians under the Jordan-Wigner transformation, and also to non-standard mixers in QAOA. Using our method, a single Trotter step of the electronic structure Hamiltonian in an arbitrary basis of $n$ orbitals can be done in $O(n^3)$ depth while a Trotter step of the unitary coupled cluster singles and doubles method can be implemented in $O(n^2 \eta)$ depth, where $\eta$ is the number of electrons.},
-  archivePrefix= {arXiv},
-  eprint       = {1905.05118},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/OHRW19generalized.pdf}
-  }
-@article{MMW25benchmarking,
-  author       = {Meirom, Dekel and Mor, Tal and Weinstein, Yossi},
-  title        = {Benchmarking Quantum Computers Via Protocols},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2505.12441v1},
-  abstract     = {Benchmarking quantum computers often deals with the parameters of single qubits or gates and sometimes deals with algorithms run on an entire chip or a noisy simulator of a chip.  Here we propose the idea of using protocols to benchmark quantum computers.  The advantage of using protocols, especially the seven suggested here, over other benchmarking methods is that there is a clear cutoff (i.e., a threshold) distinguishing quantumness from classicality for each of our protocols.  The protocols we suggest enable a comparison among various circuit-based quantum computers, and also between real chips and their noisy simulators. This latter method may then be used to better understand the various types of noise of the real chips. We use some of these protocols to answer an important question: ``How many effective qubits are there in this N-qubit quantum computer/simulator?'', and we then conclude which effective sub-chips can be named ``truly-quantum''.},
-  archivePrefix= {arXiv},
-  eprint       = {2505.12441},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/MMW25benchmarking.pdf}
-  }
-@article{BKOS03subsystem,
-  author       = {Barnum, Howard and Knill, Emanuel and Ortiz, Gerardo and Somma, Rolando and Viola, Lorenza},
-  title        = {A Subsystem-Independent Generalization of Entanglement},
-  journal      = {CoRR},
-  year         = 2003,
-  url          = {http://arxiv.org/abs/quant-ph/0305023v1},
-  abstract     = {We introduce a generalization of entanglement based on the idea that entanglement is relative to a distinguished subspace of observables rather than a distinguished subsystem decomposition. A pure quantum state is entangled relative to such a subspace if its expectations are a proper mixture of those of other states. Many information-theoretic aspects of entanglement can be extended to the general setting, suggesting new ways of measuring and classifying entanglement in multipartite systems. By going beyond the distinguishable-subsystem framework, generalized entanglement also provides novel tools for probing quantum correlations in interacting many-body systems.},
-  archivePrefix= {arXiv},
-  eprint       = {quant-ph/0305023},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/BKOS03subsystem.pdf}
-  }
-
-
-@article{CSP25taming,
-  author       = {Chang, Kathleen and Su, Qile and Puri, Shruti},
-  title        = {Taming Coherent Noise With Teleportation},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2508.04947v1},
-  abstract     = {Compared to the more widely studied Pauli errors, coherent errors present several new challenges in quantum computing and quantum error correction (QEC).  For example, coherent errors may interfere constructively over a long circuit and significantly increase the overall failure rate compared to Pauli noise.  Additionally, there is so far no analytical proof for a topological code threshold under coherent errors. Moreover, it is hard to even numerically estimate the performance of QEC under coherent errors as their effect in a Clifford circuit cannot be efficiently classically simulated. In this work, we demonstrate that teleportation effectively tailors coherent errors into Pauli errors, for which analytical and numerical results are abundant. We first show that repeated teleportation of a single qubit decoheres errors, and the average infidelity grows at worst linearly with the number of teleportations, similar to Pauli errors. We then analyze a physically motivated pure $Z$-coherent error model for teleported CSS codes in which over-rotation errors accompany every gate, and find that such an error model is equivalent to a Pauli error model.  Our result implies that the performance of a CSS code implemented via teleportation-based error correction or measurement-based error correction with such coherent noise can be efficiently simulated on a classical computer and has an analytically provable threshold. The intrinsic noise-tailoring property of teleportation may ultimately remove the need for randomized compiling in teleportation-based quantum computing schemes.},
-  archivePrefix= {arXiv},
-  eprint       = {2508.04947},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/CSP25taming.pdf}
-  }
-@article{BWMS25designing,
-  author       = {Baranes, Gefen and Wang, Iria W. and Machado, Francisco and Suleymanzade, Aziza and Stas, Pieter-Jan and Wei, Yan-Cheng and Yelin, Susanne F. and Borregaard, Johannes and Lukin, Mikhail D.},
-  title        = {Designing Fault-Tolerant Blind Quantum Computation},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2505.21621v1},
-  abstract     = {Blind quantum computing (BQC) is a computational paradigm that allows a client with limited quantum capabilities to delegate quantum computations to a more powerful server while keeping both the algorithm and data hidden. However, in practice, existing BQC protocols face significant challenges when scaling to large-scale computations due to photon losses, low efficiencies, and high overheads associated with fault-tolerant operations, requiring the client to compile both logical operations and error correction primitives. We use a recently demonstrated hybrid light-matter approach [PRL 132, 150604 (2024); Science 388, 509-513 (2025)] to develop an architecture for scalable fault-tolerant blind quantum computation. By combining high-fidelity local gates on the server's matter qubits with delegated blind rotations using photons, we construct loss-tolerant delegated gates that enable efficient algorithm compilation strategies and a scalable approach for fault-tolerant blind logical algorithms. Our approach improves the error-correction threshold and increases the speed and depth of blind logical circuits. Finally, we outline how this architecture can be implemented on state-of-the-art quantum hardware, including neutral atom arrays and solid-state spin defects. These new capabilities open up new opportunities for deep circuit blind quantum computing.},
-  archivePrefix= {arXiv},
-  eprint       = {2505.21621},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/BWMS25designing.pdf}
-  }
-@article{KSST25quantum,
-  author       = {Kaikov, Oleg and Saporiti, Theo and Sazonov, Vasily and Tamaazousti, Mohamed},
-  title        = {Quantum Error Mitigation By Global Randomized Error Cancellation for Adiabatic Evolution in the Schwinger Model},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2507.06601v1},
-  abstract     = {We extend the global randomized error cancellation (GREC) method for quantum error mitigation (QEM) in an application to adiabatic evolution of states on a noisy quantum device. We apply the adiabatic GREC method to the evolution of eigenstates in the lattice Schwinger model on a simulated quantum device with custom noise. Our results suggest that the corresponding QEM learned in one parameter regime of the model successfully transfers to a different parameter regime. In particular, our findings indicate that it transfers between different phases of the model. We observe that adiabatic GREC produces a smaller error than zero noise extrapolation (ZNE). Furthermore, in general, adiabatic GREC can be more cost-efficient in terms of the total number of gates used for the simulations. We comment on approaches to further reduce the necessary quantum computational resources. We also outline extensions of the introduced adiabatic GREC QEM method.},
-  archivePrefix= {arXiv},
-  eprint       = {2507.06601},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/KSST25quantum.pdf}
-  }
-@article{DT24low,
-  author       = {Delfosse, Nicolas and Tham, Edwin},
-  title        = {Low-Cost Noise Reduction for Clifford Circuits},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2407.06583v1},
-  abstract     = {We propose a Clifford noise reduction (CliNR) scheme that provides a reduction of the logical error rate of Clifford circuit with lower overhead than error correction and without the exponential sampling overhead of error mitigation. CliNR implements Clifford circuits by splitting them into sub-circuits that are performed using gate teleportation. A few random stabilizer measurements are used to detect errors in the resources states consumed by the gate teleportation. This can be seen as a teleported version of the CPC scheme, with offline fault-detection making it scalable. We prove that CliNR achieves a vanishing logical error rate for families of $n$-qubit Clifford circuits with size $s$ such that $nsp^2$ goes to 0, where $p$ is the physical error rate, meaning that it reaches the regime $ns = o(1/p^2)$ whereas the direct implementation is limited to $s = o(1/p)$. Moreover, CliNR uses only $3n+1$ qubits, $2s + o(s)$ gates and has zero rejection rate. This small overhead makes it more practical than quantum error correction in the near term and our numerical simulations show that CliNR provides a reduction of the logical error rate in relevant noise regimes.},
-  archivePrefix= {arXiv},
-  eprint       = {2407.06583},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/DT24low.pdf}
-  }
-@article{BKOS03subsystem,
-  author       = {Barnum, Howard and Knill, Emanuel and Ortiz, Gerardo and Somma, Rolando and Viola, Lorenza},
-  title        = {A Subsystem-Independent Generalization of Entanglement},
-  journal      = {CoRR},
-  year         = 2003,
-  url          = {http://arxiv.org/abs/quant-ph/0305023v1},
-  abstract     = {We introduce a generalization of entanglement based on the idea that entanglement is relative to a distinguished subspace of observables rather than a distinguished subsystem decomposition. A pure quantum state is entangled relative to such a subspace if its expectations are a proper mixture of those of other states. Many information-theoretic aspects of entanglement can be extended to the general setting, suggesting new ways of measuring and classifying entanglement in multipartite systems. By going beyond the distinguishable-subsystem framework, generalized entanglement also provides novel tools for probing quantum correlations in interacting many-body systems.},
-  archivePrefix= {arXiv},
-  eprint       = {quant-ph/0305023},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/BKOS03subsystem.pdf}
-  }
-  
-@article{GHK18simple,
-	source = {Luka Music, 2021-09-16},
-	doi = {10.1088/2058-9565/aaeeb3},
-	url = {https://doi.org/10.1088/2058-9565/aaeeb3},
-	year = 2018,
-	month = {nov},
-	publisher = {{IOP} Publishing},
-	volume = 4,
-	number = 1,
-	pages = 015009,
-	author = {Alexandru Gheorghiu and Matty J Hoban and Elham Kashefi},
-	title = {A simple protocol for fault tolerant verification of quantum computation},
-	journal = {Quantum Science and Technology},
-	abstract = {With experimental quantum computing technologies now in their infancy, the search for efficient means of testing the correctness of these quantum computations is becoming more pressing. An approach to the verification of quantum computation within the framework of interactive proofs has been fruitful for addressing this problem. Specifically, an untrusted agent (prover) alleging to perform quantum computations can have his claims verified by another agent (verifier) who only has access to classical computation and a small quantum device for preparing or measuring single qubits. However, when this quantum device is prone to errors, verification becomes challenging and often existing protocols address this by adding extra assumptions, such as requiring the noise in the device to be uncorrelated with the noise on the prover’s devices. In this paper, we present a simple protocol for verifying quantum computations, in the presence of noisy devices, with no extra assumptions. This protocol is based on post hoc techniques for verification, which allow for the prover to know the desired quantum computation and its input. We also perform a simulation of the protocol, for a one-qubit computation, and find the error thresholds when using the qubit repetition code as well as the Steane code.},
-  archivePrefix= {arXiv},
-  eprint       = {1804.06105},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/GHK18simple.pdf}
 }
 
 
