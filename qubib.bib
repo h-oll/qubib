@@ -35752,3 +35752,51 @@ pages[normalize_page_numbers]
   primaryClass = {quant-ph},
   file = {~/shared/papers/W20zx.pdf}
   }
+@article{GQL24hidden,
+  author       = {Gnanapandithan, Amita and Qian, Li and Lo, Hoi-Kwong},
+  title        = {Hidden Multi-Dimensional Modulation Side Channels in Quantum Protocols},
+  journal      = {CoRR},
+  year         = 2024,
+  url          = {http://arxiv.org/abs/2404.14216v2},
+  abstract     = {Quantum protocols including quantum key distribution and blind quantum computing often require the preparation of quantum states of known dimensions.  Here, we show that, rather surprisingly, hidden multi-dimensional modulation is often performed by practical devices. This violates the dimensional assumption in quantum protocols, thus creating side channels and security loopholes. Our work has important impacts on the security of quantum cryptographic protocols.},
+  archivePrefix= {arXiv},
+  eprint       = {2404.14216},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/GQL24hidden.pdf}
+  }
+@article{TLH25provably,
+  author       = {Tecot, Lucas and Luo, Di and Hsieh, Cho-Jui},
+  title        = {Provably Robust Training of Quantum Circuit Classifiers Against Parameter Noise},
+  journal      = {CoRR},
+  year         = 2025,
+  url          = {http://arxiv.org/abs/2505.18478v1},
+  abstract     = {Advancements in quantum computing have spurred significant interest in harnessing its potential for speedups over classical systems. However, noise remains a major obstacle to achieving reliable quantum algorithms. In this work, we present a provably noise-resilient training theory and algorithm to enhance the robustness of parameterized quantum circuit classifiers. Our method, with a natural connection to Evolutionary Strategies, guarantees resilience to parameter noise with minimal adjustments to commonly used optimization algorithms. Our approach is function-agnostic and adaptable to various quantum circuits, successfully demonstrated in quantum phase classification tasks. By developing provably guaranteed optimization theory with quantum circuits, our work opens new avenues for practical, robust applications of near-term quantum computers.},
+  archivePrefix= {arXiv},
+  eprint       = {2505.18478},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/TLH25provably.pdf}
+  }
+@article{IWP25verifiable,
+  author       = {Inajetovic, Matteo and Wallden, Petros and Pappa, Anna},
+  title        = {Verifiable End-To-End Delegated Variational Quantum Algorithms},
+  journal      = {CoRR},
+  year         = 2025,
+  url          = {http://arxiv.org/abs/2504.15410v3},
+  abstract     = {Variational quantum algorithms (VQAs) have emerged as promising candidates for solving complex optimization and machine learning tasks on near-term quantum hardware. However, executing quantum operations remains challenging for small-scale users because of several hardware constraints, making it desirable to delegate parts of the computation to more powerful quantum devices. In this work, we introduce a framework for delegated variational quantum algorithms (DVQAs), where a client with limited quantum capabilities delegates the execution of a VQA to a more powerful quantum server. In particular, we introduce a protocol that enables a client to delegate a variational quantum algorithm to a server while ensuring that the input, the output and also the computation itself remain secret. Additionally, if the protocol does not abort, the client can be certain that the computation outcome is indeed correct. This work builds on the general verification protocol introduced by Fitzimons and Kashefi (2017), tailoring it to VQAs. Our approach first proposes a verifiable Protocol for delegating the quantum computation required at each optimization step of a VQA, and then combines the iterative steps into an error-resilient optimization process that offers end-to-end verifiable algorithm execution. We also simulate the performance of our protocol tackling the Transverse Field Ising Model. Our results demonstrate that secure delegation of variational quantum algorithms is a realistic solution for near-term quantum networks, paving the way for practical quantum cloud computing applications.},
+  archivePrefix= {arXiv},
+  eprint       = {2504.15410},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/IWP25verifiable.pdf}
+  }
+@article{RF23efficient,
+  author       = {Rouz{\'e}, Cambyse and Fran{\c{c}}a, Daniel Stilck},
+  title        = {Efficient Learning of the Structure and Parameters of Local Pauli Noise Channels},
+  journal      = {CoRR},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2307.02959v1},
+  abstract     = {The unavoidable presence of noise is a crucial roadblock for the development of large-scale quantum computers and the ability to characterize quantum noise reliably and efficiently with high precision is essential to scale quantum technologies further. Although estimating an arbitrary quantum channel requires exponential resources, it is expected that physically relevant noise has some underlying local structure, for instance that errors across different qubits have a conditional independence structure. Previous works showed how it is possible to estimate Pauli noise channels with an efficient number of samples in a way that is robust to state preparation and measurement errors, albeit departing from a known conditional independence structure.  We present a novel approach for learning Pauli noise channels over n qubits that addresses this shortcoming. Unlike previous works that focused on learning coefficients with a known conditional independence structure, our method learns both the coefficients and the underlying structure. We achieve our results by leveraging a groundbreaking result by Bresler for efficiently learning Gibbs measures and obtain an optimal sample complexity of O(log(n)) to learn the unknown structure of the noise acting on n qubits. This information can then be leveraged to obtain a description of the channel that is close in diamond distance from O(poly(n)) samples. Furthermore, our method is efficient both in the number of samples and postprocessing without giving up on other desirable features such as SPAM-robustness, and only requires the implementation of single qubit Cliffords. In light of this, our novel approach enables the large-scale characterization of Pauli noise in quantum devices under minimal experimental requirements and assumptions.},
+  archivePrefix= {arXiv},
+  eprint       = {2307.02959},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/RF23efficient.pdf}
+  }
