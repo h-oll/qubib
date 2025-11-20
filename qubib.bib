@@ -1128,6 +1128,22 @@ pages[normalize_page_numbers]
 	Year = 1998
 }
 
+@Article{AFCD23requirements,
+	file = {Avis_2023.pdf},
+	timestamp = {2025-11-06 13:43:31 (CET)},
+	author = {Avis, Guus and Ferreira da Silva, Francisco and Coopmans, Tim and Dahlberg, Axel and Jirovská, Hana and Maier, David and Rabbie, Julian and Torres-Knoop, Ariana and Wehner, Stephanie},
+	title = {Requirements for a processing-node quantum repeater on a real-world fiber grid},
+	journal = {npj Quantum Information},
+	year = 2023,
+	volume = 9,
+	number = 1,
+	month = oct,
+	issn = {2056-6387},
+	doi = {10.1038/s41534-023-00765-x},
+	url = {https://www.nature.com/articles/s41534-023-00765-x.pdf},
+	publisher = {Springer Science and Business Media LLC}
+}
+
 @misc{AG04improved,
 	Author = {Aaronson, S. and Gottesman, D.},
 	Date-Added = {2005-12-05 10:32:18 +1000},
@@ -8173,6 +8189,19 @@ pages[normalize_page_numbers]
 	Year = 2002
 }
 
+@article{CJKM25mpc,
+	author = {Coladangelo, Andrea and Jawale, Ruta and Khurana, Dakshita and Malavolta, Giulio and Waldner, Hendrik},
+	title = {Mpc in the Quantum Head (or: Superposition-Secure (Quantum) Zero-Knowledge)},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2506.22961v1},
+	abstract = {The MPC-in-the-head technique (Ishai et al., STOC 2007) is a celebrated method to build zero-knowledge protocols with desirable theoretical properties and high practical efficiency. This technique has generated a large body of research and has influenced the design of real-world post-quantum cryptographic signatures. In this work, we present a generalization of the MPC-in-the-head paradigm to the quantum setting, where the MPC is running a quantum computation. As an application of our framework, we propose a new approach to build zero-knowledge protocols where security holds even against a verifier that can obtain a superposition of transcripts. This notion was pioneered by Damgard et al., who built a zero-knowledge protocol for NP (in the common reference string model) secure against superposition attacks, by relying on perfectly hiding and unconditionally binding dual-mode commitments. Unfortunately, no such commitments are known from standard cryptographic assumptions. In this work we revisit this problem, and present two new three-round protocols in the common reference string model: (i) A zero-knowledge argument for NP, whose security reduces to the standard learning with errors (LWE) problem. (ii) A zero-knowledge argument for QMA from the same assumption.},
+	archivePrefix = {arXiv},
+	eprint = {2506.22961},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/CJKM25mpc.pdf}
+}
+
 @article{CJL17overhead,
 	title = {Overhead analysis of universal concatenated quantum codes},
 	author = {Chamberland, Christopher and Jochym-O'Connor, Tomas and Laflamme, Raymond},
@@ -10030,18 +10059,19 @@ pages[normalize_page_numbers]
 	Year = 1998
 }
 
-@InProceedings{DFNS14superposition,
-	source = {Luka Music, 2021-09-16},
-	author = "Damg{\aa}rd, Ivan and Funder, Jakob and Nielsen, Jesper Buus and Salvail, Louis",
-	editor = "Padr{\'o}, Carles",
-	title = "Superposition Attacks on Cryptographic Protocols",
-	booktitle = "Information Theoretic Security",
+@InBook{DFNS14superposition,
+	file = {DFNS14superpositionb.pdf},
+	timestamp = {2025-11-19 08:10:38 (CET)},
+	title = {Superposition Attacks on Cryptographic Protocols},
 	year = 2014,
-	publisher = "Springer International Publishing",
-	address = "Cham",
-	pages = "142--161",
-	abstract = "Attacks on cryptographic protocols are usually modeled by allowing an adversary to ask queries to an oracle. Security is then defined by requiring that as long as the queries satisfy some constraint, there is some problem the adversary cannot solve, such as compute a certain piece of information. Even if the protocol is quantum, the queries are typically classical. In this paper, we introduce a new model of quantum attacks on protocols, where the adversary is allowed quantum access to the primitive, i.e., he may ask several classical queries in quantum superposition. This is a strictly stronger attack than the standard one, and we consider the security of several primitives in this model. We show that a secret-sharing scheme that is secure with threshold {\$}{\$}t{\$}{\$}tin the standard model is secure against superposition attacks if and only if the threshold is lowered to {\$}{\$}t/2{\$}{\$}t/2. This holds for all classical as well as all known quantum secret sharing schemes. We then consider zero- knowledge and first show that known protocols are not, in general, secure in our model by designing a superposition attack on the well-known zero-knowledge protocol for graph isomorphism. We then use our secret-sharing result to design zero-knowledge proofs for all of NP in the common reference string model. While our protocol is classical, it is sound against a cheating unbounded quantum prover and computational zero-knowledge even if the verifier is allowed a superposition attack. Finally, we consider multiparty computation and give a characterization of a class of protocols that can be shown secure, though not necessarily with efficient simulation. We show that this class contains non-trivial protocols that cannot be shown secure by running a classical simulator in superposition.",
-	isbn = "978-3-319-04268-8"
+	author = {Damgård, Ivan and Funder, Jakob and Nielsen, Jesper Buus and Salvail, Louis},
+	booktitle = {Information Theoretic Security},
+	publisher = {Springer International Publishing},
+	isbn = 9783319042688,
+	pages = {142–161},
+	doi = {10.1007/978-3-319-04268-8_9},
+	url = {https://arxiv.org/pdf/1108.6313.pdf},
+	ISSN = {1611-3349}
 }
 
 @InProceedings{DFPR14composable,
@@ -11699,6 +11729,19 @@ pages[normalize_page_numbers]
 	Title = {Quantum and Classical Correlations in Quantum Brownian Motion},
 	Volume = 89,
 	Year = 2002
+}
+
+@article{EP25mind-gaps,
+	author = {Eisert, Jens and Preskill, John},
+	title = {Mind the Gaps: the Fraught Road To Quantum Advantage},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2510.19928v1},
+	abstract = {Quantum computing is advancing rapidly, yet substantial gaps separate today's noisy intermediate-scale quantum (NISQ) devices from tomorrow's fault-tolerant application-scale (FASQ) machines. We identify four related hurdles along the road ahead: (i) from error mitigation to active error detection and correction, (ii) from rudimentary error correction to scalable fault tolerance, (iii) from early heuristics to mature, verifiable algorithms, and (iv) from exploratory simulators to credible advantage in quantum simulation. Targeting these transitions will accelerate progress toward broadly useful quantum computing.},
+	archivePrefix = {arXiv},
+	eprint = {2510.19928},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/EP25mind-gaps.pdf}
 }
 
 @inproceedings{EP94lectures,
@@ -29486,6 +29529,19 @@ pages[normalize_page_numbers]
 	Year = 1998
 }
 
+@Book{S98c,
+	timestamp = {2025-11-18 11:03:48 (CET)},
+	author = {Sakai, Shôichirô},
+	title = {C*-Algebras and W*-Algebras},
+	year = 1998,
+	publisher = {Springer Berlin Heidelberg},
+	isbn = 9783642619939,
+	doi = {10.1007/978-3-642-61993-9},
+	url = {http://dx.doi.org/10.1007/978-3-642-61993-9},
+	ISSN = {1431-0821},
+	journal = {Classics in Mathematics}
+}
+
 @misc{S98efficient,
 	Author = {Steane, {A. M. }},
 	Date-Modified = {2006-01-05 16:17:17 -0500},
@@ -35919,15 +35975,3 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{EP25mind-gaps,
-  author       = {Eisert, Jens and Preskill, John},
-  title        = {Mind the Gaps: the Fraught Road To Quantum Advantage},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2510.19928v1},
-  abstract     = {Quantum computing is advancing rapidly, yet substantial gaps separate today's noisy intermediate-scale quantum (NISQ) devices from tomorrow's fault-tolerant application-scale (FASQ) machines. We identify four related hurdles along the road ahead: (i) from error mitigation to active error detection and correction, (ii) from rudimentary error correction to scalable fault tolerance, (iii) from early heuristics to mature, verifiable algorithms, and (iv) from exploratory simulators to credible advantage in quantum simulation. Targeting these transitions will accelerate progress toward broadly useful quantum computing.},
-  archivePrefix= {arXiv},
-  eprint       = {2510.19928},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/EP25mind-gaps.pdf}
-  }
