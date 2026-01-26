@@ -25958,6 +25958,22 @@ pages[normalize_page_numbers]
 	publisher = {Springer Science and Business Media LLC}
 }
 
+@Article{ODMZ22fermion-sampling,
+	file = {ODMZ22fermion-sampling.pdf},
+	timestamp = {2026-01-26 05:41:56 (CET)},
+	author = {Oszmaniec, Michał and Dangniam, Ninnat and Morales, Mauro E.S. and Zimborás, Zoltán},
+	title = {Fermion Sampling: A Robust Quantum Computational Advantage Scheme Using Fermionic Linear Optics and Magic Input States},
+	journal = {PRX Quantum},
+	year = 2022,
+	volume = 3,
+	number = 2,
+	month = may,
+	issn = {2691-3399},
+	doi = {10.1103/prxquantum.3.020328},
+	url = {https://journals.aps.org/prxquantum/pdf/10.1103/PRXQuantum.3.020328},
+	publisher = {American Physical Society (APS)}
+}
+
 @Article{OG19recovering,
 	keywords = {qem},
 	file = {OG19recovering.pdf},
@@ -28451,6 +28467,22 @@ pages[normalize_page_numbers]
 	Year = 1975
 }
 
+@Article{RLTK24trainability,
+	file = {RLTK24trainability.pdf},
+	timestamp = {2026-01-26 06:05:38 (CET)},
+	author = {Rudolph, Manuel S. and Lerch, Sacha and Thanasilp, Supanut and Kiss, Oriel and Shaya, Oxana and Vallecorsa, Sofia and Grossi, Michele and Holmes, Zoë},
+	title = {Trainability barriers and opportunities in quantum generative modeling},
+	journal = {npj Quantum Information},
+	year = 2024,
+	volume = 10,
+	number = 1,
+	month = nov,
+	issn = {2056-6387},
+	doi = {10.1038/s41534-024-00902-0},
+	url = {https://www.nature.com/articles/s41534-024-00902-0.pdf},
+	publisher = {Springer Science and Business Media LLC}
+}
+
 @misc{RM99assymptotics,
 	Author = {Reinsch, M. W. and Morehead, J. J.},
 	Date-Added = {2005-05-09 15:52:44 +1000},
@@ -30523,6 +30555,19 @@ pages[normalize_page_numbers]
 	Title = {Quantum Key Distribution over 67 km with a plug and play system},
 	Volume = 4,
 	Year = 2002
+}
+
+@article{SGMO25efficient,
+	author = {Sater, Sami Abdul and Garnier, Maxime and Martinez, Thierry and Ollivier, Harold and Chabaud, Ulysse},
+	title = {Efficient Certification of Intractable Quantum States With Few Pauli Measurements},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2511.07300v1},
+	abstract = {Verification of quantum computations is crucial as experiments advance toward fault-tolerant quantum computing. Yet, no efficient protocol exists for certifying states generated in the Magic-State Injection model -- the foundation of several fault-tolerant quantum computing architectures. Here, we introduce an efficient protocol for certifying Clifford-enhanced Product States, a large class of quantum states obtained by applying an arbitrary Clifford circuit to a product of single-qubit, possibly magic, states. Our protocol only requires single-qubit Pauli measurements together with efficient classical post-processing, and has efficient sample complexity in both the independent (i.i.d.) and adversarial (non-i.i.d.) settings. This fills a key gap between Pauli-based certification schemes for stabilizer or (hyper)graph states and general protocols demanding non-Pauli measurements or classically intractable information about the target state. Our work provides the first efficient, Pauli-only certification protocol for the Magic-State Injection model, leading to practical verification of universal quantum computation under minimal experimental assumptions.},
+	archivePrefix = {arXiv},
+	eprint = {2511.07300},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/SGMO25efficient.pdf}
 }
 
 @misc{SH89tunneling,
@@ -36469,15 +36514,15 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{SGMO25efficient,
-  author       = {Sater, Sami Abdul and Garnier, Maxime and Martinez, Thierry and Ollivier, Harold and Chabaud, Ulysse},
-  title        = {Efficient Certification of Intractable Quantum States With Few Pauli Measurements},
+@article{RLTK23trainability,
+  author       = {Rudolph, Manuel S. and Lerch, Sacha and Thanasilp, Supanut and Kiss, Oriel and Vallecorsa, Sofia and Grossi, Michele and Holmes, Zo{\"e}},
+  title        = {Trainability Barriers and Opportunities in Quantum Generative Modeling},
   journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2511.07300v1},
-  abstract     = {Verification of quantum computations is crucial as experiments advance toward fault-tolerant quantum computing. Yet, no efficient protocol exists for certifying states generated in the Magic-State Injection model -- the foundation of several fault-tolerant quantum computing architectures. Here, we introduce an efficient protocol for certifying Clifford-enhanced Product States, a large class of quantum states obtained by applying an arbitrary Clifford circuit to a product of single-qubit, possibly magic, states. Our protocol only requires single-qubit Pauli measurements together with efficient classical post-processing, and has efficient sample complexity in both the independent (i.i.d.) and adversarial (non-i.i.d.) settings. This fills a key gap between Pauli-based certification schemes for stabilizer or (hyper)graph states and general protocols demanding non-Pauli measurements or classically intractable information about the target state. Our work provides the first efficient, Pauli-only certification protocol for the Magic-State Injection model, leading to practical verification of universal quantum computation under minimal experimental assumptions.},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2305.02881v1},
+  abstract     = {Quantum generative models, in providing inherently efficient sampling strategies, show promise for achieving a near-term advantage on quantum hardware. Nonetheless, important questions remain regarding their scalability. In this work, we investigate the barriers to the trainability of quantum generative models posed by barren plateaus and exponential loss concentration. We explore the interplay between explicit and implicit models and losses, and show that using implicit generative models (such as quantum circuit-based models) with explicit losses (such as the KL divergence) leads to a new flavour of barren plateau. In contrast, the Maximum Mean Discrepancy (MMD), which is a popular example of an implicit loss, can be viewed as the expectation value of an observable that is either low-bodied and trainable, or global and untrainable depending on the choice of kernel. However, in parallel, we highlight that the low-bodied losses required for trainability cannot in general distinguish high-order correlations, leading to a fundamental tension between exponential concentration and the emergence of spurious minima. We further propose a new local quantum fidelity-type loss which, by leveraging quantum circuits to estimate the quality of the encoded distribution, is both faithful and enjoys trainability guarantees. Finally, we compare the performance of different loss functions for modelling real-world data from the High-Energy-Physics domain and confirm the trends predicted by our theoretical results.},
   archivePrefix= {arXiv},
-  eprint       = {2511.07300},
+  eprint       = {2305.02881},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/SGMO25efficient.pdf}
+  file = {~/shared/papers/RLTK23trainability.pdf}
   }
