@@ -1203,6 +1203,19 @@ pages[normalize_page_numbers]
 	file = {AG17quantum.pdf}
 }
 
+@article{AG25less,
+	file = {AG25less.pdf},
+	author = {Ananth, Prabhanjan and Goldin, Eli},
+	title = {Less Is More: on Copy Complexity in Quantum Cryptography},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/pdf/2510.04992},
+	abstract = {Quantum cryptographic definitions are often sensitive to the number of copies of the cryptographic states revealed to an adversary. Making definitional changes to the number of copies accessible to an adversary can drastically affect various aspects including the computational hardness, feasibility, and applicability of the resulting cryptographic scheme. This phenomenon appears in many places in quantum cryptography, including quantum pseudorandomness and unclonable cryptography. To address this, we present a generic approach to boost single-copy security to multi-copy security and apply this approach to many settings. As a consequence, we obtain the following new results: -One-copy stretch pseudorandom state generators (under mild assumptions) imply the existence of t-copy stretch pseudorandom state generators, for any fixed polynomial t. -One-query pseudorandom unitaries with short keys (under mild assumptions) imply the existence of t-query pseudorandom unitaries with short keys, for any fixed polynomial t. -Assuming indistinguishability obfuscation and other standard cryptographic assumptions, there exist identical-copy secure unclonable primitives such as public-key quantum money and quantum copy-protection.},
+	archivePrefix = {arXiv},
+	eprint = {2510.04992},
+	primaryClass = {quant-ph}
+}
+
 @book{AG82nuclear-magnetism,
 	Address = {New York},
 	Author = {Abragam, A. and Goldman, M.},
@@ -3403,6 +3416,19 @@ pages[normalize_page_numbers]
 	Title = {Geometry of the {3}-Qubit State, Entanglement and Division Algebras},
 	Volume = 36,
 	Year = 2003
+}
+
+@article{BC25uncloneable,
+	author = {Bhattacharyya, Archishna and Culf, Eric},
+	title = {Uncloneable Encryption From Decoupling},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2503.19125v2},
+	abstract = {We show that uncloneable encryption exists with no computational assumptions, with security $\widetilde{O}\left(\tfrac{1}$\lambda$\right)$ in the security parameter $$\lambda$$.},
+	archivePrefix = {arXiv},
+	eprint = {2503.19125},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/BC25uncloneable.pdf}
 }
 
 @article{BC94statistical,
@@ -14517,6 +14543,19 @@ pages[normalize_page_numbers]
 	file = {~/shared/papers/GHK18simple.pdf}
 }
 
+@article{GHO25few,
+	author = {Gupta, Meghal and He, William and O'Donnell, Ryan},
+	title = {Few Single-Qubit Measurements Suffice To Certify Any Quantum State},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2506.11355v2},
+	abstract = {A fundamental task in quantum information science is state certification: testing whether a lab-prepared $n$-qubit state is close to a given hypothesis state. In this work, we show that every pure hypothesis state can be certified using only $O(n^2)$ single-qubit measurements applied to $O(n)$ copies of the lab state. Prior to our work, it was not known whether even subexponentially many single-qubit measurements could suffice to certify arbitrary states. This resolves the main open question of Huang, Preskill, and Soleimanifar (FOCS 2024, QIP 2024). Our algorithm also showcases the power of adaptive measurements: within each copy of the lab state, previous measurement outcomes dictate how subsequent qubit measurements are made. We show that the adaptivity is necessary, by proving an exponential lower bound on the number of copies needed for any nonadaptive single-qubit measurement algorithm.},
+	archivePrefix = {arXiv},
+	eprint = {2506.11355},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/GHO25few.pdf}
+}
+
 @InProceedings{GHS16semantic,
 	source = {Luka Music, 2021-09-16},
 	author = "Gagliardoni, Tommaso and H{\"u}lsing, Andreas and Schaffner, Christian",
@@ -14737,6 +14776,19 @@ pages[normalize_page_numbers]
 	pages = 083040,
 	url = {http://stacks.iop.org/1367-2630/17/i=8/a=083040},
 	year = 2015
+}
+
+@article{GKZ25multi,
+	author = {Gosset, David and Kothari, Robin and Zhang, Chenyi},
+	title = {Multi-Qubit Toffoli With Exponentially Fewer T Gates},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2510.07223v1},
+	abstract = {Prior work of Beverland et al. has shown that any exact Clifford+$T$ implementation of the $n$-qubit Toffoli gate must use at least $n$ $T$ gates. Here we show how to get away with exponentially fewer $T$ gates, at the cost of incurring a tiny $1/\mathrm{poly}(n)$ error that can be neglected in most practical situations. More precisely, the $n$-qubit Toffoli gate can be implemented to within error $ε$ in the diamond distance by a randomly chosen Clifford+$T$ circuit with at most $O(\log(1/ε))$ $T$ gates. We also give a matching $Ω(\log(1/ε))$ lower bound that establishes optimality, and we show that any purely unitary implementation achieving even constant error must use $Ω(n)$ $T$ gates. We also extend our sampling technique to implement other Boolean functions. Finally, we describe upper and lower bounds on the $T$-count of Boolean functions in terms of non-adaptive parity decision tree complexity and its randomized analogue.},
+	archivePrefix = {arXiv},
+	eprint = {2510.07223},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/GKZ25multi.pdf}
 }
 
 @article{GL03proof,
@@ -28467,6 +28519,19 @@ pages[normalize_page_numbers]
 	Year = 1975
 }
 
+@article{RLTK23trainability,
+	author = {Rudolph, Manuel S. and Lerch, Sacha and Thanasilp, Supanut and Kiss, Oriel and Vallecorsa, Sofia and Grossi, Michele and Holmes, Zo{\"e}},
+	title = {Trainability Barriers and Opportunities in Quantum Generative Modeling},
+	journal = {CoRR},
+	year = 2023,
+	url = {http://arxiv.org/abs/2305.02881v1},
+	abstract = {Quantum generative models, in providing inherently efficient sampling strategies, show promise for achieving a near-term advantage on quantum hardware. Nonetheless, important questions remain regarding their scalability. In this work, we investigate the barriers to the trainability of quantum generative models posed by barren plateaus and exponential loss concentration. We explore the interplay between explicit and implicit models and losses, and show that using implicit generative models (such as quantum circuit-based models) with explicit losses (such as the KL divergence) leads to a new flavour of barren plateau. In contrast, the Maximum Mean Discrepancy (MMD), which is a popular example of an implicit loss, can be viewed as the expectation value of an observable that is either low-bodied and trainable, or global and untrainable depending on the choice of kernel. However, in parallel, we highlight that the low-bodied losses required for trainability cannot in general distinguish high-order correlations, leading to a fundamental tension between exponential concentration and the emergence of spurious minima. We further propose a new local quantum fidelity-type loss which, by leveraging quantum circuits to estimate the quality of the encoded distribution, is both faithful and enjoys trainability guarantees. Finally, we compare the performance of different loss functions for modelling real-world data from the High-Energy-Physics domain and confirm the trends predicted by our theoretical results.},
+	archivePrefix = {arXiv},
+	eprint = {2305.02881},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/RLTK23trainability.pdf}
+}
+
 @Article{RLTK24trainability,
 	file = {RLTK24trainability.pdf},
 	timestamp = {2026-01-26 06:05:38 (CET)},
@@ -36514,15 +36579,27 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{RLTK23trainability,
-  author       = {Rudolph, Manuel S. and Lerch, Sacha and Thanasilp, Supanut and Kiss, Oriel and Vallecorsa, Sofia and Grossi, Michele and Holmes, Zo{\"e}},
-  title        = {Trainability Barriers and Opportunities in Quantum Generative Modeling},
+@article{ABGL25gluing,
+  author       = {Ananth, Prabhanjan and Bostanci, John and Gulati, Aditya and Lin, Yao-Ting},
+  title        = {Gluing Random Unitaries With Inverses and Applications To Strong Pseudorandom Unitaries},
   journal      = {CoRR},
-  year         = 2023,
-  url          = {http://arxiv.org/abs/2305.02881v1},
-  abstract     = {Quantum generative models, in providing inherently efficient sampling strategies, show promise for achieving a near-term advantage on quantum hardware. Nonetheless, important questions remain regarding their scalability. In this work, we investigate the barriers to the trainability of quantum generative models posed by barren plateaus and exponential loss concentration. We explore the interplay between explicit and implicit models and losses, and show that using implicit generative models (such as quantum circuit-based models) with explicit losses (such as the KL divergence) leads to a new flavour of barren plateau. In contrast, the Maximum Mean Discrepancy (MMD), which is a popular example of an implicit loss, can be viewed as the expectation value of an observable that is either low-bodied and trainable, or global and untrainable depending on the choice of kernel. However, in parallel, we highlight that the low-bodied losses required for trainability cannot in general distinguish high-order correlations, leading to a fundamental tension between exponential concentration and the emergence of spurious minima. We further propose a new local quantum fidelity-type loss which, by leveraging quantum circuits to estimate the quality of the encoded distribution, is both faithful and enjoys trainability guarantees. Finally, we compare the performance of different loss functions for modelling real-world data from the High-Energy-Physics domain and confirm the trends predicted by our theoretical results.},
+  year         = 2025,
+  url          = {http://arxiv.org/abs/2510.04085v1},
+  abstract     = {Gluing theorem for random unitaries [Schuster, Haferkamp, Huang, QIP 2025] have found numerous applications, including designing low depth random unitaries [Schuster, Haferkamp, Huang, QIP 2025], random unitaries in ${\sf QAC0}$ [Foxman, Parham, Vasconcelos, Yuen'25] and generically shortening the key length of pseudorandom unitaries [Ananth, Bostanci, Gulati, Lin EUROCRYPT'25]. We present an alternate method of combining Haar random unitaries from the gluing lemma from [Schuster, Haferkamp, Huang, QIP 2025] that is secure against adversaries with inverse query access to the joined unitary. As a consequence, we show for the first time that strong pseudorandom unitaries can generically have their length extended, and can be constructed using only $O(n^{1/c})$ bits of randomness, for any constant $c$, if any family of strong pseudorandom unitaries exists.},
   archivePrefix= {arXiv},
-  eprint       = {2305.02881},
+  eprint       = {2510.04085},
+  primaryClass = {cs.CR},
+  file = {~/shared/papers/ABGL25gluing.pdf}
+  }
+@article{FPYC24fusion,
+  author       = {Felice, Giovanni de and Po{\'o}r, Boldizs{\'a}r and Yeh, Lia and Cashman, William},
+  title        = {Fusion and Flow: Formal Protocols To Reliably Build Photonic Graph States},
+  journal      = {CoRR},
+  year         = 2024,
+  url          = {http://arxiv.org/abs/2409.13541v1},
+  abstract     = {Photonics offers a promising platform for implementations of measurement-based quantum computing. Recently proposed fusion-based architectures aim to achieve universality and fault-tolerance. In these approaches, computation is carried out by performing fusion and single-qubit measurements on a resource graph state. The verification of these architectures requires linear algebraic, probabilistic, and control flow structures to be combined in a unified formal language. This paper develops a framework for photonic quantum computing by bringing together linear optics, ZX calculus, and dataflow programming. We characterize fusion measurements that induce Pauli errors and show that they are correctable using a novel flow structure for fusion networks. We prove the correctness of new repeat-until-success protocols for the realization of arbitrary fusions and provide a graph-theoretic proof of universality for linear optics with entangled photon sources. The proposed framework paves the way for the development of compilation algorithms for photonic quantum computing.},
+  archivePrefix= {arXiv},
+  eprint       = {2409.13541},
   primaryClass = {quant-ph},
-  file = {~/shared/papers/RLTK23trainability.pdf}
+  file = {~/shared/papers/FPYC24fusion.pdf}
   }
