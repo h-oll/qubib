@@ -771,6 +771,19 @@ pages[normalize_page_numbers]
 	Year = 2002
 }
 
+@article{ABGL25gluing,
+	author = {Ananth, Prabhanjan and Bostanci, John and Gulati, Aditya and Lin, Yao-Ting},
+	title = {Gluing Random Unitaries With Inverses and Applications To Strong Pseudorandom Unitaries},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2510.04085v1},
+	abstract = {Gluing theorem for random unitaries [Schuster, Haferkamp, Huang, QIP 2025] have found numerous applications, including designing low depth random unitaries [Schuster, Haferkamp, Huang, QIP 2025], random unitaries in ${\sf QAC0}$ [Foxman, Parham, Vasconcelos, Yuen'25] and generically shortening the key length of pseudorandom unitaries [Ananth, Bostanci, Gulati, Lin EUROCRYPT'25]. We present an alternate method of combining Haar random unitaries from the gluing lemma from [Schuster, Haferkamp, Huang, QIP 2025] that is secure against adversaries with inverse query access to the joined unitary. As a consequence, we show for the first time that strong pseudorandom unitaries can generically have their length extended, and can be constructed using only $O(n^{1/c})$ bits of randomness, for any constant $c$, if any family of strong pseudorandom unitaries exists.},
+	archivePrefix = {arXiv},
+	eprint = {2510.04085},
+	primaryClass = {cs.CR},
+	file = {~/shared/papers/ABGL25gluing.pdf}
+}
+
 @book{ABHH01quantum-information,
 	Author = {Alber, G. and Beth, T. and Horodecki, M. and Horodecki, P. and Horodecki, R. and Roetteler, M. and Weinfurter, H. and Werner, R. and Zeilinger, A.},
 	Date-Modified = {2005-06-21 12:05:07 +0200},
@@ -2370,6 +2383,7 @@ pages[normalize_page_numbers]
 }
 
 @article{B18how,
+	file = {B18how.pdf},
 	author = {Broadbent, Anne},
 	title = {How to Verify a Quantum Computation},
 	year = 2018,
@@ -2379,7 +2393,7 @@ pages[normalize_page_numbers]
 	journal = {Theory of Computing},
 	volume = 14,
 	number = 11,
-	URL = {https://theoryofcomputing.org/articles/v014a011}
+	URL = {https://theoryofcomputing.org/articles/v014a011/v014a011.pdf}
 }
 
 @InProceedings{B21secure,
@@ -13185,6 +13199,19 @@ pages[normalize_page_numbers]
 	Year = 2002
 }
 
+@article{FPYC24fusion,
+	author = {Felice, Giovanni de and Po{\'o}r, Boldizs{\'a}r and Yeh, Lia and Cashman, William},
+	title = {Fusion and Flow: Formal Protocols To Reliably Build Photonic Graph States},
+	journal = {CoRR},
+	year = 2024,
+	url = {http://arxiv.org/abs/2409.13541v1},
+	abstract = {Photonics offers a promising platform for implementations of measurement-based quantum computing. Recently proposed fusion-based architectures aim to achieve universality and fault-tolerance. In these approaches, computation is carried out by performing fusion and single-qubit measurements on a resource graph state. The verification of these architectures requires linear algebraic, probabilistic, and control flow structures to be combined in a unified formal language. This paper develops a framework for photonic quantum computing by bringing together linear optics, ZX calculus, and dataflow programming. We characterize fusion measurements that induce Pauli errors and show that they are correctable using a novel flow structure for fusion networks. We prove the correctness of new repeat-until-success protocols for the realization of arbitrary fusions and provide a graph-theoretic proof of universality for linear optics with entangled photon sources. The proposed framework paves the way for the development of compilation algorithms for photonic quantum computing.},
+	archivePrefix = {arXiv},
+	eprint = {2409.13541},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/FPYC24fusion.pdf}
+}
+
 @Article{FR15quantum,
 	file = {FR15quantum.pdf},
 	author = {Fawzi, Omar and Renner, Renato},
@@ -19675,6 +19702,19 @@ pages[normalize_page_numbers]
 	eprint = {quant-ph/0406180},
 	primaryClass = {quant-ph},
 	file = {KKR04complexity.pdf}
+}
+
+@article{KKR26how,
+	file = {KKR26how.pdf},
+	author = {Kalai, Yael Tauman and Khurana, Dakshita and Raizes, Justin},
+	title = {How To Classically Verify a Quantum Cat Without Killing It},
+	journal = {CoRR},
+	year = 2026,
+	url = {http://arxiv.org/pdf/2602.09282v1.pdf},
+	abstract = {Existing protocols for classical verification of quantum computation (CVQC) consume the prover's witness state, requiring a new witness state for each invocation. Because QMA witnesses are not generally clonable, destroying the input witness means that amplifying soundness and completeness via repetition requires many copies of the witness. Building CVQC with low soundness error that uses only *one* copy of the witness has remained an open problem so far. We resolve this problem by constructing a CVQC that uses a single copy of the QMA witness, has negligible completeness and soundness errors, and does *not* destroy its witness. The soundness of our CVQC is based on the post-quantum Learning With Errors (LWE) assumption. To obtain this result, we define and construct two primitives (under the post-quantum LWE assumption) for non-destructively handling superpositions of classical data, which we believe are of independent interest: - A *state preserving* classical argument for NP. - Dual-mode trapdoor functions with *state recovery*.},
+	archivePrefix = {arXiv},
+	eprint = {2602.09282},
+	primaryClass = {quant-ph}
 }
 
 @misc{KKVB01power,
@@ -36579,27 +36619,3 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{ABGL25gluing,
-  author       = {Ananth, Prabhanjan and Bostanci, John and Gulati, Aditya and Lin, Yao-Ting},
-  title        = {Gluing Random Unitaries With Inverses and Applications To Strong Pseudorandom Unitaries},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2510.04085v1},
-  abstract     = {Gluing theorem for random unitaries [Schuster, Haferkamp, Huang, QIP 2025] have found numerous applications, including designing low depth random unitaries [Schuster, Haferkamp, Huang, QIP 2025], random unitaries in ${\sf QAC0}$ [Foxman, Parham, Vasconcelos, Yuen'25] and generically shortening the key length of pseudorandom unitaries [Ananth, Bostanci, Gulati, Lin EUROCRYPT'25]. We present an alternate method of combining Haar random unitaries from the gluing lemma from [Schuster, Haferkamp, Huang, QIP 2025] that is secure against adversaries with inverse query access to the joined unitary. As a consequence, we show for the first time that strong pseudorandom unitaries can generically have their length extended, and can be constructed using only $O(n^{1/c})$ bits of randomness, for any constant $c$, if any family of strong pseudorandom unitaries exists.},
-  archivePrefix= {arXiv},
-  eprint       = {2510.04085},
-  primaryClass = {cs.CR},
-  file = {~/shared/papers/ABGL25gluing.pdf}
-  }
-@article{FPYC24fusion,
-  author       = {Felice, Giovanni de and Po{\'o}r, Boldizs{\'a}r and Yeh, Lia and Cashman, William},
-  title        = {Fusion and Flow: Formal Protocols To Reliably Build Photonic Graph States},
-  journal      = {CoRR},
-  year         = 2024,
-  url          = {http://arxiv.org/abs/2409.13541v1},
-  abstract     = {Photonics offers a promising platform for implementations of measurement-based quantum computing. Recently proposed fusion-based architectures aim to achieve universality and fault-tolerance. In these approaches, computation is carried out by performing fusion and single-qubit measurements on a resource graph state. The verification of these architectures requires linear algebraic, probabilistic, and control flow structures to be combined in a unified formal language. This paper develops a framework for photonic quantum computing by bringing together linear optics, ZX calculus, and dataflow programming. We characterize fusion measurements that induce Pauli errors and show that they are correctable using a novel flow structure for fusion networks. We prove the correctness of new repeat-until-success protocols for the realization of arbitrary fusions and provide a graph-theoretic proof of universality for linear optics with entangled photon sources. The proposed framework paves the way for the development of compilation algorithms for photonic quantum computing.},
-  archivePrefix= {arXiv},
-  eprint       = {2409.13541},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/FPYC24fusion.pdf}
-  }
