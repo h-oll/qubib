@@ -7830,6 +7830,22 @@ pages[normalize_page_numbers]
 	Year = 2002
 }
 
+@Article{CFG25fault,
+	file = {CFG25fault.pdf},
+	timestamp = {2026-03-15 11:31:10 (CET)},
+	author = {Christandl, Matthias and Fawzi, Omar and Goswami, Ashutosh},
+	title = {Fault-Tolerant Quantum Computation with Constant Overhead for General Noise},
+	journal = {PRX Quantum},
+	year = 2025,
+	volume = 6,
+	number = 4,
+	month = nov,
+	issn = {2691-3399},
+	doi = {10.1103/k4cm-pp9p},
+	url = {https://journals.aps.org/prxquantum/pdf/10.1103/k4cm-pp9p},
+	publisher = {American Physical Society (APS)}
+}
+
 @article{CFGM21classical,
 	title = {Classical simulation of Gaussian quantum circuits with non-Gaussian input states},
 	author = {Chabaud, Ulysse and Ferrini, Giulia and Grosshans, Fr{\'e}d{\'e}ric and Markham, Damian},
@@ -13703,6 +13719,19 @@ pages[normalize_page_numbers]
 	booktitle = {Proceedings of the forty-first annual ACM symposium on Theory of computing},
 	pages = {169--178},
 	year = 2009
+}
+
+@article{G13fault,
+	author = {Gottesman, Daniel},
+	title = {Fault-Tolerant Quantum Computation With Constant Overhead},
+	journal = {CoRR},
+	year = 2013,
+	url = {http://arxiv.org/abs/1310.2984v3},
+	abstract = {What is the minimum number of extra qubits needed to perform a large fault-tolerant quantum circuit? Working in a common model of fault-tolerance, I show that in the asymptotic limit of large circuits, the ratio of physical qubits to logical qubits can be a constant. The construction makes use of quantum low-density parity check codes, and the asymptotic overhead of the protocol is equal to that of the family of quantum error-correcting codes underlying the fault-tolerant protocol.},
+	archivePrefix = {arXiv},
+	eprint = {1310.2984},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/G13fault.pdf}
 }
 
 @article{G16quantum,
@@ -35412,6 +35441,23 @@ pages[normalize_page_numbers]
 	Year = 2000
 }
 
+@Article{YK24time,
+	file = {YK24time.pdf},
+	timestamp = {2026-03-15 11:27:18 (CET)},
+	author = {Yamasaki, Hayata and Koashi, Masato},
+	title = {Time-Efficient Constant-Space-Overhead Fault-Tolerant Quantum Computation},
+	journal = {Nature Physics},
+	year = 2024,
+	volume = 20,
+	number = 2,
+	month = jan,
+	pages = {247–253},
+	issn = {1745-2481},
+	doi = {10.1038/s41567-023-02325-8},
+	url = {https://www.nature.com/articles/s41567-023-02325-8.pdf},
+	publisher = {Springer Science and Business Media LLC}
+}
+
 @inproceedings{YKI02analysis,
 	Author = {Yamasaki, T. and Kobayashi, H. and Imai, H.},
 	Bibsource = {DBLP, http://dblp. uni-trier. de},
@@ -36674,3 +36720,39 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
+@article{YK22time,
+  author       = {Yamasaki, Hayata and Koashi, Masato},
+  title        = {Time-Efficient Constant-Space-Overhead Fault-Tolerant Quantum Computation},
+  journal      = {CoRR},
+  year         = 2022,
+  url          = {http://arxiv.org/abs/2207.08826v3},
+  abstract     = {Scaling up quantum computers to attain substantial speedups over classical computing requires fault tolerance. Conventionally, protocols for fault-tolerant quantum computation demand excessive space overheads by using many physical qubits for each logical qubit. A more recent protocol using quantum analogues of low-density parity-check codes needs only a constant space overhead that does not grow with the number of logical qubits. However, the overhead in the processing time required to implement this protocol grows polynomially with the number of computational steps. To address these problems, here we introduce an alternative approach to constant-space-overhead fault-tolerant quantum computing using a concatenation of multiple small-size quantum codes rather than a single large-size quantum low-density parity-check code. We develop techniques for concatenating different quantum Hamming codes with growing sizes. As a result, we construct a low-overhead protocol to achieve constant space overhead and only quasi-polylogarithmic time overhead simultaneously. Our protocol is fault tolerant even if a decoder has a non-constant runtime, unlike the existing constant-space-overhead protocol. This code concatenation approach will make possible a large class of quantum speedups within feasibly bounded space overhead yet negligibly short time overhead.},
+  archivePrefix= {arXiv},
+  eprint       = {2207.08826},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/YK22time.pdf}
+  }
+@article{HNP25composable,
+  author       = {He, Zhiyang and Nguyen, Quynh T. and Pattison, Christopher A.},
+  title        = {Composable Quantum Fault-Tolerance},
+  journal      = {CoRR},
+  year         = 2025,
+  url          = {http://arxiv.org/abs/2508.08246v2},
+  abstract     = {Proving threshold theorems for fault-tolerant quantum computation is a burdensome endeavor with many moving parts that come together in relatively formulaic but lengthy ways. It is difficult and rare to combine elements from multiple papers into a single formal threshold proof, due to the use of different measures of fault-tolerance. In this work, we introduce composable fault-tolerance, a framework that decouples the probabilistic analysis of the noise distribution from the combinatorial analysis of circuit correctness, and enables threshold proofs to compose independently analyzed gadgets easily and rigorously. Within this framework, we provide a library of standard and commonly used gadgets such as memory and logic implemented by constant-depth circuits for quantum low-density parity check codes and distillation. As sample applications, we explicitly write down a threshold proof for computation with surface code and re-derive the constant space-overhead fault-tolerant scheme of Gottesman using gadgets from this library. We expect that future fault-tolerance proofs may focus on the analysis of novel techniques while leaving the standard components to the composable fault-tolerance framework, with the formal proof following the intuitive ``napkin math'' exactly.},
+  archivePrefix= {arXiv},
+  eprint       = {2508.08246},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/HNP25composable.pdf}
+  }
+@article{SO26composable,
+  author       = {Sater, Sami Abdul and Ollivier, Harold},
+  title        = {Composable Verification in the Circuit-Model Via Magic-Blindness},
+  journal      = {CoRR},
+  year         = 2026,
+  url          = {http://arxiv.org/abs/2601.07111v1},
+  abstract     = {As quantum computing machines move towards the utility regime, it is essential that users are able to verify their delegated quantum computations with security guarantees that are (i) robust to noise, (ii) composable with other secure protocols, and (iii) exponentially stronger as the number of resources dedicated to security increases. Previous works that achieve these guarantees and provide modularity necessary to optimization of protocols to real-world hardware are most often expressed in the Measurement-Based Quantum Computation (MBQC) model. This leaves architectures based on the circuit model -- in particular those using the Magic State Injection (MSI) -- with fewer options to verify their computations or with the need to compile their circuits in MBQC leading to overheads. This paper introduces a family of noise robust, composable and efficient verification protocols for Clifford + MSI circuits that are secure against arbitrary malicious behavior. This family contains the verification protocol of Broadbent (ToC, 2018), extends its security guarantees while also bridging the modularity gap between MBQC and circuit-based protocols, and reducing quantum communication costs. As a result, it opens the prospect of rapid implementation for near-term quantum devices. Our technique is based on a refined notion of blindness, called magic-blindness, which hides only the injected magic states -- the sole source of non-Clifford computational power. This enables verification by randomly interleaving computation rounds with classically simulable, magic-free test rounds, leading to a trap-based framework for verification. As a result, circuit-based quantum verification attains the same level of security and robustness previously known only in MBQC. It also optimizes the quantum communication cost as transmitted qubits are required only at the locations of state injection.},
+  archivePrefix= {arXiv},
+  eprint       = {2601.07111},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/SO26composable.pdf}
+  }
