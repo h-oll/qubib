@@ -3987,6 +3987,16 @@ pages[normalize_page_numbers]
 	Year = 2001
 }
 
+@Article{BD22drp,
+	file = {BD22drp.pdf},
+	year = {2022},
+	url = {https://web.mit.edu/paigeb/www/drp_22.pdf},
+	annote = {"A Course in Operator Theory” by John Conway},
+	author = {Esha Bhatia and Paige Dote},
+	title = {DRP IAP 2022},
+	timestamp = {2026-04-13 11:52:55 (CEST)}
+}
+
 @article{BD87manifestation,
 	Author = {Bitter, T. and Dubbers, D.},
 	Journal = {Phys. Rev. Lett.},
@@ -10781,6 +10791,19 @@ pages[normalize_page_numbers]
 	file = {~/shared/papers/DK24efficient.pdf}
 }
 
+@article{DK25communication,
+	author = {Davies, Ethan and Kay, Alastair},
+	title = {Communication-Optimal Blind Quantum Protocols},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2510.07112v2},
+	abstract = {A user, Alice, wants to get server Bob to implement a quantum computation for her. However, she wants to leave him blind to what she's doing. What are the minimal communication resources Alice must use in order to achieve information-theoretic security? In this paper, we consider a single step of the protocol, where Alice conveys to Bob whether or not he should implement a specific gate. We use an entropy-bounding technique to quantify the minimum number of qubits that Alice must send so that Bob cannot learn anything about the gate being implemented. We provide a protocol that saturates this bound. In this optimal protocol, the states that Alice sends may be entangled. For Clifford gates, we prove that it is sufficient for Alice to send separable states.},
+	archivePrefix = {arXiv},
+	eprint = {2510.07112},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/DK25communication.pdf}
+}
+
 @article{DK96consistent,
 	Author = {Dowker, F. and Kent, A.},
 	Journal = {J. Stat. Phys.},
@@ -17223,6 +17246,19 @@ pages[normalize_page_numbers]
 	file = {~/shared/papers/HNGM24practical.pdf}
 }
 
+@article{HNP25composable,
+	author = {He, Zhiyang and Nguyen, Quynh T. and Pattison, Christopher A.},
+	title = {Composable Quantum Fault-Tolerance},
+	journal = {CoRR},
+	year = 2025,
+	url = {http://arxiv.org/abs/2508.08246v2},
+	abstract = {Proving threshold theorems for fault-tolerant quantum computation is a burdensome endeavor with many moving parts that come together in relatively formulaic but lengthy ways. It is difficult and rare to combine elements from multiple papers into a single formal threshold proof, due to the use of different measures of fault-tolerance. In this work, we introduce composable fault-tolerance, a framework that decouples the probabilistic analysis of the noise distribution from the combinatorial analysis of circuit correctness, and enables threshold proofs to compose independently analyzed gadgets easily and rigorously. Within this framework, we provide a library of standard and commonly used gadgets such as memory and logic implemented by constant-depth circuits for quantum low-density parity check codes and distillation. As sample applications, we explicitly write down a threshold proof for computation with surface code and re-derive the constant space-overhead fault-tolerant scheme of Gottesman using gadgets from this library. We expect that future fault-tolerance proofs may focus on the analysis of novel techniques while leaving the standard components to the composable fault-tolerance framework, with the formal proof following the intuitive ``napkin math'' exactly.},
+	archivePrefix = {arXiv},
+	eprint = {2508.08246},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/HNP25composable.pdf}
+}
+
 @article{HO96when,
 	Author = {Horn, R. A. and Olkin, I.},
 	Date-Modified = {2006-01-04 12:21:33 +1000},
@@ -20553,6 +20589,23 @@ pages[normalize_page_numbers]
 	Title = {On the minimum distance of parallel and serially concatenated codes},
 	Url = {http://citeseer.ist.psu.edu/112434.html},
 	Year = 1997
+}
+
+@Article{KV00locally,
+	file = {KV00locally.pdf},
+	timestamp = {2026-04-13 13:30:52 (CEST)},
+	author = {KUSTERMANS, J and VAES, S},
+	title = {Locally compact quantum groups},
+	journal = {Annales Scientifiques de l’École Normale Supérieure},
+	year = 2000,
+	volume = 33,
+	number = 6,
+	month = nov,
+	pages = {837–934},
+	issn = {0012-9593},
+	doi = {10.1016/s0012-9593(00)01055-7},
+	url = {https://www.numdam.org/item/10.1016/s0012-9593(00)01055-7.pdf},
+	publisher = {Societe Mathematique de France}
 }
 
 @inproceedings{KV02structure,
@@ -26639,6 +26692,15 @@ pages[normalize_page_numbers]
 	pages = 79
 }
 
+@Article{P20operator,
+	file = {P20operator.pdf},
+	url = {https://www.math.uwaterloo.ca/~vpaulsen/OpAlgQIT.pdf},
+	year = {2020},
+	author = {VERN I. PAULSEN},
+	title = {OPERATOR ALGEBRA METHODS IN QIT},
+	timestamp = {2026-04-13 12:04:03 (CEST)}
+}
+
 @article{P56generalized,
 	Author = {Pancharatnam, S.},
 	Journal = {Proc. Ind. Acad. Sci. A},
@@ -31082,6 +31144,19 @@ pages[normalize_page_numbers]
 	Year = 1986
 }
 
+@article{SO26composable,
+	author = {Sater, Sami Abdul and Ollivier, Harold},
+	title = {Composable Verification in the Circuit-Model Via Magic-Blindness},
+	journal = {CoRR},
+	year = 2026,
+	url = {http://arxiv.org/abs/2601.07111v1},
+	abstract = {As quantum computing machines move towards the utility regime, it is essential that users are able to verify their delegated quantum computations with security guarantees that are (i) robust to noise, (ii) composable with other secure protocols, and (iii) exponentially stronger as the number of resources dedicated to security increases. Previous works that achieve these guarantees and provide modularity necessary to optimization of protocols to real-world hardware are most often expressed in the Measurement-Based Quantum Computation (MBQC) model. This leaves architectures based on the circuit model -- in particular those using the Magic State Injection (MSI) -- with fewer options to verify their computations or with the need to compile their circuits in MBQC leading to overheads. This paper introduces a family of noise robust, composable and efficient verification protocols for Clifford + MSI circuits that are secure against arbitrary malicious behavior. This family contains the verification protocol of Broadbent (ToC, 2018), extends its security guarantees while also bridging the modularity gap between MBQC and circuit-based protocols, and reducing quantum communication costs. As a result, it opens the prospect of rapid implementation for near-term quantum devices. Our technique is based on a refined notion of blindness, called magic-blindness, which hides only the injected magic states -- the sole source of non-Clifford computational power. This enables verification by randomly interleaving computation rounds with classically simulable, magic-free test rounds, leading to a trap-based framework for verification. As a result, circuit-based quantum verification attains the same level of security and robustness previously known only in MBQC. It also optimizes the quantum communication cost as transmitted qubits are required only at the locations of state injection.},
+	archivePrefix = {arXiv},
+	eprint = {2601.07111},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/SO26composable.pdf}
+}
+
 @book{SO87atlas,
 	Author = {Spanier, J. and Oldham, K. B.},
 	Publisher = {Hemisphere Publishing Corporation, Washington},
@@ -35441,6 +35516,19 @@ pages[normalize_page_numbers]
 	Year = 2000
 }
 
+@article{YK22time,
+	author = {Yamasaki, Hayata and Koashi, Masato},
+	title = {Time-Efficient Constant-Space-Overhead Fault-Tolerant Quantum Computation},
+	journal = {CoRR},
+	year = 2022,
+	url = {http://arxiv.org/abs/2207.08826v3},
+	abstract = {Scaling up quantum computers to attain substantial speedups over classical computing requires fault tolerance. Conventionally, protocols for fault-tolerant quantum computation demand excessive space overheads by using many physical qubits for each logical qubit. A more recent protocol using quantum analogues of low-density parity-check codes needs only a constant space overhead that does not grow with the number of logical qubits. However, the overhead in the processing time required to implement this protocol grows polynomially with the number of computational steps. To address these problems, here we introduce an alternative approach to constant-space-overhead fault-tolerant quantum computing using a concatenation of multiple small-size quantum codes rather than a single large-size quantum low-density parity-check code. We develop techniques for concatenating different quantum Hamming codes with growing sizes. As a result, we construct a low-overhead protocol to achieve constant space overhead and only quasi-polylogarithmic time overhead simultaneously. Our protocol is fault tolerant even if a decoder has a non-constant runtime, unlike the existing constant-space-overhead protocol. This code concatenation approach will make possible a large class of quantum speedups within feasibly bounded space overhead yet negligibly short time overhead.},
+	archivePrefix = {arXiv},
+	eprint = {2207.08826},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/YK22time.pdf}
+}
+
 @Article{YK24time,
 	file = {YK24time.pdf},
 	timestamp = {2026-03-15 11:27:18 (CET)},
@@ -36720,51 +36808,16 @@ pages[normalize_page_numbers]
 	Year = 1993
 }
 
-@article{YK22time,
-  author       = {Yamasaki, Hayata and Koashi, Masato},
-  title        = {Time-Efficient Constant-Space-Overhead Fault-Tolerant Quantum Computation},
-  journal      = {CoRR},
-  year         = 2022,
-  url          = {http://arxiv.org/abs/2207.08826v3},
-  abstract     = {Scaling up quantum computers to attain substantial speedups over classical computing requires fault tolerance. Conventionally, protocols for fault-tolerant quantum computation demand excessive space overheads by using many physical qubits for each logical qubit. A more recent protocol using quantum analogues of low-density parity-check codes needs only a constant space overhead that does not grow with the number of logical qubits. However, the overhead in the processing time required to implement this protocol grows polynomially with the number of computational steps. To address these problems, here we introduce an alternative approach to constant-space-overhead fault-tolerant quantum computing using a concatenation of multiple small-size quantum codes rather than a single large-size quantum low-density parity-check code. We develop techniques for concatenating different quantum Hamming codes with growing sizes. As a result, we construct a low-overhead protocol to achieve constant space overhead and only quasi-polylogarithmic time overhead simultaneously. Our protocol is fault tolerant even if a decoder has a non-constant runtime, unlike the existing constant-space-overhead protocol. This code concatenation approach will make possible a large class of quantum speedups within feasibly bounded space overhead yet negligibly short time overhead.},
-  archivePrefix= {arXiv},
-  eprint       = {2207.08826},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/YK22time.pdf}
-  }
-@article{HNP25composable,
-  author       = {He, Zhiyang and Nguyen, Quynh T. and Pattison, Christopher A.},
-  title        = {Composable Quantum Fault-Tolerance},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2508.08246v2},
-  abstract     = {Proving threshold theorems for fault-tolerant quantum computation is a burdensome endeavor with many moving parts that come together in relatively formulaic but lengthy ways. It is difficult and rare to combine elements from multiple papers into a single formal threshold proof, due to the use of different measures of fault-tolerance. In this work, we introduce composable fault-tolerance, a framework that decouples the probabilistic analysis of the noise distribution from the combinatorial analysis of circuit correctness, and enables threshold proofs to compose independently analyzed gadgets easily and rigorously. Within this framework, we provide a library of standard and commonly used gadgets such as memory and logic implemented by constant-depth circuits for quantum low-density parity check codes and distillation. As sample applications, we explicitly write down a threshold proof for computation with surface code and re-derive the constant space-overhead fault-tolerant scheme of Gottesman using gadgets from this library. We expect that future fault-tolerance proofs may focus on the analysis of novel techniques while leaving the standard components to the composable fault-tolerance framework, with the formal proof following the intuitive ``napkin math'' exactly.},
-  archivePrefix= {arXiv},
-  eprint       = {2508.08246},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/HNP25composable.pdf}
-  }
-@article{SO26composable,
-  author       = {Sater, Sami Abdul and Ollivier, Harold},
-  title        = {Composable Verification in the Circuit-Model Via Magic-Blindness},
-  journal      = {CoRR},
-  year         = 2026,
-  url          = {http://arxiv.org/abs/2601.07111v1},
-  abstract     = {As quantum computing machines move towards the utility regime, it is essential that users are able to verify their delegated quantum computations with security guarantees that are (i) robust to noise, (ii) composable with other secure protocols, and (iii) exponentially stronger as the number of resources dedicated to security increases. Previous works that achieve these guarantees and provide modularity necessary to optimization of protocols to real-world hardware are most often expressed in the Measurement-Based Quantum Computation (MBQC) model. This leaves architectures based on the circuit model -- in particular those using the Magic State Injection (MSI) -- with fewer options to verify their computations or with the need to compile their circuits in MBQC leading to overheads. This paper introduces a family of noise robust, composable and efficient verification protocols for Clifford + MSI circuits that are secure against arbitrary malicious behavior. This family contains the verification protocol of Broadbent (ToC, 2018), extends its security guarantees while also bridging the modularity gap between MBQC and circuit-based protocols, and reducing quantum communication costs. As a result, it opens the prospect of rapid implementation for near-term quantum devices. Our technique is based on a refined notion of blindness, called magic-blindness, which hides only the injected magic states -- the sole source of non-Clifford computational power. This enables verification by randomly interleaving computation rounds with classically simulable, magic-free test rounds, leading to a trap-based framework for verification. As a result, circuit-based quantum verification attains the same level of security and robustness previously known only in MBQC. It also optimizes the quantum communication cost as transmitted qubits are required only at the locations of state injection.},
-  archivePrefix= {arXiv},
-  eprint       = {2601.07111},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/SO26composable.pdf}
-  }
-@article{DK25communication,
-  author       = {Davies, Ethan and Kay, Alastair},
-  title        = {Communication-Optimal Blind Quantum Protocols},
-  journal      = {CoRR},
-  year         = 2025,
-  url          = {http://arxiv.org/abs/2510.07112v2},
-  abstract     = {A user, Alice, wants to get server Bob to implement a quantum computation for her. However, she wants to leave him blind to what she's doing. What are the minimal communication resources Alice must use in order to achieve information-theoretic security? In this paper, we consider a single step of the protocol, where Alice conveys to Bob whether or not he should implement a specific gate. We use an entropy-bounding technique to quantify the minimum number of qubits that Alice must send so that Bob cannot learn anything about the gate being implemented. We provide a protocol that saturates this bound. In this optimal protocol, the states that Alice sends may be entangled. For Clifford gates, we prove that it is sufficient for Alice to send separable states.},
-  archivePrefix= {arXiv},
-  eprint       = {2510.07112},
-  primaryClass = {quant-ph},
-  file = {~/shared/papers/DK25communication.pdf}
-  }
+@article{ZZNB26exponential,
+	author = {Zhao, Haimeng and Zlokapa, Alexander and Neven, Hartmut and Babbush, Ryan and Preskill, John and McClean, Jarrod R. and Huang, Hsin-Yuan},
+	title = {Exponential Quantum Advantage in Processing Massive Classical Data},
+	journal = {CoRR},
+	year = 2026,
+	url = {http://arxiv.org/abs/2604.07639v1},
+	abstract = {Broadly applicable quantum advantage, particularly in classical data processing and machine learning, has been a fundamental open problem. In this work, we prove that a small quantum computer of polylogarithmic size can perform large-scale classification and dimension reduction on massive classical data by processing samples on the fly, whereas any classical machine achieving the same prediction performance requires exponentially larger size. Furthermore, classical machines that are exponentially larger yet below the required size need superpolynomially more samples and time. We validate these quantum advantages in real-world applications, including single-cell RNA sequencing and movie review sentiment analysis, demonstrating four to six orders of magnitude reduction in size with fewer than 60 logical qubits. These quantum advantages are enabled by quantum oracle sketching, an algorithm for accessing the classical world in quantum superposition using only random classical data samples. Combined with classical shadows, our algorithm circumvents the data loading and readout bottleneck to construct succinct classical models from massive classical data, a task provably impossible for any classical machine that is not exponentially larger than the quantum machine. These quantum advantages persist even when classical machines are granted unlimited time or if BPP=BQP, and rely only on the correctness of quantum mechanics. Together, our results establish machine learning on classical data as a broad and natural domain of quantum advantage and a fundamental test of quantum mechanics at the complexity frontier.},
+	archivePrefix = {arXiv},
+	eprint = {2604.07639},
+	primaryClass = {quant-ph},
+	file = {~/shared/papers/ZZNB26exponential.pdf}
+}
+
