@@ -20412,7 +20412,9 @@ pages[normalize_page_numbers]
   issn         = {1476-4687},
   doi          = {10.1038/nature23879},
   url          = {http://dx.doi.org/10.1038/nature23879},
-  publisher    = {Springer Science and Business Media LLC}
+  publisher    = {Springer Science and Business Media LLC},
+ file = {~/shared/papers/KMTT17hardware.pdf}
+
 }
 
 @ARTICLE{KMUW18quantum,
@@ -37123,3 +37125,61 @@ pages[normalize_page_numbers]
   publisher    = {Theory of Computing Exchange}
 }
 
+@InProceedings{MP08finding,
+  author       = "Mhalla, Mehdi and Perdrix, Simon",
+  editor       = "Aceto, Luca and Damg{\aa}rd, Ivan and Goldberg, Leslie Ann and Halld{\'o}rsson, Magn{\'u}s M. and Ing{\'o}lfsd{\'o}ttir, Anna and Walukiewicz, Igor",
+  title        = "Finding Optimal Flows Efficiently",
+  booktitle    = "Automata, Languages and Programming",
+  year         = 2008,
+  publisher    = "Springer Berlin Heidelberg",
+  address      = "Berlin, Heidelberg",
+  pages        = "857--868",
+  abstract     = "Among the models of quantum computation, the One-way Quantum Computer [11,12] is one of the most promising proposals of physical realisation [13], and opens new perspectives for parallelisation by taking advantage of quantum entanglement [2]. Since a One-way QC is based on quantum measurement, which is a fundamentally nondeterministic evolution, a sufficient condition of global determinism has been introduced in [4] as the existence of a causal flow in a graph that underlies the computation. A O(n3)-algorithm has been introduced [6] for finding such a causal flow when the numbers of output and input vertices in the graph are equal, otherwise no polynomial time algorithm was known for deciding whether a graph has a causal flow or not. Our main contribution is to introduce a O(m)-algorithm for finding a causal flow (where m is the number of edges of the graph), if any, whatever the numbers of input and output vertices are. This answers the open question stated by Danos and Kashefi [4] and by de Beaudrap [6]. Moreover, we prove that our algorithm produces a flow of minimal depth.",
+  isbn         = "978-3-540-70575-8"
+}
+@article{CSDD23measurement,
+  author       = {Chan, Albie and Shi, Zheng and Dellantonio, Luca and D{\"u}r, Wolfgang and Muschik, Christine A.},
+  title        = {Measurement-Based Infused Circuits for Variational Quantum Eigensolvers},
+  journal      = {CoRR},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2305.19200v3},
+  abstract     = {Variational quantum eigensolvers (VQEs) are successful algorithms for studying physical systems on quantum computers. Recently, they were extended to the measurement-based model of quantum computing, bringing resource graph states and their advantages into the realm of quantum simulation. In this work, we incorporate such ideas into traditional VQE circuits. This enables novel problem-informed designs and versatile implementations of many-body Hamiltonians. We showcase our approach on real superconducting quantum computers by performing VQE simulations of testbed systems including the perturbed planar code, Z2 lattice gauge theory, 1D quantum chromodynamics, and the LiH molecule.},
+  archivePrefix= {arXiv},
+  eprint       = {2305.19200},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/CSDD23measurement.pdf}
+  }
+@article{YKO26verifiable,
+  author       = {Yang, Bo and Kashefi, Elham and Ollivier, Harold},
+  title        = {Verifiable Blind Probabilistic Error Cancellation},
+  journal      = {CoRR},
+  year         = 2026,
+  url          = {http://arxiv.org/abs/2607.25704v1},
+  abstract     = {Quantum error mitigation (QEM) is an essential tool for mitigating hardware noise without incurring space overhead. Yet, its reliability depends on modeling, calibration, and implementation, leaving end-to-end security on untrusted quantum hardware unresolved. We address this problem by introducing verifiable blind probabilistic error cancellation (VBPEC), the first secure verification protocol against a fully malicious adversary that integrates QEM. VBPEC brings probabilistic error cancellation (PEC), a widely studied QEM technique, within the scope of composable security by formalizing delegated mitigation as a cryptographic resource in the abstract cryptography framework. The protocol performs PEC with perfect blindness and an exponentially small security error. VBPEC retains the absence of quantum-space overhead from recent statistically-secure verified quantum computation protocols and from PEC. The only overhead takes the form of additional repetitions due to the QEM procedure. To achieve this, we extend trap-based verification from deterministic pass/fail checks to statistical tests that benefit from QEM and develop a new proof technique that integrates the corresponding additional deviation sources. Rather than merely tolerating honest noise below a fixed threshold, VBPEC actively cancels it, enabling correctly mitigated estimates to be accepted with high probability without compromising security. Our framework thus establishes an essential route towards secure, reliable, and practical delegated quantum computation on near-future quantum hardware: VBPEC fundamentally improves the practicality of verification.},
+  archivePrefix= {arXiv},
+  eprint       = {2607.25704},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/YKO26verifiable.pdf}
+  }
+@article{O26verification,
+  author       = {Ollivier, Harold},
+  title        = {Verification of Quantum Computations: Hardware-Efficient Security Proofs},
+  journal      = {CoRR},
+  year         = 2026,
+  url          = {http://arxiv.org/abs/2607.03983v1},
+  abstract     = {How can a user with limited quantum resources verify the output of an untrusted, fully quantum server? This manuscript provides a conceptual synthesis of some recent developments toward answering this question under statistical (information-theoretic) security. Rather than duplicating the dense technical proofs of the underlying publications, our focus here is on the physical motivations, the structural connections between different protocols, and the path toward hardware-efficient implementation. We begin by introducing a modular, composable framework that partitions verification into three distinct, independent primitives: remote state preparation, trap-based deviation detection, and error-correcting embedding. Using this framework, we show how the demanding hardware requirements of early protocols can be systematically relaxed. We review schemes that eliminate the spatial overhead, remove the need to prepare computational-basis dummy states, and replace single-photon sources with trusted local rotations or weak coherent pulses. Finally, we examine how these techniques scale, both to asymmetric multi-party settings and to the delegation of fully fault-tolerant computations in the presence of gate-level noise. This document is intended as a guide to the architectural principles of practical quantum verification.},
+  archivePrefix= {arXiv},
+  eprint       = {2607.03983},
+  primaryClass = {quant-ph},
+}
+@article{SO26noise,
+  author       = {Saha, Amit and Ollivier, Harold},
+  title        = {Noise Inference By Recycling Test Rounds in Verification Protocols},
+  journal      = {CoRR},
+  year         = 2026,
+  url          = {http://arxiv.org/abs/2603.30015v2},
+  abstract     = {Interactive verification protocols for quantum computations allow to build trust between a client and a service provider, ensuring the former that the instructed computation was carried out faithfully. They come in two variants, one without quantum communication that requires large overhead on the server side to coherently implement quantum-resistant cryptographic primitives, and one with quantum communication but with repetition as the only overhead on the service provider's side. Given the limited number of available qubits on current machines, only quantum communication-based protocols have yielded proof of concepts. In this work, we show that the repetition overhead of protocols with quantum communication can be further mitigated if one examines the task of operating a quantum machine from the service provider's point of view. Indeed, we show that the test rounds data, whose collection is necessary to provide security, can indeed be recycled to perform continuous monitoring of noise model parameters for the service provider. This exemplifies the versatility of these protocols, whose template can serve multiple purposes and increases the interest in considering their early integration into development roadmaps of quantum machines.},
+  archivePrefix= {arXiv},
+  eprint       = {2603.30015},
+  primaryClass = {quant-ph},
+}
