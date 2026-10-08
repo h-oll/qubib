@@ -1,4 +1,5 @@
 .DS_Store
+.dir-locals.el
 *.sav
 private-notes**
 papers**
