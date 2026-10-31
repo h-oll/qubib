@@ -37350,3 +37350,75 @@ pages[normalize_page_numbers]
   primaryClass = {quant-ph},
   file = {~/shared/papers/YRSG26protecting.pdf}
   }
+@article{MKNB26representational,
+  author       = {Majumder, Arunava and Krumm, Marius and Nautrup, Hendrik Poulsen and Briegel, Hans J.},
+  title        = {Representational Separation Between Unitary and Channel Quantum Generative Models Via Shared Classical Randomness At Shallow Depth},
+  journal      = {CoRR},
+  year         = 2026,
+  url          = {http://arxiv.org/abs/2608.05110v1},
+  abstract     = {Near-term quantum hardware limits circuit depth and often imposes geometrically local connectivity for quantum generative models, restricting the output distributions accessible to shallow unitary Born models. Introducing stochasticity into a unitary quantum Born model can improve the empirical generative performance of the resulting channel model and, for a restricted small-scale architecture, has been proven to represent a strictly larger family of distributions than its unitary counterpart. However, whether such randomness provides a provable separation at fixed shallow depth for arbitrarily large systems has remained open. Here, we show that shared classical randomness, a comparatively weak resource from entanglement theory, is sufficient to establish such a strict scalable representational separation over the corresponding shallow unitary Born model. More specifically, we augment bounded-connectivity shallow unitary circuits, followed by computational-basis measurements, with spatially separated local Pauli operations, whose joint application is controlled by a single classically sampled random bit. The resulting shallow-depth channel model generates long-range correlations in the classical output distribution that no purely unitary shallow-depth model with bounded connectivity can reproduce. For one-dimensional nearest-neighbour architectures, reproducing such distributions with a purely unitary model can require depth $Ω(N)$ in the worst case. We further show that measurement-based quantum computation (MBQC) provides a natural implementation of the required shared classical randomness through suitable adaptation of the random measurement outcomes. Numerical experiments on MBQC-based generative models support the analytical results.},
+  archivePrefix= {arXiv},
+  eprint       = {2608.05110},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/MKNB26representational.pdf}
+  }
+@article{MCSG26sampling,
+  author       = {Martiel, Simon and Chung, Jay-U and Seif, Alireza and Ghosh, Soumik and Hincks, Ian and Deshpande, Abhinav and Manabe, Hidetaka and Gu, Hanfeng and Pan, Feng and Fefferman, Bill and Gambetta, Jay M. and Javadi-Abhari, Ali},
+  title        = {Sampling Hard Circuits With Verifiably High Fidelity},
+  journal      = {CoRR},
+  year         = 2026,
+  url          = {http://arxiv.org/abs/2607.25941v3},
+  abstract     = {Sampling-based proposals are prominent candidates for demonstrating quantum computations beyond the reach of classical supercomputers. However, it has been difficult to combine their complexity-theoretic hardness with two capabilities needed for scalable quantum computing more generally: suppressing hardware errors, and verifying the quantum computation itself. Here we address both issues by introducing structured circuits, which, in addition to provable hardness guarantees, admit an encoding in a quantum code. This allows us to simultaneously reach high fidelities at high circuit depths, and to certify an experimental fidelity via the circuit structure and measurement of code syndromes. The resulting certificate is device dependent, but requires substantially weaker noise assumptions than existing fidelity proxy benchmarks. We demonstrate our proposal with a $64$-qubit, depth-$73$ Clifford circuit, doped with $314$ $T$ gates. We use a total of $76$ physical qubits to encode this computation in spacetime codes, effectively suppressing gate error rates by $10\times$ after syndrome post-selection, and yielding a state with a fidelity lower bound of $0.349$ with $95\%$ confidence. Our construction is a systematic method for promoting a stabilizer state to a magic state while keeping an error-detected fidelity certificate.},
+  archivePrefix= {arXiv},
+  eprint       = {2607.25941},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/MCSG26sampling.pdf}
+  }
+@article{YXDH25discovering,
+  author       = {Yin, Yue and Xiao, Tailong and Deng, Xiaoyang and He, Ming and Fan, Jianping and Zeng, Guihua},
+  title        = {Discovering Autonomous Quantum Error Correction Via Deep Reinforcement Learning},
+  journal      = {CoRR},
+  year         = 2025,
+  url          = {http://arxiv.org/abs/2511.12482v2},
+  abstract     = {Quantum error correction is essential for fault-tolerant quantum computing. However, standard methods relying on active measurements may introduce additional errors. Autonomous quantum error correction (AQEC) circumvents this by utilizing engineered dissipation and drives in bosonic systems, but identifying practical encoding remains challenging due to stringent Knill-Laflamme conditions. In this work, we utilize curriculum learning enabled deep reinforcement learning to discover Bosonic codes under approximate AQEC framework to resist both single-photon and double-photon losses. We present an analytical solution of solving the master equation under approximation conditions, which can significantly accelerate the training process of reinforcement learning. The agent first identifies an encoded subspace surpassing the breakeven point through rapid exploration within a constrained evolutionary time-frame, then strategically fine-tunes its policy to sustain this performance advantage over extended temporal horizons. We find that the two-phase trained agent can discover the optimal set of codewords, i.e., the Fock states $\ket{4}$ and $\ket{7}$ considering the effect of both single-photon and double-photon loss. We identify that the discovered code surpasses the breakeven threshold over a longer evolution time and achieve the state-of-art performance. We also analyze the robustness of the code against the phase damping and amplitude damping noise. Our work highlights the potential of curriculum learning enabled deep reinforcement learning in discovering the optimal quantum error correct code especially in early fault-tolerant quantum systems.},
+  archivePrefix= {arXiv},
+  eprint       = {2511.12482},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/YXDH25discovering.pdf}
+  }
+@article{CEHS26energy,
+  author       = {Carrasco-Codina, Miquel and Escofet, Pau and Hilaire, Paul and Soret, Ariane and Nerenberg, Sam and Champain, Victor and Milburn, Gerard and Theophilo, Klara and Li, Sophie H. and Bautista, Irais and G{\'o}mez, Andr{\'e}s and Miralles, Jose and Abadal, Sergi and Almud{\'e}ver, Carmen G. and Alarc{\'o}n, Eduard and Yehia, Raja},
+  title        = {Energy Efficiency of Quantum Computers},
+  journal      = {CoRR},
+  year         = 2026,
+  url          = {http://arxiv.org/abs/2605.15090v2},
+  abstract     = {How much energy does a quantum computer consume? Are they more efficient than their classical counterparts? In this work, we make a step towards answering these questions. We define the energy efficiency of a quantum computer as the ratio of the number of algorithms it can perform during a given time over the energy consumed by the hardware during this time. We analyze the most representative physical platforms currently envisioned to be used as building blocks of quantum computers: superconducting qubits, silicon spin qubits, trapped ions, neutral atoms and photonic qubits. Including insights from experts in all these technologies and taking into account algorithm compilation constraints, we discuss the advantages and inconveniences of each platform from an energy standpoint. Beyond providing concrete values of the energy consumption of current quantum computers, we lay the foundation of a framework to benchmark the energy efficiency of any future quantum computing architecture.},
+  archivePrefix= {arXiv},
+  eprint       = {2605.15090},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/CEHS26energy.pdf}
+  }
+@article{HADM23quantum-utility,
+  author       = {Herrmann, Nils and Arya, Daanish and Doherty, Marcus W. and Mingare, Angus and Pillay, Jason C. and Preis, Florian and Prestel, Stefan},
+  title        = {Quantum Utility -- Definition and Assessment of a Practical Quantum Advantage},
+  journal      = {CoRR},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2303.02138v2},
+  abstract     = {Several benchmarks have been proposed to holistically measure quantum computing performance. While some have focused on the end user's perspective (e.g., in application-oriented benchmarks), the real industrial value taking into account the physical footprint of the quantum processor are not discussed. Different use-cases come with different requirements for size, weight, power consumption, or data privacy while demanding to surpass certain thresholds of fidelity, speed, problem size, or precision. This paper aims to incorporate these characteristics into a concept coined quantum utility, which demonstrates the effectiveness and practicality of quantum computers for various applications where quantum advantage -- defined as either being faster, more accurate, or demanding less energy -- is achieved over a classical machine of similar size, weight, and cost. To successively pursue quantum utility, a level-based classification scheme -- constituted as application readiness levels (ARLs) -- as well as extended classification labels are introduced. These are demonstratively applied to different quantum applications from the fields of quantum chemistry, quantum simulation, quantum machine learning, and data analysis followed by a brief discussion.},
+  archivePrefix= {arXiv},
+  eprint       = {2303.02138},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/HADM23quantum-utility.pdf}
+  }
+@article{PLSM23robust,
+  author       = {Paletta, Louis and Leverrier, Anthony and Sarlette, Alain and Mirrahimi, Mazyar and Vuillot, Christophe},
+  title        = {Robust Sparse Iqp Sampling in Constant Depth},
+  journal      = {CoRR},
+  year         = 2023,
+  url          = {http://arxiv.org/abs/2307.10729v4},
+  abstract     = {Between NISQ (noisy intermediate scale quantum) approaches without any proof of robust quantum advantage and fully fault-tolerant quantum computation, we propose a scheme to achieve a provable superpolynomial quantum advantage (under some widely accepted complexity conjectures) that is robust to noise with minimal error correction requirements. We choose a class of sampling problems with commuting gates known as sparse IQP (Instantaneous Quantum Polynomial-time) circuits and we ensure its fault-tolerant implementation by introducing the tetrahelix code. This new code is obtained by merging several tetrahedral codes (3D color codes) and has the following properties: each sparse IQP gate admits a transversal implementation, and the depth of the logical circuit can be traded for its width. Combining those, we obtain a depth-1 implementation of any sparse IQP circuit up to the preparation of encoded states. This comes at the cost of a space overhead which is only polylogarithmic in the width of the original circuit. We furthermore show that the state preparation can also be performed in constant depth with a single step of feed-forward from classical computation. Our construction thus exhibits a robust superpolynomial quantum advantage for a sampling problem implemented on a constant depth circuit with a single round of measurement and feed-forward.},
+  archivePrefix= {arXiv},
+  eprint       = {2307.10729},
+  primaryClass = {quant-ph},
+  file = {~/shared/papers/PLSM23robust.pdf}
+  }
